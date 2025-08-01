@@ -9,7 +9,7 @@ namespace CapstoneProj.MonsterSystem
         [SerializeField] private float _maxSpawnTime;
         [SerializeField] private float _maxReloadTime;
         private float _elapsedTime;
-        private bool _spawnActive;
+        private bool _isSpawnActive;
         private bool _reloading;
         private Vector3 _maxSize = Vector3.one;
         private Vector3 _minSize = new Vector3(0f, 1f, 1f);
@@ -21,7 +21,7 @@ namespace CapstoneProj.MonsterSystem
         {
             _elapsedTime = 0;
             _fillTransform.localScale = _maxSize;
-            _spawnActive = true;
+            _isSpawnActive = true;
             _reloading = false;
         }
 
@@ -34,7 +34,7 @@ namespace CapstoneProj.MonsterSystem
 
         private void Update()
         {
-            if (!_spawnActive)
+            if (!_isSpawnActive)
                 return;
 
             if (_reloading)
