@@ -11,15 +11,20 @@ namespace CapstoneProj.ProgressSystem
             Star3
         }
 
+        private const string POP_UP = "PopUp";
+
         [SerializeField] private ProgressStarType _progressStarType;
+        [SerializeField] private Animator _animator;
 
         private void Awake()
         {
-            ProgressBar.Instance.OnStarProgress +=
-                ProgressBar_OnStarProgress;
-
-            SetVisibility(false);
+            if (_animator == null)
+                _animator = GetComponent<Animator>();
         }
+
+        private void Start()
+            => ProgressBar.Instance.OnStarProgress +=
+                ProgressBar_OnStarProgress;
 
         private void ProgressBar_OnStarProgress(object sender, ProgressBar.OnStarProgressEventArgs e)
         {
@@ -31,10 +36,10 @@ namespace CapstoneProj.ProgressSystem
                 _ => 0f
             };
 
-            SetVisibility(e.ProgressPercent >= progressPercentThreshold);
-        }
+            if (e.ProgressPercent < progressPercentThreshold)
+                return;
 
-        private void SetVisibility(bool isVisible)
-            => gameObject.SetActive(isVisible);
+            _animator.SetTrigger(POP_UP);
+        }
     }
 }
