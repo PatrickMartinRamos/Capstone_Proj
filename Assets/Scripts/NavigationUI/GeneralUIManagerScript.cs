@@ -26,6 +26,11 @@ public class GeneralUIManagerScript : MonoBehaviour
         SettingsRestartButton.GetComponent<Button>().onClick.AddListener(RestartScene);
         SettingsBackButton.GetComponent<Button>().onClick.AddListener(SettingsBack);
         VolumeSlider.GetComponent<Slider>().onValueChanged.AddListener(delegate { UpdateVolumeTxt(); });
+
+    }
+    void SetupScreen()
+    {
+        Screen.orientation = ScreenOrientation.Portrait;
     }
     void UpdateVolumeTxt()
     {
