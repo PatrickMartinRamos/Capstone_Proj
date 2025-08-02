@@ -1,11 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Region : MonoBehaviour
 {
     [SerializeField] private int stageNumber;
     [SerializeField] private bool isUnlocked = false, isSelected = false;
     //[SerializeField] private GameObject stageLock;
+    [SerializeField] private GameObject playBtn;
     [SerializeField][Range(0, 3)] private float clearLevel;
 
     [SerializeField] private Vector3 targetEulerAngle;
@@ -15,6 +18,10 @@ public class Region : MonoBehaviour
     private bool isWorldRotating = false;
     private GameObject World;
 
+    private void Start()
+    {
+        playBtn.GetComponent<Button>().onClick.AddListener(PlayStage);
+    }
     private void Update()
     {
         if (isSelected && isWorldRotating)
@@ -25,6 +32,13 @@ public class Region : MonoBehaviour
                 StopCoroutine(RotateOverTime());
                 isWorldRotating = false;
             }
+        }
+    }
+    void PlayStage()
+    {
+        if (isSelected)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     public void UnselectRegion()
