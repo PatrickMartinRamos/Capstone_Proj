@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 19672835}
   m_Layer: 6
   m_Name: Constant - circle
-  m_TagString: Player
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 112030769}
   m_Layer: 6
   m_Name: Variable-square
-  m_TagString: Untagged
+  m_TagString: Square
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 139205830}
   m_Layer: 6
   m_Name: Variable_1 - square
-  m_TagString: Untagged
+  m_TagString: Square
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1826,8 +1826,8 @@ GameObject:
   - component: {fileID: 1331801347}
   - component: {fileID: 1331801348}
   m_Layer: 6
-  m_Name: Constant_1 - cirlce
-  m_TagString: Untagged
+  m_Name: Constant_1 - circle
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2610,7 +2610,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   varParent: {fileID: 1155977302}
-  size: {x: 0, y: 0}
 --- !u!114 &2012912183
 MonoBehaviour:
   m_ObjectHideFlags: 0
