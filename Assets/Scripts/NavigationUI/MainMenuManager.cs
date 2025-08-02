@@ -1,17 +1,16 @@
-using System;
 using System.ComponentModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GeneralUIManagerScript : MonoBehaviour
+public class MainMenuManager : MonoBehaviour
 {
-    [Header("Labels")] 
+    [Header("Labels")]
     [SerializeField] private TextMeshProUGUI volumeTxt;
     [Header("Buttons")]
-    [SerializeField] private GameObject BackButton;
-    [SerializeField] private GameObject SettingsButton, SettingsHomeButton, SettingsRestartButton, SettingsBackButton;
+    [SerializeField] private GameObject PlayButton;
+    [SerializeField] private GameObject SettingsButton, QuitButton, SettingsBackButton;
     [Header("Sliders")]
     [SerializeField] private GameObject VolumeSlider;
     [Header("Panel")]
@@ -21,15 +20,12 @@ public class GeneralUIManagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        BackButton.GetComponent<Button>().onClick.AddListener(Back);
         SettingsButton.GetComponent<Button>().onClick.AddListener(Settings);
-        if (SettingsHomeButton!=null)
-            SettingsHomeButton.GetComponent<Button>().onClick.AddListener(Home);
-        if (SettingsRestartButton != null)
-            SettingsRestartButton.GetComponent<Button>().onClick.AddListener(RestartScene);
+        PlayButton.GetComponent<Button>().onClick.AddListener(StartGame);
+        QuitButton.GetComponent<Button>().onClick.AddListener(QuitGame);
         SettingsBackButton.GetComponent<Button>().onClick.AddListener(SettingsBack);
         VolumeSlider.GetComponent<Slider>().onValueChanged.AddListener(delegate { UpdateVolumeTxt(); });
-
+        SetupScreen();
     }
     void SetupScreen()
     {
@@ -39,17 +35,13 @@ public class GeneralUIManagerScript : MonoBehaviour
     {
         volumeTxt.text = VolumeSlider.GetComponent<Slider>().value.ToString();
     }
-    void Back()
+    void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("WorldSelection");
     }
-    void Home()
+    void QuitGame()
     {
-        SceneManager.LoadScene("MainLobby");
-    }
-    void RestartScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Application.Quit();
     }
     void Settings()
     {
@@ -62,3 +54,4 @@ public class GeneralUIManagerScript : MonoBehaviour
         SettingsButton.GetComponent<Button>().interactable = true;
     }
 }
+
