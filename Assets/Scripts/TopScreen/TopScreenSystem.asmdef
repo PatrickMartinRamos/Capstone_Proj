@@ -1,0 +1,16 @@
+{
+    "name": "TopScreenSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a4a359480b162254c9035e1014bdf9a9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
