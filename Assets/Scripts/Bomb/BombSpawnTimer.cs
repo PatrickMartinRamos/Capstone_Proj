@@ -1,10 +1,13 @@
 using System;
+using CapstoneProj.MiscSystem;
 using UnityEngine;
 
-namespace CapstoneProj.MonsterSystem
+namespace CapstoneProj.BombSystem
 {
-    public class BombSpawnTimer : MonoBehaviour
+    public class BombSpawnTimer : SingletonBehaviour<BombSpawnTimer>
     {
+        public event EventHandler OnSpawnBomb;
+
         [SerializeField] private Transform _fillTransform;
         [SerializeField] private float _maxSpawnTime;
         [SerializeField] private float _maxReloadTime;
@@ -55,6 +58,7 @@ namespace CapstoneProj.MonsterSystem
                 return;
 
             resetCallback?.Invoke();
+            OnSpawnBomb?.Invoke(this, EventArgs.Empty);
         }
     }
 }

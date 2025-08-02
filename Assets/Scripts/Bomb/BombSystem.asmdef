@@ -1,3 +1,17 @@
 {
-	"name": "MonsterSystem"
+    "name": "MonsterSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a4a359480b162254c9035e1014bdf9a9",
+        "GUID:d8188a5831daa9f44b159513dd6bc85a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
