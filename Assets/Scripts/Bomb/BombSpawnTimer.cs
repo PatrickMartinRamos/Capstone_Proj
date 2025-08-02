@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace CapstoneProj.MonsterSystem
 {
-    public class MonsterSpawnTimer : MonoBehaviour
+    public class BombSpawnTimer : MonoBehaviour
     {
         [SerializeField] private Transform _fillTransform;
         [SerializeField] private float _maxSpawnTime;

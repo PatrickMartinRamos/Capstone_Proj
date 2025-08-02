@@ -19,7 +19,7 @@ namespace CapstoneProj.ProgressSystem
 
         private const float MAX_SIZE = 1f;
         private const float MIN_SIZE = 0f;
-        private readonly Vector3 ORIGINAL_SCALE = new Vector3(MAX_SIZE, MIN_SIZE, MAX_SIZE);
+        private readonly Vector3 ORIGINAL_SCALE = new Vector3(MIN_SIZE, MAX_SIZE, MAX_SIZE);
 
         [SerializeField] private Transform _fillTransform;
         [SerializeField] private float _maxProgressTime;
@@ -49,10 +49,10 @@ namespace CapstoneProj.ProgressSystem
         public void Progress(float progressPercentToAdd)
         {
             _previousScale = _scale;
-            _progressPercent = _scale.y;
+            _progressPercent = _scale.x;
             _progressPercent += progressPercentToAdd;
             _progressPercent = Mathf.Clamp(_progressPercent, MIN_SIZE, MAX_SIZE);
-            _scale.y = _progressPercent;
+            _scale.x = _progressPercent;
             _isProgressing = true;
         }
 

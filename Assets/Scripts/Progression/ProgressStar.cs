@@ -13,7 +13,7 @@ namespace CapstoneProj.ProgressSystem
 
         [SerializeField] private ProgressStarType _progressStarType;
 
-        private void Awake()
+        private void Start()
         {
             ProgressBar.Instance.OnStarProgress +=
                 ProgressBar_OnStarProgress;
