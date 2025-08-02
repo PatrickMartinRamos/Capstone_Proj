@@ -990,6 +990,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "TouchControls",
+            "id": "29272a0c-d18e-4b0b-8574-72e0ffdff79e",
+            "actions": [
+                {
+                    "name": "Touch",
+                    "type": "Button",
+                    "id": "bb2b8e2a-1f1c-4be7-8ffa-5f03e6e625b7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Drag",
+                    "type": "PassThrough",
+                    "id": "f82a2185-5fe0-4d7c-8f70-b40eaa6d3203",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d4fc55de-2f09-4951-8886-0d8c1b077278",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c535e64e-eeeb-4ad6-bce2-d1aec27a66ae",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
