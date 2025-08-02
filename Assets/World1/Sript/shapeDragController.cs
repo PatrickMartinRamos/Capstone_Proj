@@ -9,8 +9,8 @@ public class shapeDragController : MonoBehaviour
     private RaycastHit2D hit;
     void Update()
     {
-        Vector2 touchPosition = shapeInputController.Instance.GetTouchPosition();
-        bool isTouching = shapeInputController.Instance.IsTouching();
+        Vector2 touchPosition = InputManager.Instance.GetTouchPosition();
+        bool isTouching = InputManager.Instance.IsTouching();
        
         if (isTouching)
         {

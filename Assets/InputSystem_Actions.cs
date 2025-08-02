@@ -1098,6 +1098,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Swipe"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""300f4034-947c-424d-b938-de77b8c64e32"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1120,6 +1129,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Drag"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd648693-c41d-404e-adbd-921b36ead3bf"",
+                    ""path"": ""<Touchscreen>/primaryTouch/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Swipe"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1216,6 +1236,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_TouchControls = asset.FindActionMap("TouchControls", throwIfNotFound: true);
         m_TouchControls_Touch = m_TouchControls.FindAction("Touch", throwIfNotFound: true);
         m_TouchControls_Drag = m_TouchControls.FindAction("Drag", throwIfNotFound: true);
+        m_TouchControls_Swipe = m_TouchControls.FindAction("Swipe", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1679,6 +1700,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private List<ITouchControlsActions> m_TouchControlsActionsCallbackInterfaces = new List<ITouchControlsActions>();
     private readonly InputAction m_TouchControls_Touch;
     private readonly InputAction m_TouchControls_Drag;
+    private readonly InputAction m_TouchControls_Swipe;
     /// <summary>
     /// Provides access to input actions defined in input action map "TouchControls".
     /// </summary>
@@ -1698,6 +1720,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "TouchControls/Drag".
         /// </summary>
         public InputAction @Drag => m_Wrapper.m_TouchControls_Drag;
+        /// <summary>
+        /// Provides access to the underlying input action "TouchControls/Swipe".
+        /// </summary>
+        public InputAction @Swipe => m_Wrapper.m_TouchControls_Swipe;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1730,6 +1756,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Drag.started += instance.OnDrag;
             @Drag.performed += instance.OnDrag;
             @Drag.canceled += instance.OnDrag;
+            @Swipe.started += instance.OnSwipe;
+            @Swipe.performed += instance.OnSwipe;
+            @Swipe.canceled += instance.OnSwipe;
         }
 
         /// <summary>
@@ -1747,6 +1776,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Drag.started -= instance.OnDrag;
             @Drag.performed -= instance.OnDrag;
             @Drag.canceled -= instance.OnDrag;
+            @Swipe.started -= instance.OnSwipe;
+            @Swipe.performed -= instance.OnSwipe;
+            @Swipe.canceled -= instance.OnSwipe;
         }
 
         /// <summary>
@@ -2015,5 +2047,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnDrag(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Swipe" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSwipe(InputAction.CallbackContext context);
     }
 }
