@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8424e6882334b3040a396eb99f71c3b5, type: 3}
+  m_Name: GrayBombSO
+  m_EditorClassIdentifier: 
+  BombName: Gray Bomb
+  BombType: 2
+  BombSprite: {fileID: -6577369613164128536, guid: 087f3a629591ce04db828a8762fb391b, type: 3}
+  BombPrefab: {fileID: 2670437858836625563, guid: 75e76f90a18d53f4099c8fdbfc0495d7, type: 3}
+  ExplosionType: 0
+  DefusalType: 0

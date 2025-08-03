@@ -1,0 +1,7 @@
+Bomb Name,Bomb Type,Bomb Sprite,Bomb Prefab,Explostion Type,Defusal Type
+Gray Bomb,GrayBomb,bomb_gray,GrayBombPrefab,Self,Plotting
+Blue Bomb,BlueBomb,bomb_blue,BlueBombPrefab,Grid3x3,Plotting
+Green Bomb,GreenBomb,bomb_green,GreenBombPrefab,Rook,Midpoint
+Yellow Bomb,YellowBomb,bomb_yellow,YellowBombPrefab,Bishop,Midpoint
+Violet Bomb,VioletBomb,bomb_violet,VioletBombPrefab,AllGray,Distance
+Rainbow Bomb,RainbowBomb,bomb_rainbow,RainbowBombPrefab,AllOfARandomColor,Distance

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8424e6882334b3040a396eb99f71c3b5, type: 3}
+  m_Name: VioletBombSO
+  m_EditorClassIdentifier: 
+  BombName: Violet Bomb
+  BombType: 32
+  BombSprite: {fileID: 8159289217413192814, guid: e5a27cecc1885434f9f32189450b5eb0, type: 3}
+  BombPrefab: {fileID: 2670437858836625563, guid: 19d3600454a4b5946975982066b5779b, type: 3}
+  ExplosionType: 4
+  DefusalType: 2

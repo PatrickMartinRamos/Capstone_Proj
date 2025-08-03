@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45652c27a8ebd9944895ba5a603c321f, type: 3}
+  m_Name: Stage1SO
+  m_EditorClassIdentifier: 
+  StageID: 1
+  WorldSO: {fileID: 11400000, guid: 09e2a74a6610ffb43aa565a372883f0f, type: 2}
+  StageName: Stage 1
+  StageDuration: 120
+  InitialBombCount: 15
+  DefusalType: 2
+  BombType: 2
+  ProgressStarTypeBombSpawnIntervalList:
+  - progressStarType: 0
+    BombSpawnInterval: 10
+  - progressStarType: 1
+    BombSpawnInterval: 8
+  - progressStarType: 2
+    BombSpawnInterval: 6
+  RequiredPoints: 200

@@ -1,16 +1,10 @@
+using CapstoneProj.EnumSystem;
 using UnityEngine;
 
 namespace CapstoneProj.ProgressSystem
 {
     public class ProgressStar : MonoBehaviour
     {
-        enum ProgressStarType
-        {
-            Star1,
-            Star2,
-            Star3
-        }
-
         private const string POP_UP = "PopUp";
 
         [SerializeField] private ProgressStarType _progressStarType;

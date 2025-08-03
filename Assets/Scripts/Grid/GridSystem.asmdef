@@ -1,9 +1,11 @@
 {
-    "name": "ProgressSystem",
+    "name": "MonsterSystem",
     "rootNamespace": "",
     "references": [
         "GUID:a4a359480b162254c9035e1014bdf9a9",
-        "GUID:de3e54b7bd55f5744a89e6f5b330d3b2"
+        "GUID:4675ca49998b3814f835b039a02ceb36",
+        "GUID:de3e54b7bd55f5744a89e6f5b330d3b2",
+        "GUID:b272dd276dd04684aa67039bdf7bed7f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
