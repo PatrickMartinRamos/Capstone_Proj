@@ -11,5 +11,7 @@ namespace CapstoneProj.ScriptableObjectSystem
         public Transform BombPrefab;
         public ExplosionType ExplosionType;
         public DefusalType DefusalType;
+        public int CorrectPoints;
+        public int IncorrectPoints;
     }
 }
