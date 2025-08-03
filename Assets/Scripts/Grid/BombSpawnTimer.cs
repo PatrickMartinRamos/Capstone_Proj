@@ -61,7 +61,7 @@ namespace CapstoneProj.GridSystem
 
             resetCallback?.Invoke();
 
-            if (_isReloading)
+            if (!_isReloading)
                 return;
             
             OnBombSpawnTimerRunOut?.Invoke(this, EventArgs.Empty);
