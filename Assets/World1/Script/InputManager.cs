@@ -1,3 +1,4 @@
+using CapstoneProj.GameInputSystem;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour

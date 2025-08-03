@@ -1,7 +1,7 @@
-Bomb Name,Bomb Type,Bomb Sprite,Bomb Prefab,Explostion Type,Defusal Type
-Gray Bomb,GrayBomb,bomb_gray,GrayBombPrefab,Self,Plotting
-Blue Bomb,BlueBomb,bomb_blue,BlueBombPrefab,Grid3x3,Plotting
-Green Bomb,GreenBomb,bomb_green,GreenBombPrefab,Rook,Midpoint
-Yellow Bomb,YellowBomb,bomb_yellow,YellowBombPrefab,Bishop,Midpoint
-Violet Bomb,VioletBomb,bomb_violet,VioletBombPrefab,AllGray,Distance
-Rainbow Bomb,RainbowBomb,bomb_rainbow,RainbowBombPrefab,AllOfARandomColor,Distance
+Bomb Name,Bomb Type,Bomb Sprite,Bomb Prefab,Explostion Type,Defusal Type,Correct Points,Incorrect Points
+Gray Bomb,GrayBomb,bomb_gray,GrayBombPrefab,Self,Plotting,2,1
+Blue Bomb,BlueBomb,bomb_blue,BlueBombPrefab,Grid3x3,Plotting,3,2
+Green Bomb,GreenBomb,bomb_green,GreenBombPrefab,Rook,Midpoint,6,4
+Yellow Bomb,YellowBomb,bomb_yellow,YellowBombPrefab,Bishop,Midpoint,8,6
+Violet Bomb,VioletBomb,bomb_violet,VioletBombPrefab,AllGray,Distance,10,8
+Rainbow Bomb,RainbowBomb,bomb_rainbow,RainbowBombPrefab,AllOfARandomColor,Distance,12,9

@@ -68,14 +68,6 @@ namespace CapstoneProj.ProgressSystem
                 return;
             }
 
-#if UNITY_EDITOR
-
-            // TODO: Remove once Scoring System is Implemented, Change Input System to New Input System in Profile Settings
-            if (Input.GetKeyDown(KeyCode.Space))
-                Progress(1f / 9f);
-
-#endif
-
             if (!_isProgressing)
                 return;
 

@@ -17,4 +17,6 @@ MonoBehaviour:
   BombSprite: {fileID: 7292913100277989281, guid: 3892e7b0efefd724184d6db52fcddfd4, type: 3}
   BombPrefab: {fileID: 2670437858836625563, guid: e36664dd14dd0c045986edfe827ff27f, type: 3}
   ExplosionType: 3
-  DefusalType: 1
+  DefusalType: 4
+  CorrectPoints: 8
+  IncorrectPoints: 6

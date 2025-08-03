@@ -368,6 +368,24 @@ namespace CapstoneProject.EditorSystem
                     else
                         Debug.LogWarning($"{bombSO.name}'s DefusalType, {bombSODefusalType}, is invalid!");
 
+                    string bombSOCorrectPoints = values[6];
+                    if (int.TryParse(bombSOCorrectPoints, out int correctPoints))
+                    {
+                        if (bombSO.CorrectPoints != correctPoints)
+                            bombSO.CorrectPoints = correctPoints;
+                    }
+                    else
+                        Debug.LogWarning($"{bombSO.name}'s CorrectPoints, {bombSOCorrectPoints}, is invalid!");
+
+                    string bombSOIncorrectPoints = values[7];
+                    if (int.TryParse(bombSOIncorrectPoints, out int incorrectPoints))
+                    {
+                        if (bombSO.IncorrectPoints != incorrectPoints)
+                            bombSO.IncorrectPoints = incorrectPoints;
+                    }
+                    else
+                        Debug.LogWarning($"{bombSO.name}'s IncorrectPoints, {bombSOIncorrectPoints}, is invalid!");
+
                     EditorUtility.SetDirty(bombSO);
                     AssetDatabase.SaveAssetIfDirty(bombSO);
 
