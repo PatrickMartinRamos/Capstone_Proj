@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using TMPro;
 using UnityEngine;
@@ -22,8 +23,10 @@ public class GeneralUIManagerScript : MonoBehaviour
     {
         BackButton.GetComponent<Button>().onClick.AddListener(Back);
         SettingsButton.GetComponent<Button>().onClick.AddListener(Settings);
-        SettingsHomeButton.GetComponent<Button>().onClick.AddListener(Home);
-        SettingsRestartButton.GetComponent<Button>().onClick.AddListener(RestartScene);
+        if (SettingsHomeButton!=null)
+            SettingsHomeButton.GetComponent<Button>().onClick.AddListener(Home);
+        if (SettingsRestartButton != null)
+            SettingsRestartButton.GetComponent<Button>().onClick.AddListener(RestartScene);
         SettingsBackButton.GetComponent<Button>().onClick.AddListener(SettingsBack);
         VolumeSlider.GetComponent<Slider>().onValueChanged.AddListener(delegate { UpdateVolumeTxt(); });
 

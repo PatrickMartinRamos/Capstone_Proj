@@ -1,19 +1,19 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Region : MonoBehaviour
 {
-    [SerializeField] private int stageNumber;
-    [SerializeField] private bool isUnlocked = false, isSelected = false;
+    [SerializeField] private RegionStatusScriptable RegionStatus;
+    [SerializeField] private TextMeshProUGUI stageNumber;
     //[SerializeField] private GameObject stageLock;
     [SerializeField] private GameObject playBtn;
-    [SerializeField][Range(0, 3)] private float clearLevel;
 
     [SerializeField] private Vector3 targetEulerAngle;
     private Vector3 currentEulerAngle;
-    [SerializeField] private float rotateTime = 2f, time;
+    [SerializeField] private float rotateTime, time;
 
     private bool isWorldRotating = false;
     private GameObject World;
@@ -24,7 +24,7 @@ public class Region : MonoBehaviour
     }
     private void Update()
     {
-        if (isSelected && isWorldRotating)
+        if (RegionStatus.isSelected && isWorldRotating)
         {
             StartCoroutine(RotateOverTime());
             if(World.transform.eulerAngles == targetEulerAngle)
@@ -36,18 +36,19 @@ public class Region : MonoBehaviour
     }
     void PlayStage()
     {
-        if (isSelected)
+        if (RegionStatus.isSelected)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     public void UnselectRegion()
     {
-        isSelected = false;
+        RegionStatus.isSelected = false;
     }
     public void RotateWorld(GameObject world)
     {
-        isSelected = true;
+        RegionStatus.isSelected = true;
+        stageNumber.text = RegionStatus.stageNumber.ToString();
         World = world;
         currentEulerAngle = World.transform.eulerAngles;
         isWorldRotating = true;
