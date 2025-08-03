@@ -44,11 +44,22 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: strip-1
-    uniqueID: 1522012561
+  - name: strip_1
+    uniqueID: 1974132395
     locked: 0
-  - name: strip-2
+  - name: strip_2
     uniqueID: 3411448503
+    locked: 0
+  - name: strip_3
+    uniqueID: 1861876751
+    locked: 0
+  - name: shadow
+    uniqueID: 3137143351
+    locked: 0
+  - name: spot_light
+    uniqueID: 3303590123
     locked: 0
   m_RenderingLayers:
   - Default
+  - RL-strip-1
+  - RL-strip-2

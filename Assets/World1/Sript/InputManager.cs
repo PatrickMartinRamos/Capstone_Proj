@@ -57,7 +57,7 @@ public class InputManager : MonoBehaviour
     {
         if (touchEnded)
         {
-            touchEnded = false; 
+            touchEnded = false;  
             return true;
         }
     return false;
