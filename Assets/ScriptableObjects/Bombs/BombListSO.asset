@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e99366d904add84f99a31cd36f4fa0d, type: 3}
+  m_Name: BombListSO
+  m_EditorClassIdentifier: 
+  BombSOList:
+  - {fileID: 11400000, guid: 0373b4239d2e3b442b079a244d8c778c, type: 2}
+  - {fileID: 11400000, guid: f88723f2b3017e7409d9fca6985961cb, type: 2}
+  - {fileID: 11400000, guid: 993b15144559a894a81d901715585939, type: 2}
+  - {fileID: 11400000, guid: 886156c89e2eab340b7ee11a504ef1ee, type: 2}
+  - {fileID: 11400000, guid: f1c26763388ed9e4c9b6b923286fce17, type: 2}
+  - {fileID: 11400000, guid: b1bbf4d18398c5749837c5c3d9386ea3, type: 2}

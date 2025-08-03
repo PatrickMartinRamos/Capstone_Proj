@@ -1,8 +1,7 @@
 {
-    "name": "ProgressSystem",
+    "name": "ScriptableObjectSystem",
     "rootNamespace": "",
     "references": [
-        "GUID:a4a359480b162254c9035e1014bdf9a9",
         "GUID:de3e54b7bd55f5744a89e6f5b330d3b2"
     ],
     "includePlatforms": [],

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b775ce3a82eaf574d8a33c252d33f488, type: 3}
+  m_Name: WorldListSO
+  m_EditorClassIdentifier: 
+  WorldSOList:
+  - {fileID: 11400000, guid: 885ed37a6ff99764ca4a8e1be8c170a2, type: 2}
+  - {fileID: 11400000, guid: 09e2a74a6610ffb43aa565a372883f0f, type: 2}
