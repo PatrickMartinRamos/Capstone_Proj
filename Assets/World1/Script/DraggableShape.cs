@@ -15,4 +15,8 @@ public class DraggableShape : MonoBehaviour
     {
         this.transform.position = originPosition;
     }
+    public void ChangeOriginPos(Vector3 pos)
+    {
+        originPosition = pos;
+    }
 }

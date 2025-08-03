@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.Rendering.ProbeAdjustmentVolume;
 
 public class shapeCombination : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class shapeCombination : MonoBehaviour
     [SerializeField] private List<GameObject> symbols = new List<GameObject>();
     private GameObject spawnedShape;
     private List<GameObject> spawnedShapesList = new List<GameObject>();
+    private bool areEqual = false, correctCombination = false, doneMoving = false;
+    private Vector3 FinalPos;
 
 
     public static shapeCombination Instance {  get; private set; }
@@ -71,32 +74,58 @@ public class shapeCombination : MonoBehaviour
                     Vector2 targetPos = spawnPts[spawnedShapesList.IndexOf(shape)].position;
                     shape.transform.position = Vector2.MoveTowards(currentPos, targetPos, 2*Time.deltaTime);
                 }
-                if(spawnedShapesList.IndexOf(shape) < symbols.Count) symbols[spawnedShapesList.IndexOf(shape)].SetActive(true);
+                if (spawnedShapesList.IndexOf(shape) == 3 && shape.transform.position == spawnPts[spawnedShapesList.IndexOf(shape)].position) 
+                    areEqual = true;
+            }
+            if (!areEqual)
+            {
+                foreach (var symbol in symbols)
+                    symbol.SetActive(true);
             }
         }
         if (spawnedShapesList.Count == 4)
         {
-            bool areEqual = spawnedShapesArrangement.SequenceEqual(secondArrangement);
+            areEqual = spawnedShapesArrangement.SequenceEqual(secondArrangement);
             if (areEqual)
             {
                 Debug.Log("Step 2 Squaring Binomial: Check");
             }
             else
             {
-                foreach (GameObject shape in spawnedShapesList)
-                {
-                    Debug.Log("Wrong Combination");
-                }
-                foreach (var symbol in symbols)
-                {
-                    symbol.SetActive(true);
-                }
-                //spawnedShapesList.Clear();
+                StageManager.Instance.OpenWrongAnswerPanel();
             }
         }
+        if (correctCombination)
+        {
+            var curPos1 = spawnedShapesList[0].transform.position;
+            spawnedShapesList[0].transform.position = Vector3.MoveTowards(curPos1, FinalPos, 5 * Time.deltaTime);
+            var curPos2 = spawnedShapesList[3].transform.position;
+            spawnedShapesList[3].transform.position = Vector3.MoveTowards(curPos1, FinalPos, 5 * Time.deltaTime);
+            if (spawnedShapesList[0].transform.position == FinalPos &&
+                spawnedShapesList[3].transform.position == FinalPos)
+            {
+                StageManager.Instance.Star = Instantiate(star_4pt, FinalPos, Quaternion.identity);
+                ClearShapeList();
+                StageManager.Instance.ShowCraftBox = false;
+            }
+
+        }
     }
-    public bool Square(string matchedTag, Vector3 spawnPos)
+    public void ClearShapeList()
     {
+        foreach (GameObject shape in spawnedShapesList)
+        {
+            Destroy(shape);
+        }
+        spawnedShapesList.Clear();
+        foreach (var symbol in symbols)
+        {
+            symbol.SetActive(false);
+        }
+    }
+    public bool Square(GameObject targetObject, Vector3 spawnPos)
+    {
+        string matchedTag = targetObject.gameObject.tag;
         switch (matchedTag)
         {
             case "Square":
@@ -112,8 +141,9 @@ public class shapeCombination : MonoBehaviour
         }
         return true;
     }
-    public bool Circle(string matchedTag, Vector3 spawnPos)
+    public bool Circle(GameObject targetObject, Vector3 spawnPos)
     {
+        string matchedTag = targetObject.gameObject.tag;
         switch (matchedTag)
         {
             case "Square":
@@ -129,12 +159,43 @@ public class shapeCombination : MonoBehaviour
         }
         return true;
     }
-    public bool Triangle(string matchedTag, Vector3 spawnPos)
+    public bool Triangle(GameObject draggedObject, GameObject targetObject, Vector3 spawnPos)
     {
-        return false;
+        string matchedTag = targetObject.gameObject.tag;
+        switch (matchedTag)
+        {
+            case "Triangle":
+                if (targetObject.GetComponent<DraggableShape>().Name == "Product" &&
+                    draggedObject.GetComponent<DraggableShape>().Name == "Product")
+                {
+                    Vector3 newPosition = (targetObject.transform.position + draggedObject.transform.position) / 2;
+
+                    targetObject.transform.position = newPosition;
+                    targetObject.transform.localScale = targetObject.transform.localScale * 2;
+                    targetObject.GetComponent<DraggableShape>().ChangeOriginPos(new Vector3 (0,0,0));
+                    symbols[1].gameObject.SetActive(false);
+                    draggedObject.SetActive(false);
+                    correctCombination = true;
+                    FinalPos = targetObject.transform.position;
+                    return true;
+                }
+                else
+                {
+                    StageManager.Instance.DeductTime(1f);
+                    StageManager.Instance.OpenWrongAnswerPanel();
+                    return false;
+                }
+                break;
+            default:
+                Debug.Log("No Match");
+                return false;
+        }
+        return true;
+
     }
     void SpawnShape (GameObject shape, Vector3 spawnPos)
     {
+        if (spawnedShapesList.Count == 4) return;
         PlayFX(spawnPos);
         spawnedShape = Instantiate(shape, spawnPos, Quaternion.identity);
         spawnedShapesArrangement[spawnedShapesList.Count] = spawnedShape.GetComponent<DraggableShape>().Name;
