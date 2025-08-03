@@ -7,6 +7,9 @@ TagManager:
   - Square
   - Circle
   - SwipeUI
+  - Triangle
+  - Scissor
+  - 4-Star
   layers:
   - Default
   - TransparentFX

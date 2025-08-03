@@ -41,20 +41,47 @@ public class shapeDragController : MonoBehaviour
         {
             // Touch released
             Debug.Log("Released");
-            Debug.Log(overlap);
             transform.parent = null;
 
             if (overlap != null)
             {
-                //check if both shapes has a combination
-                if (selectedShape.gameObject.tag == overlap.gameObject.tag)
+                string draggedShapeTag = selectedShape.gameObject.tag;
+                string targetShapeTag = overlap.gameObject.tag;
+                bool isMatched = false;
+                Vector3 spawnPosition = (selectedShape.transform.position + overlap.transform.position) / 2f;
+
+                switch (draggedShapeTag)
                 {
-                    Debug.Log("Set triangle");
+                    case "Square":
+                        Debug.Log("Matching Square...");
+                        isMatched = shapeCombination.Instance.Square(targetShapeTag, spawnPosition);
+                        break;
+                    case "Circle":
+                        Debug.Log("Matching Circle...");
+                        isMatched = shapeCombination.Instance.Circle(targetShapeTag, spawnPosition);
+                        break;
+                    case "Triangle":
+                        Debug.Log("Matching Triangle...");
+                        isMatched = shapeCombination.Instance.Triangle(targetShapeTag, spawnPosition);
+                        break;
+                    case "Scissor":
+                        Debug.Log("Dividing...");
+                        break;
+                    default:
+                        Debug.Log("Matched unknown shape");
+                        break;
                 }
+
+                // Return Selected Shape to its original position
+                if (isMatched)
+                {
+                    selectedShape.GetComponent<DraggableShape>().RevertPosition();
+                }
+
+                overlap = null;
+                selectedShape = null;
+                transform.parent = varParent;
             }
-            overlap = null;
-            selectedShape = null;
-            transform.parent = varParent;
         }
     }
 
