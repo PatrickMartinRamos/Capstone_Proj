@@ -41,7 +41,7 @@ namespace CapstoneProj.GridSystem
 
         public static Bomb SpawnBomb(BombSO bombSO, Tile parentTile)
         {
-            Transform bombTransform = Instantiate(bombSO.BombPrefab);
+            Transform bombTransform = Instantiate(bombSO.BombPrefab, parentTile.GetTileTransform());
 
             if (bombTransform.TryGetComponent(out SpriteRenderer spriteRenderer))
             {
