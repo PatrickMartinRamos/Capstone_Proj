@@ -27,7 +27,14 @@ namespace CapstoneProj.GridSystem
                 bottomTileTransform.gameObject.SetActive(true);
 
                 if (bottomTileTransform.TryGetComponent(out Tile bottomTile))
+                {
+                    Vector2Int tileCoordinates = topTile.GetTileCoordinates();
+                    bottomTile.SetTileCoordinates(tileCoordinates);
                     _bottomTileList.Add(bottomTile);
+
+                    if (tileCoordinates == Vector2Int.zero)
+                        GridNavigatorSpawner.Instance.SetCenterBottomTile(bottomTile);
+                }
             }
         }
 

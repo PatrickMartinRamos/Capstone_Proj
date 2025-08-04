@@ -40,13 +40,18 @@ namespace CapstoneProj.GridSystem
                     topTileTransform.gameObject.SetActive(true);
 
                     if (topTileTransform.TryGetComponent(out Tile tile))
+                    {
+                        Vector2 tileFloatCoordinates = new Vector2(x, y) * 2f;
+                        Vector2Int tileCoordinates = new Vector2Int(Mathf.FloorToInt(tileFloatCoordinates.x), Mathf.FloorToInt(tileFloatCoordinates.y));
+                        tile.SetTileCoordinates(tileCoordinates);
                         _topTileList.Add(tile);
+                    }
                 }
             }
 
             TopScreenBombSpawner.Instance.SpawnInitialBombs(_topTileList);
             BombSpawnTimer.Instance.ResetCountdown();
-            InputToTileDetector.Instance.SetGridReady(true);
+            TileDetector.Instance.SetGridReady(true);
             BottomScreenTileSpawner.Instance.SpawnGrid(_topTileList);
         }
 

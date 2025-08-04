@@ -27,6 +27,7 @@ namespace CapstoneProj.GridSystem
             Tile bottomTile = bottomTileList[bottomTileIndex];
 
             Bomb.SpawnBomb(bomb.GetBombSO(), bottomTile, BombAnimationType.BombMarker);
+            GridNavigatorSpawner.Instance.SpawnGridNavigator();
         }
     }
 }

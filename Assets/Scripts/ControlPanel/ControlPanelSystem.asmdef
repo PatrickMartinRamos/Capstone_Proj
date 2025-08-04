@@ -1,0 +1,19 @@
+{
+    "name": "ControlPanelSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a4a359480b162254c9035e1014bdf9a9",
+        "GUID:c4fcdefe13a7cdb4b9033bcdfbbe3c5d",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:de3e54b7bd55f5744a89e6f5b330d3b2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

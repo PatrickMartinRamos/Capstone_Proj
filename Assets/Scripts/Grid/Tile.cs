@@ -5,6 +5,14 @@ namespace CapstoneProj.GridSystem
     public class Tile : MonoBehaviour
     {
         [SerializeField] private Bomb _bomb;
+        [SerializeField] private GridNavigator _gridNavigator;
+        [SerializeField] private Vector2Int _tileCoordinates;
+
+        public void SetTileCoordinates(Vector2Int coordinates)
+            => _tileCoordinates = coordinates;
+
+        public Vector2Int GetTileCoordinates()
+            => _tileCoordinates;
 
         public Transform GetTileTransform()
             => transform;
@@ -20,5 +28,17 @@ namespace CapstoneProj.GridSystem
 
         public bool HasBomb()
             => _bomb != null;
+
+        public void SetGridNavigator(GridNavigator gridNavigator)
+            => _gridNavigator = gridNavigator;
+
+        public GridNavigator GetGridNavigator()
+            => _gridNavigator;
+
+        public void ClearGridNavigator()
+            => _gridNavigator = null;
+
+        public bool HasGridNavigator()
+            => _gridNavigator != null;
     }
 }
