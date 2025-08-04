@@ -56,6 +56,15 @@ TagManager:
   - name: strip_3
     uniqueID: 490419397
     locked: 0
+  - name: stripe_4
+    uniqueID: 3572659667
+    locked: 0
+  - name: strip_5
+    uniqueID: 302463149
+    locked: 0
+  - name: strip_6
+    uniqueID: 3150122067
+    locked: 0
   - name: shade
     uniqueID: 1582548641
     locked: 0
