@@ -1,10 +1,11 @@
 using System;
 using CapstoneProj.GameInputSystem;
+using CapstoneProj.MiscSystem;
 using UnityEngine;
 
 namespace CapstoneProj.GridSystem
 {
-    public class InputToTileDetector : MonoBehaviour
+    public class InputToTileDetector : SingletonBehaviour<InputToTileDetector>
     {
         public event EventHandler<OnTileWithBombDetectedEventArgs> OnTileWithBombDetected; // Event to notify when a tile is detected.
         public class OnTileWithBombDetectedEventArgs : EventArgs
@@ -19,7 +20,15 @@ namespace CapstoneProj.GridSystem
 
         [SerializeField] private GameInputs _gameInputs; // Reference to the game inputs.
         private Vector2 _mousePosition; // Stores the mouse position.
-        private bool _hasInteractedSuccessfully; // Flag to check if the interaction was successful.
+        private bool _hasInteractedSuccessfully = false; // Flag to check if the interaction was successful.
+        [SerializeField] private bool _isGridReady = false; // Flag to check if the grid is ready for interaction.
+
+        protected override void Awake()
+        {
+            base.Awake();
+            
+            SetGridReady(false); // Initially set the grid to not ready.
+        }
 
         private void Start()
         {
@@ -50,6 +59,9 @@ namespace CapstoneProj.GridSystem
 
         private void GameInputs_OnPrimaryInteractStartedAction()
         {
+            if (!_isGridReady)
+                return;
+
             if (_hasInteractedSuccessfully)
                 return; // If the interaction was already successful, do nothing.
 
@@ -85,5 +97,11 @@ namespace CapstoneProj.GridSystem
         }
         public void ResetInteraction()
             => _hasInteractedSuccessfully = false; // Reset the interaction state.
+
+        public void SetGridReady(bool isGridReady)
+        {
+            _isGridReady = isGridReady;
+            ResetInteraction();
+        }
     }
 }

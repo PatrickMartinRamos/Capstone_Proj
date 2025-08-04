@@ -1,3 +1,5 @@
+using System;
+using CapstoneProj.EnumSystem;
 using CapstoneProj.ScriptableObjectSystem;
 using UnityEngine;
 
@@ -5,6 +7,17 @@ namespace CapstoneProj.GridSystem
 {
     public class Bomb : MonoBehaviour
     {
+        public event EventHandler<OnBombSpawnedEventArgs> OnBombSpawned;
+        public class OnBombSpawnedEventArgs : EventArgs
+        {
+            public Sprite BombSprite { get; private set; }
+
+            public OnBombSpawnedEventArgs(Sprite bombSprite)
+            {
+                BombSprite = bombSprite;
+            }
+        }
+
         [SerializeField] private BombSO _bombSO;
 
         private Tile _parentTile;
@@ -39,20 +52,20 @@ namespace CapstoneProj.GridSystem
             Destroy(gameObject);
         }
 
-        public static Bomb SpawnBomb(BombSO bombSO, Tile parentTile)
+        public static Bomb SpawnBomb(BombSO bombSO, Tile parentTile, BombAnimationType bombAnimationType)
         {
             Transform bombTransform = Instantiate(bombSO.BombPrefab, parentTile.GetTileTransform());
-
-            if (bombTransform.TryGetComponent(out SpriteRenderer spriteRenderer))
-            {
-                if (spriteRenderer.sprite != bombSO.BombSprite)
-                    spriteRenderer.sprite = bombSO.BombSprite;
-            }
 
             if (bombTransform.TryGetComponent(out Bomb bomb))
             {
                 bomb.SetBombSO(bombSO);
                 bomb.SetParentTile(parentTile);
+    
+                if (bomb.TryGetComponent(out BombAnimation bombAnimation))
+                    bombAnimation.SetBombAnimationType(bombAnimationType);
+
+                bomb.OnBombSpawned?.Invoke(bomb, new OnBombSpawnedEventArgs(bombSO.BombSprite));
+                
                 return bomb;
             }
 

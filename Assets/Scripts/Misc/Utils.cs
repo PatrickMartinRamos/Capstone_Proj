@@ -15,8 +15,8 @@ namespace CapstoneProj.MiscSystem
 
             foreach (T type in Enum.GetValues(typeof(T)))
             {
-                // Skip the zero (None) value
-                if (Convert.ToInt32(type) == 0)
+                // Skip the None and Everything value
+                if (Convert.ToInt32(type) == 0 || Convert.ToInt32(type) == 1 << 0)
                     continue;
 
                 if (selected.HasFlag(type))

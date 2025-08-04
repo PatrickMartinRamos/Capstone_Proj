@@ -6,10 +6,6 @@ namespace CapstoneProj.GridSystem
 {
     public class BombSpawnTimer : SingletonBehaviour<BombSpawnTimer>
     {
-        // TODO: MAKE SURE TILE SPAWNER IS READY BEFORE THIS
-
-        public event EventHandler OnBombSpawnTimerRunOut;
-
         [SerializeField] private Transform _fillTransform;
         [SerializeField] private float _maxSpawnTime;
         [SerializeField] private float _maxReloadTime;
@@ -19,10 +15,15 @@ namespace CapstoneProj.GridSystem
         private Vector3 _maxSize = Vector3.one;
         private Vector3 _minSize = new Vector3(0f, 1f, 1f);
 
-        private void Start()
-            => ResetCountdown();
+        public void StopCountdown()
+        {
+            _isSpawnActive = false;
+            _isReloading = false;
+            _elapsedTime = 0;
+            _fillTransform.localScale = _minSize;
+        }
 
-        private void ResetCountdown()
+        public void ResetCountdown()
         {
             _elapsedTime = 0;
             _fillTransform.localScale = _maxSize;
@@ -30,7 +31,7 @@ namespace CapstoneProj.GridSystem
             _isReloading = false;
         }
 
-        private void ResetReload()
+        public void ResetReload()
         {
             _elapsedTime = 0;
             _fillTransform.localScale = _minSize;
@@ -63,8 +64,8 @@ namespace CapstoneProj.GridSystem
 
             if (!_isReloading)
                 return;
-            
-            OnBombSpawnTimerRunOut?.Invoke(this, EventArgs.Empty);
+
+            TopScreenBombSpawner.Instance.SpawnBomb();
         }
     }
 }

@@ -2,7 +2,8 @@
     "name": "ScreensSystem",
     "rootNamespace": "",
     "references": [
-        "GUID:21ef605a02b340840b1780b11b339cdc"
+        "GUID:21ef605a02b340840b1780b11b339cdc",
+        "GUID:a4a359480b162254c9035e1014bdf9a9"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
