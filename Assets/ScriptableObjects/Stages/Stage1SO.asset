@@ -18,7 +18,7 @@ MonoBehaviour:
   StageDuration: 120
   InitialBombCount: 15
   DefusalType: 2
-  BombType: 2
+  BombType: -1
   ProgressStarTypeBombSpawnIntervalList:
   - progressStarType: 0
     BombSpawnInterval: 10
