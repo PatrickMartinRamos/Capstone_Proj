@@ -1,24 +1,17 @@
+using System;
 using UnityEngine;
 
 namespace CapstoneProj.GridSystem
 {
     public class TileInteraction : MonoBehaviour
     {
-        [SerializeField] private Tile _tile;
+        public event EventHandler OnSuccessfulInteraction; // Event to notify when a successful interaction occurs.
+        public event EventHandler OnUnsuccessfulInteraction; // Event to notify when an unsuccessful interaction occurs.
 
-        private void Awake()
-        {
-            if (_tile == null)
-            {
-                if (_tile.TryGetComponent(out Tile tile))
-                    _tile = tile;
-            }
-        }
+        public void SuccessfulInteraction()
+            => OnSuccessfulInteraction?.Invoke(this, EventArgs.Empty); // Invoke the successful interaction event.
 
-        public void OnInteracted()
-        {
-            if (_tile.HasBomb())
-                Debug.Log($"Tile Detected: {name} has a {_tile.GetBomb().name}!");
-        }
+        public void UnsuccessfulInteraction()
+            => OnUnsuccessfulInteraction?.Invoke(this, EventArgs.Empty); // Invoke the unsuccessful interaction event.
     }
 }

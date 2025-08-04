@@ -338,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &229953721
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,8 +1039,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7253652341725546674, guid: 26e758733acfd5e4f8202497b5858d9e, type: 3}
-  m_Color: {r: 0.39607844, g: 0.39607844, b: 0.39607844, a: 1}
+  m_Sprite: {fileID: 3145346001150055142, guid: 438f62ede99bce043934b39f7771bc54, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1075,6 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1191849567}
   - component: {fileID: 1191849566}
+  - component: {fileID: 1191849568}
   m_Layer: 0
   m_Name: BottomScreen
   m_TagString: Untagged
@@ -1121,6 +1122,20 @@ Transform:
   - {fileID: 2077845612}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191849568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191849565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650569ab6519e5048afafffd0783d012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputToTileDetectorInternal: {fileID: 1441053237}
+  animatorInternal: {fileID: 1191849566}
 --- !u!1 &1345752268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,6 +1556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515127844}
   - component: {fileID: 1515127845}
+  - component: {fileID: 1515127846}
   m_Layer: 0
   m_Name: TopScreen
   m_TagString: Untagged
@@ -1587,6 +1603,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1515127846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515127842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cade17c7496be4d8b48611f43f5880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputToTileDetectorInternal: {fileID: 1441053237}
+  animatorInternal: {fileID: 1515127845}
 --- !u!1 &1534977691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,7 +1734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b024a6b6201a2ca4f9b6fc844baaccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tile: {fileID: 1534977696}
 --- !u!114 &1534977696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2281,10 +2310,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968628665}
+  - component: {fileID: 1968628668}
   - component: {fileID: 1968628666}
   - component: {fileID: 1968628669}
+  - component: {fileID: 1968628670}
   - component: {fileID: 1968628667}
-  - component: {fileID: 1968628668}
   m_Layer: 8
   m_Name: Tile
   m_TagString: Untagged
@@ -2402,7 +2432,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b024a6b6201a2ca4f9b6fc844baaccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tile: {fileID: 1968628666}
+--- !u!114 &1968628670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968628664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aac8c55412ee3c458d15ba97d721852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tileInteraction: {fileID: 1968628669}
+  _animator: {fileID: 1968628667}
 --- !u!1 &1988617488
 GameObject:
   m_ObjectHideFlags: 0
