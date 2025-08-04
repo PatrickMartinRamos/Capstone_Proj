@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class StripSpotLight : MonoBehaviour
 {
-    [Header("Assign Strip Parents (each must have a SpriteMask)")]
-    [SerializeField] private Transform[] stripParents; 
     private string spotlightLayerName = "spot_light";
-    private string spotlightMaskFront = "spot_light"; 
-    private string spotlightMaskBack = "spot_light"; 
+    private string spotlightMaskFront = "spot_light";
+    private string spotlightMaskBack = "spot_light";
     [SerializeField] private float nonSpotlightAnimSpeed = 0.2f;
 
     private List<StripData> strips = new List<StripData>();
 
-    private void Awake()
+    private void Start()
     {
-        foreach (Transform stripParent in stripParents)
+        var cameraStrips = ComicstripCamera.Instance.Strips; //Get strips from ComicstripCamera
+
+        foreach (var stripInfo in cameraStrips)
         {
+            var stripParent = stripInfo.strip; // RectTransform
             SpriteRenderer[] renderers = stripParent.GetComponentsInChildren<SpriteRenderer>(true);
             SpriteMask mask = stripParent.GetComponentInChildren<SpriteMask>(true);
             Animator[] animators = stripParent.GetComponentsInChildren<Animator>(true);
@@ -45,23 +46,15 @@ public class StripSpotLight : MonoBehaviour
             StripData strip = strips[i];
             bool isActive = (i == activeIndex);
 
-            // Sorting layers
             foreach (var sr in strip.Renderers)
                 sr.sortingLayerName = isActive ? spotlightLayerName : strip.OriginalLayer;
 
-            // Mask
             if (strip.Mask != null)
             {
-                strip.Mask.frontSortingLayerID = isActive 
-                    ? SortingLayer.NameToID(spotlightMaskFront) 
-                    : strip.OriginalFrontLayerID;
-
-                strip.Mask.backSortingLayerID = isActive 
-                    ? SortingLayer.NameToID(spotlightMaskBack) 
-                    : strip.OriginalBackLayerID;
+                strip.Mask.frontSortingLayerID = isActive ? SortingLayer.NameToID(spotlightMaskFront) : strip.OriginalFrontLayerID;
+                strip.Mask.backSortingLayerID = isActive ? SortingLayer.NameToID(spotlightMaskBack) : strip.OriginalBackLayerID;
             }
 
-            // Animator speed
             foreach (var anim in strip.Animators)
                 anim.speed = isActive ? 1f : nonSpotlightAnimSpeed;
         }

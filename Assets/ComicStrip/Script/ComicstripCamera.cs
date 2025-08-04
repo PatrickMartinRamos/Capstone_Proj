@@ -8,16 +8,17 @@ public class ComicstripCamera : MonoBehaviour
     [System.Serializable]
     public class StripInfo
     {
-        public RectTransform strip;  // The strip itself
-        public float holdTime = 2f;  // Custom hold time for this strip
+        public RectTransform strip;
+        public float holdTime = 2f;
     }
 
     [Header("Strip Settings")]
     [SerializeField] private float zoomScale = 1.2f;
     [SerializeField] private float zoomDuration = 0.5f;
-    [SerializeField] private StripInfo[] strips; // ✅ Now each strip has its own hold time
+    [SerializeField] private StripInfo[] strips;
 
     public int ActiveStripIndex { get; private set; } = -1;
+    public StripInfo[] Strips => strips;
 
     private void Awake()
     {
@@ -48,7 +49,7 @@ public class ComicstripCamera : MonoBehaviour
             }
             strips[i].strip.localScale = targetScale;
 
-            // ✅ Hold for this strip's unique time
+            // Hold for unique time
             yield return new WaitForSeconds(strips[i].holdTime);
 
             // Zoom back
@@ -62,6 +63,7 @@ public class ComicstripCamera : MonoBehaviour
             strips[i].strip.localScale = originalScale;
         }
 
-        ActiveStripIndex = -1; // Done
+        ActiveStripIndex = -1;
+        Debug.Log("Comic strip sequence completed. Press Play to Proceed to Gameplay");
     }
 }
