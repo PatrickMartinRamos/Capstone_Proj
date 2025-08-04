@@ -3,50 +3,65 @@ using UnityEngine;
 
 public class ComicstripCamera : MonoBehaviour
 {
-    [Header("Strip Settings")]
-    [SerializeField] private float zoomScale = 1.2f;     // How much to scale
-    [SerializeField] private float zoomDuration = 0.5f; // Time to zoom in
-    [SerializeField] private float holdTime = 2f;       // Time to hold before next strip
+    public static ComicstripCamera Instance { get; private set; }
 
-    [SerializeField] private RectTransform[] strips;
+    [System.Serializable]
+    public class StripInfo
+    {
+        public RectTransform strip;  // The strip itself
+        public float holdTime = 2f;  // Custom hold time for this strip
+    }
+
+    [Header("Strip Settings")]
+    [SerializeField] private float zoomScale = 1.2f;
+    [SerializeField] private float zoomDuration = 0.5f;
+    [SerializeField] private StripInfo[] strips; // ✅ Now each strip has its own hold time
+
+    public int ActiveStripIndex { get; private set; } = -1;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
-        // Start zoom coroutine
-        StartCoroutine(ZoomStripsOneByOne());
+        StartCoroutine(ZoomAndSpotlightSequence());
     }
 
-    private IEnumerator ZoomStripsOneByOne()
+    private IEnumerator ZoomAndSpotlightSequence()
     {
-        foreach (var strip in strips)
+        for (int i = 0; i < strips.Length; i++)
         {
-            if (strip == transform) continue; // Skip parent itself
+            ActiveStripIndex = i;
 
-            Vector3 originalScale = strip.localScale;
+            Vector3 originalScale = strips[i].strip.localScale;
             Vector3 targetScale = originalScale * zoomScale;
 
-            // Zoom in smoothly
+            // Zoom in
             float elapsedTime = 0f;
             while (elapsedTime < zoomDuration)
             {
-                strip.localScale = Vector3.Lerp(originalScale, targetScale, elapsedTime / zoomDuration);
+                strips[i].strip.localScale = Vector3.Lerp(originalScale, targetScale, elapsedTime / zoomDuration);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
-            strip.localScale = targetScale;
+            strips[i].strip.localScale = targetScale;
 
-            // Hold for a while
-            yield return new WaitForSeconds(holdTime);
+            // ✅ Hold for this strip's unique time
+            yield return new WaitForSeconds(strips[i].holdTime);
 
-            // Zoom back to original scale
+            // Zoom back
             elapsedTime = 0f;
             while (elapsedTime < zoomDuration)
             {
-                strip.localScale = Vector3.Lerp(targetScale, originalScale, elapsedTime / zoomDuration);
+                strips[i].strip.localScale = Vector3.Lerp(targetScale, originalScale, elapsedTime / zoomDuration);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
-            strip.localScale = originalScale;
+            strips[i].strip.localScale = originalScale;
         }
+
+        ActiveStripIndex = -1; // Done
     }
 }

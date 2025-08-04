@@ -4,74 +4,66 @@ using UnityEngine;
 
 public class StripSpotLight : MonoBehaviour
 {
-    [Header("Assign Strip Parents")]
-    [SerializeField] private Transform[] stripParents; // Assign each strip parent in Inspector
-    [SerializeField] private string spotlightLayerName = "spot_light";
-    [SerializeField] private float spotlightTime = 2f;
+    [Header("Assign Strip Parents (each must have a SpriteMask)")]
+    [SerializeField] private Transform[] stripParents; 
+    private string spotlightLayerName = "spot_light";
+    private string spotlightMaskFront = "spot_light"; 
+    private string spotlightMaskBack = "spot_light"; 
+    [SerializeField] private float nonSpotlightAnimSpeed = 0.2f;
 
     private List<StripData> strips = new List<StripData>();
 
     private void Awake()
     {
-        // Collect all strips & store their original layer names
         foreach (Transform stripParent in stripParents)
         {
             SpriteRenderer[] renderers = stripParent.GetComponentsInChildren<SpriteRenderer>(true);
+            SpriteMask mask = stripParent.GetComponentInChildren<SpriteMask>(true);
+            Animator[] animators = stripParent.GetComponentsInChildren<Animator>(true);
 
             if (renderers.Length > 0)
             {
-                string originalLayer = renderers[0].sortingLayerName; // Assume all share same layer
-                strips.Add(new StripData(renderers, originalLayer));
-            }
-            else
-            {
-                Debug.LogWarning($"No SpriteRenderers found in {stripParent.name}");
-            }
-        }
-    }
+                string originalLayer = renderers[0].sortingLayerName;
+                int originalFront = mask ? mask.frontSortingLayerID : 0;
+                int originalBack = mask ? mask.backSortingLayerID : 0;
 
-    private void Start()
-    {
-        StartCoroutine(CycleSpotlights());
-    }
-
-    private IEnumerator CycleSpotlights()
-    {
-        if (strips.Count == 0)
-        {
-            Debug.LogWarning("No strips found for spotlight.");
-            yield break;
-        }
-
-        while (true)
-        {
-            foreach (var strip in strips)
-            {
-                // Reset all strips to their original layers
-                ResetAllStrips();
-
-                // Spotlight current strip
-                foreach (var sr in strip.Renderers)
-                {
-                    if (sr != null)
-                        sr.sortingLayerName = spotlightLayerName;
-                }
-
-                // Wait before switching
-                yield return new WaitForSeconds(spotlightTime);
+                strips.Add(new StripData(renderers, originalLayer, mask, originalFront, originalBack, animators));
             }
         }
     }
 
-    private void ResetAllStrips()
+    private void Update()
     {
-        foreach (var strip in strips)
+        int activeIndex = ComicstripCamera.Instance.ActiveStripIndex;
+        UpdateSpotlight(activeIndex);
+    }
+
+    private void UpdateSpotlight(int activeIndex)
+    {
+        for (int i = 0; i < strips.Count; i++)
         {
+            StripData strip = strips[i];
+            bool isActive = (i == activeIndex);
+
+            // Sorting layers
             foreach (var sr in strip.Renderers)
+                sr.sortingLayerName = isActive ? spotlightLayerName : strip.OriginalLayer;
+
+            // Mask
+            if (strip.Mask != null)
             {
-                if (sr != null)
-                    sr.sortingLayerName = strip.OriginalLayer;
+                strip.Mask.frontSortingLayerID = isActive 
+                    ? SortingLayer.NameToID(spotlightMaskFront) 
+                    : strip.OriginalFrontLayerID;
+
+                strip.Mask.backSortingLayerID = isActive 
+                    ? SortingLayer.NameToID(spotlightMaskBack) 
+                    : strip.OriginalBackLayerID;
             }
+
+            // Animator speed
+            foreach (var anim in strip.Animators)
+                anim.speed = isActive ? 1f : nonSpotlightAnimSpeed;
         }
     }
 
@@ -80,11 +72,19 @@ public class StripSpotLight : MonoBehaviour
     {
         public SpriteRenderer[] Renderers;
         public string OriginalLayer;
+        public SpriteMask Mask;
+        public int OriginalFrontLayerID;
+        public int OriginalBackLayerID;
+        public Animator[] Animators;
 
-        public StripData(SpriteRenderer[] renderers, string originalLayer)
+        public StripData(SpriteRenderer[] renderers, string originalLayer, SpriteMask mask, int originalFront, int originalBack, Animator[] animators)
         {
             Renderers = renderers;
             OriginalLayer = originalLayer;
+            Mask = mask;
+            OriginalFrontLayerID = originalFront;
+            OriginalBackLayerID = originalBack;
+            Animators = animators;
         }
     }
 }
