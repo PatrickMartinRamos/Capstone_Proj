@@ -34,7 +34,7 @@ namespace CapstoneProj.GridSystem
                 _parentTile.ClearBomb();
 
             if (parentTile.HasBomb())
-                Debug.LogError("Tile already has a Bomb"); // TODO: Change Functionality
+                Debug.LogError("Tile already has a Bomb");
 
             _parentTile = parentTile;
             parentTile.SetBomb(this);

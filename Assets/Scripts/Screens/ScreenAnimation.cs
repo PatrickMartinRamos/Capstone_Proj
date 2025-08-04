@@ -1,3 +1,4 @@
+using CapstoneProj.ControlPanelSystem;
 using CapstoneProj.GridSystem;
 using UnityEngine;
 
@@ -26,18 +27,18 @@ namespace CapstoneProj.ScreenSystem
 
         private void Start()
         {
-            InputToTileDetector.Instance.OnTileWithBombDetected
-                += InputToTileDetector_OnTileWithBombDetected; // Subscribe to the tile detection event.
+            TileDetector.Instance.OnTileWithBombDetected
+                += TileDetector_OnTileWithBombDetected; // Subscribe to the tile detection event.
         }
 
         private void OnDestroy()
         {
-            if (InputToTileDetector.Instance != null)
-                InputToTileDetector.Instance.OnTileWithBombDetected
-                    -= InputToTileDetector_OnTileWithBombDetected; // Unsubscribe from the tile detection event.
+            if (TileDetector.Instance != null)
+                TileDetector.Instance.OnTileWithBombDetected
+                    -= TileDetector_OnTileWithBombDetected; // Unsubscribe from the tile detection event.
         }
 
-        private void InputToTileDetector_OnTileWithBombDetected(object sender, InputToTileDetector.OnTileWithBombDetectedEventArgs e)
+        private void TileDetector_OnTileWithBombDetected(object sender, TileDetector.OnTileWithBombDetectedEventArgs e)
         {
             _originalTopTile = e.DetectedTileWithBomb; // Store the original top tile when a bomb is detected.
 
@@ -51,12 +52,23 @@ namespace CapstoneProj.ScreenSystem
             _animator.SetTrigger(trigger); // Set the appropriate animation trigger based on the screen type.
         }
 
-        public void ScreenRefocused()
+        // Triggered after bottom screen maximize animation completes.
+        public void BottomScreenMaximized()
         {
             if (_screenType != ScreenType.BottomScreen)
                 return;
 
             BottomScreenBombSpawner.Instance.SpawnBomb(_originalTopTile);
+            CartesianPlaneToggle.Instance.SetIsToggleable(true);
+            OrderedPair.Instance.SetCoordinateIsScrollable(true);
+        }
+
+        public void BottomScreenMinimized()
+        {
+            if (_screenType != ScreenType.BottomScreen)
+                return;
+
+            CartesianPlaneToggle.Instance.ResetCartesianPlaneButton(); // Reset the Cartesian Plane Button when the bottom screen is minimized.
         }
     }
 }

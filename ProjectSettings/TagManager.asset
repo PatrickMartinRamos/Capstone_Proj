@@ -17,8 +17,8 @@ TagManager:
   - shapeVar
   - navigationWheel
   - Tile
-  - 
-  - 
+  - CartesianPlaneToggle
+  - OrderedPair
   - 
   - 
   - 

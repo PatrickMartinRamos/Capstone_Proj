@@ -10,6 +10,7 @@ namespace CapstoneProj.GameInputSystem
         public Action<Vector2> OnDragPerformedAction; // Action to invoke when dragging.
         public Action<Vector2> OnPointerPositionPerformedAction; // Action to invoke when pointer position changes.
         public Action OnPrimaryInteractStartedAction; // Action to invoke when primary interaction starts.
+        public Action OnPrimaryInteractCanceledAction; // Action to invoke when primary interaction is canceled.
         public Action<Vector2> OnSwipePerformedAction; // Action to invoke when swiping.
         public Action OnTouchStartedAction; // Action to invoke when touch starts.
 
@@ -51,6 +52,8 @@ namespace CapstoneProj.GameInputSystem
         {
             if (context.started)
                 OnPrimaryInteractStartedAction?.Invoke();
+            else if (context.canceled)
+                OnPrimaryInteractCanceledAction?.Invoke();
         }
 
         public void OnSwipe(InputAction.CallbackContext context)

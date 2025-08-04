@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace CapstoneProj.GridSystem
 {
-    public class InputToTileDetector : SingletonBehaviour<InputToTileDetector>
+    public class TileDetector : SingletonBehaviour<TileDetector>
     {
         public event EventHandler<OnTileWithBombDetectedEventArgs> OnTileWithBombDetected; // Event to notify when a tile is detected.
         public class OnTileWithBombDetectedEventArgs : EventArgs
@@ -18,10 +18,12 @@ namespace CapstoneProj.GridSystem
             }
         }
 
+        private const string TILE_LAYER = "Tile"; // Layer name for the tile layer.
+
         [SerializeField] private GameInputs _gameInputs; // Reference to the game inputs.
-        private Vector2 _mousePosition; // Stores the mouse position.
-        private bool _hasInteractedSuccessfully = false; // Flag to check if the interaction was successful.
         [SerializeField] private bool _isGridReady = false; // Flag to check if the grid is ready for interaction.
+        [SerializeField] private bool _hasInteractedSuccessfully = false; // Flag to check if the interaction was successful.
+        private Vector2 _mousePosition; // Stores the mouse position.
 
         protected override void Awake()
         {
@@ -70,7 +72,7 @@ namespace CapstoneProj.GridSystem
             Vector2 origin = ray.origin;
             Vector2 direction = ray.direction;
 
-            int layerMask = LayerMask.GetMask("Tile"); // Define the layer mask for the tile layer.
+            int layerMask = LayerMask.GetMask(TILE_LAYER); // Define the layer mask for the tile layer.
 
             RaycastHit2D hit = Physics2D.Raycast(origin, direction, Mathf.Infinity, layerMask);
 
@@ -95,6 +97,7 @@ namespace CapstoneProj.GridSystem
                 }
             }
         }
+        
         public void ResetInteraction()
             => _hasInteractedSuccessfully = false; // Reset the interaction state.
 
