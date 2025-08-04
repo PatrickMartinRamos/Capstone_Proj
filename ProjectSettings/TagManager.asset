@@ -7,6 +7,9 @@ TagManager:
   - Square
   - Circle
   - SwipeUI
+  - Triangle
+  - Scissor
+  - 4-Star
   layers:
   - Default
   - TransparentFX
@@ -44,5 +47,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: strip_1
+    uniqueID: 259713615
+    locked: 0
+  - name: strip_2
+    uniqueID: 4098587271
+    locked: 0
+  - name: strip_3
+    uniqueID: 490419397
+    locked: 0
+  - name: stripe_4
+    uniqueID: 3572659667
+    locked: 0
+  - name: strip_5
+    uniqueID: 302463149
+    locked: 0
+  - name: strip_6
+    uniqueID: 3150122067
+    locked: 0
+  - name: shade
+    uniqueID: 1582548641
+    locked: 0
+  - name: spot_light
+    uniqueID: 1613957307
+    locked: 0
   m_RenderingLayers:
   - Default
+  - test
