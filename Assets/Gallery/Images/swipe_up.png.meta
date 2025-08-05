@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 12c7567ec70e616459988fc287621a1e
+guid: 9fbb1d1d59e2dec44a0e7f7e5ca57beb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7036454837413206609
-    second: cartesian_plane_toggle_0
+      213: -2774007427363141792
+    second: swipe_up_0
+  - first:
+      213: -551633815462995273
+    second: swipe_up_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cartesian_plane_toggle_0
+      name: swipe_up_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
+        x: 72
+        y: 224
+        width: 356
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa528e92b9d795e90800000000000000
-      internalID: -7036454837413206609
+      spriteID: 06789bf21feb089d0800000000000000
+      internalID: -2774007427363141792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swipe_up_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 44
+        width: 356
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba1c3fa7f33858f0800000000000000
+      internalID: -551633815462995273
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cartesian_plane_toggle_0: -7036454837413206609
+      swipe_up_0: -2774007427363141792
+      swipe_up_1: -551633815462995273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

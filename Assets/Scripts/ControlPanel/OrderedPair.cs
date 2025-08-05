@@ -27,6 +27,8 @@ namespace CapstoneProj.ControlPanelSystem
             }
         }
 
+        public event EventHandler OnCoordinateReset;
+
         [SerializeField] private Vector2Int _tileCoordinate;
 
         public void SetXTileCoordinate(int xCoordinate)
@@ -43,5 +45,8 @@ namespace CapstoneProj.ControlPanelSystem
 
         public void SetCoordinateIsScrollable(bool isScrollable)
             => OnCoordinateIsScrollableSet?.Invoke(this, new OnCoordinateIsScrollableSetEventArgs(isScrollable));
+
+        public void CoordinateReset()
+            => OnCoordinateReset?.Invoke(this, EventArgs.Empty);
     }
 }
