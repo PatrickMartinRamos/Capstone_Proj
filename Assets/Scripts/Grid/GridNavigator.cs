@@ -1,3 +1,4 @@
+using System;
 using CapstoneProj.MiscSystem;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ namespace CapstoneProj.GridSystem
 {
     public class GridNavigator : SingletonBehaviour<GridNavigator>
     {
+        public event EventHandler OnDestroySelf;
+
         private Tile _parentTile;
 
         public void SetParentTile(Tile parentTile)
@@ -24,9 +27,29 @@ namespace CapstoneProj.GridSystem
         public Tile GetParentTile()
             => _parentTile;
 
+        private void ResetParentTile()
+        {
+            _parentTile = null;
+            transform.parent = null;
+        }
+
         public void DestroySelf()
         {
+            _parentTile.GetBomb().DestroySelf();
             _parentTile.ClearGridNavigator();
+
+            ResetParentTile();
+            OnDestroySelf?.Invoke(this, EventArgs.Empty);
+        }
+
+        public void DestroySelfContinuation()
+        {
+            BottomScreenBombSpawner bottomScreenBombSpawner = BottomScreenBombSpawner.Instance;
+            
+            Tile originalTopTile = bottomScreenBombSpawner.GetOriginalTopTile();
+            originalTopTile.Explode();
+
+            TileDetector.Instance.ResetInteraction();
 
             Destroy(gameObject);
         }

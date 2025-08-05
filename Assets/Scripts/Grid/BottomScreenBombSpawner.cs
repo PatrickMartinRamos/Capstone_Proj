@@ -9,6 +9,12 @@ namespace CapstoneProj.GridSystem
     {
         [SerializeField] private Tile _originalTopTile;
 
+        public Tile GetOriginalTopTile()
+            => _originalTopTile;
+
+        public void ClearOriginalTopeTile()
+            => _originalTopTile = null;
+
         public void SpawnBomb(Tile topTile)
         {
             _originalTopTile = topTile; // Store the original top tile for reference.

@@ -46,11 +46,11 @@ namespace CapstoneProj.ProgressSystem
             _fillTransform.localScale = ORIGINAL_SCALE;
         }
 
-        public void Progress(float progressPercentToAdd)
+        public void Progress(float progressPercent)
         {
             _previousScale = _scale;
             _progressPercent = _scale.x;
-            _progressPercent += progressPercentToAdd;
+            _progressPercent = progressPercent;
             _progressPercent = Mathf.Clamp(_progressPercent, MIN_SIZE, MAX_SIZE);
             _scale.x = _progressPercent;
             _isProgressing = true;

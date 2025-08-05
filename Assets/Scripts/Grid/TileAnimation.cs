@@ -7,7 +7,9 @@ namespace CapstoneProj.GridSystem
     {
         private const string SUCCESSFUL_INTERACTION = "SuccessfulInteraction"; // Animation trigger for successful interaction.
         private const string UNSUCCESSFUL_INTERACTION = "UnsuccessfulInteraction"; // Animation trigger for unsuccessful interaction.
+        private const string EXPLODE = "Explode";
 
+        [SerializeField] private Tile _tile;
         [SerializeField] private TileInteraction _tileInteraction; // Reference to the TileInteraction component.
         [SerializeField] private Animator _animator;
 
@@ -22,6 +24,8 @@ namespace CapstoneProj.GridSystem
 
         private void Start()
         {
+            _tile.OnExplode
+                += Tile_OnExplode;
             _tileInteraction.OnSuccessfulInteraction
                 += TileInteraction_OnSuccessfulInteraction; // Subscribe to successful interaction event.
             _tileInteraction.OnUnsuccessfulInteraction
@@ -30,6 +34,10 @@ namespace CapstoneProj.GridSystem
 
         private void OnDestroy()
         {
+            if (_tile != null)
+                _tile.OnExplode
+                    -= Tile_OnExplode;
+
             if (_tileInteraction != null)
             {
                 _tileInteraction.OnSuccessfulInteraction
@@ -39,10 +47,16 @@ namespace CapstoneProj.GridSystem
             }
         }
 
+        private void Tile_OnExplode(object sender, EventArgs e)
+            => TriggerAnimation(EXPLODE);
+
         private void TileInteraction_OnUnsuccessfulInteraction(object sender, EventArgs e)
-            => _animator.SetTrigger(UNSUCCESSFUL_INTERACTION); // Trigger the unsuccessful interaction animation.
+            => TriggerAnimation(UNSUCCESSFUL_INTERACTION); // Trigger the unsuccessful interaction animation.
 
         private void TileInteraction_OnSuccessfulInteraction(object sender, EventArgs e)
-            => _animator.SetTrigger(SUCCESSFUL_INTERACTION); // Trigger the successful interaction animation.
+            => TriggerAnimation(SUCCESSFUL_INTERACTION); // Trigger the successful interaction animation.
+
+        private void TriggerAnimation(string trigger)
+            => _animator.SetTrigger(trigger);
     }
 }
