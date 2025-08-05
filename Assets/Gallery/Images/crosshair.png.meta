@@ -3,8 +3,8 @@ guid: 9db23e808ea82d147bab1bb928d88edc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8668582039582172404
-    second: bomb_marker_0
+      213: -6142374563283994760
+    second: crosshair_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb_marker_0
+      name: crosshair_0
       rect:
         serializedVersion: 2
         x: 24
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0b9f58209203b780800000000000000
-      internalID: -8668582039582172404
+      spriteID: 877ff0ed0e6e1caa0800000000000000
+      internalID: -6142374563283994760
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bomb_marker_0: -8668582039582172404
+      crosshair_0: -6142374563283994760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

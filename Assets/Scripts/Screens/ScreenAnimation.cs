@@ -61,6 +61,7 @@ namespace CapstoneProj.ScreenSystem
             BottomScreenBombSpawner.Instance.SpawnBomb(_originalTopTile);
             CartesianPlaneToggle.Instance.SetIsToggleable(true);
             OrderedPair.Instance.SetCoordinateIsScrollable(true);
+            DefuseButton.Instance.SetIsInteractable(true);
         }
 
         public void BottomScreenMinimized()
@@ -68,7 +69,9 @@ namespace CapstoneProj.ScreenSystem
             if (_screenType != ScreenType.BottomScreen)
                 return;
 
-            CartesianPlaneToggle.Instance.ResetCartesianPlaneButton(); // Reset the Cartesian Plane Button when the bottom screen is minimized.
+            CartesianPlaneToggle.Instance.ResetCartesianPlaneButton();
+            OrderedPair.Instance.CoordinateReset();
+            DefuseButton.Instance.ResetDefuseButton();
         }
     }
 }
