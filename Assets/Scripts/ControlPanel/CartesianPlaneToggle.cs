@@ -23,7 +23,7 @@ namespace CapstoneProj.ControlPanelSystem
         {
             base.Awake();
 
-            ResetCartesianPlaneButton();
+            ResetCartesianPlaneToggle();
         }
 
         private void Start()
@@ -78,12 +78,10 @@ namespace CapstoneProj.ControlPanelSystem
             }
         }
 
-        public void ResetCartesianPlaneButton()
+        public void ResetCartesianPlaneToggle()
         {
             _isSelected = false;
             SetIsToggleable(false);
-
-            OnDeselected?.Invoke(this, EventArgs.Empty); // Invoke the deselected event.
         }
 
         public void SetIsToggleable(bool isToggleable)

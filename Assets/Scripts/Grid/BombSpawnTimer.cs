@@ -7,8 +7,8 @@ namespace CapstoneProj.GridSystem
     public class BombSpawnTimer : SingletonBehaviour<BombSpawnTimer>
     {
         [SerializeField] private Transform _fillTransform;
-        [SerializeField] private float _maxSpawnTime;
-        [SerializeField] private float _maxReloadTime;
+        [SerializeField] private float _maxSpawnTime = 5f;
+        [SerializeField] private float _maxReloadTime = 0.5f;
         private float _elapsedTime;
         private bool _isSpawnActive;
         private bool _isReloading;

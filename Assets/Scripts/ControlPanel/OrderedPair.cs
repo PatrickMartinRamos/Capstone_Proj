@@ -47,6 +47,9 @@ namespace CapstoneProj.ControlPanelSystem
             => OnCoordinateIsScrollableSet?.Invoke(this, new OnCoordinateIsScrollableSetEventArgs(isScrollable));
 
         public void CoordinateReset()
-            => OnCoordinateReset?.Invoke(this, EventArgs.Empty);
+        {
+            _tileCoordinate = Vector2Int.zero;
+            OnCoordinateReset?.Invoke(this, EventArgs.Empty);
+        }
     }
 }

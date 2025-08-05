@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 namespace CapstoneProj.GridSystem
 {
     public class Tile : MonoBehaviour
     {
+        public event EventHandler OnExplode;
+
         [SerializeField] private Bomb _bomb;
         [SerializeField] private GridNavigator _gridNavigator;
         [SerializeField] private Vector2Int _tileCoordinates;
@@ -40,5 +43,11 @@ namespace CapstoneProj.GridSystem
 
         public bool HasGridNavigator()
             => _gridNavigator != null;
+
+        public void Explode()
+        {
+            OnExplode?.Invoke(this, EventArgs.Empty);
+            GetBomb().DestroySelf();
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace CapstoneProj.GridSystem
     {
         private const string SHOW = "Show";
         private const string HIDE = "Hide";
+        private const string UNTOGGLEABLE = "Untoggleable";
 
         [SerializeField] private Animator _animator;
 
@@ -23,6 +24,8 @@ namespace CapstoneProj.GridSystem
                 += CartesianPlaneButton_OnSelected;
             CartesianPlaneToggle.Instance.OnDeselected
                 += CartesianPlaneButton_OnDeselected;
+            CartesianPlaneToggle.Instance.OnUntoggleable
+                += CartesianPlaneButton_OnUntoggleable;
         }
 
         private void OnDestroy()
@@ -35,6 +38,9 @@ namespace CapstoneProj.GridSystem
             CartesianPlaneToggle.Instance.OnDeselected
                 -= CartesianPlaneButton_OnDeselected;
         }
+
+        private void CartesianPlaneButton_OnUntoggleable(object sender, EventArgs e)
+            => TriggerAnimation(UNTOGGLEABLE);
 
         private void CartesianPlaneButton_OnDeselected(object sender, EventArgs e)
             => TriggerAnimation(HIDE);
