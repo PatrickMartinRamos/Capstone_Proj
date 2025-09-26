@@ -2179,7 +2179,7 @@ GameObject:
   - component: {fileID: 1459723624}
   - component: {fileID: 1459723623}
   m_Layer: 5
-  m_Name: World1LobbyUICanvas
+  m_Name: World2LobbyUICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

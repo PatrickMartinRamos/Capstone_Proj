@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 38666552}
   - component: {fileID: 38666556}
   m_Layer: 0
-  m_Name: World
+  m_Name: World_1-Algebraic Foundation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldName: Algebraic Foundations
-  sceneName: World 1 Stages
+  sceneName: World 2 Stages
   isUnlocked: 0
   isSelected: 1
   isLastSelected: 0
@@ -1382,7 +1382,7 @@ GameObject:
   - component: {fileID: 673564498}
   - component: {fileID: 673564502}
   m_Layer: 0
-  m_Name: World_1
+  m_Name: World_2-Plotting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1498,7 +1498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldName: Plotting
-  sceneName: 
+  sceneName: World 2 Stages
   isUnlocked: 0
   isSelected: 0
   isLastSelected: 0
