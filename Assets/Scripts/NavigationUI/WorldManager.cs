@@ -19,6 +19,8 @@ public class WorldManager : MonoBehaviour
         mainCam = GameObject.FindGameObjectWithTag("MainCamera");
         worldNameTxt.text = worlds[selectedWorldIndex].GetComponent<WorldSelection>().Selected();
 
+        selectBtn.GetComponent<Button>().onClick.RemoveAllListeners();
+
         nextBtn.GetComponent<Button>().onClick.AddListener(SelectNextWorld);
         preBtn.GetComponent<Button>().onClick.AddListener(SelectPrevWorld);
         selectBtn.GetComponent<Button>().onClick.AddListener(EnterWorld);

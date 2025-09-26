@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232ac9296c119104d9f08334157afe5b, type: 3}
   m_Name: Stage 8
   m_EditorClassIdentifier: 
+  worldName: AlgebraicFoundation
   stageNumber: 8
   isUnlocked: 0
   isSelected: 0

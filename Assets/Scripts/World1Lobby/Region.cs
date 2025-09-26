@@ -34,11 +34,18 @@ public class Region : MonoBehaviour
             }
         }
     }
+    public void InitiateStageLabelChange()
+    {
+        RegionStatus.isSelected = true;
+        stageNumber.text = RegionStatus.stageNumber.ToString();
+    }
     void PlayStage()
     {
+        playBtn.GetComponent<Button>().onClick.RemoveAllListeners();
+
         if (RegionStatus.isSelected)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(RegionStatus.worldName);
         }
     }
     public void UnselectRegion()

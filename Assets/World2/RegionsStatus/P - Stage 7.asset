@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 232ac9296c119104d9f08334157afe5b, type: 3}
-  m_Name: Stage 4
+  m_Name: P - Stage 7
   m_EditorClassIdentifier: 
-  stageNumber: 4
+  worldName: PlottingScene
+  stageNumber: 7
   isUnlocked: 0
   isSelected: 0
   clearLevel: 0

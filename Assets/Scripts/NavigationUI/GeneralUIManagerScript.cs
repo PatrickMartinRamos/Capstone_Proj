@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class GeneralUIManagerScript : MonoBehaviour
 {
+    [Header("BackButtonDirector")]
+    [SerializeField] private string priorScene;
     [Header("Labels")] 
     [SerializeField] private TextMeshProUGUI volumeTxt;
     [Header("Buttons")]
@@ -41,7 +43,7 @@ public class GeneralUIManagerScript : MonoBehaviour
     }
     void Back()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(priorScene);
     }
     void Home()
     {

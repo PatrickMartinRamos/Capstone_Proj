@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: 9811aff95aec1de499a3cb7a19decc6a, type: 2}
+  RegionStatus: {fileID: 11400000, guid: f3f24548905de3643803d0243bc45128, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 0, y: 0, z: 0}
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: 9d566aec63b1b3d4cb9253f537bdae4e, type: 2}
+  RegionStatus: {fileID: 11400000, guid: a54f84693e98e8145857d7a17bfe88c7, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 0, y: 0, z: 0}
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: e3a11a0339e824b4383c3f932022abca, type: 2}
+  RegionStatus: {fileID: 11400000, guid: f63973cced68ca449adb67453db913c7, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 350.06903, y: 47.680836, z: 44.66419}
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: 09b5dc9ca6c88d7429b5fa54228f594b, type: 2}
+  RegionStatus: {fileID: 11400000, guid: bbe5853ac14824e42bfc53589e239321, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 0, y: 0, z: 0}
@@ -1717,6 +1717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1683660748126311525, guid: 704747484bf442b46ae5aaee0953902a, type: 3}
+      propertyPath: priorScene
+      value: WorldSelection
+      objectReference: {fileID: 0}
     - target: {fileID: 2455383139494238267, guid: 704747484bf442b46ae5aaee0953902a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1863,7 +1867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: dbb7e7dbfb010c74197a98644dd5f54e, type: 2}
+  RegionStatus: {fileID: 11400000, guid: 44ff1face3efc524cb1f8730a360c6bd, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 0, y: 0, z: 0}
@@ -2529,7 +2533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: fef785756f8537b47b3c59213b81e58a, type: 2}
+  RegionStatus: {fileID: 11400000, guid: 24924a96f57413e488ecc53aef997be1, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 0, y: 0, z: 0}
@@ -2656,7 +2660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: 1fc2716d978c66f49816c25e0d963f85, type: 2}
+  RegionStatus: {fileID: 11400000, guid: 9eb56fddd894ccf4eb97e6ce0124c5fe, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 0, y: 0, z: 0}
@@ -2818,7 +2822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1b2d7b70edcb4ea9998d97f2a28a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegionStatus: {fileID: 11400000, guid: ef0daf69002f4094ebc97816b30331d4, type: 2}
+  RegionStatus: {fileID: 11400000, guid: cabeb14d79cf09b45914eb2c25385754, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
   targetEulerAngle: {x: 338.1463, y: 93.261955, z: 342.7368}

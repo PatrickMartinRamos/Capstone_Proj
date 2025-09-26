@@ -14,6 +14,7 @@ public class RegionManager : MonoBehaviour
     private void Start()
     {
         selectedRegion = regions[selectedRegionIndex];
+        selectedRegion.GetComponent<Region>().InitiateStageLabelChange();
         World.transform.Rotate(0, 0, 0);  
     }
 
