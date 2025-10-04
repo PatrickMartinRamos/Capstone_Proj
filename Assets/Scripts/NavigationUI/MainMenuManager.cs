@@ -17,6 +17,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject SettingsPanel;
 
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,7 +38,7 @@ public class MainMenuManager : MonoBehaviour
     }
     void StartGame()
     {
-        SceneManager.LoadScene("WorldSelection");
+        LevelLoader.Instance.LoadLevel("WorldSelection");
     }
     void QuitGame()
     {

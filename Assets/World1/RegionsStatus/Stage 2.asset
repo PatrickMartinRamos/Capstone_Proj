@@ -15,5 +15,5 @@ MonoBehaviour:
   worldName: AlgebraicFoundation
   stageNumber: 2
   isUnlocked: 0
-  isSelected: 1
+  isSelected: 0
   clearLevel: 0
