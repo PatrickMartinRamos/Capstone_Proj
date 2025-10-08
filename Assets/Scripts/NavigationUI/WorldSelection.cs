@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class WorldSelection : MonoBehaviour
 {
     [SerializeField] private string worldName, sceneName;
+    [SerializeField] private float worldRotationSpeed;
     [SerializeField] private bool isUnlocked, isSelected, isLastSelected = false;
 
     private void Update()
     {
-        transform.Rotate(0, 1, 0);
+        float speed = worldRotationSpeed * Time.deltaTime;
+        transform.Rotate(0, 1 * speed, 0);
     }
 
     public void EnterWorld()
