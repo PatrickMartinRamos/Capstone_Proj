@@ -9,6 +9,7 @@ public class WorldManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> worlds;
     [SerializeField] private int selectedWorldIndex = 0;
+    private string sceneName;
     [SerializeField] private TextMeshProUGUI worldNameTxt;
     [SerializeField] private GameObject nextBtn, preBtn, selectBtn;
     private GameObject mainCam;
@@ -30,12 +31,16 @@ public class WorldManager : MonoBehaviour
         {
             baseYPositions[world] = world.transform.position.y;
         }
-
         worldNameTxt.text = worlds[selectedWorldIndex].GetComponent<WorldSelection>().Selected();
 
         nextBtn.GetComponent<Button>().onClick.AddListener(SelectNextWorld);
         preBtn.GetComponent<Button>().onClick.AddListener(SelectPrevWorld);
         selectBtn.GetComponent<Button>().onClick.AddListener(EnterWorld);
+
+        selectBtn.GetComponent<Button>().onClick.AddListener(() =>
+        {
+            Debug.Log("Select button raw test click works!");
+        });
 
         HighlightCurrentWorld();
     }
@@ -76,7 +81,6 @@ public class WorldManager : MonoBehaviour
 
         if (selectedWorldIndex >= worlds.Count)
             selectedWorldIndex = 0;
-
         HighlightCurrentWorld();
     }
 
@@ -93,9 +97,11 @@ public class WorldManager : MonoBehaviour
         HighlightCurrentWorld();
     }
 
-    void EnterWorld()
+    public void EnterWorld()
     {
         if (isAnimating) return; // optional safety check
+
         worlds[selectedWorldIndex].GetComponent<WorldSelection>().EnterWorld();
+
     }
 }

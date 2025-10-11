@@ -7,7 +7,7 @@ public class WorldSelection : MonoBehaviour
 {
     [SerializeField] private string worldName, sceneName;
     [SerializeField] private float worldRotationSpeed;
-    [SerializeField] private bool isUnlocked, isSelected, isLastSelected = false;
+    [SerializeField] private bool isUnlocked, isSelected = false;
 
     private void Update()
     {
