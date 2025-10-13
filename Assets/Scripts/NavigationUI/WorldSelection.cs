@@ -1,3 +1,4 @@
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,7 +6,8 @@ using UnityEngine.UI;
 
 public class WorldSelection : MonoBehaviour
 {
-    [SerializeField] private string worldName, sceneName;
+    [SerializeField] private string worldName;
+    [SerializeField] private RectTransform stageSelectionTransform;
     [SerializeField] private float worldRotationSpeed;
     [SerializeField] private bool isUnlocked, isSelected = false;
 
@@ -17,7 +19,7 @@ public class WorldSelection : MonoBehaviour
 
     public void EnterWorld()
     {
-        SceneManager.LoadScene(sceneName);
+        stageSelectionTransform.DOAnchorPosY(0, 0.2f);
     }
     public string Selected()
     {

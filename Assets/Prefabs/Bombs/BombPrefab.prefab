@@ -112,8 +112,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7767275888456967435}
   - component: {fileID: 2802017835732793489}
-  - component: {fileID: 1287993365814446693}
-  - component: {fileID: 2212999916173492809}
   m_Layer: 0
   m_Name: BombPrefab
   m_TagString: Untagged
@@ -151,44 +149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bombSO: {fileID: 0}
---- !u!114 &1287993365814446693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6868489275095863176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453d269e782953439d610aece877c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bombAnimationType: 0
-  _animator: {fileID: 2212999916173492809}
-  _bombAnimatorController: {fileID: 9100000, guid: d26db6797823abb4b974a7bd310a8b8a, type: 2}
-  _bombMarkerAnimatorController: {fileID: 9100000, guid: df57a300717c1ae41a8b8af8f3baa838, type: 2}
---- !u!95 &2212999916173492809
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6868489275095863176}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d26db6797823abb4b974a7bd310a8b8a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6598818634209158689
 PrefabInstance:
   m_ObjectHideFlags: 0
