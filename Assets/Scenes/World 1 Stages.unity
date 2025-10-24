@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 38666553}
   - component: {fileID: 38666552}
   - component: {fileID: 38666556}
+  - component: {fileID: 38666557}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -344,6 +345,35 @@ MonoBehaviour:
   - {fileID: 273960094}
   - {fileID: 1869895278}
   - {fileID: 1609346767}
+  playerStatusJSONManager: {fileID: 38666557}
+--- !u!114 &38666557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38666551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b457dc559e3d4ee49a1cc3b766c37c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  algebWorldPlayerStatus: {fileID: 11400000, guid: 698a9e1bdf0f7674480a3fbbfa492b13, type: 2}
+  stage1: {fileID: 11400000, guid: 9811aff95aec1de499a3cb7a19decc6a, type: 2}
+  stage2: {fileID: 11400000, guid: e3a11a0339e824b4383c3f932022abca, type: 2}
+  stage3: {fileID: 11400000, guid: ef0daf69002f4094ebc97816b30331d4, type: 2}
+  stage4: {fileID: 11400000, guid: fef785756f8537b47b3c59213b81e58a, type: 2}
+  stage5: {fileID: 11400000, guid: 1fc2716d978c66f49816c25e0d963f85, type: 2}
+  stage6: {fileID: 11400000, guid: dbb7e7dbfb010c74197a98644dd5f54e, type: 2}
+  stage7: {fileID: 11400000, guid: 09b5dc9ca6c88d7429b5fa54228f594b, type: 2}
+  stage8: {fileID: 11400000, guid: 9d566aec63b1b3d4cb9253f537bdae4e, type: 2}
+  stage9: {fileID: 11400000, guid: e83223076787672418abcac6b326287f, type: 2}
+  stage10: {fileID: 11400000, guid: 40a639d9c7591124bac67c7e79521c83, type: 2}
+  stage11: {fileID: 11400000, guid: 0269dec09f93a554db75d0dd6d84e4da, type: 2}
+  stage12: {fileID: 11400000, guid: 9c80c0617cf6d1a4cb1bcc4addcc47d3, type: 2}
+  stage13: {fileID: 11400000, guid: 98745ad8ea699ad43893d6b5f91f4889, type: 2}
+  stage14: {fileID: 11400000, guid: fc58271998bf9614488996329174caf7, type: 2}
+  stage15: {fileID: 11400000, guid: 93fc1593f95c6ff4e8ee40ae603a31cd, type: 2}
 --- !u!1 &80355124
 GameObject:
   m_ObjectHideFlags: 0

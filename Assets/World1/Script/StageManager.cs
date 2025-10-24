@@ -4,8 +4,14 @@ using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
+    [SerializeField] private int stageNumber;
+    [SerializeField] private AlgebraicFoundationPlayerStatus playerStatus;
+
     [Header("CraftBox")]
-    [SerializeField] Vector3 hiddenPos, shownUpPos;
+    [SerializeField] Vector3 hiddenPos;
+    [SerializeField] Vector3 shownUpPos;
+    [SerializeField] float introTransSpeed;
+
     [Header("GameObjects")]
     public GameObject CraftingBox;
     public GameObject InitialHiddenItems;
@@ -21,7 +27,10 @@ public class StageManager : MonoBehaviour
     public GameObject CorrectAnswerPanel, WrongAnswerPanel;
     public GameObject HelpPanel;
 
-    public bool ShowCraftBox, craftBoxIsHidden=false;
+    public bool ShowCraftBox, craftBoxIsHidden=false, startGame = false;
+
+    [Header("JSON Manager")]
+    [SerializeField] private PlayerStatusJSONManager playerStatusJSONManager;
 
     public static StageManager Instance { get; private set; }
     private void Awake()
@@ -39,12 +48,13 @@ public class StageManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Setting Player Data Current Stage
+        playerStatus.currentStage = stageNumber;
         CraftingBox.transform.position = hiddenPos;
         time = timeLimit;
         timer.maxValue = timeLimit;
         timer.value = time;
         timer.gameObject.SetActive(false);
-        ShowCraftBox = true;
     }
 
     // Update is called once per frame
@@ -54,7 +64,7 @@ public class StageManager : MonoBehaviour
         {
             if (CraftingBox.transform.position != shownUpPos)
             {
-                CraftingBox.transform.position = Vector3.MoveTowards(CraftingBox.transform.position, shownUpPos, 4 * Time.deltaTime);
+                CraftingBox.transform.position = Vector3.MoveTowards(CraftingBox.transform.position, shownUpPos, introTransSpeed * Time.deltaTime);
             }
             if (CraftingBox.transform.position == shownUpPos && !InitialHiddenItems.gameObject.activeSelf)
             {
@@ -77,7 +87,8 @@ public class StageManager : MonoBehaviour
             }
             if (CraftingBox.transform.position == hiddenPos) craftBoxIsHidden = true;
         }
-        if (craftBoxIsHidden)
+
+        if (craftBoxIsHidden && startGame)
         {
             Star.transform.position = Vector3.MoveTowards(Star.transform.position, Cannon.transform.position, 3 * Time.deltaTime);
             if (Star.transform.position == Cannon.transform.position)
@@ -93,6 +104,12 @@ public class StageManager : MonoBehaviour
         } 
             
 
+    }
+    public void StartGame()
+    {
+        ShowCraftBox = true;
+        craftBoxIsHidden = false;
+        startGame = true;
     }
     public void DeductTime(float deduction)
     {
@@ -114,7 +131,7 @@ public class StageManager : MonoBehaviour
     public void NextStage()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
+        playerStatusJSONManager.UpdatePlayerStatus();
     }
     public void Home()
     {

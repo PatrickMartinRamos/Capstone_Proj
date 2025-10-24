@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ab53bb5cb3d884d84dfcc287a939d3, type: 3}
+  m_Name: AlgebWorldPlayerStatus
+  m_EditorClassIdentifier: 
+  currentStage: 1
+  totalPlayTime: 0
+  stage1ClearLevel: 0
+  stage2ClearLevel: 0
+  stage3ClearLevel: 0
+  stage4ClearLevel: 0
+  stage5ClearLevel: 0
+  stage6ClearLevel: 0
+  stage7ClearLevel: 0
+  stage8ClearLevel: 0
+  stage9ClearLevel: 0
+  stage10ClearLevel: 0
+  stage11ClearLevel: 0
+  stage12ClearLevel: 0
+  stage13ClearLevel: 0
+  stage14ClearLevel: 0
+  stage15ClearLevel: 0

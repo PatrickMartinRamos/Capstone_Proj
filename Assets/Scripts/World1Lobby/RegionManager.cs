@@ -11,11 +11,19 @@ public class RegionManager : MonoBehaviour
     private GameObject selectedRegion;
     GameObject SelectedRegion => selectedRegion;
 
+    [Header("JSON Manager")]
+    [SerializeField] private PlayerStatusJSONManager playerStatusJSONManager;
+
+    private void Awake()
+    {
+        playerStatusJSONManager.LoadPlayerStatus();
+    }
+
     private void Start()
     {
         selectedRegion = regions[selectedRegionIndex];
         selectedRegion.GetComponent<Region>().InitiateStageLabelChange();
-        World.transform.Rotate(0, 0, 0);  
+        World.transform.Rotate(0, 0, 0);
     }
 
     public void ToNextStage()
