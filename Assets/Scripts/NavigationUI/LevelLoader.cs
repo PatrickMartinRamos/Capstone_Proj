@@ -9,22 +9,30 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private GameObject transitionAnimator;
     private Animator animator;
 
+    // Flag to skip transitionIn on the first scene load
+    private bool sceneLoaded = false;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
     void Start()
     {
         animator = transitionAnimator.GetComponentInChildren<Animator>();
+        // Subscribe after animator is assigned
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        // flag that the first scene is now running
+        sceneLoaded = true;
     }
 
     public void LoadLevel(string sceneName)
@@ -34,9 +42,22 @@ public class LevelLoader : MonoBehaviour
 
     private IEnumerator PlayTransition(string sceneName)
     {
-        // Play the transition animation
         animator.SetTrigger("startTransition");
         yield return new WaitForSeconds(1f);
+
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (sceneLoaded)
+        {
+            animator.SetTrigger("transitionIn");
+        }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
