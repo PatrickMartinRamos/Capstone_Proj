@@ -1003,7 +1003,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 826511380634225805, guid: 9e8934c9ec48acf4990a5b423fd18b61, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1111,7 +1112,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1122052249}
   - component: {fileID: 1122052250}
-  - component: {fileID: 1122052251}
   m_Layer: 0
   m_Name: CartesianPlane
   m_TagString: Untagged
@@ -1157,19 +1157,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1122052251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122052248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0efd67f9f2d67e40bc0b981714b3e9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 1122052250}
 --- !u!1 &1160350980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,7 +1433,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1191849567}
   - component: {fileID: 1191849566}
-  - component: {fileID: 1191849568}
   m_Layer: 0
   m_Name: BottomScreen
   m_TagString: Untagged
@@ -1494,20 +1480,6 @@ Transform:
   - {fileID: 1122052249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1191849568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191849565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cd9aafa352874341be7faab1c670bf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 1191849566}
-  _screenType: 1
 --- !u!1 &1339078563
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2013,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 826511380634225805, guid: 9e8934c9ec48acf4990a5b423fd18b61, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2062,7 +2035,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1515127844}
   - component: {fileID: 1515127845}
-  - component: {fileID: 1515127846}
   m_Layer: 0
   m_Name: TopScreen
   m_TagString: Untagged
@@ -2109,20 +2081,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1515127846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515127842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cd9aafa352874341be7faab1c670bf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 1515127845}
-  _screenType: 0
 --- !u!1 &1550978247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,7 +2093,6 @@ GameObject:
   - component: {fileID: 1550978250}
   - component: {fileID: 1550978249}
   - component: {fileID: 1550978252}
-  - component: {fileID: 1550978251}
   m_Layer: 11
   m_Name: DefuseButton
   m_TagString: Untagged
@@ -2228,19 +2185,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1550978251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550978247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e351df03c39c3cb4a977746da7d08b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
 --- !u!114 &1550978252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2860,7 +2804,6 @@ GameObject:
   - component: {fileID: 1870982306}
   - component: {fileID: 1870982307}
   - component: {fileID: 1870982305}
-  - component: {fileID: 1870982308}
   m_Layer: 9
   m_Name: CartesianPlaneToggle
   m_TagString: Untagged
@@ -2967,19 +2910,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1870982308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870982303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3493333ae90cf394182b2fa0898d2b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 1870982307}
 --- !u!1 &1882999841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,7 +3057,6 @@ GameObject:
   - component: {fileID: 1968628667}
   - component: {fileID: 1968628666}
   - component: {fileID: 1968628669}
-  - component: {fileID: 1968628670}
   m_Layer: 8
   m_Name: TopTile
   m_TagString: Untagged
@@ -3248,21 +3177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b024a6b6201a2ca4f9b6fc844baaccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1968628670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968628664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aac8c55412ee3c458d15ba97d721852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tile: {fileID: 1968628666}
-  _tileInteraction: {fileID: 1968628669}
-  _animator: {fileID: 1968628667}
 --- !u!1 &1988617488
 GameObject:
   m_ObjectHideFlags: 0

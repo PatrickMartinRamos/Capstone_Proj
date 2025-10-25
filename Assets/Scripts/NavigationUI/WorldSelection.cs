@@ -1,23 +1,44 @@
-using TMPro;
+using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class WorldSelection : MonoBehaviour
 {
-    [SerializeField] private string worldName, sceneName;
+    [SerializeField] private string worldName;
+    [SerializeField] private RectTransform stageSelectionTransform;
     [SerializeField] private float worldRotationSpeed;
-    [SerializeField] private bool isUnlocked, isSelected, isLastSelected = false;
+    [SerializeField] private bool isUnlocked, isSelected = false;
 
+    public List<Transform> regions;
+
+    public List<Transform> GetRegions()
+    {
+        return regions;
+    }
     private void Update()
     {
         float speed = worldRotationSpeed * Time.deltaTime;
         transform.Rotate(0, 1 * speed, 0);
     }
 
-    public void EnterWorld()
+    public void OpenWorldStage(RectTransform stageTransform)
     {
-        SceneManager.LoadScene(sceneName);
+        stageSelectionTransform.DOAnchorPosY(945, 0.2f);
+    }   
+
+    public void CloseWorldStage(RectTransform stageTransform)
+    {
+        stageSelectionTransform.DOAnchorPosY(-800, 0.2f);
+    }
+
+    public RectTransform OpenRectTransform()
+    {
+        return stageSelectionTransform;
+    }
+
+    public string worldNameGet()
+    {
+        return worldName;
     }
     public string Selected()
     {

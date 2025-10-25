@@ -1,48 +1,97 @@
-using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RegionManager : MonoBehaviour
 {
-    [SerializeField] private GameObject World;
-    [SerializeField] private List<GameObject> regions;
+    public static RegionManager instance;
+    [SerializeField] private GameObject currentWorldSelected;
+    [SerializeField] private List<GameObject> regions = new List<GameObject>();
+    [SerializeField] private int selectedRegionIndex = 0;
+    [SerializeField] private GameObject tintBG;
 
-    private int selectedRegionIndex = 0;
-    private GameObject selectedRegion;
-    GameObject SelectedRegion => selectedRegion;
-
-    [Header("JSON Manager")]
-    [SerializeField] private PlayerStatusJSONManager playerStatusJSONManager;
-
-    private void Awake()
+    void Awake()
     {
-        playerStatusJSONManager.LoadPlayerStatus();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+    void Start()
+    {
+        tintBG.gameObject.SetActive(false);
     }
 
-    private void Start()
+    public void InitializedWorldStage(Transform world)
     {
-        selectedRegion = regions[selectedRegionIndex];
-        selectedRegion.GetComponent<Region>().InitiateStageLabelChange();
-        World.transform.Rotate(0, 0, 0);
+        ClearWorldStages();
+
+        currentWorldSelected = world.gameObject;
+        tintBG.gameObject.SetActive(true);
+        // Find all Region scripts inside the world object
+        Region[] foundRegions = world.GetComponentsInChildren<Region>(true);
+
+        int index = 0;
+        foreach (Region region in foundRegions)
+        {
+            region.InitiateStageLabelChange();
+            GameObject regionObj = region.gameObject;
+            regions.Add(regionObj);
+
+            //Debug.Log($"Region Found: {regionObj.name}");
+
+            // Try to get button and add listener
+            Button btn = regionObj.GetComponent<Button>();
+            if (btn != null)
+            {
+                int capturedIndex = index; // local copy for lambda
+                btn.onClick.RemoveAllListeners(); // clear previous listeners
+                btn.onClick.AddListener(() => OnRegionClicked(capturedIndex, regionObj.name));
+            }
+
+            index++;
+        }
+
+        // Debug.Log($"Current World: {currentWorldSelected.name}");
+        // Debug.Log($"Total Regions Found: {regions.Count}");
     }
 
-    public void ToNextStage()
+    private void OnRegionClicked(int index, string regionName)
     {
-        Debug.Log("Next");
-        selectedRegionIndex = Mathf.Clamp(selectedRegionIndex+1,0,3);
-        ChangeStage();
-    }
-    public void ToPreviousStage()
-    {
-        Debug.Log("Previous");
-        selectedRegionIndex = Mathf.Clamp(selectedRegionIndex-1, 0, 3);
-        ChangeStage();
-    } 
-    private void ChangeStage()
-    {
-        selectedRegion.GetComponent<Region>().UnselectRegion();
-        selectedRegion = regions[selectedRegionIndex];
-        selectedRegion.GetComponent<Region>().RotateWorld(World);
+        selectedRegionIndex = index;
+        // Debug.Log($"Clicked Region: {regionName} (Index: {index})");
+
+        // Load scene based on RegionStatus
+        Region region = regions[index].GetComponent<Region>();
+        if (region != null)
+        {
+            string sceneName = region.RegionStatus.worldName;
+            // Debug.Log($"Loading Scene: {sceneName}");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        }
     }
 
+    public void ClearWorldStages()
+    {
+        // Clear existing listeners to avoid duplicates
+        foreach (var regionObj in regions)
+        {
+            Button btn = regionObj.GetComponent<Button>();
+            if (btn != null) btn.onClick.RemoveAllListeners();
+        }
+
+        regions.Clear();
+        tintBG.gameObject.SetActive(false);
+        currentWorldSelected = null;
+    }
+
+    public void LoadSelectedStage()
+    {
+        Debug.Log($"Loading stage for region index: {selectedRegionIndex}");
+    }
 }

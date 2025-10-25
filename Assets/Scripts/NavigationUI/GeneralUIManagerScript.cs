@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,13 +26,19 @@ public class GeneralUIManagerScript : MonoBehaviour
     {
         BackButton.GetComponent<Button>().onClick.AddListener(Back);
         SettingsButton.GetComponent<Button>().onClick.AddListener(Settings);
-        if (SettingsHomeButton!=null)
+        if (SettingsHomeButton != null)
             SettingsHomeButton.GetComponent<Button>().onClick.AddListener(Home);
         if (SettingsRestartButton != null)
             SettingsRestartButton.GetComponent<Button>().onClick.AddListener(RestartScene);
         SettingsBackButton.GetComponent<Button>().onClick.AddListener(SettingsBack);
         VolumeSlider.GetComponent<Slider>().onValueChanged.AddListener(delegate { UpdateVolumeTxt(); });
 
+
+    }
+
+    void OnDestroy()
+    {
+        DOTween.KillAll();
     }
     void SetupScreen()
     {

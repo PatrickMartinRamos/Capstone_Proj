@@ -61,8 +61,8 @@ namespace CapstoneProj.GridSystem
                 bomb.SetBombSO(bombSO);
                 bomb.SetParentTile(parentTile);
     
-                if (bomb.TryGetComponent(out BombAnimation bombAnimation))
-                    bombAnimation.SetBombAnimationType(bombAnimationType);
+                // if (bomb.TryGetComponent(out BombAnimation bombAnimation))
+                //     bombAnimation.SetBombAnimationType(bombAnimationType);
 
                 bomb.OnBombSpawned?.Invoke(bomb, new OnBombSpawnedEventArgs(bombSO.BombSprite));
                 

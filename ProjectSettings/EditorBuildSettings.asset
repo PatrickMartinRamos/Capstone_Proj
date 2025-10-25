@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: 6c84aca4d0a0d2847ba0a1daec705950
   - enabled: 1
     path: Assets/Scenes/World 1 Stages.unity
-    guid: 3dc2b42ae15bd89448c3dcc8c2af274b
+    guid: b8ba618af0be2c84a83f4513925eed84
   - enabled: 1
     path: Assets/Scenes/Game Scene/AlgebraicFoundation.unity
     guid: c0029c4dbfc77644c84436dbd94d0355

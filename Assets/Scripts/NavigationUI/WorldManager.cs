@@ -9,8 +9,9 @@ public class WorldManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> worlds;
     [SerializeField] private int selectedWorldIndex = 0;
+    private string sceneName;
     [SerializeField] private TextMeshProUGUI worldNameTxt;
-    [SerializeField] private GameObject nextBtn, preBtn, selectBtn;
+    [SerializeField] private GameObject nextBtn, preBtn, selectBtn, bg;
     private GameObject mainCam;
 
     [Header("Animation Settings")]
@@ -30,12 +31,12 @@ public class WorldManager : MonoBehaviour
         {
             baseYPositions[world] = world.transform.position.y;
         }
-
         worldNameTxt.text = worlds[selectedWorldIndex].GetComponent<WorldSelection>().Selected();
 
         nextBtn.GetComponent<Button>().onClick.AddListener(SelectNextWorld);
         preBtn.GetComponent<Button>().onClick.AddListener(SelectPrevWorld);
-        selectBtn.GetComponent<Button>().onClick.AddListener(EnterWorld);
+        selectBtn.GetComponent<Button>().onClick.AddListener(ShowWorldStages);
+
 
         HighlightCurrentWorld();
     }
@@ -71,12 +72,12 @@ public class WorldManager : MonoBehaviour
     {
         if (isAnimating) return;
 
+        ScreenController.Instance.OnClickChangeFont();
         previousWorldIndex = selectedWorldIndex;
         selectedWorldIndex++;
 
         if (selectedWorldIndex >= worlds.Count)
             selectedWorldIndex = 0;
-
         HighlightCurrentWorld();
     }
 
@@ -84,6 +85,7 @@ public class WorldManager : MonoBehaviour
     {
         if (isAnimating) return;
 
+        ScreenController.Instance.OnClickChangeFont();
         previousWorldIndex = selectedWorldIndex;
         selectedWorldIndex--;
 
@@ -93,9 +95,44 @@ public class WorldManager : MonoBehaviour
         HighlightCurrentWorld();
     }
 
-    void EnterWorld()
+    public void ShowWorldStages()
     {
-        if (isAnimating) return; // optional safety check
-        worlds[selectedWorldIndex].GetComponent<WorldSelection>().EnterWorld();
+        //if (isAnimating) return;
+        var selectedWorld = worlds[selectedWorldIndex];
+        //var worldName = selectedWorld.GetComponent<WorldSelection>().worldNameGet();
+        var stageTransform = selectedWorld.GetComponent<WorldSelection>().OpenRectTransform();
+
+        selectedWorld.GetComponent<WorldSelection>().OpenWorldStage(stageTransform);
+
+        RegionManager.instance.InitializedWorldStage(stageTransform);
+        HideWorldSelectionUI();
+        //Debug.Log($"[WorldManager] Show World: {worldName}, initializing its stages...");
     }
+
+    public void CloseWorldStages()
+    {
+        var selectedWorld = worlds[selectedWorldIndex];
+        var stageTransform = selectedWorld.GetComponent<WorldSelection>().OpenRectTransform();
+        selectedWorld.GetComponent<WorldSelection>().CloseWorldStage(stageTransform);
+        ShowWorldSelectionUI();
+        RegionManager.instance.ClearWorldStages();
+    }
+
+    void HideWorldSelectionUI()
+    {
+        bg.GetComponent<RectTransform>().DOAnchorPosY(-639, 0.2f);
+        nextBtn.GetComponent<RectTransform>().DOAnchorPosX(300, 0.2f);
+        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-759, 0.2f);
+        selectBtn.GetComponent<RectTransform>().DOAnchorPosY(-1400, 0.2f);
+    }
+
+    void ShowWorldSelectionUI()
+    {
+        bg.GetComponent<RectTransform>().DOAnchorPosY(27, 0.2f);
+        nextBtn.GetComponent<RectTransform>().DOAnchorPosX(0, 0.2f);
+        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-161, 0.2f);
+        selectBtn.GetComponent<RectTransform>().DOAnchorPosY(288.9998f, 0.2f);
+    }
+
+
 }
