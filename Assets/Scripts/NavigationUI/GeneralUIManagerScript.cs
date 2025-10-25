@@ -6,11 +6,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manages the general UI interactions.
+/// </summary>
+
 public class GeneralUIManagerScript : MonoBehaviour
 {
     [Header("BackButtonDirector")]
     [SerializeField] private string priorScene;
-    [Header("Labels")] 
+    [Header("Labels")]
     [SerializeField] private TextMeshProUGUI volumeTxt;
     [Header("Buttons")]
     [SerializeField] private GameObject BackButton;

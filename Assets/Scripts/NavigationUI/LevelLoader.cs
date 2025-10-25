@@ -2,6 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// transition animator for loading levels
+/// </summary>
 public class LevelLoader : MonoBehaviour
 {
     public static LevelLoader Instance;

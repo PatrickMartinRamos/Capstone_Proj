@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
+/// <summary>
+/// Manages the selection and display of worlds in the navigation UI.
+/// </summary>
 public class WorldManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> worlds;
@@ -15,7 +18,7 @@ public class WorldManager : MonoBehaviour
     private GameObject mainCam;
 
     [Header("Animation Settings")]
-    [SerializeField] private float moveDistance = 2f;  // how high the selected world moves
+    [SerializeField] private float moveDistance = 2f;
     [SerializeField] private float moveDuration = 0.5f;
 
     private int previousWorldIndex = -1;
@@ -104,7 +107,6 @@ public class WorldManager : MonoBehaviour
 
         selectedWorld.GetComponent<WorldSelection>().OpenWorldStage(stageTransform);
 
-        RegionManager.instance.InitializedWorldStage(stageTransform);
         HideWorldSelectionUI();
         //Debug.Log($"[WorldManager] Show World: {worldName}, initializing its stages...");
     }
@@ -115,14 +117,13 @@ public class WorldManager : MonoBehaviour
         var stageTransform = selectedWorld.GetComponent<WorldSelection>().OpenRectTransform();
         selectedWorld.GetComponent<WorldSelection>().CloseWorldStage(stageTransform);
         ShowWorldSelectionUI();
-        RegionManager.instance.ClearWorldStages();
     }
 
     void HideWorldSelectionUI()
     {
         bg.GetComponent<RectTransform>().DOAnchorPosY(-639, 0.2f);
         nextBtn.GetComponent<RectTransform>().DOAnchorPosX(300, 0.2f);
-        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-759, 0.2f);
+        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-636.11f, 0.2f);
         selectBtn.GetComponent<RectTransform>().DOAnchorPosY(-1400, 0.2f);
     }
 
@@ -130,7 +131,7 @@ public class WorldManager : MonoBehaviour
     {
         bg.GetComponent<RectTransform>().DOAnchorPosY(27, 0.2f);
         nextBtn.GetComponent<RectTransform>().DOAnchorPosX(0, 0.2f);
-        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-161, 0.2f);
+        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-281.11f, 0.2f);
         selectBtn.GetComponent<RectTransform>().DOAnchorPosY(288.9998f, 0.2f);
     }
 

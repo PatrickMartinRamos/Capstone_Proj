@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cc7e8bb2c96594c987262d5bd552ae, type: 3}
+  m_Name: CarcinusSO
+  m_EditorClassIdentifier: 
+  _species: 8
+  _cleansingType: 2
+  _hydrionEnergyAmountGiven: 100
+  _color: {r: 1, g: 0.6470588, b: 0, a: 1}
+  _prefab: {fileID: 5861155049555676598, guid: f77d706c4d8819247b78c4cd04ff93fb, type: 3}

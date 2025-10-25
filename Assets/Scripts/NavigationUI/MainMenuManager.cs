@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manages the main menu UI interactions.
+/// </summary>
 public class MainMenuManager : MonoBehaviour
 {
     [Header("Labels")]

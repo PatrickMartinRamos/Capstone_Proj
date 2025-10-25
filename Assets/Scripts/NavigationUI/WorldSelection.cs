@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
+/// <summary>
+/// Handles the selection and rotation of worlds in the navigation UI.
+/// </summary>
 public class WorldSelection : MonoBehaviour
 {
     [SerializeField] private string worldName;
@@ -24,7 +27,7 @@ public class WorldSelection : MonoBehaviour
     public void OpenWorldStage(RectTransform stageTransform)
     {
         stageSelectionTransform.DOAnchorPosY(945, 0.2f);
-    }   
+    }
 
     public void CloseWorldStage(RectTransform stageTransform)
     {
