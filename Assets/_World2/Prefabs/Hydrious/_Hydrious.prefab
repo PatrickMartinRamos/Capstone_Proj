@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 8b8f19cc66e2b004484b1e00ca890a31, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1247922688935235188, guid: c7e80d1e0b212ef4c87208a508013bd8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -120,7 +120,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7381377912302550717}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3e84f80cf90784eaaa6e779bb92258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hydriousSO: {fileID: 0}
+  _hydriousSO: {fileID: 11400000, guid: 3951b22a40f340349b59d487c93fb475, type: 2}
   _hydriousMovement: {fileID: -4131412999225413285}
   _hydriousInteraction: {fileID: 7045527990757372991}
 --- !u!114 &-4131412999225413285
@@ -248,8 +248,8 @@ MonoBehaviour:
   _moveTime: {x: 1, y: 5}
   _rotationTime: {x: 0.5, y: 1.5}
   _movementBounds:
-    m_Center: {x: 0, y: 412, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0.5, y: 412, z: 0}
+    m_Extent: {x: 77.632065, y: 234.5, z: 0}
 --- !u!114 &7045527990757372991
 MonoBehaviour:
   m_ObjectHideFlags: 0

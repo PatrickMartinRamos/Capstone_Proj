@@ -1222,6 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e48319b5d5cb4244b7ab4e54e4bcd57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priorScene: 
   volumeTxt: {fileID: 6190517930912802657}
   BackButton: {fileID: 763347489778713432}
   SettingsButton: {fileID: 1263072317301985899}

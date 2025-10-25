@@ -8,17 +8,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8464181646152054875, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4131412999225413285, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
-      propertyPath: _rectTransform
-      value: 
-      objectReference: {fileID: 5861155049555676598}
-    - target: {fileID: 5911312130329526074, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
-      propertyPath: _hydriousSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 3951b22a40f340349b59d487c93fb475, type: 2}
+      propertyPath: _movementBounds.m_Extent.x
+      value: -103.862366
+      objectReference: {fileID: 0}
+    - target: {fileID: -4131412999225413285, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: _movementBounds.m_Extent.y
+      value: -234.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811929429187390039, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811929429187390039, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272187809662480288, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568817064181024778, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7381377912302550717, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
       propertyPath: m_Name
       value: Piscyn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7381377912302550717, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143610872259674370, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403011631501482325, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
       propertyPath: m_Pivot.x
@@ -100,17 +128,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8447266880559131367, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1247922688935235188, guid: c7e80d1e0b212ef4c87208a508013bd8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7381377912302550717, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8751821175379260845}
   m_SourcePrefab: {fileID: 100100000, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
---- !u!224 &5861155049555676598 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8403011631501482325, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
+--- !u!1 &4874464771290360414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7381377912302550717, guid: 1f55ffe9cbe65054e8b1c1f83a682f40, type: 3}
   m_PrefabInstance: {fileID: 2723129629796717795}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8751821175379260845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4874464771290360414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}

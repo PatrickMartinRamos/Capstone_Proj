@@ -14,7 +14,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - fishLayer
   - Water
   - UI
   - shapeVar
@@ -70,6 +70,9 @@ TagManager:
     locked: 0
   - name: spot_light
     uniqueID: 1613957307
+    locked: 0
+  - name: fishLayer
+    uniqueID: 760743133
     locked: 0
   m_RenderingLayers:
   - Default

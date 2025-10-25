@@ -944,13 +944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e620e681c2ead34f946b73658749dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stripParents:
-  - {fileID: 2642794929069530178}
-  - {fileID: 1292458145379505305}
-  - {fileID: 453190326382693032}
-  - {fileID: 8693477356957459272}
-  - {fileID: 2096396146177124379}
-  - {fileID: 4804939088970833044}
   nonSpotlightAnimSpeed: 0.01
 --- !u!1 &4248945463284484325
 GameObject:
