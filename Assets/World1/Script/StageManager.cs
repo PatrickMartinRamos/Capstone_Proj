@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -24,6 +25,7 @@ public class StageManager : MonoBehaviour
     public float timeLimit;
     private float time; public float currentTime => time;
     public Slider timer;
+    public TextMeshProUGUI NotificationText;
     public GameObject CorrectAnswerPanel, WrongAnswerPanel;
     public GameObject HelpPanel;
 

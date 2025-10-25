@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9121047967205210636}
   - component: {fileID: 7181405145728695495}
-  - component: {fileID: 3917414178768875373}
   - component: {fileID: 2005956681868522816}
+  - component: {fileID: -8260314367744170327}
   m_Layer: 6
   m_Name: 6-Point Star
   m_TagString: Untagged
@@ -89,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3917414178768875373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7913336269917424358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb26a886e6a43d4ebc60a3ee2321c3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originPosition: {x: 0, y: 0, z: 0}
-  name: 6-Point Star
 --- !u!60 &2005956681868522816
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -216,3 +202,22 @@ PolygonCollider2D:
       - {x: -0.66262674, y: -1.2349395}
       - {x: -0.5805955, y: -1.1631621}
   m_UseDelaunayMesh: 0
+--- !u!114 &-8260314367744170327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913336269917424358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60918b9c5fd89499666c0a4b8c2ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iD: 
+  classification: 3
+  shapeName: 6-Point Star
+  withValue: 0
+  value: 0
+  originPos: {x: 0, y: 0, z: 0}
+  interacted: []

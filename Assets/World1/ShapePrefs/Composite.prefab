@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 955010739641370300}
   - component: {fileID: 3747538354122102271}
-  - component: {fileID: 1286506601822651985}
   - component: {fileID: 1269213116185214779}
+  - component: {fileID: -6870435764570336261}
   m_Layer: 6
   m_Name: Composite
   m_TagString: Circle
@@ -89,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1286506601822651985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6159393169522842354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb26a886e6a43d4ebc60a3ee2321c3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originPosition: {x: 0, y: 0, z: 0}
-  name: Composite
 --- !u!60 &1269213116185214779
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -169,3 +155,22 @@ PolygonCollider2D:
       - {x: 0.37517577, y: -0.4801155}
       - {x: 0.51873046, y: -0.3263069}
   m_UseDelaunayMesh: 0
+--- !u!114 &-6870435764570336261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6159393169522842354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60918b9c5fd89499666c0a4b8c2ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iD: 
+  classification: 1
+  shapeName: Composite
+  withValue: 0
+  value: 0
+  originPos: {x: 0, y: 0, z: 0}
+  interacted: []

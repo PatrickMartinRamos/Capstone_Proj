@@ -123,15 +123,14 @@ public class shapeCombination : MonoBehaviour
             symbol.SetActive(false);
         }
     }
-    public bool Square(GameObject targetObject, Vector3 spawnPos)
+    public bool Square(ShapeClassification targetClass, Vector3 spawnPos)
     {
-        string matchedTag = targetObject.gameObject.tag;
-        switch (matchedTag)
+        switch (targetClass)
         {
-            case "Square":
+            case ShapeClassification.Square:
                 SpawnShape(squaredVariable, spawnPos);
                 break;
-            case "Circle":
+            case ShapeClassification.Circle:
                 PlayFX(spawnPos);
                 SpawnShape(product, spawnPos);
                 break;
@@ -141,15 +140,14 @@ public class shapeCombination : MonoBehaviour
         }
         return true;
     }
-    public bool Circle(GameObject targetObject, Vector3 spawnPos)
+    public bool Circle(ShapeClassification targetClass, Vector3 spawnPos)
     {
-        string matchedTag = targetObject.gameObject.tag;
-        switch (matchedTag)
+        switch (targetClass)
         {
-            case "Square":
+            case ShapeClassification.Square:
                 SpawnShape(product, spawnPos);
                 break;
-            case "Circle":
+            case ShapeClassification.Circle:
                 PlayFX(spawnPos);
                 SpawnShape(squaredConstant, spawnPos);
                 break;
@@ -161,18 +159,18 @@ public class shapeCombination : MonoBehaviour
     }
     public bool Triangle(GameObject draggedObject, GameObject targetObject, Vector3 spawnPos)
     {
-        string matchedTag = targetObject.gameObject.tag;
+        ShapeClassification matchedTag = targetObject.GetComponent<Itargetable>().GetTargetClassification();
         switch (matchedTag)
         {
-            case "Triangle":
-                if (targetObject.GetComponent<DraggableShape>().Name == "Product" &&
-                    draggedObject.GetComponent<DraggableShape>().Name == "Product")
+            case ShapeClassification.Triangle:
+                if (targetObject.GetComponent<Shapes>().Name == "Product" &&
+                    draggedObject.GetComponent<Shapes>().Name == "Product")
                 {
                     Vector3 newPosition = (targetObject.transform.position + draggedObject.transform.position) / 2;
 
                     targetObject.transform.position = newPosition;
                     targetObject.transform.localScale = targetObject.transform.localScale * 2;
-                    targetObject.GetComponent<DraggableShape>().ChangeOriginPos(new Vector3 (0,0,0));
+                    targetObject.GetComponent<Shapes>().ChangeOriginPos(new Vector3 (0,0,0));
                     symbols[1].gameObject.SetActive(false);
                     draggedObject.SetActive(false);
                     correctCombination = true;
@@ -185,12 +183,10 @@ public class shapeCombination : MonoBehaviour
                     StageManager.Instance.OpenWrongAnswerPanel();
                     return false;
                 }
-                break;
             default:
                 Debug.Log("No Match");
                 return false;
         }
-        return true;
 
     }
     void SpawnShape (GameObject shape, Vector3 spawnPos)
@@ -198,7 +194,7 @@ public class shapeCombination : MonoBehaviour
         if (spawnedShapesList.Count == 4) return;
         PlayFX(spawnPos);
         spawnedShape = Instantiate(shape, spawnPos, Quaternion.identity);
-        spawnedShapesArrangement[spawnedShapesList.Count] = spawnedShape.GetComponent<DraggableShape>().Name;
+        spawnedShapesArrangement[spawnedShapesList.Count] = spawnedShape.GetComponent<Shapes>().Name;
         spawnedShapesList.Add(spawnedShape);
     }
     void PlayFX(Vector3 spawnPos)

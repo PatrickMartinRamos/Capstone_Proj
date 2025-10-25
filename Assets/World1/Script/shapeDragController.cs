@@ -60,32 +60,10 @@ public class shapeDragController : MonoBehaviour
 
             if (overlap != null && selectedShape != null && overlap.gameObject != selectedShape.gameObject)
             {
-                string draggedShapeTag = selectedShape.tag;
-                string targetShapeTag = overlap.tag;
                 bool isMatched = false;
                 Vector3 spawnPosition = (selectedShape.transform.position + overlap.transform.position) / 2f;
 
-                switch (draggedShapeTag)
-                {
-                    case "Square":
-                        Debug.Log("Matching Square...");
-                        isMatched = shapeCombination.Instance.Square(overlap.gameObject, spawnPosition);
-                        break;
-                    case "Circle":
-                        Debug.Log("Matching Circle...");
-                        isMatched = shapeCombination.Instance.Circle(overlap.gameObject, spawnPosition);
-                        break;
-                    case "Triangle":
-                        Debug.Log("Matching Triangle...");
-                        isMatched = shapeCombination.Instance.Triangle(selectedShape, overlap.gameObject, spawnPosition);
-                        break;
-                    case "Scissor":
-                        Debug.Log("Dividing...");
-                        break;
-                    default:
-                        Debug.Log("Matched unknown shape");
-                        break;
-                }
+                isMatched = selectedShape.GetComponent<IDraggable>().Interact(overlap.gameObject, spawnPosition);
 
                 if (isMatched)
                 {

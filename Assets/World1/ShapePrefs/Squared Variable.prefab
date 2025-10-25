@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5435029084504023}
   - component: {fileID: 3489223951875608040}
-  - component: {fileID: 802963054194128464}
   - component: {fileID: 7820675458668066128}
+  - component: {fileID: -2341441237178968483}
   m_Layer: 6
   m_Name: Squared Variable
   m_TagString: Triangle
@@ -89,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &802963054194128464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8535150851574643827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb26a886e6a43d4ebc60a3ee2321c3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originPosition: {x: 0, y: 0, z: 0}
-  name: Squared Variable
 --- !u!60 &7820675458668066128
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -166,3 +152,22 @@ PolygonCollider2D:
       - {x: 0.7799024, y: -0.6617803}
       - {x: 0.7799024, y: -0.6310186}
   m_UseDelaunayMesh: 0
+--- !u!114 &-2341441237178968483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8535150851574643827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60918b9c5fd89499666c0a4b8c2ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iD: 
+  classification: 2
+  shapeName: Squared Variable
+  withValue: 0
+  value: 0
+  originPos: {x: 0, y: 0, z: 0}
+  interacted: []

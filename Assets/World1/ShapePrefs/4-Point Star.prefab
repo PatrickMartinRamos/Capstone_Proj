@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3304073960546176303}
   - component: {fileID: 629652735499284314}
-  - component: {fileID: 5837636039269850230}
   - component: {fileID: 2283186279296192002}
+  - component: {fileID: 1970689374633789503}
   m_Layer: 6
   m_Name: 4-Point Star
   m_TagString: Untagged
@@ -89,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5837636039269850230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345859143283428619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb26a886e6a43d4ebc60a3ee2321c3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originPosition: {x: 0, y: 0, z: 0}
-  name: 4-Point Star
 --- !u!60 &2283186279296192002
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -207,3 +193,22 @@ PolygonCollider2D:
       - {x: 0.063066155, y: -1.4034114}
       - {x: 0.18611303, y: -0.99325514}
   m_UseDelaunayMesh: 0
+--- !u!114 &1970689374633789503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345859143283428619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60918b9c5fd89499666c0a4b8c2ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iD: 
+  classification: 3
+  shapeName: 4-Point Star
+  withValue: 0
+  value: 0
+  originPos: {x: 0, y: 0, z: 0}
+  interacted: []
