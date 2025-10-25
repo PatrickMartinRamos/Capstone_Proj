@@ -469,9 +469,6 @@ MonoBehaviour:
   RegionStatus: {fileID: 11400000, guid: 9811aff95aec1de499a3cb7a19decc6a, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
-  targetEulerAngle: {x: 0, y: 0, z: 0}
-  rotateTime: 1
-  time: 0
 --- !u!1 &273960094
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,9 +593,6 @@ MonoBehaviour:
   RegionStatus: {fileID: 11400000, guid: e3a11a0339e824b4383c3f932022abca, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
-  targetEulerAngle: {x: 350.06903, y: 47.680836, z: 44.66419}
-  rotateTime: 1
-  time: 0
 --- !u!1 &328742334
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +953,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398540741}
   m_CullTransparentMesh: 1
+--- !u!1001 &544994646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1997962246120725980, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_Name
+      value: FPS_SETTINGS
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.29195
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.14136
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975026224639350830, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4b3a23fe2562654b8e41ec57d7503a1, type: 3}
 --- !u!1 &595836046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,9 +2163,6 @@ MonoBehaviour:
   RegionStatus: {fileID: 11400000, guid: fef785756f8537b47b3c59213b81e58a, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
-  targetEulerAngle: {x: 0, y: 0, z: 0}
-  rotateTime: 1
-  time: 0
 --- !u!1 &1823130131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,9 +2322,6 @@ MonoBehaviour:
   RegionStatus: {fileID: 11400000, guid: ef0daf69002f4094ebc97816b30331d4, type: 2}
   stageNumber: {fileID: 80355126}
   playBtn: {fileID: 398540741}
-  targetEulerAngle: {x: 338.1463, y: 93.261955, z: 342.7368}
-  rotateTime: 1
-  time: 0
 --- !u!1 &1870356940
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,10 +4223,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9bd091139d0c74f91892da66a12190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  World: {fileID: 8562387502226100568}
+  currentWorldSelected: {fileID: 0}
   regions:
   - {fileID: 120565849}
   - {fileID: 1869895279}
+  selectedRegionIndex: 0
+  tintBG: {fileID: 0}
 --- !u!23 &8615283218193314898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4315,3 +4362,4 @@ SceneRoots:
   - {fileID: 1459723626}
   - {fileID: 745944904}
   - {fileID: 1958305429}
+  - {fileID: 544994646}

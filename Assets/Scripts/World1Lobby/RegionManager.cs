@@ -1,54 +1,97 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RegionManager : MonoBehaviour
 {
+    public static RegionManager instance;
+    [SerializeField] private GameObject currentWorldSelected;
+    [SerializeField] private List<GameObject> regions = new List<GameObject>();
+    [SerializeField] private int selectedRegionIndex = 0;
+    [SerializeField] private GameObject tintBG;
 
-/// <summary>
-/// TODO:
-///     -update stage 
-///     -check if what world is selected
-///     -change the unlocked stage base on what world is selected
-///     -load stage
-///     -stage selection UI logic
-/// </summary>
-
-    [SerializeField] private GameObject world;
-    [SerializeField] private List<Transform> regions;
-
-    private int selectedRegionIndex = -1;
-    private GameObject selectedRegion;
-
-    private void Start()
+    void Awake()
     {
-        // Attach click listeners for each region button
-        for (int i = 0; i < regions.Count; i++)
+        if (instance == null)
         {
-            int index = i;
-            var regionBtn = regions[i].GetComponent<Button>();
-            // Initialize stage label
-            regions[i].GetComponent<Region>().InitiateStageLabelChange();
-            regionBtn.onClick.AddListener(() => OnRegionClicked(index));
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+    void Start()
+    {
+        tintBG.gameObject.SetActive(false);
+    }
+
+    public void InitializedWorldStage(Transform world)
+    {
+        ClearWorldStages();
+
+        currentWorldSelected = world.gameObject;
+        tintBG.gameObject.SetActive(true);
+        // Find all Region scripts inside the world object
+        Region[] foundRegions = world.GetComponentsInChildren<Region>(true);
+
+        int index = 0;
+        foreach (Region region in foundRegions)
+        {
+            region.InitiateStageLabelChange();
+            GameObject regionObj = region.gameObject;
+            regions.Add(regionObj);
+
+            //Debug.Log($"Region Found: {regionObj.name}");
+
+            // Try to get button and add listener
+            Button btn = regionObj.GetComponent<Button>();
+            if (btn != null)
+            {
+                int capturedIndex = index; // local copy for lambda
+                btn.onClick.RemoveAllListeners(); // clear previous listeners
+                btn.onClick.AddListener(() => OnRegionClicked(capturedIndex, regionObj.name));
+            }
+
+            index++;
+        }
+
+        // Debug.Log($"Current World: {currentWorldSelected.name}");
+        // Debug.Log($"Total Regions Found: {regions.Count}");
+    }
+
+    private void OnRegionClicked(int index, string regionName)
+    {
+        selectedRegionIndex = index;
+        // Debug.Log($"Clicked Region: {regionName} (Index: {index})");
+
+        // Load scene based on RegionStatus
+        Region region = regions[index].GetComponent<Region>();
+        if (region != null)
+        {
+            string sceneName = region.RegionStatus.worldName;
+            // Debug.Log($"Loading Scene: {sceneName}");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         }
     }
 
-    void OnRegionClicked(int index)
+    public void ClearWorldStages()
     {
-        if (selectedRegion != null)
+        // Clear existing listeners to avoid duplicates
+        foreach (var regionObj in regions)
         {
-            selectedRegion.GetComponent<Region>().UnselectRegion();
+            Button btn = regionObj.GetComponent<Button>();
+            if (btn != null) btn.onClick.RemoveAllListeners();
         }
 
-        // Update selected region info
-        selectedRegionIndex = index;
-        selectedRegion = regions[index].gameObject;
+        regions.Clear();
+        tintBG.gameObject.SetActive(false);
+        currentWorldSelected = null;
+    }
 
-        // Mark as selected in Region script
-        selectedRegion.GetComponent<Region>().SelectWorld(world);
-
-        // Log selected region details
-        var regionData = selectedRegion.GetComponent<Region>();
-        Debug.Log($"Selected Region: {selectedRegion.name} | Stage: {regionData.name}");
+    public void LoadSelectedStage()
+    {
+        Debug.Log($"Loading stage for region index: {selectedRegionIndex}");
     }
 }
