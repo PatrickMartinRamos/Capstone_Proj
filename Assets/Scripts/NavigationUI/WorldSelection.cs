@@ -10,7 +10,6 @@ public class WorldSelection : MonoBehaviour
     [SerializeField] private string worldName;
     [SerializeField] private RectTransform stageSelectionTransform;
     [SerializeField] private float worldRotationSpeed;
-    [SerializeField] private bool isUnlocked, isSelected = false;
 
     public List<Transform> regions;
 
