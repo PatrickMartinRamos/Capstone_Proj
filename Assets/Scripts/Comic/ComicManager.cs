@@ -1,17 +1,12 @@
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class ComicManager : MonoBehaviour
 {
-    [Header("World 1 Comics")]
-    [SerializeField] private VideoClip[] world1Comics;
-
-    [Header("World 2 Comics")]
-    [SerializeField] private VideoClip[] world2Comics;
-
     [Header("UI")]
-    [SerializeField] private GameObject comicCanvas;  // Canvas that holds the comic UI
+    [SerializeField] private GameObject comicCanvas;
     [SerializeField] private VideoPlayer videoPlayer;
 
     private string currentWorld;
@@ -19,9 +14,11 @@ public class ComicManager : MonoBehaviour
 
     private void Start()
     {
-        // Make sure the comic UI starts hidden
         if (comicCanvas != null)
             comicCanvas.SetActive(false);
+
+        // Disable autoplay (browser restriction)
+        videoPlayer.playOnAwake = false;
     }
 
     public void PlayComicFor(string worldName, int stageID)
@@ -29,37 +26,39 @@ public class ComicManager : MonoBehaviour
         currentWorld = worldName;
         currentStage = stageID;
 
-        VideoClip clip = GetComicClip(worldName, stageID);
+        string fileName = $"{worldName}_Comic_{stageID}.mp4";
+        string videoPath = Path.Combine(Application.streamingAssetsPath, fileName);
 
-        if (clip == null)
+        if (!FileExists(videoPath))
         {
-            Debug.LogWarning($"No comic clip found for {worldName} - Stage {stageID}");
+            Debug.LogWarning($"Comic video not found: {videoPath}. Loading game scene instead...");
             SceneManager.LoadScene(worldName);
             return;
         }
 
-        // Show the comic UI and play the video
         comicCanvas.SetActive(true);
-        videoPlayer.clip = clip;
+        videoPlayer.url = videoPath;
         videoPlayer.loopPointReached += OnComicFinished;
-        videoPlayer.Play();
 
-        Debug.Log($"Playing comic for {worldName} - Stage {stageID}");
+        // AUTO-PLAY (no click wait)
+        StartVideo();
     }
 
-    private VideoClip GetComicClip(string worldName, int stageID)
+    private void StartVideo()
     {
-        int index = Mathf.Clamp(stageID - 1, 0, 14);
+        Debug.Log("Attempting to auto-play comic...");
+        videoPlayer.Play();
+    }
 
-        switch (worldName)
-        {
-            case "World1_GameScene":
-                return (world1Comics.Length > index) ? world1Comics[index] : null;
-            case "World2_GameScene":
-                return (world2Comics.Length > index) ? world2Comics[index] : null;
-            default:
-                return null;
-        }
+
+    private bool FileExists(string path)
+    {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        // WebGL cannot use File.Exists, but StreamingAssets are always included if uploaded
+        return true;
+#else
+        return File.Exists(path);
+#endif
     }
 
     private void OnComicFinished(VideoPlayer vp)
