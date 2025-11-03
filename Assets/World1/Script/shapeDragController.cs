@@ -22,7 +22,7 @@ public class shapeDragController : MonoBehaviour
         if (isTouching)
         {
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(touchPosition);
-            worldPoint.z = 1f; // Ensure shape stays visible in 2D view
+            worldPoint.z = -2f; // Ensure shape stays visible in 2D view
 
             if (selectedShape == null)
             {
@@ -60,15 +60,12 @@ public class shapeDragController : MonoBehaviour
 
             if (overlap != null && selectedShape != null && overlap.gameObject != selectedShape.gameObject)
             {
-                bool isMatched = false;
                 Vector3 spawnPosition = (selectedShape.transform.position + overlap.transform.position) / 2f;
 
-                isMatched = selectedShape.GetComponent<IDraggable>().Interact(overlap.gameObject, spawnPosition);
+                overlap.gameObject.GetComponent<ITargetable>().InteractWithDraggedObject(selectedShape);
+                Debug.Log(overlap.gameObject.name + " \n" + selectedShape.name);
+                selectedShape.GetComponent<Shapes>().RevertPosition();
 
-                if (isMatched)
-                {
-                    selectedShape.GetComponent<DraggableShape>().RevertPosition();
-                }
             }
 
             // Reset

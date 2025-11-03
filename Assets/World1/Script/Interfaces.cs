@@ -1,12 +1,9 @@
 using UnityEngine;
 
-public interface IDraggable
+public interface ITargetable
 {
-    bool Interact(GameObject target, Vector3 spawnPt);
-    ShapeClassification GetDraggedObjectClassification();
-}
-public interface Itargetable
-{
-    ShapeStats SendInfo();
-    ShapeClassification GetTargetClassification();
+    void InteractWithDraggedObject(GameObject draggedObject)
+    {
+
+    }
 }

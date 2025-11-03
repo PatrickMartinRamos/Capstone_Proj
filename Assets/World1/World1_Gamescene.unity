@@ -722,8 +722,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 6476901963790386409, guid: 1081e3d2fb47bd9498defd736a699c45, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 6476901963790386409, guid: 7490ceaafe30b4d4d956bb3b0cd7112c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1096,7 +1096,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1955448553306655712, guid: c4e63915621fc02419e38fcfd3451a1a, type: 3}
+  m_Sprite: {fileID: -1955448553306655712, guid: 56ba08c6d5e907f47bdc1be260d95500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1180,7 +1180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7494821065275194188, guid: e78d5f1613f0c444abb1c8a653baeb2d, type: 3}
+  m_Sprite: {fileID: 7494821065275194188, guid: d187511fa85f7fb4896c8b27e5255f3e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
