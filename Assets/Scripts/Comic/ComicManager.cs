@@ -2,16 +2,22 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.UI;
 
 public class ComicManager : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField] private GameObject comicCanvas;
     [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private Button skipButton;
 
     private string currentWorld;
     private int currentStage;
 
+    void Awake()
+    {
+        skipButton.onClick.AddListener(SkipComic);
+    }
     private void Start()
     {
         if (comicCanvas != null)
@@ -46,10 +52,15 @@ public class ComicManager : MonoBehaviour
 
     private void StartVideo()
     {
-        Debug.Log("Attempting to auto-play comic...");
+        //Debug.Log("Attempting to auto-play comic...");
         videoPlayer.Play();
     }
 
+    private void SkipComic()
+    {
+        videoPlayer.Stop();
+        OnComicFinished(videoPlayer);
+    }
 
     private bool FileExists(string path)
     {

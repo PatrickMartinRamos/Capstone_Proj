@@ -24,6 +24,7 @@ public class MainMenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        SettingsPanel.SetActive(false);
         SettingsButton.GetComponent<Button>().onClick.AddListener(Settings);
         PlayButton.GetComponent<Button>().onClick.AddListener(StartGame);
         QuitButton.GetComponent<Button>().onClick.AddListener(QuitGame);
@@ -52,7 +53,7 @@ public class MainMenuManager : MonoBehaviour
         SettingsPanel.SetActive(true);
         SettingsButton.GetComponent<Button>().interactable = false;
     }
-    void SettingsBack()
+    public void SettingsBack()
     {
         SettingsPanel.SetActive(false);
         SettingsButton.GetComponent<Button>().interactable = true;
