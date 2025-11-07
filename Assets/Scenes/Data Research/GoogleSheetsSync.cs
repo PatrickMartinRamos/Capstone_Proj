@@ -29,7 +29,8 @@ public class GoogleSheetsSync : MonoBehaviour
 
     private IEnumerator PostRequest(string url, string json, Action<bool> onComplete = null)
     {
-        loadIcon.SetActive(true);
+        if (loadIcon != null)
+            loadIcon.SetActive(true);
 
         UnityWebRequest www = new UnityWebRequest(url, "POST");
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
@@ -39,7 +40,8 @@ public class GoogleSheetsSync : MonoBehaviour
 
         yield return www.SendWebRequest();
 
-        loadIcon.SetActive(false);
+        if (loadIcon != null)
+            loadIcon.SetActive(false);
 
         if (www.result != UnityWebRequest.Result.Success)
         {
@@ -54,12 +56,14 @@ public class GoogleSheetsSync : MonoBehaviour
 }
     private IEnumerator GetRequest(string url, Action<PlayerSaveData> callback)
     {
-        loadIcon.SetActive(true);
+        if (loadIcon != null)
+            loadIcon.SetActive(true);
 
         UnityWebRequest www = UnityWebRequest.Get(url);
         yield return www.SendWebRequest();
 
-        loadIcon.SetActive(false);
+        if (loadIcon != null)
+            loadIcon.SetActive(false);
 
         if (www.result != UnityWebRequest.Result.Success)
         {

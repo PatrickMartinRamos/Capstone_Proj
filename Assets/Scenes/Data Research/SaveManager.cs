@@ -1,9 +1,9 @@
-﻿using System.IO;
+using System.IO;
 using UnityEngine;
 
 
 /// <summary>
-/// wag na muna gamitin to for local save/load nlng to use datamanager for load and uploading data to google sheets
+/// wag na muna gamitin to for local save/load nlng to use datamanagesr for load and uploading data to google sheets
 /// </summary>
 public class SaveManager : MonoBehaviour
 {

@@ -33,7 +33,7 @@ public class DataLoader : MonoBehaviour
 
     public void UploadData(string _playerName, int _stageLevel, int _stageScore, float _playTime, Action<bool> onComplete = null)
     {
-        // ✅ Set player data immediately before any checking or uploading
+        // Set player data immediately before any checking or uploading
         currentPlayerName = _playerName;
         currentStageLevel = _stageLevel;
         currentScore = _stageScore;
@@ -56,7 +56,7 @@ public class DataLoader : MonoBehaviour
             playTime = _playTime
         };
 
-        // 🔽 Continue with your normal check-download-upload flow
+        // Continue with your normal check-download-upload flow
         sync.DownloadFromGoogleSheet(_playerName, existingData =>
         {
             bool hasExistingData = existingData != null && 

@@ -131,7 +131,7 @@ public class WorldManager : MonoBehaviour
     {
         bg.GetComponent<RectTransform>().DOAnchorPosY(27, 0.2f);
         nextBtn.GetComponent<RectTransform>().DOAnchorPosX(0, 0.2f);
-        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-281.11f, 0.2f);
+        preBtn.GetComponent<RectTransform>().DOAnchorPosX(-0, 0.2f);
         selectBtn.GetComponent<RectTransform>().DOAnchorPosY(288.9998f, 0.2f);
     }
 

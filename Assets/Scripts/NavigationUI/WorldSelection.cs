@@ -25,12 +25,12 @@ public class WorldSelection : MonoBehaviour
 
     public void OpenWorldStage(RectTransform stageTransform)
     {
-        stageSelectionTransform.DOAnchorPosY(742, 0.2f);
+        stageSelectionTransform.DOAnchorPosY(900, 0.2f);
     }
 
     public void CloseWorldStage(RectTransform stageTransform)
     {
-        stageSelectionTransform.DOAnchorPosY(-800, 0.2f);
+        stageSelectionTransform.DOAnchorPosY(3300, 0.2f);
     }
 
     public RectTransform OpenRectTransform()

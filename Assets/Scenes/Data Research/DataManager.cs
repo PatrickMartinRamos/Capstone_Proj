@@ -37,21 +37,32 @@ public class DataManager : MonoBehaviour
 
         if (string.IsNullOrEmpty(currentUser) || currentUser == "No User")
         {
-            Debug.Log("ℹ️ No logged-in user found. Waiting for new player creation...");
+            Debug.Log("ℹ No logged-in user found. Waiting for new player creation...");
             return;
         }
-        loadingImage.SetActive(true);
+        if (loadingImage != null)
+            loadingImage.SetActive(true);
         // Always pull fresh data from Google Sheets
-        Debug.Log($"☁️ Downloading cloud data for {currentUser}...");
+        Debug.Log($"Downloading cloud data for {currentUser}...");
         dataLoader.Sync.DownloadFromGoogleSheet(currentUser, cloudData =>
         {
+            // If this MonoBehaviour was destroyed while the async request was in-flight, bail out.
+            if (this == null) return;
+
             if (cloudData != null)
             {
                 currentData = cloudData;
-                loadingImage.SetActive(false);
+                if (loadingImage != null)
+                    loadingImage.SetActive(false);
                 Debug.Log($" Loaded data from Google Sheets for {currentData.playerName}");
                 Debug.Log($" Level: {currentData.stageLevel}, \nScore: {currentData.stageScore}, \nTime: {currentData.playTime:F1}s");
             }
+            else
+            {
+                if (loadingImage != null)
+                    loadingImage.SetActive(false);
+            }
+
         });
     }
 
@@ -105,7 +116,7 @@ public class DataManager : MonoBehaviour
         currentData.stageScore += Random.Range(10, 50);
         currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
         currentData.playTime += Random.Range(60f, 300f);
-
+        
         Debug.Log($"Testing update for {currentData.playerName}...");
         UploadToGoogleSheets();
     }
