@@ -1,10 +1,7 @@
 using DG.Tweening;
-using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class TutorialUINavigation : MonoBehaviour
 {

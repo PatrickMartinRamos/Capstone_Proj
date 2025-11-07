@@ -5,25 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldSelection.unity
     guid: 6c84aca4d0a0d2847ba0a1daec705950
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/World 1 Stages.unity
     guid: b8ba618af0be2c84a83f4513925eed84
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game Scene/AlgebraicFoundation.unity
     guid: c0029c4dbfc77644c84436dbd94d0355
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game Scene/PlottingScene.unity
     guid: 2a508c72db5bf384ead127a8b61a2759
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/World 2 Stages.unity
     guid: eb371f811938ff54093d1c38ec3e4fac
-  - enabled: 1
+  - enabled: 0
     path: Assets/World1/World1_Gamescene.unity
     guid: 370a74663ec34b04a83d9406d4de0364
   - enabled: 1
