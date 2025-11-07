@@ -1,5 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class BinomiallProblemLoader : ProblemLoader
@@ -10,12 +12,14 @@ public class BinomiallProblemLoader : ProblemLoader
     [SerializeField] GameObject minusSymbol;
     private GameObject variable;
     private GameObject constant;
+    private List<int> answers = new List<int>();
 
     private void Start()
     {
+        StageManager.Instance.problem = this;
         variable = StageManager.Instance.variable;
         constant = StageManager.Instance.constant;
-        LoadProblem();
+        //LoadProblem();
     }
     public override void LoadProblem()
     {
@@ -26,6 +30,7 @@ public class BinomiallProblemLoader : ProblemLoader
             constant.GetComponent<Shapes>().AddValue(stageDifficulty);
         }
         InstantiateGiven(leftSide.transform, ProblemMarkers[0], ProblemMarkers[1], ProblemMarkers[2]);
+
         InstantiateGiven(rightSide.transform, ProblemMarkers[3], ProblemMarkers[4], ProblemMarkers[5]);
 
     }
@@ -34,46 +39,37 @@ public class BinomiallProblemLoader : ProblemLoader
         // Add Variable
         GameObject v = Instantiate(variable, varSpawnPt, Quaternion.identity);
         v.transform.SetParent(side, false);
+        v.GetComponent<Shapes>().ChangeToGiven();
 
         // Add Symbol
-        Instantiate(GetSymbol(stageDifficulty), symSpawnPt, Quaternion.identity).transform.SetParent(side, false);
+        Instantiate(plusSymbol, symSpawnPt, Quaternion.identity).transform.SetParent(side, false);
 
         // Add Constant
-        GameObject c = Instantiate(variable, conSpawnPt, Quaternion.identity);
+        GameObject c = Instantiate(constant, conSpawnPt, Quaternion.identity);
         c.transform.SetParent(side, false);
-    }
-    private void GetLevelDifficulty()
-    {
-        int level = PlayerPrefs.GetInt("StageID");
-        if (level != 0)
+        c.GetComponent<Shapes>().ChangeToGiven();
+        if (answers.Count == 0)
         {
-            int levelIndicator = level % 3;
-            switch (levelIndicator)
-            {
-                case 0:
-                    stageDifficulty = Difficulty.easy;
-                    break;
-                case 1:
-                    stageDifficulty = Difficulty.normal;
-                    break;
-                case 2:
-                    stageDifficulty = Difficulty.hard;
-                    break;
-            }
+            var a = v.GetComponent<Shapes>().value;
+            var b = v.GetComponent<Shapes>().value;
+            SolveForAnswer(a, b);
         }
+
     }
-    private GameObject GetSymbol(Difficulty difficulty)
+    public void SolveForAnswer(int a, int b)
     {
-        switch (stageDifficulty)
-        {
-            case Difficulty.easy:
-                return plusSymbol;
-            case Difficulty.normal:
-                return minusSymbol;
-            case Difficulty.hard:
-                int roll = Random.Range(0, 2);
-                return roll == 0 ? plusSymbol : minusSymbol;
-        }
-        return null;
+        // a^2 + 2ab + b^2
+        // Add first term
+        answers.Add(a*a);
+        // Add second term
+        answers.Add(2 * a * b);
+        // Add third term
+        answers.Add(b*b);
+
     }
+    public override List<int> Answers()
+    {
+        return answers;
+    }
+
 }

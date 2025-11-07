@@ -11,4 +11,28 @@ public class ProblemLoader : MonoBehaviour
     {
 
     }
+    public virtual List<int> Answers()
+    {
+        return null;
+    }
+    internal void GetLevelDifficulty()
+    {
+        int level = StageManager.Instance.StageNumber;
+        if (level != 0)
+        {
+            int levelIndicator = level % 3;
+            switch (levelIndicator)
+            {
+                case 0:
+                    stageDifficulty = Difficulty.hard;
+                    break;
+                case 1:
+                    stageDifficulty = Difficulty.easy;
+                    break;
+                case 2:
+                    stageDifficulty = Difficulty.normal;
+                    break;
+            }
+        }
+    }
 }

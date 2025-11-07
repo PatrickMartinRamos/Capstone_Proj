@@ -1,11 +1,13 @@
 using UnityEngine;
 public enum ShapeClassification
 {
-    Square,
-    Circle,
-    Triangle,
-    Star,
-    Scissors
+    Square, // Energized Gear
+    Circle, // Gear
+    Triangle, // Combined Gear
+    DoubleSquare, // Double Energized Gear
+    DoubleCircle, // Double Gear
+    Scissors, // Extractor
+    Null
 }
 
 public enum Tool

@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: GamePlay_BG
+    uniqueID: 1437716749
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -70,6 +73,12 @@ TagManager:
     locked: 0
   - name: spot_light
     uniqueID: 1613957307
+    locked: 0
+  - name: Interactables
+    uniqueID: 893237965
+    locked: 0
+  - name: GamePlay_FG
+    uniqueID: 2967113573
     locked: 0
   m_RenderingLayers:
   - Default

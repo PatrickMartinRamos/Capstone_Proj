@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    [Header("Selected Tool")]
-    [SerializeField] private Tool chosenTool;
+    [SerializeField] private AlgebraicFoundationPlayerStatus playerStatus;
+
+    [Header("JSON Manager")]
+    public PlayerStatusJSONManager playerStatusJSONManager;
     public static PlayerManager Instance { get; private set; }
     private void Awake()
     {
@@ -14,5 +16,9 @@ public class PlayerManager : MonoBehaviour
         }
         Instance = this;
 
+    }
+    private void Start()
+    {
+        playerStatus.currentStage = StageManager.Instance.StageNumber;
     }
 }

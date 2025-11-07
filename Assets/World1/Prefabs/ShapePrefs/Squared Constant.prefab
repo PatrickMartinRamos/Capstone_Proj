@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7615999868980306600}
   - component: {fileID: 2732280969867206247}
   - component: {fileID: -753715049147208935}
+  - component: {fileID: 501850609881264831}
   m_Layer: 6
   m_Name: Squared Constant
   m_TagString: Triangle
@@ -171,3 +172,30 @@ MonoBehaviour:
   value: 0
   originPos: {x: 0, y: 0, z: 0}
   interacted: []
+--- !u!50 &501850609881264831
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661027638255985016}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

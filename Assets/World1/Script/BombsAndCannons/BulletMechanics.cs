@@ -11,6 +11,10 @@ public class BulletMechanics : MonoBehaviour
     {
         initLocalPos = transform.localPosition;
     }
+    private void Start()
+    {
+        StageManager.Instance.bullet = this.gameObject;
+    }
 
     private void OnEnable()
     {

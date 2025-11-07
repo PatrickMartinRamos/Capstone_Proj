@@ -1,31 +1,27 @@
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 
-public class Square : Shapes
+public class Circle : Shapes
 {
     public GameObject CombinedShape;
-    public override void CombineLikeTerms(GameObject dragged, GameObject target)
-    {
-        base.CombineLikeTerms(dragged, target);
-    }
     public override void CombineShapes(GameObject dragged, GameObject target)
     {
         // Get Midpoint of 2 shapes
-        Vector2 spawnPt = (target.transform.position + dragged.transform.position)/2;
+        Vector2 spawnPt = (target.transform.position + dragged.transform.position) / 2;
         ShapeClassification targetClass = target.GetComponent<Shapes>().GetClassification();
         Debug.Log("Target Classification = " + targetClass);
-        switch(targetClass)
+        switch (targetClass)
         {
             case ShapeClassification.Square:
-                CombinedShape = StageManager.Instance.squaredVariable;
+                CombinedShape = StageManager.Instance.product;
                 break;
             case ShapeClassification.Circle:
-                CombinedShape = StageManager.Instance.product;
+                CombinedShape = StageManager.Instance.squaredConstant;
                 break;
             default:
                 Debug.Log("cannot combine shapes");
                 break;
+
         }
 
         GameObject newShape = Instantiate(CombinedShape, spawnPt, Quaternion.identity);
@@ -37,11 +33,10 @@ public class Square : Shapes
         switch (difficulty)
         {
             case Difficulty.normal:
-                value = 1;
+                value = Random.Range(1,10);
                 break;
             case Difficulty.hard:
-                int stageLevel = PlayerPrefs.GetInt("StageID");
-                value = stageLevel < 7 ? Random.Range(2,5) : Random.Range(6,10);
+                value = Random.Range(6, 15);
                 valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
                 valueLabel.SetActive(true);
                 break;

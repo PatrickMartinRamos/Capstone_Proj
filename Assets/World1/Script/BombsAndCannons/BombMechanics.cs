@@ -6,10 +6,11 @@ public class BombMechanics : MonoBehaviour
     [SerializeField] ProblemType problemType;
     [SerializeField] GameObject explosionFX;
     [SerializeField] GameObject gameScene;
+    private Vector3 gameSceneSpawnPt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameSceneSpawnPt = StageManager.Instance.gameplaySpawnPt.transform.position;
     }
 
     // Update is called once per frame
@@ -22,20 +23,27 @@ public class BombMechanics : MonoBehaviour
         Debug.Log("Bomb has been selected.");
         StageManager.Instance.targetBomb = gameObject;
         OpenGameScene();
+        this.gameObject.GetComponent<Collider2D>().enabled = false;
     }
     void OpenGameScene()
     {
-        gameScene = GetCraftBox();
-        if(gameScene != null)
+        GameObject prefab = GetCraftBox();
+        if (prefab != null)
         {
-            Instantiate(gameScene);
-            gameScene.transform.DOScale(0, 0f);
+            gameScene = Instantiate(prefab, gameSceneSpawnPt, Quaternion.identity);
+            gameScene.transform.SetParent(StageManager.Instance.gameplaySpawnPt.transform, worldPositionStays: false);
+            gameScene.transform.localScale = Vector3.zero;
             gameScene.SetActive(true);
-            gameScene.transform.DOScale(1.3f, 0.5f);
-            gameScene.transform.DOScale(1f, 1f);
-        }
+            StageManager.Instance.ActiveGameArea = gameScene;
 
+            // Create sequence properly
+            Sequence seq = DOTween.Sequence();
+            seq.Append(gameScene.transform.DOScale(1.4f, 0.3f))
+               .Append(gameScene.transform.DOScale(1.2f, 1f))
+               .OnComplete(() => gameScene.GetComponent<ProblemLoader>().LoadProblem());
+        }
     }
+
     GameObject GetCraftBox()
     {
         switch(problemType)

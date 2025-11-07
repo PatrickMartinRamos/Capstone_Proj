@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class VerifierMechanics : MonoBehaviour, ITargetable
 {
@@ -13,28 +14,64 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTransformChildrenChanged()
     {
-        
+        if (embedShape.transform.parent == this.gameObject.transform)
+            return;
+        resetColorIndicator();
+        embedShape = null;
     }
     public void InteractWithDraggedObject(GameObject draggedObject)
     {
-        embedShape = draggedObject;
-        draggedObject.transform.parent = transform;
-        draggedObject.transform.position = Vector3.zero;
-    }
-    public void VerifyShape()
-    {
-        ShapeClassification embedShapeClass = embedShape.GetComponent<Shapes>().GetClassification();
-        if(embedShapeClass == correctShape)
+        if (embedShape  != null)
         {
-            verificationIndicator.color = correct;
+            StageManager.Instance.NotificationText.text = "A Gear is Already Embed. Remove first to proceed.";
+            return;
+        } 
+
+        if (draggedObject.transform.parent != this)
+        {
+            embedShape = draggedObject;
+            Debug.Log("Dragged Into: Verifier" + " \nDragged Object: " + this.gameObject.name);
+            draggedObject.transform.SetParent(transform, false);
+        }
+        verificationIndicator.color = Color.yellow;
+        draggedObject.GetComponent<Shapes>().FixScale();
+        draggedObject.transform.localPosition = new Vector3(0, 0, 0);
+    }
+    public bool VerifyShape(int answer)
+    {
+        int submittedAns = 0;
+        ShapeClassification embedShapeClass;
+
+        embedShapeClass = embedShape != null ? embedShape.GetComponent<Shapes>().GetClassification() : ShapeClassification.Null;
+        submittedAns = embedShape != null ? embedShape.GetComponent<Shapes>().value : 0;
+        if (embedShapeClass == correctShape)
+        {
+
+            if (submittedAns == answer)
+            {
+                Debug.Log("All Correct.");
+
+                verificationIndicator.color = correct;
+                return true;
+            }
+            else
+            {
+                Debug.Log("Incorrect Value\t" +submittedAns);
+
+                verificationIndicator.color = wrong;
+                return false;
+            }
+
         }
         else
         {
+            Debug.Log("Incorrect Gear\t" + embedShapeClass);
             verificationIndicator.color = wrong;
+            return false;
         }
+
     }
     public void resetColorIndicator()
     {
