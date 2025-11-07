@@ -41,7 +41,7 @@ public class BulletMechanics : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
         // Move once (not every frame)
-        moveTween = transform.DOMove(targetPos, 2f).SetEase(Ease.Linear)
+        moveTween = transform.DOMove(targetPos, 1f).SetEase(Ease.Linear)
             .OnComplete(() =>
             {
                 gameObject.SetActive(false);

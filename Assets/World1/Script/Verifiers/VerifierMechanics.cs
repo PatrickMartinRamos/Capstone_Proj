@@ -33,11 +33,12 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
         {
             embedShape = draggedObject;
             Debug.Log("Dragged Into: Verifier" + " \nDragged Object: " + this.gameObject.name);
-            draggedObject.transform.SetParent(transform, false);
+            draggedObject.transform.SetParent(transform,false);
         }
+        draggedObject.GetComponent<Shapes>().ChangeOriginPos(new Vector3(0, 0, 0));
+        draggedObject.GetComponent<Shapes>().RevertPosition();
         verificationIndicator.color = Color.yellow;
-        draggedObject.GetComponent<Shapes>().FixScale();
-        draggedObject.transform.localPosition = new Vector3(0, 0, 0);
+        draggedObject.GetComponent<Shapes>().FixScale(2f);
     }
     public bool VerifyShape(int answer)
     {

@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+using Sequence = DG.Tweening.Sequence;
 public class ShapeStats
 {
     public string iD;
@@ -147,6 +148,10 @@ public class Shapes : MonoBehaviour, ITargetable
     {
         transform.DOScale(origScaleSize, 0.5f);
     }
+    public void FixScale(float scaleModifier)
+    {
+        transform.DOScale(origScaleSize * scaleModifier, 0.5f);
+    }
 
     public void MoveToArea()
     {
@@ -155,7 +160,7 @@ public class Shapes : MonoBehaviour, ITargetable
         // Apply impulse force once
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         Vector3 targetPos = GetRandomPosition();
-        rb.DOMove(targetPos, 1f);
+        rb.DOMove(targetPos, 1f).OnComplete(()=>ChangeOriginPos(targetPos));
         Debug.Log("Sending to Area");
     }
 

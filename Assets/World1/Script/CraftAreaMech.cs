@@ -15,6 +15,9 @@ public class CraftAreaMech : MonoBehaviour, ITargetable
     }
     public void InteractWithDraggedObject(GameObject draggedObject)
     {
+        if (StageManager.Instance.ActiveGameArea.GetComponent<BinomiallProblemLoader>() && (draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Square 
+            || draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle)) return;
+
         if (draggedObject.transform.parent != this)
             draggedObject.transform.SetParent(transform, true);
         draggedObject.GetComponent<Shapes>().FixScale();

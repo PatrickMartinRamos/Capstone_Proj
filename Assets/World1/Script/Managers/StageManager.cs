@@ -3,6 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -46,7 +47,11 @@ public class StageManager : MonoBehaviour
 
     public bool ShowCraftBox, craftBoxIsHidden=false, startGame = false;
 
+    // Singleton Instance
     public static StageManager Instance { get; private set; }
+
+    // Events 
+    public static UnityEvent CloseGameAreaEvent = new();
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -76,7 +81,7 @@ public class StageManager : MonoBehaviour
     }
     public void StartSuccessSequence()
     {
-        targetBomb.GetComponent<Collider2D>().enabled = true;
+        CloseGameAreaEvent.Invoke();
         ActiveGameArea.SetActive(false);
         bullet.SetActive(true);
     }

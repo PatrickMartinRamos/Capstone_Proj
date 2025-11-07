@@ -74,7 +74,7 @@ public class shapeDragController : MonoBehaviour
                 }
 
                 // Reset Pos
-                //selectedShape.GetComponent<Shapes>().RevertPosition();
+                selectedShape.GetComponent<Shapes>().RevertPosition();
             }
 
             // Reset Drag Controller

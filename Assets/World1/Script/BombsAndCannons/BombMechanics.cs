@@ -1,5 +1,6 @@
-using UnityEngine;
 using DG.Tweening;
+using UnityEngine;
+using UnityEngine.Events;
 
 public class BombMechanics : MonoBehaviour
 {
@@ -7,23 +8,37 @@ public class BombMechanics : MonoBehaviour
     [SerializeField] GameObject explosionFX;
     [SerializeField] GameObject gameScene;
     private Vector3 gameSceneSpawnPt;
+    private bool canTargetBomb = true;
+
+    public static UnityEvent OpenGameAreaEvent = new UnityEvent();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameSceneSpawnPt = StageManager.Instance.gameplaySpawnPt.transform.position;
+        OpenGameAreaEvent.AddListener(DisableTargetting);
+        StageManager.CloseGameAreaEvent.AddListener(EnableTargetting);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    }
+    void DisableTargetting()
+    {
+        canTargetBomb = false;
+    }
+    void EnableTargetting()
+    {
+        canTargetBomb = true;
     }
     public void SelectBomb()
     {
+        if (!canTargetBomb) return;
         Debug.Log("Bomb has been selected.");
         StageManager.Instance.targetBomb = gameObject;
+        OpenGameAreaEvent.Invoke();
         OpenGameScene();
-        this.gameObject.GetComponent<Collider2D>().enabled = false;
     }
     void OpenGameScene()
     {
