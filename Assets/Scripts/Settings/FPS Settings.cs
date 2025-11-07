@@ -9,7 +9,7 @@ public class FPSSettings : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         Application.targetFrameRate = fps;
     }
-    private void Update() {
-        Debug.Log($"FrameRate: {fps}");    
-    }
+    // private void Update() {
+    //     Debug.Log($"FrameRate: {fps}");    
+    // }
 }

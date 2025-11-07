@@ -2,12 +2,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// transition animator for loading levels
+/// </summary>
 public class LevelLoader : MonoBehaviour
 {
     public static LevelLoader Instance;
 
     [SerializeField] private GameObject transitionAnimator;
     private Animator animator;
+    bool isTransitioning = false;
 
     // Flag to skip transitionIn on the first scene load
     private bool sceneLoaded = false;
@@ -37,15 +41,21 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLevel(string sceneName)
     {
+        if (isTransitioning) return;
+
         StartCoroutine(PlayTransition(sceneName));
     }
 
     private IEnumerator PlayTransition(string sceneName)
     {
+        isTransitioning = true;
+
         animator.SetTrigger("startTransition");
         yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene(sceneName);
+        yield return null;
+        isTransitioning = false;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

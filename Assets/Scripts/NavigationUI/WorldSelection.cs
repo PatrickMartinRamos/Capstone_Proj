@@ -2,12 +2,14 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
+/// <summary>
+/// Handles the selection and rotation of worlds in the navigation UI.
+/// </summary>
 public class WorldSelection : MonoBehaviour
 {
     [SerializeField] private string worldName;
     [SerializeField] private RectTransform stageSelectionTransform;
     [SerializeField] private float worldRotationSpeed;
-    [SerializeField] private bool isUnlocked, isSelected = false;
 
     public List<Transform> regions;
 
@@ -23,12 +25,12 @@ public class WorldSelection : MonoBehaviour
 
     public void OpenWorldStage(RectTransform stageTransform)
     {
-        stageSelectionTransform.DOAnchorPosY(945, 0.2f);
-    }   
+        stageSelectionTransform.DOAnchorPosY(900, 0.2f);
+    }
 
     public void CloseWorldStage(RectTransform stageTransform)
     {
-        stageSelectionTransform.DOAnchorPosY(-800, 0.2f);
+        stageSelectionTransform.DOAnchorPosY(3300, 0.2f);
     }
 
     public RectTransform OpenRectTransform()

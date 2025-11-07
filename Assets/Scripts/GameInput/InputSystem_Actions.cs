@@ -656,6 +656,15 @@ namespace CapstoneProj.GameInputSystem
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Space_Test"",
+                    ""type"": ""Button"",
+                    ""id"": ""c7dbfc1f-e16b-40d5-82b1-3a1c177186f3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1076,6 +1085,17 @@ namespace CapstoneProj.GameInputSystem
                     ""action"": ""TrackedDeviceOrientation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8fc87280-2fe8-4d33-aff8-c1d8a2050ace"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Space_Test"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -1296,6 +1316,7 @@ namespace CapstoneProj.GameInputSystem
             m_UI_ScrollWheel = m_UI.FindAction("ScrollWheel", throwIfNotFound: true);
             m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
             m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+            m_UI_Space_Test = m_UI.FindAction("Space_Test", throwIfNotFound: true);
             // TouchControls
             m_TouchControls = asset.FindActionMap("TouchControls", throwIfNotFound: true);
             m_TouchControls_Touch = m_TouchControls.FindAction("Touch", throwIfNotFound: true);
@@ -1579,6 +1600,7 @@ namespace CapstoneProj.GameInputSystem
         private readonly InputAction m_UI_ScrollWheel;
         private readonly InputAction m_UI_TrackedDevicePosition;
         private readonly InputAction m_UI_TrackedDeviceOrientation;
+        private readonly InputAction m_UI_Space_Test;
         /// <summary>
         /// Provides access to input actions defined in input action map "UI".
         /// </summary>
@@ -1630,6 +1652,10 @@ namespace CapstoneProj.GameInputSystem
             /// Provides access to the underlying input action "UI/TrackedDeviceOrientation".
             /// </summary>
             public InputAction @TrackedDeviceOrientation => m_Wrapper.m_UI_TrackedDeviceOrientation;
+            /// <summary>
+            /// Provides access to the underlying input action "UI/Space_Test".
+            /// </summary>
+            public InputAction @Space_Test => m_Wrapper.m_UI_Space_Test;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -1686,6 +1712,9 @@ namespace CapstoneProj.GameInputSystem
                 @TrackedDeviceOrientation.started += instance.OnTrackedDeviceOrientation;
                 @TrackedDeviceOrientation.performed += instance.OnTrackedDeviceOrientation;
                 @TrackedDeviceOrientation.canceled += instance.OnTrackedDeviceOrientation;
+                @Space_Test.started += instance.OnSpace_Test;
+                @Space_Test.performed += instance.OnSpace_Test;
+                @Space_Test.canceled += instance.OnSpace_Test;
             }
 
             /// <summary>
@@ -1727,6 +1756,9 @@ namespace CapstoneProj.GameInputSystem
                 @TrackedDeviceOrientation.started -= instance.OnTrackedDeviceOrientation;
                 @TrackedDeviceOrientation.performed -= instance.OnTrackedDeviceOrientation;
                 @TrackedDeviceOrientation.canceled -= instance.OnTrackedDeviceOrientation;
+                @Space_Test.started -= instance.OnSpace_Test;
+                @Space_Test.performed -= instance.OnSpace_Test;
+                @Space_Test.canceled -= instance.OnSpace_Test;
             }
 
             /// <summary>
@@ -2113,6 +2145,13 @@ namespace CapstoneProj.GameInputSystem
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "Space_Test" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnSpace_Test(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "TouchControls" which allows adding and removing callbacks.

@@ -16,7 +16,6 @@ public class shapeDragController : MonoBehaviour
         Vector2 touchPosition = InputManager.Instance.GetTouchPosition();
         bool isTouching = InputManager.Instance.IsTouching();
 
-        // 🛑 Block shape dragging if touching a UI element
         if (Input.touchCount > 0 && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
             return;
 
