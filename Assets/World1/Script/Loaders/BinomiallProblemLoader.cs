@@ -51,7 +51,7 @@ public class BinomiallProblemLoader : ProblemLoader
         if (answers.Count == 0)
         {
             var a = v.GetComponent<Shapes>().value;
-            var b = v.GetComponent<Shapes>().value;
+            var b = c.GetComponent<Shapes>().value;
             SolveForAnswer(a, b);
         }
 

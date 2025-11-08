@@ -19,13 +19,14 @@ public class StageManager : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject cannon;
-    public GameObject star;
     public GameObject bullet;
-    public GameObject targetBomb;
     public GameObject craftArea;
     public GameObject gameplaySpawnPt;
     public GameObject bulletCase;
     public GameObject ActiveGameArea;
+    public GameObject targetBomb;
+    public List<GameObject> StageBombs;
+
 
     [Header("ShapesList")]
     public GameObject variable;
@@ -42,8 +43,9 @@ public class StageManager : MonoBehaviour
     private float time; public float currentTime => time;
     public Slider timer;
     public TextMeshProUGUI NotificationText;
-    public GameObject CorrectAnswerPanel, WrongAnswerPanel;
-    public GameObject HelpPanel;
+    public GameObject correctAnswerPanel, WrongAnswerPanel;
+    public GameObject helpPanel;
+    public GameObject stageIndicatorLabel;
 
     public bool ShowCraftBox, craftBoxIsHidden=false, startGame = false;
 
@@ -65,7 +67,7 @@ public class StageManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+      //  stageIndicatorLabel.GetComponent<TextMeshProUGUI>().text = $"Stage {stageNumber}";
     }
 
     // Update is called once per frame
@@ -82,13 +84,11 @@ public class StageManager : MonoBehaviour
     public void StartSuccessSequence()
     {
         CloseGameAreaEvent.Invoke();
-        ActiveGameArea.SetActive(false);
-        bullet.SetActive(true);
-    }
-    public void OpenBulletCase()
-    {
-        bulletCase.transform.DOLocalMoveX(-6.6f, 0.2f, true);
-        bullet.transform.SetParent(cannon.transform);
+        Sequence seq = DOTween.Sequence();
+        seq.Append(ActiveGameArea.transform.DOLocalMoveY(1, 1f));
+        seq.Append(ActiveGameArea.transform.DOScale(Vector3.zero, 1f));
+        seq.Append(cannon.transform.DOPunchPosition(Vector3.down, 0.3f, 2));
+        seq.OnComplete(()=>bullet.SetActive(true));
     }
     public void StartGame()
     {

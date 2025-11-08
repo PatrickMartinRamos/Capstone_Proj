@@ -212,3 +212,5 @@ MonoBehaviour:
   value: 0
   originPos: {x: 0, y: 0, z: 0}
   interacted: []
+  origScaleSize: 0
+  valueLabel: {fileID: 0}

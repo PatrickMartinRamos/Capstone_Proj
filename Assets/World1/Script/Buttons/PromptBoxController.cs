@@ -15,7 +15,7 @@ public class PromptBoxController : MonoBehaviour
     }
     internal virtual void TriggerAction()
     {
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
     private void OnEnable()
     {

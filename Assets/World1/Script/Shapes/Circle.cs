@@ -25,6 +25,7 @@ public class Circle : Shapes
         }
 
         GameObject newShape = Instantiate(CombinedShape, spawnPt, Quaternion.identity);
+        newShape.GetComponent<Shapes>().AddValue(dragged.GetComponent<Shapes>().value, target.GetComponent<Shapes>().value);
         newShape.GetComponent<Shapes>().MoveToArea();
 
     }
@@ -34,6 +35,7 @@ public class Circle : Shapes
         {
             case Difficulty.normal:
                 value = Random.Range(1,10);
+                valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
                 break;
             case Difficulty.hard:
                 value = Random.Range(6, 15);

@@ -8,13 +8,14 @@ public class BombMechanics : MonoBehaviour
     [SerializeField] GameObject explosionFX;
     [SerializeField] GameObject gameScene;
     private Vector3 gameSceneSpawnPt;
-    private bool canTargetBomb = true;
+    private bool canTargetBomb = true, isNeutralized = false;
 
     public static UnityEvent OpenGameAreaEvent = new UnityEvent();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        StageManager.Instance.StageBombs.Add(gameObject);
         gameSceneSpawnPt = StageManager.Instance.gameplaySpawnPt.transform.position;
         OpenGameAreaEvent.AddListener(DisableTargetting);
         StageManager.CloseGameAreaEvent.AddListener(EnableTargetting);
@@ -23,6 +24,10 @@ public class BombMechanics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ((isNeutralized && !explosionFX.activeInHierarchy))
+        {
+            gameObject.SetActive(false);
+        }
     }
     void DisableTargetting()
     {
@@ -54,7 +59,7 @@ public class BombMechanics : MonoBehaviour
             // Create sequence properly
             Sequence seq = DOTween.Sequence();
             seq.Append(gameScene.transform.DOScale(1.4f, 0.3f))
-               .Append(gameScene.transform.DOScale(1.2f, 1f))
+               .Append(gameScene.transform.DOScale(1.1f, 1f))
                .OnComplete(() => gameScene.GetComponent<ProblemLoader>().LoadProblem());
         }
     }
@@ -78,7 +83,8 @@ public class BombMechanics : MonoBehaviour
         if (collision != null && collision.gameObject.name == "Bullet")
         {
             explosionFX.SetActive(true);
-            gameObject.SetActive(false);
+            isNeutralized = true;
+            collision.gameObject.SetActive(false);
         }
     }
 }

@@ -15,8 +15,29 @@ EditorBuildSettings:
     path: Assets/Scenes/World 1 Stages.unity
     guid: b8ba618af0be2c84a83f4513925eed84
   - enabled: 1
-    path: Assets/Scenes/Game Scene/World1_GameScene.unity
-    guid: c0029c4dbfc77644c84436dbd94d0355
+    path: Assets/World1/World1_GameScene.unity
+    guid: 370a74663ec34b04a83d9406d4de0364
+  - enabled: 1
+    path: Assets/World1/World1_Stage1.unity
+    guid: 1559e52bdc24e434e93c1d2f844c0687
+  - enabled: 1
+    path: Assets/World1/World1_Stage2.unity
+    guid: 3181dc44fe3012642ac1f3564aa5d3fc
+  - enabled: 1
+    path: Assets/World1/World1_Stage3.unity
+    guid: 28deb9735cf5a5b41a749bea1a394030
+  - enabled: 1
+    path: Assets/World1/World1_Stage4.unity
+    guid: 678ecc3b04fb2834cb3d74d6e34947f6
+  - enabled: 1
+    path: Assets/World1/World1_Stage5.unity
+    guid: d1f229174c2d6454e981b7cba9325c10
+  - enabled: 1
+    path: Assets/World1/World1_Stage6.unity
+    guid: b1cda2477cc20e54d9be58ab4beb6bec
+  - enabled: 1
+    path: Assets/World1/World1_Stage7.unity
+    guid: a38735a336aae984484501188018574a
   - enabled: 0
     path: Assets/Scenes/Game Scene/PlottingScene.unity
     guid: 2a508c72db5bf384ead127a8b61a2759

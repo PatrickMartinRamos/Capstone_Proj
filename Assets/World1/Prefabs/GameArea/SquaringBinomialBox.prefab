@@ -423,7 +423,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 893237965
+  m_SortingLayerID: -526302991
   m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &8024480631563921323
@@ -851,8 +851,8 @@ Transform:
   m_GameObject: {fileID: 2581674105859793645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0238, y: -0.41, z: 0.2347}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalPosition: {x: 0.0238, y: -1, z: 0.2347}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3633057101032224074}
@@ -2049,7 +2049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: -1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3494,6 +3494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2559055596979711486}
   - component: {fileID: 8904610431193787822}
+  - component: {fileID: 3134841509850103361}
   m_Layer: 0
   m_Name: CannonShellCase
   m_TagString: Untagged
@@ -3572,6 +3573,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3134841509850103361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933264931595497273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfe0200ce182cc418e4c36e2339eea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPlaceholder: {fileID: 3765560318715589071}
 --- !u!1 &8957181732079455764
 GameObject:
   m_ObjectHideFlags: 0

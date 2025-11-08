@@ -29,6 +29,7 @@ public class Square : Shapes
         }
 
         GameObject newShape = Instantiate(CombinedShape, spawnPt, Quaternion.identity);
+        newShape.GetComponent<Shapes>().AddValue(dragged.GetComponent<Shapes>().value, target.GetComponent<Shapes>().value);
         newShape.GetComponent<Shapes>().MoveToArea();
 
     }
@@ -38,6 +39,7 @@ public class Square : Shapes
         {
             case Difficulty.normal:
                 value = 1;
+                valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
                 break;
             case Difficulty.hard:
                 int stageLevel = PlayerPrefs.GetInt("StageID");

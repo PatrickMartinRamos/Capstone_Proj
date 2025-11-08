@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 1105793337
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -73,6 +76,12 @@ TagManager:
     locked: 0
   - name: fishLayer
     uniqueID: 760743133
+    locked: 0
+  - name: Interactables
+    uniqueID: 3768664305
+    locked: 0
+  - name: ForeGround
+    uniqueID: 3278151447
     locked: 0
   m_RenderingLayers:
   - Default

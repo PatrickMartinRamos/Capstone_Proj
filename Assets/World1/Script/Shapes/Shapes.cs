@@ -100,6 +100,15 @@ public class Shapes : MonoBehaviour, ITargetable
             valueLabel.SetActive(true);
         }
     }
+    public void AddValue(int val1, int val2)
+    {
+        value = val1 * val2;
+        withValue = true;
+        valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+
+        if (StageManager.Instance.problem.stageDifficulty!=Difficulty.easy)
+        valueLabel.SetActive(true);
+    }
     public virtual void AddValue(Difficulty difficulty)
     {
         withValue = true;
