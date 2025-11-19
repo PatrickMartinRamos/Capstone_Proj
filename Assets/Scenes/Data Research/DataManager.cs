@@ -43,8 +43,14 @@ public class DataManager : MonoBehaviour
 
         // Always pull fresh data from Google Sheets
         Debug.Log($"Downloading cloud data for {currentUser}...");
-        SyncCloudData(currentUser);
-    }
+        
+
+        SyncCloudData(currentUser, null, cloudData =>
+        {
+            if (cloudData != null)
+                Debug.Log("Cloud data loaded in Start(): " + cloudData.playerName);
+        });
+    }   
 
     /// <summary>
     /// Downloads cloud data for the player and handles a scene-specific loading image

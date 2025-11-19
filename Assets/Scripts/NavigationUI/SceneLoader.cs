@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using UnityEngine;
 
 public class SceneLoader : MonoBehaviour
@@ -6,26 +7,18 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
+
+    }
+
+    public void test()
+    {
         if (DataManager.Instance == null)
         {
             Debug.LogError("DataManager instance not found");
             return;
         }
 
-        // Wait until cloud data is loaded
-        DataManager.Instance.SyncCloudData(null, loadingImage, cloudData =>
-        {
-            if (cloudData == null)
-            {
-                Debug.LogError("Failed to load player data");
-                return;
-            }
-
-            string playerName = cloudData.playerName;
-            Debug.Log("Player name is: " + playerName);
-
-            // Do anything else that depends on playerName here
-        });
+        Debug.Log(DataManager.Instance.GetCurrentData().playerName);
     }
 
 }

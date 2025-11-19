@@ -302,8 +302,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<align=center><size=80> <b>How To Play:</b></size></align>\n\n\n4. Keep
     combining until you get the required shape.\n\n\n <align=center><b>Have fun and
-    enjoy the game.</b></center>\n\n\n\n\n\n\n\n\n<i><size=0.8em><align=center>Touch
-    Screen to Close</align></size></i>"
+    enjoy the game.</b>\n\n\n\n\n\n\n\n<i><size=0.8em><align=center>Touch Screen
+    to Close</align></size></i>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
   m_sharedMaterial: {fileID: -5212519863517009721, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
