@@ -28,9 +28,9 @@ public class TimerMechanics : MonoBehaviour
     {
         currentTime = Mathf.Clamp(currentTime-Time.deltaTime, 0, StageManager.Instance.timeLimit);
         StageManager.Instance.timer.value = currentTime;
-        if(currentTime == 0)
+        if(currentTime == 0 && StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().bombExploded == false)
         {
-            StageManager.Instance.WrongAnswerPanel.SetActive(true);
+            StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().ExplodeBomb();
         }
     }
 }

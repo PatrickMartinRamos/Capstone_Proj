@@ -32,6 +32,8 @@ public class Shapes : MonoBehaviour, ITargetable
     [SerializeField] internal GameObject valueLabel;
     internal bool isGiven = false;
 
+    protected GameObject initParent;
+
     public string ID => iD;
 
     void Start()
@@ -42,6 +44,7 @@ public class Shapes : MonoBehaviour, ITargetable
         origScaleSize = transform.localScale.x;
         if (StageManager.Instance.StageNumber % 3 == 1) withValue = false;
         if(!withValue) valueLabel.SetActive(false);
+        initParent = transform.parent.gameObject;
     }
 
     // Update is called once per frame
@@ -100,18 +103,37 @@ public class Shapes : MonoBehaviour, ITargetable
             valueLabel.SetActive(true);
         }
     }
+    private List<int> valList;
+    private int currentIndex = 0;
     public void AddValue(int val1, int val2)
     {
-        value = val1 * val2;
-        withValue = true;
-        valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+        if (StageManager.Instance.problem.stageDifficulty != Difficulty.hard)
+        {
+            value = val1 * val2;
+            withValue = true;
+            valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
 
-        if (StageManager.Instance.problem.stageDifficulty!=Difficulty.easy)
-        valueLabel.SetActive(true);
+            if (StageManager.Instance.problem.stageDifficulty != Difficulty.easy)
+                valueLabel.SetActive(true);
+        }
+        else
+        {
+            int[] valSet= new int[] { Random.Range(1, 6), val1 * val2, Random.Range(1, 9) };
+            valList = new List<int>(valSet);
+            ShuffleList(valList);   // randomize order
+        }
+
     }
     public virtual void AddValue(Difficulty difficulty)
     {
         withValue = true;
+    }
+    public virtual void AddQuotientValue(int val)
+    {
+        value = val;
+        withValue = true;
+        valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+        valueLabel.SetActive(true);
     }
     public void AddInteractedShape(string iD)
     {
@@ -186,5 +208,37 @@ public class Shapes : MonoBehaviour, ITargetable
 
         return sb.ToString();
     }
+    public void returnToInitParent()
+    {
+        transform.parent = initParent.transform;
+        transform.localPosition = originPos;
+        FixScale();
+    }
+    // Fisher–Yates shuffle
+    private void ShuffleList(List<int> list)
+    {
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int rand = Random.Range(0, i + 1);
+            int temp = list[i];
+            list[i] = list[rand];
+            list[rand] = temp;
+        }
+    }
+
+    // Call this function to get one value each time
+    public int GetNextValue()
+    {
+        if (currentIndex >= valList.Count)
+        {
+            Debug.LogWarning("All values already used!");
+            return -1;
+        }
+
+        int nextValue = valList[currentIndex];
+        currentIndex++;             // move to next
+        return nextValue;
+    }
 
 }
+

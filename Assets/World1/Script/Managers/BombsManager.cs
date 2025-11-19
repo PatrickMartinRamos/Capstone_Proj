@@ -20,13 +20,14 @@ public class BombsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (neutralizedBombs == launchedBombs.Count)
+        if (neutralizedBombs == launchedBombs.Count && !StageManager.Instance.correctAnswerPanel.activeInHierarchy)
         {
             StageManager.Instance.correctAnswerPanel.SetActive(true);
             int score = 0;
             if (StageManager.Instance.currentTime >= StageManager.Instance.timeLimit / 2) score = 3;
             else score = StageManager.Instance.currentTime >= StageManager.Instance.timeLimit*(1/3)? 2 : 1;
                 StageManager.Instance.correctAnswerPanel.GetComponentInChildren<Slider>().value = score;
+
         }
     }
     public bool RegisterBomb(GameObject bomb)

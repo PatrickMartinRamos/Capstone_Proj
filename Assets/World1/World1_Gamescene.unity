@@ -460,6 +460,7 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 0}
   isSceneChanger: 0
+  isStageChanger: 0
   sceneName: 
 --- !u!114 &336432597
 MonoBehaviour:
@@ -1160,6 +1161,7 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 775876947}
   isSceneChanger: 1
+  isStageChanger: 0
   sceneName: World1_GameScene
 --- !u!114 &775876950
 MonoBehaviour:
@@ -1994,6 +1996,7 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 789923353}
   isSceneChanger: 0
+  isStageChanger: 0
   sceneName: 
 --- !u!225 &1049896101
 CanvasGroup:
@@ -2426,6 +2429,7 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 2130397798}
   isSceneChanger: 0
+  isStageChanger: 0
   sceneName: 
 --- !u!114 &1197225389
 MonoBehaviour:
@@ -3604,6 +3608,7 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 1777467096}
   isSceneChanger: 1
+  isStageChanger: 0
   sceneName: WorldSelection
 --- !u!114 &1777467099
 MonoBehaviour:
@@ -4224,6 +4229,7 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 0}
   isSceneChanger: 0
+  isStageChanger: 0
   sceneName: 
 --- !u!114 &1943864232
 MonoBehaviour:

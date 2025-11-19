@@ -6,12 +6,13 @@ using UnityEngine.Events;
 
 public class BombMechanics : MonoBehaviour
 {
-    [SerializeField] ProblemType problemType;
-    [SerializeField] GameObject explosionFX;
+    [SerializeField] public ProblemType problemType;
+    [SerializeField] GameObject explosionFX, bigExplosionFX, inactiveFX;
     [SerializeField] GameObject gameScene;
     private BombsManager bombsManager;
     private Vector3 gameSceneSpawnPt;
     private bool canTargetBomb = true, isNeutralized = false, isRegistered;
+    public bool bombExploded = false;
 
     public static UnityEvent OpenGameAreaEvent = new UnityEvent();
 
@@ -29,10 +30,7 @@ public class BombMechanics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((isNeutralized && !explosionFX.activeInHierarchy))
-        {
-            gameObject.SetActive(false);
-        }
+
     }
     void DisableTargetting()
     {
@@ -45,7 +43,7 @@ public class BombMechanics : MonoBehaviour
     public void SelectBomb()
     {
         // return if bomb cannot be targetted
-        if (!canTargetBomb) return;
+        if (!canTargetBomb || isNeutralized) return;
 
         // selection prompt
         Debug.Log("Bomb has been selected.");
@@ -99,16 +97,32 @@ public class BombMechanics : MonoBehaviour
     {
         explosionFX.SetActive(true);
         bullet.SetActive(false);
-        StartCoroutine(WaitForExplosionToFinish());        
+        StartCoroutine(WaitForExplosionToFinish(explosionFX.GetComponent<ParticleSystem>()));        
     }
-    IEnumerator WaitForExplosionToFinish()
-    {
-        ParticleSystem ps = explosionFX.GetComponent<ParticleSystem>();
 
+    public void ExplodeBomb()
+    {
+        StageManager.Instance.ActiveGameArea.SetActive(false);
+        bigExplosionFX.SetActive(true);
+        StartCoroutine(WaitForBigExplosionToFinish(bigExplosionFX.GetComponent<ParticleSystem>()));
+        bombExploded = true;
+
+    }
+    IEnumerator WaitForExplosionToFinish(ParticleSystem ps)
+    {
         // Wait until the particle system is completely done
         yield return new WaitUntil(() => !ps.IsAlive(true));
 
         isNeutralized = true;
         bombsManager.AddNeutralized();
+        gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
+        inactiveFX.SetActive(true);
+    }
+    IEnumerator WaitForBigExplosionToFinish(ParticleSystem ps)
+    {
+        // Wait until the particle system is completely done
+        yield return new WaitUntil(() => !ps.IsAlive(true));
+
+        StageManager.Instance.WrongAnswerPanel.SetActive(true);
     }
 }

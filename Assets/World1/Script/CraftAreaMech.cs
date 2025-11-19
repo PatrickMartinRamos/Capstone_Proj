@@ -15,8 +15,14 @@ public class CraftAreaMech : MonoBehaviour, ITargetable
     }
     public void InteractWithDraggedObject(GameObject draggedObject)
     {
-        if (StageManager.Instance.ActiveGameArea.GetComponent<BinomiallProblemLoader>() && (draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Square 
-            || draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle)) return;
+        if (StageManager.Instance.ActiveGameArea.GetComponent<BinomiallProblemLoader>() && (draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Square
+            || draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle))
+        {
+            draggedObject.GetComponent<Shapes>().returnToInitParent();
+            return;
+        }
+        else if (draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Scissors)
+            return;
 
         if (draggedObject.transform.parent != this)
             draggedObject.transform.SetParent(transform, true);

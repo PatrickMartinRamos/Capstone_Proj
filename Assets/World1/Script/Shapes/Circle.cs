@@ -120,19 +120,80 @@ public class Circle : Shapes
     }
     public override void AddValue(Difficulty difficulty)
     {
-        switch (difficulty)
+        if(StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.squaringBinomial)
         {
-            case Difficulty.normal:
-                value = Random.Range(1, 10);
-                valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
-                break;
-            case Difficulty.hard:
-                value = Random.Range(6, 15);
-                valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
-                valueLabel.SetActive(true);
-                break;
+            switch (difficulty)
+            {
+                case Difficulty.normal:
+                    value = Random.Range(1, 10);
+                    valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+                    break;
+                case Difficulty.hard:
+                    value = Random.Range(6, 15);
+                    valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+                    valueLabel.SetActive(true);
+                    break;
+            }
+            base.AddValue(difficulty);
         }
-        base.AddValue(difficulty);
+        else if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType
+                 == ProblemType.radicals)
+        {
+            switch (difficulty)
+            {
+                case Difficulty.easy:
+                    value = 8;
+                    valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+                    valueLabel.SetActive(true);
+                    break;
+
+                case Difficulty.normal:
+                    value = GetRandomNonPrime(10, 30);   
+                    valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+                    valueLabel.SetActive(true);
+                    break;
+
+                case Difficulty.hard:
+                    value = GetRandomNonPrime(30, 80);   
+                    valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+                    valueLabel.SetActive(true);
+                    break;
+            }
+
+            base.AddValue(difficulty);
+        }
 
     }
+    private int GetRandomNonPrime(int min, int max) // max is exclusive
+    {
+        int num;
+
+        do
+        {
+            num = Random.Range(min, max);
+        }
+        while (IsPrime(num));
+
+        return num;
+    }
+
+    private bool IsPrime(int n)
+    {
+        if (n <= 1) return false;          // 0,1,negative are non-prime
+        if (n == 2) return true;
+
+        // Even numbers >2 are non-prime
+        if (n % 2 == 0) return false;
+
+        int boundary = Mathf.FloorToInt(Mathf.Sqrt(n));
+        for (int i = 3; i <= boundary; i += 2)
+        {
+            if (n % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+
+
 }

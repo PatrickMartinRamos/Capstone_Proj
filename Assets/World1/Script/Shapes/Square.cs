@@ -153,4 +153,5 @@ public class Square : Shapes
         base.AddValue(difficulty);
 
     }
+
 }

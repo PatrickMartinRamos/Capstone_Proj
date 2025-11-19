@@ -35,8 +35,7 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
             Debug.Log("Dragged Into: Verifier" + " \nDragged Object: " + this.gameObject.name);
             draggedObject.transform.SetParent(transform,false);
         }
-        draggedObject.GetComponent<Shapes>().ChangeOriginPos(new Vector3(0, 0, 0));
-        draggedObject.GetComponent<Shapes>().RevertPosition();
+        draggedObject.transform.localPosition = Vector3.zero;
         verificationIndicator.color = Color.yellow;
         draggedObject.GetComponent<Shapes>().FixScale(2f);
     }
@@ -49,7 +48,12 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
         submittedAns = embedShape != null ? embedShape.GetComponent<Shapes>().value : 0;
         if (embedShapeClass == correctShape)
         {
-
+            if(StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.radicals 
+                && StageManager.Instance.problem.stageDifficulty == Difficulty.easy)
+            {
+                verificationIndicator.color = correct;
+                return true;
+            }
             if (submittedAns == answer)
             {
                 Debug.Log("All Correct.");

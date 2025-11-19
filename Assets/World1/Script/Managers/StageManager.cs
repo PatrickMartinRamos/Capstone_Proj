@@ -52,7 +52,9 @@ public class StageManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] public AudioSource audioSrc;
 
-    public bool ShowCraftBox, craftBoxIsHidden=false, startGame = false;
+    public bool isPlaying = false;
+    public float playTimer;
+
 
     // Singleton Instance
     public static StageManager Instance { get; private set; }
@@ -92,26 +94,19 @@ public class StageManager : MonoBehaviour
 
         Sequence seq = DOTween.Sequence();
         seq.Append(ActiveGameArea.transform.DOLocalMoveY(1, 1f));
-        seq.Append(ActiveGameArea.transform.DOLocalMoveY(-10, 1f));
+        seq.Append(ActiveGameArea.transform.DOLocalMoveY(-15, 1f));
         seq.Append(cannon.transform.DOPunchPosition(Vector3.down, 0.3f, 2));
-        seq.OnComplete(() => bullet.SetActive(true));
-
-        ActiveGameArea.SetActive(false);
+        seq.OnComplete(() => { bullet.SetActive(true); ActiveGameArea.SetActive(false);
+        });
     }
-    private void moveCraftBox()
-    {
 
-    }
     public void StartGame()
     {
-        startGame = true;
+        isPlaying = true;
     }
     public void DeductTime(float deduction)
     {
         timer.GetComponent<TimerMechanics>().DeductTime(deduction);
     }
-    public void OpenWrongAnswerPanel()
-    {
-        WrongAnswerPanel.SetActive(true);
-    }
+
 }
