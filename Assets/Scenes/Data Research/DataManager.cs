@@ -1,15 +1,15 @@
 using UnityEngine;
-using System.IO;
+using System;
 using UnityEngine.UI;
+
 public class DataManager : MonoBehaviour
 {
     public static DataManager Instance;
 
     private DataLoader dataLoader;
-    private PlayerSaveData currentData; 
-    [SerializeField] private GameObject loadingImage;
-    
-    void Awake()
+    private PlayerSaveData currentData;
+
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -19,13 +19,13 @@ public class DataManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            return;
         }
     }
 
-    void Start()
+    private void Start()
     {
         dataLoader = DataLoader.instance;
+
         if (dataLoader == null)
         {
             Debug.LogWarning("⚠️ DataLoader instance not found. DataManager will not load.");
@@ -40,34 +40,39 @@ public class DataManager : MonoBehaviour
             Debug.Log("ℹ No logged-in user found. Waiting for new player creation...");
             return;
         }
-        if (loadingImage != null)
-            loadingImage.SetActive(true);
+
         // Always pull fresh data from Google Sheets
         Debug.Log($"Downloading cloud data for {currentUser}...");
-        dataLoader.Sync.DownloadFromGoogleSheet(currentUser, cloudData =>
+        SyncCloudData(currentUser);
+    }
+
+    /// <summary>
+    /// Downloads cloud data for the player and handles a scene-specific loading image
+    /// </summary>
+    public void SyncCloudData(string playerName, GameObject sceneLoadingImage = null, Action<PlayerSaveData> onComplete = null)
+    {
+        if (sceneLoadingImage != null)
+            sceneLoadingImage.SetActive(true);
+
+        dataLoader.Sync.DownloadFromGoogleSheet(playerName, cloudData =>
         {
-            // If this MonoBehaviour was destroyed while the async request was in-flight, bail out.
             if (this == null) return;
+
+            if (sceneLoadingImage != null)
+                sceneLoadingImage.SetActive(false);
 
             if (cloudData != null)
             {
                 currentData = cloudData;
-                if (loadingImage != null)
-                    loadingImage.SetActive(false);
-                Debug.Log($" Loaded data from Google Sheets for {currentData.playerName}");
-                Debug.Log($" Level: {currentData.stageLevel}, \nScore: {currentData.stageScore}, \nTime: {currentData.playTime:F1}s");
-            }
-            else
-            {
-                if (loadingImage != null)
-                    loadingImage.SetActive(false);
+                Debug.Log($"Loaded data from Google Sheets for {currentData.playerName}");
             }
 
+            onComplete?.Invoke(cloudData);
         });
     }
 
     // ------------------ SAVE + UPLOAD ------------------
-    public void SaveData(int stageLevel, int stageScore, float playTime)
+    public void SaveData(int stageLevel, int stageScore, float playTime, GameObject sceneLoadingImage = null)
     {
         if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
         {
@@ -79,12 +84,10 @@ public class DataManager : MonoBehaviour
         currentData.stageScore = stageScore;
         currentData.playTime = playTime;
 
-        Debug.Log($"Updated data for {currentData.playerName}: Level {stageLevel}, Score {stageScore}, Time {playTime:F1}s");
-        UploadToGoogleSheets();
+        UploadToGoogleSheets(sceneLoadingImage);
     }
 
-    // ------------------ UPLOAD ------------------
-    public void UploadToGoogleSheets()
+    public void UploadToGoogleSheets(GameObject sceneLoadingImage = null)
     {
         if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
         {
@@ -92,9 +95,15 @@ public class DataManager : MonoBehaviour
             return;
         }
 
+        if (sceneLoadingImage != null)
+            sceneLoadingImage.SetActive(true);
+
         Debug.Log($"⬆️ Uploading {currentData.playerName} to Google Sheets...");
         dataLoader.Sync.UploadToGoogleSheet(currentData, success =>
         {
+            if (sceneLoadingImage != null)
+                sceneLoadingImage.SetActive(false);
+
             if (success)
                 Debug.Log($"Successfully uploaded {currentData.playerName} data.");
             else
@@ -102,24 +111,24 @@ public class DataManager : MonoBehaviour
         });
     }
 
-    // ------------------ TEST BUTTON ------------------
-    [ContextMenu("🧪 Test Update and Upload to Cloud Data")]
-    public void TestUpdateCloudData()
-    {
-        
-        if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
-        {
-            Debug.LogWarning("No current user to test update.");
-            return;
-        }
-        //give random data for  the current log in user
-        currentData.stageScore += Random.Range(10, 50);
-        currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
-        currentData.playTime += Random.Range(60f, 300f);
-        
-        Debug.Log($"Testing update for {currentData.playerName}...");
-        UploadToGoogleSheets();
-    }
+    // ------------------ TEST METHODS ------------------
+    // [ContextMenu("🧪 Test Update and Upload")]
+    // public void TestUpdateCloudData(GameObject sceneLoadingImage = null)
+    // {
+    //     if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
+    //     {
+    //         Debug.LogWarning("No current user to test update.");
+    //         return;
+    //     }
+
+    //     // Randomly update current data
+    //     currentData.stageScore += UnityEngine.Random.Range(10, 50);
+    //     currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
+    //     currentData.playTime += UnityEngine.Random.Range(60f, 300f);
+
+    //     Debug.Log($"Testing update for {currentData.playerName}...");
+    //     UploadToGoogleSheets(sceneLoadingImage);
+    // }
 
     // ------------------ GETTER ------------------
     public PlayerSaveData GetCurrentData() => currentData;

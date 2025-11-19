@@ -1,12 +1,15 @@
 using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreateUser : MonoBehaviour
 {
     [SerializeField] private TMP_InputField playerNameInputField;
     [SerializeField] private TextMeshProUGUI greetingText;
     [SerializeField] private GameObject playBtn;
+    [SerializeField] private Button createAccountBtn;
     DataLoader dataLoader;
     //SaveManager saveManager;
 
@@ -46,6 +49,11 @@ public class CreateUser : MonoBehaviour
 
     public void OnSubmitPlayerName()
     {
+        if(greetingText.text == "Loading...") {
+            createAccountBtn.interactable = false;
+            return;
+        }
+
         string playerName = playerNameInputField.text.Trim();
         if (!string.IsNullOrEmpty(playerName))
         {
@@ -56,12 +64,14 @@ public class CreateUser : MonoBehaviour
             {
                 if (success)
                 {
+                    createAccountBtn.interactable = false;
                     greetingText.text = $"Welcome, {playerName}!";
                     playBtn.SetActive(true);
-                    DOVirtual.DelayedCall(1f, CloseCreateUserPanel); // wait a bit before closing
+                    DOVirtual.DelayedCall(1f, CloseCreateUserPanel); // wait a bit before closing          
                 }
                 else
                 {
+                    createAccountBtn.interactable = true;
                     greetingText.text = "Upload failed. Try again.";
                     playBtn.SetActive(false);
                     playerNameInputField.interactable = true;
