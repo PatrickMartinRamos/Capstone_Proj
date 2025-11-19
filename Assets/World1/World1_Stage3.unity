@@ -182,7 +182,7 @@ MonoBehaviour:
   squaredConstant: {fileID: 5270895313945380865, guid: 8904a00829aa7634ab92cb77ef9eb4f4, type: 3}
   product: {fileID: 4744246010910942730, guid: 59aea8df97e0f1b43b43e430068efb4d, type: 3}
   problem: {fileID: 0}
-  timeLimit: 60
+  timeLimit: 80
   currentTime: 0
   timer: {fileID: 0}
   NotificationText: {fileID: 748655240}
