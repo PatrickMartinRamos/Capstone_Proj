@@ -102,24 +102,40 @@ public class DataManager : MonoBehaviour
         });
     }
 
-    // ------------------ TEST BUTTON ------------------
-    [ContextMenu("🧪 Test Update and Upload to Cloud Data")]
-    public void TestUpdateCloudData()
+    //called by other scripts to update data and upload
+    public void test(int _stageLVL, int _stageScore, float _playTime)
     {
-        
-        if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
+        if(currentData == null || string.IsNullOrEmpty(currentData.playerName))
         {
-            Debug.LogWarning("No current user to test update.");
+            Debug.LogWarning("No valid current user to save.");
             return;
         }
-        //give random data for  the current log in user
-        currentData.stageScore += Random.Range(10, 50);
-        currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
-        currentData.playTime += Random.Range(60f, 300f);
-        
-        Debug.Log($"Testing update for {currentData.playerName}...");
+
+        currentData.stageLevel = _stageLVL;
+        currentData.stageScore = _stageScore;
+        currentData.playTime = _playTime;
+
         UploadToGoogleSheets();
     }
+
+    // ------------------ TEST BUTTON ------------------
+    // [ContextMenu("🧪 Test Update and Upload to Cloud Data")]
+    // public void TestUpdateCloudData()
+    // {
+        
+    //     if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
+    //     {
+    //         Debug.LogWarning("No current user to test update.");
+    //         return;
+    //     }
+    //     //give random data for  the current log in user
+    //     currentData.stageScore += Random.Range(10, 50);
+    //     currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
+    //     currentData.playTime += Random.Range(60f, 300f);
+        
+    //     Debug.Log($"Testing update for {currentData.playerName}...");
+    //     UploadToGoogleSheets();
+    // }
 
     // ------------------ GETTER ------------------
     public PlayerSaveData GetCurrentData() => currentData;
