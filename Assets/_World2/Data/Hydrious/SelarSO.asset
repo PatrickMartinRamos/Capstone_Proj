@@ -17,3 +17,10 @@ MonoBehaviour:
   _hydrionEnergyAmountGiven: 125
   _color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   _prefab: {fileID: 5861155049555676598, guid: 1278e6b1aa06f8f4aa4654072f995544, type: 3}
+  _mutatedSpriteLeft: {fileID: 6345175787511983153, guid: 0832d6526a4b6b94c913771f2498ec86, type: 3}
+  _mutatedSpriteRight: {fileID: 8048231659193131937, guid: 3432413d98567244583dc68d247c1692, type: 3}
+  _dizzySpriteLeft: {fileID: 6105307388213568257, guid: 7e083bb67e33ed247b5378fceb3c9edd, type: 3}
+  _dizzySpriteRight: {fileID: 7555814641530489877, guid: c988fe03140569d4d855c63e0974cc2a, type: 3}
+  _cleansedSpriteLeft: {fileID: -3690881853160170086, guid: 7f4f7cc26ee428e49bb7d8939aea3d43, type: 3}
+  _cleansedSpriteRight: {fileID: -3690881853160170086, guid: 3ca1ce08708d0284c9e338ea781d72f1, type: 3}
+  _xraySprite: {fileID: 2976357375808794516, guid: 77ad599a55574e44aa509e40f7c2c2fe, type: 3}

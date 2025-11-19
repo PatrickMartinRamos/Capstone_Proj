@@ -6,26 +6,47 @@ namespace Stellarfarer
     {
         [SerializeField] private Species _species;
         [SerializeField] private CleansingType _cleansingType;
-        [SerializeField] private float _hydrionEnergyAmountGiven;
+        [SerializeField] private int _hydrionEnergyAmountGiven;
         [SerializeField] private Color _color;
-        [SerializeField] private Transform _prefab;
+        [SerializeField] private RectTransform _prefab;
+        [SerializeField] private Sprite _mutatedSpriteLeft;
+        [SerializeField] private Sprite _mutatedSpriteRight;
+        [SerializeField] private Sprite _dizzySpriteLeft;
+        [SerializeField] private Sprite _dizzySpriteRight;
+        [SerializeField] private Sprite _cleansedSpriteLeft;
+        [SerializeField] private Sprite _cleansedSpriteRight;
+        [SerializeField] private Sprite _xraySprite;
 
         public Species Species
             => _species;
         public CleansingType CleansingType
             => _cleansingType;
-        public float HydrionEnergyAmountGiven
+        public int HydrionEnergyAmountGiven
             => _hydrionEnergyAmountGiven;
         public Color Color
             => _color;
-        public Transform Prefab
+        public RectTransform Prefab
             => _prefab;
+        public Sprite MutatedSpriteLeft
+            => _mutatedSpriteLeft;
+        public Sprite MutatedSpriteRight
+            => _mutatedSpriteRight;
+        public Sprite DizzySpriteLeft
+            => _dizzySpriteLeft;
+        public Sprite DizzySpriteRight
+            => _dizzySpriteRight;
+        public Sprite CleansedSpriteLeft
+            => _cleansedSpriteLeft;
+        public Sprite CleansedSpriteRight
+            => _cleansedSpriteRight;
+        public Sprite XRaySprite
+            => _xraySprite;
 
 #if UNITY_EDITOR
         public void UpdateSO(
             Species species,
             CleansingType cleansingType,
-            float hydrionEnergyAmountGiven,
+            int hydrionEnergyAmountGiven,
             Color color)
         {
             if (!CompareSpecies(species))

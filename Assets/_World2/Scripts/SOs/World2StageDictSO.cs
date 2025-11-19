@@ -1,10 +1,14 @@
+using System.Collections.Generic;
+using AYellowpaper.SerializedCollections;
+using UnityEngine;
+
 namespace Stellarfarer
 {
-    public class World2StageDictSO : UnityEngine.ScriptableObject
+    public class World2StageDictSO : ScriptableObject
     {
-        [UnityEngine.SerializeField] private SerializedDictionary<int, World2StageSO> _world2StageSODict = new();
+        [SerializeField] private SerializedDictionary<int, World2StageSO> _world2StageSODict = new();
 
-        public System.Collections.Generic.IReadOnlyDictionary<int, World2StageSO> World2StageSODict
+        public IReadOnlyDictionary<int, World2StageSO> World2StageSODict
             => _world2StageSODict;
 
 #if UNITY_EDITOR

@@ -1,0 +1,11 @@
+﻿Number,Cleansing Type,Hydrion Energy Amount Requried,SpawnTime
+1,Plotting,125,30
+2,Plotting,250,30
+3,Midpoint,225,60
+4,Midpoint,300,60
+5,Distance,250,120
+6,Distance,300,120
+7,Plotting|Midpoint,350,60
+8,Plotting|Distance,300,120
+9,Midpoint|Distance,350,120
+10,Plotting|Midpoint|Distance,500,120

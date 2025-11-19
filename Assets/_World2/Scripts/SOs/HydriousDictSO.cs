@@ -1,10 +1,14 @@
+using System.Collections.Generic;
+using AYellowpaper.SerializedCollections;
+using UnityEngine;
+
 namespace Stellarfarer
 {
-    public class HydriousDictSO : UnityEngine.ScriptableObject
+    public class HydriousDictSO : ScriptableObject
     {
-        [UnityEngine.SerializeField] private SerializedDictionary<Species, HydriousSO> _hydriousSODict = new();
+        [SerializeField] private SerializedDictionary<Species, HydriousSO> _hydriousSODict = new();
 
-        public System.Collections.Generic.IReadOnlyDictionary<Species, HydriousSO> HydriousSODict
+        public IReadOnlyDictionary<Species, HydriousSO> HydriousSODict
             => _hydriousSODict;
 
 #if UNITY_EDITOR
@@ -23,7 +27,7 @@ namespace Stellarfarer
             {
                 if (!species.IsSingleFlag())
                 {
-                    UnityEngine.Debug.LogError($"Indexer only supports a single species flag, not multiple ({species}).");
+                    Debug.LogError($"Indexer only supports a single species flag, not multiple ({species}).");
                     return null;
                 }
 
@@ -33,7 +37,7 @@ namespace Stellarfarer
             {
                 if (!species.IsSingleFlag())
                 {
-                    UnityEngine.Debug.LogError($"Indexer only supports a single species flag, not multiple ({species}).");
+                    Debug.LogError($"Indexer only supports a single species flag, not multiple ({species}).");
                     return;
                 }
 
@@ -41,12 +45,31 @@ namespace Stellarfarer
             }
         }
 
+        public HydriousSO[] GetHydriousSOArrayByCleansingType(CleansingType cleansingType)
+        {
+            if (_hydriousSODict == null || _hydriousSODict.Count == 0)
+                return null;
+
+            List<HydriousSO> hydriousSOList = new();
+
+            foreach (var cleaningTypeSingle in cleansingType.GetFlags())
+            {
+                foreach (HydriousSO hydriousSO in _hydriousSODict.Values)
+                {
+                    if (hydriousSO.CompareCleansingType(cleaningTypeSingle))
+                        hydriousSOList.Add(hydriousSO);
+                }
+            }
+
+            return hydriousSOList.ToArray();
+        }
+
         public HydriousSO[] GetHydriousSOArrayBySpecies(Species species)
         {
             if (_hydriousSODict == null || _hydriousSODict.Count == 0)
                 return null;
 
-            System.Collections.Generic.List<HydriousSO> hydriousSOList = new();
+            List<HydriousSO> hydriousSOList = new();
 
             foreach (var speciesSingle in species.GetFlags())
             {
@@ -54,7 +77,7 @@ namespace Stellarfarer
                     hydriousSOList.Add(hydriousSO);
                 else
                 {
-                    UnityEngine.Debug.LogError($"[HydriousListSO] Species {speciesSingle} not found in dictionary.");
+                    Debug.LogError($"[HydriousDictSO] Cleansing Type {speciesSingle} not found in dictionary.");
                     break;
                 }
             }

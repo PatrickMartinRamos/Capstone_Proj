@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _number: 2
   _cleansingType: 1
-  _species: 1
-  _hydrionEnergyAmountRequired: 125
-  _spawnTime: 15
+  _hydrionEnergyAmountRequired: 250
+  _spawnTime: 30

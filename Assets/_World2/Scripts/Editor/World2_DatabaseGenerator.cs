@@ -116,16 +116,15 @@ namespace Stellarfarer
                 {
                     Utils.StringToEnumFlag<Species>(values[0]),
                     Utils.StringToEnumFlag<CleansingType>(values[1]),
-                    Utils.StringToFloat(values[2]),
+                    Utils.StringToInt(values[2]),
                     Utils.StringToColor(values[3])
                 },
                 Database.World2Stage => new object[]
                 {
                     Utils.StringToInt(values[0]),
                     Utils.StringToEnumFlag<CleansingType>(values[1]),
-                    Utils.StringToEnumFlag<Species>(values[2]),
-                    Utils.StringToFloat(values[3]),
-                    Utils.StringToFloat(values[4])
+                    Utils.StringToInt(values[2]),
+                    Utils.StringToFloat(values[3])
                 },
                 _ => System.Array.Empty<object>()
             };
