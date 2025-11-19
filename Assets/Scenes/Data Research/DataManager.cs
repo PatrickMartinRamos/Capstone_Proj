@@ -49,17 +49,15 @@ public class DataManager : MonoBehaviour
     /// <summary>
     /// Downloads cloud data for the player and handles a scene-specific loading image
     /// </summary>
-    public void SyncCloudData(string playerName, GameObject sceneLoadingImage = null)
+    public void SyncCloudData(string playerName, GameObject sceneLoadingImage = null, Action<PlayerSaveData> onComplete = null)
     {
         if (sceneLoadingImage != null)
             sceneLoadingImage.SetActive(true);
 
         dataLoader.Sync.DownloadFromGoogleSheet(playerName, cloudData =>
         {
-            // If this DataManager was destroyed, bail
             if (this == null) return;
 
-            // Hide scene-specific loading image
             if (sceneLoadingImage != null)
                 sceneLoadingImage.SetActive(false);
 
@@ -67,8 +65,9 @@ public class DataManager : MonoBehaviour
             {
                 currentData = cloudData;
                 Debug.Log($"Loaded data from Google Sheets for {currentData.playerName}");
-                Debug.Log($"Level: {currentData.stageLevel}, Score: {currentData.stageScore}, Time: {currentData.playTime:F1}s");
             }
+
+            onComplete?.Invoke(cloudData);
         });
     }
 
@@ -113,23 +112,23 @@ public class DataManager : MonoBehaviour
     }
 
     // ------------------ TEST METHODS ------------------
-    [ContextMenu("🧪 Test Update and Upload")]
-    public void TestUpdateCloudData(GameObject sceneLoadingImage = null)
-    {
-        if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
-        {
-            Debug.LogWarning("No current user to test update.");
-            return;
-        }
+    // [ContextMenu("🧪 Test Update and Upload")]
+    // public void TestUpdateCloudData(GameObject sceneLoadingImage = null)
+    // {
+    //     if (currentData == null || string.IsNullOrEmpty(currentData.playerName))
+    //     {
+    //         Debug.LogWarning("No current user to test update.");
+    //         return;
+    //     }
 
-        // Randomly update current data
-        currentData.stageScore += UnityEngine.Random.Range(10, 50);
-        currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
-        currentData.playTime += UnityEngine.Random.Range(60f, 300f);
+    //     // Randomly update current data
+    //     currentData.stageScore += UnityEngine.Random.Range(10, 50);
+    //     currentData.stageLevel = Mathf.Min(currentData.stageLevel + 1, 10);
+    //     currentData.playTime += UnityEngine.Random.Range(60f, 300f);
 
-        Debug.Log($"Testing update for {currentData.playerName}...");
-        UploadToGoogleSheets(sceneLoadingImage);
-    }
+    //     Debug.Log($"Testing update for {currentData.playerName}...");
+    //     UploadToGoogleSheets(sceneLoadingImage);
+    // }
 
     // ------------------ GETTER ------------------
     public PlayerSaveData GetCurrentData() => currentData;
