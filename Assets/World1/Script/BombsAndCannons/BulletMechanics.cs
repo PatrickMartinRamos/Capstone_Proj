@@ -18,7 +18,7 @@ public class BulletMechanics : MonoBehaviour
 
     private void OnEnable()
     {
-        target = StageManager.Instance.targetBomb;
+        target = StageManager.Instance.bombsManager.targetBomb;
         MoveToTarget();
     }
 

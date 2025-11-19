@@ -13,6 +13,7 @@ public class ButtonEvent : MonoBehaviour
         button = GetComponent<Button>();
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(OnClick);
+        audioSource = StageManager.Instance.audioSrc;
     }
 
     internal virtual void OnClick()

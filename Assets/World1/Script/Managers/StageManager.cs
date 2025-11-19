@@ -24,9 +24,6 @@ public class StageManager : MonoBehaviour
     public GameObject gameplaySpawnPt;
     public GameObject bulletCase;
     public GameObject ActiveGameArea;
-    public GameObject targetBomb;
-    public List<GameObject> StageBombs;
-
 
     [Header("ShapesList")]
     public GameObject variable;
@@ -40,12 +37,20 @@ public class StageManager : MonoBehaviour
 
     [Header("UI")]
     public float timeLimit;
-    private float time; public float currentTime => time;
+    public float currentTime;
     public Slider timer;
     public TextMeshProUGUI NotificationText;
     public GameObject correctAnswerPanel, WrongAnswerPanel;
-    public GameObject helpPanel;
+    public GameObject notificationPanel;
     public GameObject stageIndicatorLabel;
+    public GameObject astronaut;
+
+    [Header("Managers")]
+    [SerializeField] public BombsManager bombsManager;
+    [SerializeField] public UIManager uiManager;
+
+    [Header("Audio")]
+    [SerializeField] public AudioSource audioSrc;
 
     public bool ShowCraftBox, craftBoxIsHidden=false, startGame = false;
 
@@ -63,32 +68,39 @@ public class StageManager : MonoBehaviour
         }
         Instance = this;
 
+        bombsManager = bombsManager == null ? gameObject.AddComponent<BombsManager>() : bombsManager;
+        uiManager = uiManager == null ? gameObject.AddComponent<UIManager>() : uiManager;
+        audioSrc = GameObject.FindFirstObjectByType<AudioSource>();
+
+        currentTime = timeLimit;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      //  stageIndicatorLabel.GetComponent<TextMeshProUGUI>().text = $"Stage {stageNumber}";
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (ActiveGameArea != null)
-        {
-            time = timeLimit;
-            timer.maxValue = timeLimit;
-            timer.value = time;
-            timer.gameObject.SetActive(false);
-        }
+
     }
     public void StartSuccessSequence()
     {
+        currentTime = timer.GetComponent<TimerMechanics>().GetCurrentTime();
         CloseGameAreaEvent.Invoke();
+
         Sequence seq = DOTween.Sequence();
         seq.Append(ActiveGameArea.transform.DOLocalMoveY(1, 1f));
-        seq.Append(ActiveGameArea.transform.DOScale(Vector3.zero, 1f));
+        seq.Append(ActiveGameArea.transform.DOLocalMoveY(-10, 1f));
         seq.Append(cannon.transform.DOPunchPosition(Vector3.down, 0.3f, 2));
-        seq.OnComplete(()=>bullet.SetActive(true));
+        seq.OnComplete(() => bullet.SetActive(true));
+
+        ActiveGameArea.SetActive(false);
+    }
+    private void moveCraftBox()
+    {
+
     }
     public void StartGame()
     {
@@ -96,27 +108,10 @@ public class StageManager : MonoBehaviour
     }
     public void DeductTime(float deduction)
     {
-        time = time - deduction;
+        timer.GetComponent<TimerMechanics>().DeductTime(deduction);
     }
     public void OpenWrongAnswerPanel()
     {
         WrongAnswerPanel.SetActive(true);
-    }
-    public void CloseWrongAnswerPanel()
-    {
-        WrongAnswerPanel.SetActive(false);
-    }
-    public void RestartStage()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    public void NextStage()
-    {
-        PlayerManager.Instance.playerStatusJSONManager.UpdatePlayerStatus();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    public void Home()
-    {
-        SceneManager.LoadScene(0);
     }
 }

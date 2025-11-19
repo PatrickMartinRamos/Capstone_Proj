@@ -8,6 +8,7 @@ using Unity.VisualScripting; // for Pointer & Touch input
 public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private GameObject tutorialPanel;
+    [SerializeField] private GameObject astronaut;
     [SerializeField] private List<GameObject> tutorialPrompts = new List<GameObject>();
 
     private int currentPromptIndex = 0;
@@ -56,6 +57,7 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     {
         //Dotween scale
         tutorialPanel.SetActive(false);
+        astronaut.SetActive(false);
         gameObject.SetActive(false);
     }
 }
