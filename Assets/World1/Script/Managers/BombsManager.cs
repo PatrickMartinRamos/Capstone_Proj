@@ -28,7 +28,7 @@ public class BombsManager : MonoBehaviour
             else score = StageManager.Instance.currentTime >= StageManager.Instance.timeLimit*(1/3)? 2 : 1;
                 StageManager.Instance.correctAnswerPanel.GetComponentInChildren<Slider>().value = score;
 
-            
+            DataManager.Instance.SaveData(StageManager.Instance.StageNumber, score, StageManager.Instance.timeLimit - StageManager.Instance.currentTime);
         }
     }
     public bool RegisterBomb(GameObject bomb)
