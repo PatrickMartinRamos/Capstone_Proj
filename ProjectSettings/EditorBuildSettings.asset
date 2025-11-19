@@ -19,20 +19,20 @@ EditorBuildSettings:
     guid: 1559e52bdc24e434e93c1d2f844c0687
   - enabled: 1
     path: Assets/World1/World1_Stage2.unity
-    guid: 5ffa5bf4f00034f459bdde9d1e8f02d2
+    guid: eadfe21516ffa5d459cee4adeb5bf9e3
   - enabled: 1
     path: Assets/World1/World1_Stage3.unity
-    guid: 9f47255da56462a4b82eeead45274178
+    guid: 5b634ac316d045748b0ff59fd2960af7
   - enabled: 1
     path: Assets/World1/World1_Stage4.unity
-    guid: 64f500478d55a15498132b03ab2d69a2
+    guid: 94b94a65f91b8c848b4915f9051930b5
   - enabled: 1
     path: Assets/World1/World1_Stage5.unity
-    guid: bb7a61236b2e73b4db78bdf8fd6c95dc
+    guid: 7ca542ef91288954f98e2c4222715150
   - enabled: 1
     path: Assets/World1/World1_Stage6.unity
-    guid: 0bcba675f7d392a46bdc37bde81f7242
-  - enabled: 1
+    guid: e42162b053809f9479bda3ed6a25ae87
+  - enabled: 0
     path: Assets/World1/World1_Stage7.unity
     guid: f4052af9bfa7e364987250e0ca6c2b12
   - enabled: 1

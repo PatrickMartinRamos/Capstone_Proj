@@ -139,13 +139,17 @@ public class Square : Shapes
     {
         switch (difficulty)
         {
-            case Difficulty.normal:
+            case Difficulty.easy:
                 value = 1;
                 valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
                 break;
+            case Difficulty.normal:
+                value = Random.Range(2, 5);
+                valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+                valueLabel.SetActive(true);
+                break;
             case Difficulty.hard:
-                int stageLevel = PlayerPrefs.GetInt("StageID");
-                value = stageLevel < 7 ? Random.Range(2, 5) : Random.Range(6, 10);
+                value =  Random.Range(6, 10);
                 valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
                 valueLabel.SetActive(true);
                 break;

@@ -118,12 +118,28 @@ public class Shapes : MonoBehaviour, ITargetable
         }
         else
         {
-            int[] valSet= new int[] { Random.Range(1, 6), val1 * val2, Random.Range(1, 9) };
-            valList = new List<int>(valSet);
-            ShuffleList(valList);   // randomize order
-        }
+            int[] valSet = new int[]
+            {
+            Random.Range(1, 6),
+            val1 * val2,
+            Random.Range(1, 9)
+            };
 
+            valList = new List<int>(valSet);
+            ShuffleList(valList);
+
+            currentIndex = 0;   // IMPORTANT FIX
+
+            // Assign the first value to the shape immediately
+            value = valList[currentIndex];
+            currentIndex++;
+
+            withValue = true;
+            valueLabel.SetActive(true);
+            valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+        }
     }
+
     public virtual void AddValue(Difficulty difficulty)
     {
         withValue = true;
