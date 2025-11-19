@@ -4,11 +4,12 @@ using UnityEngine.EventSystems;
 public class shapeDragController : MonoBehaviour
 {
     [SerializeField] private LayerMask shapeLayer;
-    [SerializeField] private Transform varParent;
+    //[SerializeField] private Transform varParent;
 
     private GameObject selectedShape;
     private Collider2D overlap;
     private RaycastHit2D hit;
+    private bool canInteract = true;
 
     void Update()
     {
@@ -21,7 +22,7 @@ public class shapeDragController : MonoBehaviour
         if (isTouching)
         {
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(touchPosition);
-            worldPoint.z = 1f; // Ensure shape stays visible in 2D view
+            worldPoint.z = -5f; // Ensure shape stays visible in 2D view
 
             if (selectedShape == null)
             {
@@ -36,6 +37,9 @@ public class shapeDragController : MonoBehaviour
                 // Dragging
                 if (selectedShape != null)
                 {
+                    canInteract = true;
+                    selectedShape.GetComponent<Collider2D>().enabled = false;
+                    //varParent = selectedShape.transform.parent;
                     selectedShape.transform.position = worldPoint;
 
                     if (hit.collider != null)
@@ -53,49 +57,29 @@ public class shapeDragController : MonoBehaviour
         }
         else
         {
+            Vector3 worldPoint = Camera.main.ScreenToWorldPoint(touchPosition);
+            worldPoint.z = 0;
             // Touch released
-            Debug.Log("Released");
-            transform.parent = null;
-
-            if (overlap != null && selectedShape != null && overlap.gameObject != selectedShape.gameObject)
+            //transform.parent = null;
+            if (selectedShape != null)
             {
-                string draggedShapeTag = selectedShape.tag;
-                string targetShapeTag = overlap.tag;
-                bool isMatched = false;
-                Vector3 spawnPosition = (selectedShape.transform.position + overlap.transform.position) / 2f;
+                selectedShape.GetComponent<Collider2D>().enabled = true;
 
-                switch (draggedShapeTag)
+                if (overlap != null && overlap.gameObject.GetComponent<ITargetable>() != null && overlap.gameObject != selectedShape.gameObject)
                 {
-                    case "Square":
-                        Debug.Log("Matching Square...");
-                        isMatched = shapeCombination.Instance.Square(overlap.gameObject, spawnPosition);
-                        break;
-                    case "Circle":
-                        Debug.Log("Matching Circle...");
-                        isMatched = shapeCombination.Instance.Circle(overlap.gameObject, spawnPosition);
-                        break;
-                    case "Triangle":
-                        Debug.Log("Matching Triangle...");
-                        isMatched = shapeCombination.Instance.Triangle(selectedShape, overlap.gameObject, spawnPosition);
-                        break;
-                    case "Scissor":
-                        Debug.Log("Dividing...");
-                        break;
-                    default:
-                        Debug.Log("Matched unknown shape");
-                        break;
+                    if (canInteract)
+                    overlap.gameObject.GetComponent<ITargetable>().InteractWithDraggedObject(selectedShape);
+                    canInteract = false;
                 }
 
-                if (isMatched)
-                {
-                    selectedShape.GetComponent<DraggableShape>().RevertPosition();
-                }
+                // Reset Pos
+                //selectedShape.GetComponent<Shapes>().RevertPosition();
             }
 
-            // Reset
+            // Reset Drag Controller
             overlap = null;
             selectedShape = null;
-            transform.parent = varParent;
+            //transform.parent = varParent;
         }
     }
 }
