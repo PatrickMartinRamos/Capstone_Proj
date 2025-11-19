@@ -79,7 +79,7 @@ public class DataLoader : MonoBehaviour
             }
             else
             {
-                Debug.Log($"🆕 No existing data found for {_playerName}, creating new entry...");
+                Debug.Log($"No existing data found for {_playerName}, creating new entry...");
             }
 
             // Upload new data if different or not found
