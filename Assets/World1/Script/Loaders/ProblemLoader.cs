@@ -6,6 +6,8 @@ public class ProblemLoader : MonoBehaviour
 {
     [SerializeField] internal List<Vector3> ProblemMarkers;
     internal Difficulty stageDifficulty;
+    protected List<int> answers = new List<int>();
+
 
     public virtual void LoadProblem()
     {
@@ -13,7 +15,7 @@ public class ProblemLoader : MonoBehaviour
     }
     public virtual List<int> Answers()
     {
-        return null;
+        return answers;
     }
     internal void GetLevelDifficulty()
     {

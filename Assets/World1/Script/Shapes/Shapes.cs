@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using System.Collections.Generic;
 using System.Net;
 using TMPro;
@@ -230,7 +230,7 @@ public class Shapes : MonoBehaviour, ITargetable
         transform.localPosition = originPos;
         FixScale();
     }
-    // Fisher�Yates shuffle
+    // Fisher–Yates shuffle
     private void ShuffleList(List<int> list)
     {
         for (int i = list.Count - 1; i > 0; i--)

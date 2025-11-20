@@ -45,7 +45,10 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
         ShapeClassification embedShapeClass;
 
         embedShapeClass = embedShape != null ? embedShape.GetComponent<Shapes>().GetClassification() : ShapeClassification.Null;
-        submittedAns = embedShape != null ? embedShape.GetComponent<Shapes>().value : 0;
+        submittedAns = embedShape != null ? embedShape.GetComponent<Shapes>().value : StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.radicals ? 1 : 0;
+
+        Debug.Log($"submitted {submittedAns}...");
+
         if (embedShapeClass == correctShape)
         {
             if(StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.radicals 

@@ -6,6 +6,7 @@ public class CannonMechanics : MonoBehaviour
     [SerializeField] GameObject cannon;
     [SerializeField] GameObject cannonShell;
     [SerializeField] GameObject cannonShellCase;
+    [SerializeField] Sprite STBshell, Rshell, CTSshell;
 
     [Header("Aiming Settings")]
     [SerializeField] private float rotationDuration = 0.5f; // time it takes to rotate
