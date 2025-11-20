@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Midpoint_Y2
       objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: cfa2ca16eaf22ff49b639a3bf3b62eec, type: 3}
+      propertyPath: m_text
+      value: By
+      objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: cfa2ca16eaf22ff49b639a3bf3b62eec, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1063,6 +1067,10 @@ PrefabInstance:
     - target: {fileID: 4702407488611409508, guid: 54a27c07e7a07764b91ef46926a44b85, type: 3}
       propertyPath: m_Name
       value: Distance_Y2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: 54a27c07e7a07764b91ef46926a44b85, type: 3}
+      propertyPath: m_text
+      value: Ay
       objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: 54a27c07e7a07764b91ef46926a44b85, type: 3}
       propertyPath: m_Pivot.x
@@ -1546,6 +1554,10 @@ PrefabInstance:
     - target: {fileID: 4702407488611409508, guid: 9e0a4b78f57a38248ba71a70c905505c, type: 3}
       propertyPath: m_Name
       value: Midpoint_X2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: 9e0a4b78f57a38248ba71a70c905505c, type: 3}
+      propertyPath: m_text
+      value: Ay
       objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: 9e0a4b78f57a38248ba71a70c905505c, type: 3}
       propertyPath: m_Pivot.x
@@ -2296,6 +2308,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 985365354}
     m_Modifications:
+    - target: {fileID: 6880560368042766088, guid: 9872c7a7f07c64447a88583ca5eb6121, type: 3}
+      propertyPath: m_text
+      value: 0.00
+      objectReference: {fileID: 0}
     - target: {fileID: 7134066379224879544, guid: 9872c7a7f07c64447a88583ca5eb6121, type: 3}
       propertyPath: m_Name
       value: Distance
@@ -2396,6 +2412,10 @@ PrefabInstance:
     - target: {fileID: 4702407488611409508, guid: 626a0866fffddb84f9d8d74979d299e3, type: 3}
       propertyPath: m_Name
       value: Distance_Y1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: 626a0866fffddb84f9d8d74979d299e3, type: 3}
+      propertyPath: m_text
+      value: Ax
       objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: 626a0866fffddb84f9d8d74979d299e3, type: 3}
       propertyPath: m_Pivot.x
@@ -3373,7 +3393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &738988822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4399,6 +4419,10 @@ PrefabInstance:
     - target: {fileID: 4702407488611409508, guid: 5af5919a05f3fb1428d9b5c49ed7777c, type: 3}
       propertyPath: m_Name
       value: Midpoint_Y1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: 5af5919a05f3fb1428d9b5c49ed7777c, type: 3}
+      propertyPath: m_text
+      value: Bx
       objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: 5af5919a05f3fb1428d9b5c49ed7777c, type: 3}
       propertyPath: m_Pivot.x
@@ -6248,6 +6272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Distance_X1
       objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: 6152fba62d9dad846ad4beac9787e065, type: 3}
+      propertyPath: m_text
+      value: Bx
+      objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: 6152fba62d9dad846ad4beac9787e065, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7515,6 +7543,14 @@ PrefabInstance:
     - target: {fileID: 4702407488611409508, guid: afe9848f0d9e12a46829d1a4e01b349d, type: 3}
       propertyPath: m_Name
       value: Midpoint_X1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: afe9848f0d9e12a46829d1a4e01b349d, type: 3}
+      propertyPath: m_text
+      value: Ax
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: afe9848f0d9e12a46829d1a4e01b349d, type: 3}
+      propertyPath: m_fontSize
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: afe9848f0d9e12a46829d1a4e01b349d, type: 3}
       propertyPath: m_Pivot.x
@@ -9517,6 +9553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Distance_X2
       objectReference: {fileID: 0}
+    - target: {fileID: 4765886153571012641, guid: 68513c209372fdf42b974ca09cdec69d, type: 3}
+      propertyPath: m_text
+      value: By
+      objectReference: {fileID: 0}
     - target: {fileID: 6410742713120302869, guid: 68513c209372fdf42b974ca09cdec69d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9784,7 +9824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2076204842
 MonoBehaviour:
   m_ObjectHideFlags: 0
