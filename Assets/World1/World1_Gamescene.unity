@@ -2159,6 +2159,7 @@ GameObject:
   - component: {fileID: 914383731}
   - component: {fileID: 914383730}
   - component: {fileID: 914383729}
+  - component: {fileID: 914383732}
   m_Layer: 5
   m_Name: BinomBtn
   m_TagString: Untagged
@@ -2268,6 +2269,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914383727}
   m_CullTransparentMesh: 1
+--- !u!114 &914383732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914383727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23154c6f7dab7ac44ae07c6dd0fb64e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
+  objectToClose:
+  - {fileID: 1961876942}
+  - {fileID: 2072728547}
+  objectToOpen:
+  - {fileID: 1967918827}
 --- !u!1 &975361653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,6 +3110,7 @@ GameObject:
   - component: {fileID: 1234046711}
   - component: {fileID: 1234046710}
   - component: {fileID: 1234046709}
+  - component: {fileID: 1234046712}
   m_Layer: 5
   m_Name: RadiBtn
   m_TagString: Untagged
@@ -3199,6 +3220,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234046707}
   m_CullTransparentMesh: 1
+--- !u!114 &1234046712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234046707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23154c6f7dab7ac44ae07c6dd0fb64e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
+  objectToClose:
+  - {fileID: 1967918827}
+  - {fileID: 2072728547}
+  objectToOpen:
+  - {fileID: 1961876942}
 --- !u!1 &1250880026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1553571, g: 0.9245283, b: 0.004360993, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3476,7 +3516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.45698738, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3961,7 +4001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8113208, g: 0.08036668, b: 0.08036668, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4462,6 +4502,7 @@ GameObject:
   - component: {fileID: 1787513157}
   - component: {fileID: 1787513156}
   - component: {fileID: 1787513155}
+  - component: {fileID: 1787513158}
   m_Layer: 5
   m_Name: CTSBtn
   m_TagString: Untagged
@@ -4571,6 +4612,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787513153}
   m_CullTransparentMesh: 1
+--- !u!114 &1787513158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787513153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23154c6f7dab7ac44ae07c6dd0fb64e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
+  objectToClose:
+  - {fileID: 1967918827}
+  - {fileID: 1961876942}
+  objectToOpen:
+  - {fileID: 2072728547}
 --- !u!1 &1883085822
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,7 +5547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.3962264, g: 0.28969383, b: 0.28969383, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Events;
+using static UnityEngine.GraphicsBuffer;
 
 public class BombMechanics : MonoBehaviour
 {
@@ -50,6 +51,8 @@ public class BombMechanics : MonoBehaviour
 
         // targetBomb setting
         bombsManager.setTargetBomb(this.gameObject);
+        StageManager.Instance.cannon.GetComponent<CannonMechanics>().AimAt(this.gameObject.transform.position);
+
         OpenGameAreaEvent.Invoke();
         OpenGameScene();
     }
@@ -67,7 +70,7 @@ public class BombMechanics : MonoBehaviour
             // Create sequence properly
             Sequence seq = DOTween.Sequence();
             seq.Append(gameScene.transform.DOScale(1.4f, 0.3f))
-               .Append(gameScene.transform.DOScale(1.1f, 1f))
+               .Append(gameScene.transform.DOScale(1f, 1f))
                .OnComplete(() => gameScene.GetComponent<ProblemLoader>().LoadProblem());
         }
     }

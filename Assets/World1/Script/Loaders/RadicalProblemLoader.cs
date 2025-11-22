@@ -34,7 +34,7 @@ public class RadicalProblemLoader : ProblemLoader
         s.ChangeToGiven();
         s.valueLabel.GetComponent<TextMeshProUGUI>().text = s.value.ToString();
         s.valueLabel.SetActive(true);
-
+        s.isMovable = false;
         // Generate answer only once
         if (answers.Count == 0)
         {

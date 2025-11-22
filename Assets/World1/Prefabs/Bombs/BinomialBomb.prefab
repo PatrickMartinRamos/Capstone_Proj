@@ -9853,7 +9853,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.9207404}
+  m_Offset: {x: 0, y: 1.3190732}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9863,7 +9863,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.96, y: 5.448519}
+  m_Size: {x: 4.96, y: 6.6518536}
   m_EdgeRadius: 0
 --- !u!50 &2038505362991773231
 Rigidbody2D:
@@ -9909,6 +9909,7 @@ MonoBehaviour:
   bigExplosionFX: {fileID: 1093181818459309132}
   inactiveFX: {fileID: 2142575557912365496}
   gameScene: {fileID: 6312514179536746243}
+  bombExploded: 0
 --- !u!1 &2782038886898120786
 GameObject:
   m_ObjectHideFlags: 0

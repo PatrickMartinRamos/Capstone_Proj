@@ -30,7 +30,7 @@ public class Shapes : MonoBehaviour, ITargetable
     internal Vector3 spawnPt;
     [SerializeField] float origScaleSize;
     [SerializeField] internal GameObject valueLabel;
-    internal bool isGiven = false;
+    internal bool isGiven = false, isMovable = true;
 
     protected GameObject initParent;
 
@@ -49,8 +49,7 @@ public class Shapes : MonoBehaviour, ITargetable
 
     // Update is called once per frame
     void Update()
-    {
-        
+    { 
     }
     public void ChangeToGiven()
     {

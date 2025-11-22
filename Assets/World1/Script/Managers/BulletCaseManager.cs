@@ -13,7 +13,7 @@ public class BulletCaseManager : MonoBehaviour
     void OpenCase()
     {
         Sequence seq = DOTween.Sequence();
-        seq.Append(transform.DOLocalMoveY(-6f, 0.5f, true));
+        seq.Append(transform.DOLocalMoveY(-8.6f, 0.5f, true));
         seq.Append(bulletPlaceholder.transform.DOMove(StageManager.Instance.bullet.transform.position, 1f));
         seq.Join(bulletPlaceholder.transform.DOScale(Vector3.zero, 1f));
         
