@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Stellarfarer
@@ -15,7 +16,8 @@ namespace Stellarfarer
 
         private const string STAGE_ID_NAME = "StageID";
 
-        public event System.Action OnStateChanged;
+        public event Action OnStateChanged;
+        public event Action OnGamePauseTToggled;
 
         [SerializeField] private World2StageDictSO _stageDataDictSO;
 #if UNITY_EDITOR
@@ -25,6 +27,14 @@ namespace Stellarfarer
         private World2StageSO _stageSO;
         private State _state;
         private float _countdownToStartTimer = 3f;
+        private bool _isGamePaused;
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            _isGamePaused = false;
+        }
 
         private void Start()
             => Wait();
@@ -119,5 +129,17 @@ namespace Stellarfarer
 
         public int GetStageID()
             => _stageID;
+
+        public void ToggleGamePause()
+        {
+            _isGamePaused = !_isGamePaused;
+
+            Time.timeScale = _isGamePaused ? 0f : 1f;
+
+            OnGamePauseTToggled?.Invoke();
+        }
+
+        public bool IsGamePaused()
+            => _isGamePaused;
     }
 }
