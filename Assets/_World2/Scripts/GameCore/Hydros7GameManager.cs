@@ -37,6 +37,9 @@ namespace Stellarfarer
             int baseStageID = 1; // TODO: Change to saved stage
 #endif
             _stageID = PlayerPrefs.HasKey(STAGE_ID_NAME) ? PlayerPrefs.GetInt(STAGE_ID_NAME) : baseStageID;
+#if UNITY_EDITOR
+            _testStageID = _stageID; // TODO: Change to saved stage
+#endif
             _stageSO = _stageDataDictSO[_stageID];
         }
 
@@ -61,7 +64,7 @@ namespace Stellarfarer
 
                     break;
                 case State.GamePlaying:
-                    WinGame();
+
                     break;
                 case State.GameWin:
                     Debug.Log("Game Won");
