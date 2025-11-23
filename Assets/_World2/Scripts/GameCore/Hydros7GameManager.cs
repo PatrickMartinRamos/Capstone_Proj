@@ -64,7 +64,6 @@ namespace Stellarfarer
 
                     break;
                 case State.GamePlaying:
-
                     break;
                 case State.GameWin:
                     Debug.Log("Game Won");
