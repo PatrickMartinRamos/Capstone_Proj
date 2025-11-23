@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Stellarfarer
 {
     public class PauseManagerUI : MonoBehaviour
     {
         [SerializeField] private GameObject _pauseMenu;
+        [SerializeField] private Button _retrybtn;
+        [SerializeField] private Button _returnToWorlSelectionBtn;
 
         private Hydros7GameManager _hydros7GameManager;
 
@@ -42,7 +45,7 @@ namespace Stellarfarer
             => SetPauseMenuVisibility(true);
 
         private void HidePauseMenu()
-            => SetPauseMenuVisibility(true);
+            => SetPauseMenuVisibility(false);
 
         private void SetPauseMenuVisibility(bool isVisible)
             => _pauseMenu.SetActive(isVisible);
