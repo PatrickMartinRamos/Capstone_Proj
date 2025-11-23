@@ -6,12 +6,17 @@ public class CannonMechanics : MonoBehaviour
     [SerializeField] GameObject cannon;
     [SerializeField] GameObject cannonShell;
     [SerializeField] GameObject cannonShellCase;
+    [SerializeField] Sprite STBshell, Rshell, CTSshell;
 
     [Header("Aiming Settings")]
     [SerializeField] private float rotationDuration = 0.5f; // time it takes to rotate
     [SerializeField] private Ease rotationEase = Ease.OutBack; // optional tween style
 
     private Tween rotationTween;
+    public void Start()
+    {
+        StageManager.Instance.cannon = this.gameObject;
+    }
     public void AimAt(Vector3 targetPos)
     {
         // Stop any current rotation tween
@@ -40,9 +45,22 @@ public class CannonMechanics : MonoBehaviour
     {
 
     }
-    public void GetShell()
+    public void SwitchShell(ProblemType p)
     {
-
+        switch (p)
+        {
+            case ProblemType.squaringBinomial:
+                cannonShell.GetComponent<SpriteRenderer>().sprite = STBshell;
+                break;
+            case ProblemType.radicals:
+                cannonShell.GetComponent<SpriteRenderer>().sprite = Rshell;
+                break;
+            case ProblemType.completingSquare:
+                cannonShell.GetComponent<SpriteRenderer>().sprite = CTSshell;
+                break;
+            default:
+                break;
+        }
     }
 
 }

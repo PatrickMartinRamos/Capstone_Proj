@@ -60,7 +60,5 @@ public class CloseButton : ButtonEvent
 
         // Reset for potential future plays (e.g., if the audio loops or is played again)
         fiftyPercentTriggered = false;
-
-
     }
 }

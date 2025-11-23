@@ -12,7 +12,6 @@ public class BinomiallProblemLoader : ProblemLoader
     [SerializeField] GameObject minusSymbol;
     private GameObject variable;
     private GameObject constant;
-    private List<int> answers = new List<int>();
 
     private void Start()
     {
@@ -24,11 +23,7 @@ public class BinomiallProblemLoader : ProblemLoader
     public override void LoadProblem()
     {
         GetLevelDifficulty();
-        if (stageDifficulty != Difficulty.easy)
-        {
-            variable.GetComponent<Shapes>().AddValue(stageDifficulty);
-            constant.GetComponent<Shapes>().AddValue(stageDifficulty);
-        }
+
         InstantiateGiven(leftSide.transform, ProblemMarkers[0], ProblemMarkers[1], ProblemMarkers[2]);
 
         InstantiateGiven(rightSide.transform, ProblemMarkers[3], ProblemMarkers[4], ProblemMarkers[5]);
@@ -36,6 +31,7 @@ public class BinomiallProblemLoader : ProblemLoader
     }
     public void InstantiateGiven(Transform side, Vector3 varSpawnPt, Vector3 symSpawnPt, Vector3 conSpawnPt)
     {
+
         // Add Variable
         GameObject v = Instantiate(variable, varSpawnPt, Quaternion.identity);
         v.transform.SetParent(side, false);
@@ -48,6 +44,15 @@ public class BinomiallProblemLoader : ProblemLoader
         GameObject c = Instantiate(constant, conSpawnPt, Quaternion.identity);
         c.transform.SetParent(side, false);
         c.GetComponent<Shapes>().ChangeToGiven();
+
+        // Add Value
+        if (stageDifficulty != Difficulty.easy)
+        {
+            v.GetComponent<Shapes>().AddValue(stageDifficulty);
+            c.GetComponent<Shapes>().AddValue(stageDifficulty);
+        }
+
+        // get answer
         if (answers.Count == 0)
         {
             var a = v.GetComponent<Shapes>().value;
@@ -66,10 +71,6 @@ public class BinomiallProblemLoader : ProblemLoader
         // Add third term
         answers.Add(b*b);
 
-    }
-    public override List<int> Answers()
-    {
-        return answers;
     }
 
 }

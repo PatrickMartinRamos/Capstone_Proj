@@ -93,8 +93,8 @@ public class StageManager : MonoBehaviour
         CloseGameAreaEvent.Invoke();
 
         Sequence seq = DOTween.Sequence();
-        seq.Append(ActiveGameArea.transform.DOLocalMoveY(1, 1f));
-        seq.Append(ActiveGameArea.transform.DOLocalMoveY(-15, 1f));
+        seq.Append(ActiveGameArea.transform.DOLocalMoveY(1.5f, 1f));
+        seq.Append(ActiveGameArea.transform.DOLocalMoveY(-15, 0.5f));
         seq.Append(cannon.transform.DOPunchPosition(Vector3.down, 0.3f, 2));
         seq.OnComplete(() => { bullet.SetActive(true); ActiveGameArea.SetActive(false);
         });

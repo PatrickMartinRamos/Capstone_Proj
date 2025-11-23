@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using System.Collections.Generic;
 using System.Net;
 using TMPro;
@@ -30,7 +30,7 @@ public class Shapes : MonoBehaviour, ITargetable
     internal Vector3 spawnPt;
     [SerializeField] float origScaleSize;
     [SerializeField] internal GameObject valueLabel;
-    internal bool isGiven = false;
+    internal bool isGiven = false, isMovable = true;
 
     protected GameObject initParent;
 
@@ -49,8 +49,7 @@ public class Shapes : MonoBehaviour, ITargetable
 
     // Update is called once per frame
     void Update()
-    {
-        
+    { 
     }
     public void ChangeToGiven()
     {
@@ -230,7 +229,7 @@ public class Shapes : MonoBehaviour, ITargetable
         transform.localPosition = originPos;
         FixScale();
     }
-    // Fisher�Yates shuffle
+    // Fisher–Yates shuffle
     private void ShuffleList(List<int> list)
     {
         for (int i = list.Count - 1; i > 0; i--)

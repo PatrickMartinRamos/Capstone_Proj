@@ -35,7 +35,7 @@ public class shapeDragController : MonoBehaviour
             else
             {
                 // Dragging
-                if (selectedShape != null)
+                if (selectedShape != null && selectedShape.GetComponent<Shapes>().isMovable)
                 {
                     canInteract = true;
                     selectedShape.GetComponent<Collider2D>().enabled = false;

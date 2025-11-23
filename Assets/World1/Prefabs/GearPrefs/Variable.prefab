@@ -490,7 +490,7 @@ MonoBehaviour:
   iD: 
   classification: 0
   shapeName: Variable
-  withValue: 1
+  withValue: 0
   value: 1
   originPos: {x: 0, y: 0, z: 0}
   interacted: []
