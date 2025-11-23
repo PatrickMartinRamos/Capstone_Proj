@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Stellarfarer
 {
@@ -22,6 +21,7 @@ namespace Stellarfarer
 #if UNITY_EDITOR
         [SerializeField, Range(1, 10)] private int _testStageID = 1;
 #endif
+        private int _stageID;
         private World2StageSO _stageSO;
         private State _state;
         private float _countdownToStartTimer = 3f;
@@ -36,8 +36,8 @@ namespace Stellarfarer
 #else
             int baseStageID = 1; // TODO: Change to saved stage
 #endif
-            int stageID = PlayerPrefs.HasKey(STAGE_ID_NAME) ? PlayerPrefs.GetInt(STAGE_ID_NAME) : baseStageID;
-            _stageSO = _stageDataDictSO[stageID];
+            _stageID = PlayerPrefs.HasKey(STAGE_ID_NAME) ? PlayerPrefs.GetInt(STAGE_ID_NAME) : baseStageID;
+            _stageSO = _stageDataDictSO[_stageID];
         }
 
         private void OnDestroy()
@@ -61,14 +61,12 @@ namespace Stellarfarer
 
                     break;
                 case State.GamePlaying:
-
+                    WinGame();
                     break;
                 case State.GameWin:
-                    SceneManager.LoadScene("Scenes/WorldSelection");
                     Debug.Log("Game Won");
                     break;
                 case State.GameLose:
-                    SceneManager.LoadScene("Scenes/WorldSelection");
                     Debug.Log("Game Lost");
                     break;
             }
@@ -115,5 +113,8 @@ namespace Stellarfarer
 
         public int GetRequiredPoints()
             => _stageSO.HydrionEnergyAmountRequired;
+
+        public int GetStageID()
+            => _stageID;
     }
 }

@@ -37,30 +37,29 @@ namespace Stellarfarer
         {
             PointsManager.Instance.GetPoints(out Vector2 pointA, out Vector2 pointB);
 
-            if (!_midpoint_X1.TryGetValue(out int x1))
-                return false;
+            bool isX1Correct = _midpoint_X1.Grade(
+                (answer) => answer == (int)pointA.x || answer == (int)pointB.x
+            );
 
-            if (!_midpoint_Y1.TryGetValue(out int y1))
-                return false;
+            bool isY1Correct = _midpoint_Y1.Grade(
+                (answer) => answer == (int)pointA.x || answer == (int)pointB.x
+            );
 
-            if (!_midpoint_X2.TryGetValue(out int x2))
-                return false;
+            bool isX2Correct = _midpoint_X2.Grade(
+                (answer) => answer == (int)pointA.y || answer == (int)pointB.y
+            );
 
-            if (!_midpoint_Y2.TryGetValue(out int y2))
-                return false;
+            bool isY2Correct = _midpoint_Y2.Grade(
+                (answer) => answer == (int)pointA.y || answer == (int)pointB.y
+            );
 
-            if (!_midpoint_X.TryGetValue(out float x))
-                return false;
+            bool isXCorrect = _midpoint_X.Grade(
+                (answer) => answer == (pointA.x + pointB.x) / 2
+            );
 
-            if (!_midpoint_Y.TryGetValue(out float y))
-                return false;
-
-            bool isX1Correct = x1 == (int)pointA.x || x1 == (int)pointB.x;
-            bool isY1Correct = y1 == (int)pointA.x || y1 == (int)pointB.x;
-            bool isX2Correct = x2 == (int)pointA.y || x2 == (int)pointB.y;
-            bool isY2Correct = y2 == (int)pointA.y || y2 == (int)pointB.y;
-            bool isXCorrect = x == (pointA.x + pointB.x) / 2;
-            bool isYCorrect = y == (pointA.y + pointB.y) / 2;
+            bool isYCorrect = _midpoint_Y.Grade(
+                (answer) => answer == (pointA.y + pointB.y) / 2
+            );
 
             return isX1Correct && isY1Correct &&
                 isX2Correct && isY2Correct &&

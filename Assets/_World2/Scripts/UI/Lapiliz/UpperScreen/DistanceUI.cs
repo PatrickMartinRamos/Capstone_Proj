@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 
 namespace Stellarfarer
@@ -37,32 +36,35 @@ namespace Stellarfarer
         {
             PointsManager.Instance.GetPoints(out Vector2 pointA, out Vector2 pointB);
 
-            if (!_distance_X1.TryGetValue(out int x1))
-                return false;
+            bool isX1Correct = _distance_X1.Grade(
+                (answer) => answer == (int)pointB.x
+            );
 
-            if (!_distance_Y1.TryGetValue(out int y1))
-                return false;
+            bool isY1Correct = _distance_Y1.Grade(
+                (answer) => answer == (int)pointA.x
+            );
 
-            if (!_distance_X2.TryGetValue(out int x2))
-                return false;
+            bool isX2Correct = _distance_X2.Grade(
+                (answer) => answer == (int)pointB.y
+            );
 
-            if (!_distance_Y2.TryGetValue(out int y2))
-                return false;
+            bool isY2Correct = _distance_Y2.Grade(
+                (answer) => answer == (int)pointA.y
+            );
 
-            if (!_distance.TryGetValue(out float d))
-                return false;
+            bool isDCorrect = _distance.Grade(
+                (answer) =>
+                {
+                    float distance = Mathf.Round(
+                            Mathf.Sqrt(
+                                Mathf.Pow(pointB.x - pointA.x, 2) +
+                                Mathf.Pow(pointB.y - pointA.y, 2)
+                            ) * 100f
+                        ) / 100f;
 
-            bool isX1Correct = x1 == (int)pointB.x;
-            bool isY1Correct = y1 == (int)pointA.x;
-            bool isX2Correct = x2 == (int)pointB.y;
-            bool isY2Correct = y2 == (int)pointA.y;
-            float distance = Mathf.Round(
-                    Mathf.Sqrt(
-                        Mathf.Pow(pointB.x - pointA.x, 2) +
-                        Mathf.Pow(pointB.y - pointA.y, 2)
-                    ) * 100f
-                ) / 100f;
-            bool isDCorrect = Mathf.Abs(d - distance) < 0.001f;
+                    return Mathf.Abs(answer - distance) < 0.001f;
+                }
+            );
 
             return isX1Correct && isY1Correct &&
                 isX2Correct && isY2Correct &&

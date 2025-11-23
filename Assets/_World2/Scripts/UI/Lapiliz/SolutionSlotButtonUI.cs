@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,8 @@ namespace Stellarfarer
         [SerializeField] private Sprite _visible;
         [SerializeField] private TMP_InputField _inputField;
 
+        private Color _placeholderFontColor;
+
         private void Awake()
         {
             if (_visual == null)
@@ -22,6 +25,7 @@ namespace Stellarfarer
                 _inputField = GetComponent<TMP_InputField>();
 
             ClearText();
+            _placeholderFontColor = _inputField.placeholder.color;
         }
 
         private void Start()
@@ -36,7 +40,39 @@ namespace Stellarfarer
         public void ClearText()
             => SetText("");
 
-        public bool TryGetValue(out int value)
+        private bool TryGetValue(out int value)
             => int.TryParse(_inputField.text.Trim(), out value);
+
+        private void SetColor(Color visualColor, Color textFontColor, Color placeholderFontColor)
+        {
+            _visual.color = visualColor;
+            _inputField.textComponent.color = textFontColor;
+            _inputField.placeholder.color = placeholderFontColor;
+        }
+
+        private void Correct()
+            => SetColor(Color.white, Color.black, _placeholderFontColor);
+
+        private void Wrong()
+            => SetColor(Color.red, Color.white, new Color(1f, 1f, 1f, _placeholderFontColor.a));
+
+        public bool Grade(Func<int, bool> condition)
+        {
+            bool isCorrect = false;
+
+            if (TryGetValue(out int answer))
+            {
+                isCorrect = condition.Invoke(answer);
+
+                if (isCorrect)
+                    Correct();
+                else
+                    Wrong();
+            }
+            else
+                Wrong();
+
+            return isCorrect;
+        }
     }
 }
