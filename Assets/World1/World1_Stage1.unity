@@ -1505,6 +1505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSceneCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2244227803671174273, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443974966272163462, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1514,6 +1518,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 745654688}
     - target: {fileID: 4919073186902945380, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257185544646418847, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1565,6 +1573,14 @@ PrefabInstance:
         open the case containing the SNS Shell!\n\nPlease Help us Dear Savior!</align>\n\nFollow
         the guide below to obtain the <b>STB Neutralizing Shell</b>,\n\n\n\n\n\n\n\n\n\n<i><size=0.8em><align=center>Touch
         Screen to Close</align></size></i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590363344650735344, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590363344650735344, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9136652380534691151, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text

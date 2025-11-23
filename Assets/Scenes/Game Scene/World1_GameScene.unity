@@ -1022,22 +1022,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41cecd45a04c3ee409e341e6d312cc1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hiddenPos: {x: 0.0405, y: -8.12, z: 0.12}
-  shownUpPos: {x: 0.0405, y: -1.54, z: 0.12}
-  CraftingBox: {fileID: 883467599}
-  InitialHiddenItems: {fileID: 1826903848}
-  Cannon: {fileID: 2114145584}
-  Star: {fileID: 0}
-  Bullet: {fileID: 1699572113}
-  Bomb: {fileID: 1786985119}
+  stageNumber: 0
+  squaringBinomialBox: {fileID: 0}
+  radicalsBox: {fileID: 0}
+  completingSquareBox: {fileID: 0}
+  cannon: {fileID: 0}
+  bullet: {fileID: 0}
+  craftArea: {fileID: 0}
+  gameplaySpawnPt: {fileID: 0}
+  bulletCase: {fileID: 0}
+  ActiveGameArea: {fileID: 0}
+  variable: {fileID: 0}
+  constant: {fileID: 0}
+  squaredVariable: {fileID: 0}
+  squaredConstant: {fileID: 0}
+  product: {fileID: 0}
+  problem: {fileID: 0}
   timeLimit: 30
+  currentTime: 0
   timer: {fileID: 933105792}
-  CorrectAnswerPanel: {fileID: 292247390}
+  NotificationText: {fileID: 0}
+  correctAnswerPanel: {fileID: 0}
   WrongAnswerPanel: {fileID: 1034513499}
-  HelpPanel: {fileID: 1034513499}
-  ShowCraftBox: 0
-  craftBoxIsHidden: 0
-  playerStatusJSONManager: {fileID: 152560687}
+  notificationPanel: {fileID: 0}
+  stageIndicatorLabel: {fileID: 0}
+  astronaut: {fileID: 0}
+  bombsManager: {fileID: 0}
+  uiManager: {fileID: 0}
+  audioSrc: {fileID: 0}
+  isPlaying: 0
+  playTimer: 0
 --- !u!114 &152560687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,6 +2110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33abb3b470a2b646902c41da36e4dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStatus: {fileID: 0}
   charImage: {fileID: 778131845}
   designatedPos: {fileID: 187736826}
   transitionDuration: 0.5
@@ -12001,7 +12016,6 @@ MonoBehaviour:
   shapeLayer:
     serializedVersion: 2
     m_Bits: 64
-  varParent: {fileID: 1155977302}
 --- !u!114 &2012912183
 MonoBehaviour:
   m_ObjectHideFlags: 0
