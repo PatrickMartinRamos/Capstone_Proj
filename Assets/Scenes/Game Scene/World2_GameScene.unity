@@ -1203,8 +1203,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 236887423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1080, y: 2337.2307}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4843,6 +4843,7 @@ GameObject:
   - component: {fileID: 737203429}
   - component: {fileID: 737203428}
   - component: {fileID: 737203432}
+  - component: {fileID: 737203434}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4954,6 +4955,19 @@ MonoBehaviour:
   _nextStageButton: {fileID: 381937545}
   _retryButton: {fileID: 1927572730}
   _returnButton: {fileID: 1379868441}
+--- !u!114 &737203434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737203427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886174d10f91c4b4ba587971413cb3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
 --- !u!1 &738988821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6574,7 +6588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -373, y: 873}
+  m_AnchoredPosition: {x: -373, y: 836}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996988489
@@ -7673,8 +7687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 737203427}
-  _retrybtn: {fileID: 0}
-  _returnToWorlSelectionBtn: {fileID: 0}
 --- !u!1 &1179482858
 GameObject:
   m_ObjectHideFlags: 0
@@ -12343,10 +12355,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetMasterVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1835612448
 GameObject:
   m_ObjectHideFlags: 0
@@ -13059,7 +13083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1927572730
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,8 +6,6 @@ namespace Stellarfarer
     public class PauseManagerUI : MonoBehaviour
     {
         [SerializeField] private GameObject _pauseMenu;
-        [SerializeField] private Button _retrybtn;
-        [SerializeField] private Button _returnToWorlSelectionBtn;
 
         private Hydros7GameManager _hydros7GameManager;
 

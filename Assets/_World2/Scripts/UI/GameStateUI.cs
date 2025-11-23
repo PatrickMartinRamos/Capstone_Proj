@@ -33,8 +33,11 @@ namespace Stellarfarer
             _returnButton.onClick.AddListener(() => LoadScene(WORLDSELECTION_FILEPATH));
         }
 
-        private void LoadScene(string sceneName)
-            => SceneManager.LoadScene(sceneName);
+        private void LoadScene(string sceneName){
+            SceneManager.LoadScene(sceneName);
+            Time.timeScale = 1f;
+        }
+            
 
         private void Start()
         {
