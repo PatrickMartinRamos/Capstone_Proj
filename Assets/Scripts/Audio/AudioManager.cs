@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     {
         if (Instance != null)
         {
+            Debug.Log("Destroying "+this.gameObject.name);
             Destroy(gameObject);
             return;
         }

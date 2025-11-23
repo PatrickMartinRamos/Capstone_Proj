@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44706088dd7e14599aa22d4e669807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToClose:
   - {fileID: 0}
@@ -1082,7 +1082,6 @@ GameObject:
   - component: {fileID: 728161274}
   - component: {fileID: 728161273}
   - component: {fileID: 728161275}
-  - component: {fileID: 728161276}
   m_Layer: 0
   m_Name: GameSceneManager
   m_TagString: Untagged
@@ -1216,19 +1215,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &728161276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728161272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6833996e5eb9049a75b62a8d007acc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioData: {fileID: 11400000, guid: 172fcb0350ae48c46bd15ca5eb706fc4, type: 2}
 --- !u!1 &745654686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1227,7 @@ GameObject:
   - component: {fileID: 745654688}
   - component: {fileID: 745654690}
   - component: {fileID: 745654691}
+  - component: {fileID: 745654692}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1374,6 +1361,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f0617d55fdf4084ea7d4dca9526028f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!81 &745654692
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745654686}
+  m_Enabled: 1
 --- !u!1 &775876947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44706088dd7e14599aa22d4e669807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToClose:
   - {fileID: 775876947}
@@ -2204,7 +2199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &975361654
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2237,7 +2232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc1464e3f983b8b47abd7c8001df9774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToOpen: {fileID: 2130397798}
 --- !u!114 &975361656
@@ -2458,7 +2453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44706088dd7e14599aa22d4e669807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToClose:
   - {fileID: 789923353}
@@ -2741,7 +2736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44706088dd7e14599aa22d4e669807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToClose:
   - {fileID: 2130397798}
@@ -3600,7 +3595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886174d10f91c4b4ba587971413cb3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 728161276}
+  audioManager: {fileID: 0}
 --- !u!1 &1426967848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,7 +3908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc1464e3f983b8b47abd7c8001df9774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToOpen: {fileID: 789923353}
 --- !u!114 &1587857795
@@ -4201,7 +4196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44706088dd7e14599aa22d4e669807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToClose:
   - {fileID: 1777467096}
@@ -4917,7 +4912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db44706088dd7e14599aa22d4e669807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 728161275}
+  audioSource: {fileID: 0}
   buttonClickSFX: {fileID: 8300000, guid: 9ed6366d74279a64fb0c2a296b0f358f, type: 3}
   objectToClose:
   - {fileID: 0}

@@ -12,35 +12,44 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldSelection.unity
     guid: 6c84aca4d0a0d2847ba0a1daec705950
   - enabled: 1
-    path: Assets/World1/World1_Gamescene.unity
+    path: Assets/World1/World1_GameScene.unity
     guid: 370a74663ec34b04a83d9406d4de0364
   - enabled: 1
     path: Assets/World1/World1_Stage1.unity
     guid: 1559e52bdc24e434e93c1d2f844c0687
   - enabled: 1
     path: Assets/World1/World1_Stage2.unity
-    guid: eadfe21516ffa5d459cee4adeb5bf9e3
+    guid: b4afe899e53e5a24cb9384b44edc9fc0
   - enabled: 1
     path: Assets/World1/World1_Stage3.unity
-    guid: 5b634ac316d045748b0ff59fd2960af7
+    guid: 50c7b1343405c304ebbb13caa4512bbc
   - enabled: 1
     path: Assets/World1/World1_Stage4.unity
     guid: 94b94a65f91b8c848b4915f9051930b5
   - enabled: 1
     path: Assets/World1/World1_Stage5.unity
-    guid: 7ca542ef91288954f98e2c4222715150
+    guid: cf1341d8b8a341b478f00543515514a2
   - enabled: 1
     path: Assets/World1/World1_Stage6.unity
-    guid: e42162b053809f9479bda3ed6a25ae87
+    guid: 52db12dafa0154c448484b8be2e07bcc
   - enabled: 1
     path: Assets/Scenes/Game Scene/World2_GameScene.unity
     guid: 41c745b4b43c0ce4ebbec48bce3f8bfc
-  - enabled: 0
+  - enabled: 1
     path: Assets/World1/World1_Stage7.unity
-    guid: f4052af9bfa7e364987250e0ca6c2b12
+    guid: 36407803113dc644fbf974e32ae6504c
   - enabled: 0
     path: Assets/_World2/Scenes/World2_GameScene.unity
     guid: 0f5e00058a0d47c479083571bea61857
+  - enabled: 1
+    path: Assets/World1/World1_Stage8.unity
+    guid: b493ebcac729609489b5daa89712492a
+  - enabled: 1
+    path: Assets/World1/World1_Stage9.unity
+    guid: c2e997b958271c44cab3092d325f528c
+  - enabled: 1
+    path: Assets/World1/World1_Stage10.unity
+    guid: 693442e102697954aa636e0f8faf3d3f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
