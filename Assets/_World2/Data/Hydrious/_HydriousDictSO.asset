@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: _HydriousDictSO
   m_EditorClassIdentifier: 
   _hydriousSODict:
-    _keyList: 010000000200000004000000080000001000000020000000
-    _valueList:
-    - {fileID: 11400000, guid: 3951b22a40f340349b59d487c93fb475, type: 2}
-    - {fileID: 11400000, guid: c5d9aba6fc0cd7c42a1f4b55a4eb5a7f, type: 2}
-    - {fileID: 11400000, guid: baf278c9589d12340ab82d0cb189dc9c, type: 2}
-    - {fileID: 11400000, guid: 04881ea72cb5e664abbcfce45fc51aaa, type: 2}
-    - {fileID: 11400000, guid: e5db6aa0ab1e75c41ae0bb445436974a, type: 2}
-    - {fileID: 11400000, guid: 321ba44ddf72be3458d051eeda1e83de, type: 2}
+    _serializedList:
+    - Key: 1
+      Value: {fileID: 11400000, guid: 3951b22a40f340349b59d487c93fb475, type: 2}
+    - Key: 2
+      Value: {fileID: 11400000, guid: c5d9aba6fc0cd7c42a1f4b55a4eb5a7f, type: 2}
+    - Key: 4
+      Value: {fileID: 11400000, guid: baf278c9589d12340ab82d0cb189dc9c, type: 2}
+    - Key: 8
+      Value: {fileID: 11400000, guid: 04881ea72cb5e664abbcfce45fc51aaa, type: 2}
+    - Key: 16
+      Value: {fileID: 11400000, guid: e5db6aa0ab1e75c41ae0bb445436974a, type: 2}
+    - Key: 32
+      Value: {fileID: 11400000, guid: 321ba44ddf72be3458d051eeda1e83de, type: 2}

@@ -1,14 +1,18 @@
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Stellarfarer
 {
     public class CaptureManager : SingletonBehaviour<CaptureManager>
     {
-        public event System.Action OnCapture;
+        public event Action OnCapture;
+        public event Action OnCleanse;
 
-        [SerializeField] private UnityEngine.UI.Image _holdingArea;
-        [SerializeField] private Bounds _holdingAreaBounds;
-        private Hydrious _hydriousTarget;
+        [SerializeField] private Image _holdingArea;
+        [SerializeField] private Sprite _full;
+        [SerializeField] private Sprite _visible;
+        private HydriousUI _hydriousUITarget;
 
         protected override void Awake()
         {
@@ -19,24 +23,41 @@ namespace Stellarfarer
                 Debug.LogError($"Holding Area is null or uninitialized.");
                 return;
             }
-            else
-            {
-                Vector2 holdingAreaCenter = _holdingArea.GetActualVisibleSpriteCenter();
-                Vector2 holdingAreaSize = _holdingArea.GetScaledVisibleSpriteSizeInUIUnits();
-                _holdingAreaBounds = new Bounds(holdingAreaCenter, holdingAreaSize);
-            }
         }
 
-        public void Capture(Hydrious hydrious)
+        private void Start()
+            => _holdingArea.ConfigureImageFromFullToVisibleSprite(
+                    full: _full,
+                    visible: _visible
+                );
+
+        private bool HasHydriousUITarget()
+            => _hydriousUITarget != null;
+
+        public bool TryCapture(HydriousUI hydriousUI)
         {
-            _hydriousTarget = hydrious;
+            if (HasHydriousUITarget())
+                return false;
+
+            SetHydriousUITarget(hydriousUI);
             OnCapture?.Invoke();
+
+            return true;
         }
 
-        public Hydrious GetHydriousTarget()
-            => _hydriousTarget;
+        private void SetHydriousUITarget(HydriousUI hydriousUI)
+            => _hydriousUITarget = hydriousUI;
 
-        public Bounds GetHoldingAreaBounds()
-            => _holdingAreaBounds;
+        public void ClearHydriousUITarget()
+            => SetHydriousUITarget(null);
+
+        public HydriousUI GetHydriousUITarget()
+            => _hydriousUITarget;
+
+        public RectTransform GetHoldingAreaRectTransform()
+            => _holdingArea.rectTransform;
+
+        public void Cleanse()
+            => OnCleanse?.Invoke();
     }
 }

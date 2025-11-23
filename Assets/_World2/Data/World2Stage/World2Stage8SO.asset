@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: World2Stage8SO
   m_EditorClassIdentifier: 
   _number: 8
-  _cleansingType: 2
-  _species: 12
-  _hydrionEnergyAmountRequired: 500
-  _spawnTime: 60
+  _cleansingType: 5
+  _hydrionEnergyAmountRequired: 300
+  _spawnTime: 120

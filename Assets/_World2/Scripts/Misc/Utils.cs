@@ -75,9 +75,6 @@ namespace Stellarfarer
             };
         }
 
-        public static float ConvertPixelsToUIUnits(float sizeInPixels, float pixelsPerUnit)
-            => sizeInPixels / pixelsPerUnit;
-
         public static Vector2 ConvertPixelsToUIUnits(Vector2 sizeInPixels, float pixelsPerUnit)
             => sizeInPixels / pixelsPerUnit;
 
@@ -87,75 +84,20 @@ namespace Stellarfarer
         public static float Halve(float num)
             => num / 2;
 
-        public static float AbsoluteSubtract(float num1, float num2)
-            => Mathf.Abs(num1 - num2);
-
-        public static Vector2 AbsoluteSubtract(Vector2 num1, Vector2 num2)
-            => new(
-                Mathf.Abs(num1.x - num2.x),
-                Mathf.Abs(num1.y - num2.y)
-            );
+        public static Vector2 Halve(Vector2 vector)
+            => vector / 2;
 
         public static float GetDistanceFromOriginToAxisCenter(
             Vector2 spriteBorder,
-            float textureSize,
-            float spriteSize)
+            float textureSize)
         {
             float startToAxis_X = spriteBorder.x;
             float startToAxis_Y = textureSize - spriteBorder.y;
 
             float halfTextureSize = Halve(textureSize);
-            float halfSpriteSize = Halve(spriteSize);
 
-            float originToAxis_X = AbsoluteSubtract(spriteBorder.x, halfTextureSize);
-            float originToAxis_Y = AbsoluteSubtract(spriteBorder.y, halfTextureSize);
-
-            bool sameSide = (startToAxis_X < halfTextureSize) == (startToAxis_Y < halfTextureSize);
-
-            float shortestDistanceFromOrigin;
-            int direction;
-            float originToAxisCenter;
-
-            if (sameSide)
-            {
-                if (originToAxis_X < originToAxis_Y)
-                {
-                    shortestDistanceFromOrigin = originToAxis_X;
-                    direction = -1;
-                }
-                else if (originToAxis_Y < originToAxis_X)
-                {
-                    shortestDistanceFromOrigin = originToAxis_Y;
-                    direction = 1;
-                }
-                else
-                {
-                    shortestDistanceFromOrigin = 0;
-                    direction = 0;
-                }
-
-                originToAxisCenter = (halfSpriteSize + shortestDistanceFromOrigin) * direction;
-            }
-            else
-            {
-                if (originToAxis_X > originToAxis_Y)
-                {
-                    halfSpriteSize -= originToAxis_Y;
-                    direction = -1;
-                }
-                else if (originToAxis_Y > originToAxis_X)
-                {
-                    halfSpriteSize -= originToAxis_X;
-                    direction = 1;
-                }
-                else
-                {
-                    halfSpriteSize = 0;
-                    direction = 0;
-                }
-
-                originToAxisCenter = halfSpriteSize * direction;
-            }
+            float axisCenter = (startToAxis_X + startToAxis_Y) / 2;
+            float originToAxisCenter = axisCenter - halfTextureSize;
 
             return originToAxisCenter;
         }

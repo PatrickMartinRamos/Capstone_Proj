@@ -1,5 +1,3 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,9 +48,9 @@ namespace Stellarfarer
         public static Vector2 GetActualVisibleSpriteSizeInPixels(this Image image)
         {
             Texture texture = image.GetSpriteTexture();
-            Vector2 textureSize = new(texture.width, texture.height); // px
+            Vector2 textureSize = new Vector2(texture.width, texture.height); // px
             Vector4 spriteBorder = image.GetSpriteBorder();
-            var actualVisibleSpriteSize = new Vector2(
+            Vector2 actualVisibleSpriteSize = new Vector2(
                 Utils.MultiSubtract(textureSize.x, spriteBorder.x, spriteBorder.z),
                 Utils.MultiSubtract(textureSize.y, spriteBorder.y, spriteBorder.w));
 
@@ -67,7 +65,7 @@ namespace Stellarfarer
         public static Vector2 GetDisplayedSpriteSizeInUIUnits(this Image image)
         {
             Texture texture = image.GetSpriteTexture();
-            Vector2 textureSize = new(texture.width, texture.height); // px
+            Vector2 textureSize = new Vector2(texture.width, texture.height); // px
             Vector2 rectSize = image.rectTransform.rect.size; // ui
 
             if (image.preserveAspect)
@@ -95,26 +93,39 @@ namespace Stellarfarer
         /// </summary>
         /// <param name="image">The Image component to evaluate.</param>
         /// <returns>The center of actual visible sprite.</returns>
-        public static Vector2 GetActualVisibleSpriteCenter(this Image image)
+        public static Vector2 GetScaledVisibleSpriteCenter(this Image image)
         {
             Texture texture = image.GetSpriteTexture();
             Vector2 textureSize = new(texture.width, texture.height);
             Vector4 spriteBorder = image.GetSpriteBorder();
-            Vector2 actualSpriteSizeInPixels = image.GetActualVisibleSpriteSizeInPixels();
+            RectTransform rectTransform = image.rectTransform;
 
+            // 1️⃣ Compute the center position in texture space (in pixels)
             float originToCenterX =
                 Utils.GetDistanceFromOriginToAxisCenter(
                     new Vector2(spriteBorder.x, spriteBorder.z),
-                    textureSize.x,
-                    actualSpriteSizeInPixels.x);
+                    textureSize.x);
             float originToCenterY =
                 Utils.GetDistanceFromOriginToAxisCenter(
-                    new Vector2(spriteBorder.w, spriteBorder.y),
-                    textureSize.y,
-                    actualSpriteSizeInPixels.y);
+                    new Vector2(spriteBorder.y, spriteBorder.w),
+                    textureSize.y);
 
-            Vector2 originToCenter = new(originToCenterX, originToCenterY);
-            return originToCenter;
+            Vector2 textureCenter = new(originToCenterX, originToCenterY);
+
+            // 2️⃣ Normalize relative to texture size
+            Vector2 normalizedCenter = new Vector2(
+                textureCenter.x / textureSize.x,
+                textureCenter.y / textureSize.y
+            );
+
+            // 3️⃣ Scale by the actual visible UI rect size
+            Vector2 uiRectSize = rectTransform.rect.size;
+            Vector2 uiCenter = new Vector2(
+                normalizedCenter.x * uiRectSize.x,
+                normalizedCenter.y * uiRectSize.y
+            );
+
+            return uiCenter;
         }
 
         public static Texture GetSpriteTexture(this Image image)
@@ -143,6 +154,68 @@ namespace Stellarfarer
             }
 
             return sprite.border;
+        }
+
+        public static Rect GetVisibleRect(this Image image)
+        {
+            Vector2 center = image.GetScaledVisibleSpriteCenter();
+            Vector2 size = image.GetScaledVisibleSpriteSizeInUIUnits();
+
+            return new Rect(center, size);
+        }
+
+        public static void ConfigureImageFromFullToVisibleSprite(this Image image, Sprite full, Sprite visible)
+        {
+            image.ConfigureImageAsFullSprite(full);
+            image.ConfigureImageAsVisibleSprite(visible);
+        }
+
+        public static void ConfigureImageAsFullSprite(this Image image, Sprite sprite)
+        {
+            Vector2 anchorMin = Vector2.zero;
+            Vector2 anchorMax = Vector2.one;
+            Vector2 anchoredPosition = Vector2.zero;
+            Vector2 sizeDelta = Vector2.zero;
+
+            image.ConfigureImageLayoutAndSprite(
+                anchorMin,
+                anchorMax,
+                anchoredPosition,
+                sizeDelta,
+                sprite
+            );
+        }
+
+        public static void ConfigureImageAsVisibleSprite(this Image image, Sprite sprite)
+        {
+            Vector2 anchorMin = new Vector2(0.5f, 0.5f);
+            Vector2 anchorMax = new Vector2(0.5f, 0.5f);
+            Vector2 anchoredPosition = image.GetScaledVisibleSpriteCenter();
+            Vector2 sizeDelta = image.GetScaledVisibleSpriteSizeInUIUnits();
+
+            image.ConfigureImageLayoutAndSprite(
+                anchorMin,
+                anchorMax,
+                anchoredPosition,
+                sizeDelta,
+                sprite
+            );
+        }
+
+        public static void ConfigureImageLayoutAndSprite(
+            this Image image,
+            Vector2 anchorMin,
+            Vector2 anchorMax,
+            Vector2 anchoredPosition,
+            Vector2 sizeDelta,
+            Sprite sprite)
+        {
+            RectTransform imageRectTransform = image.rectTransform;
+            imageRectTransform.anchorMin = anchorMin;
+            imageRectTransform.anchorMax = anchorMax;
+            imageRectTransform.anchoredPosition = anchoredPosition;
+            imageRectTransform.sizeDelta = sizeDelta;
+            image.sprite = sprite;
         }
     }
 }

@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 53d380f6854928a4791a73c16a4f54a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5771241036123336334
+    second: Midpoint Formula_0
+  - first:
+      213: 4580571477327924000
+    second: Midpoint Formula_1
+  - first:
+      213: -8897556896102752577
+    second: Midpoint Formula_2
+  - first:
+      213: -2498524919667236836
+    second: Midpoint Formula_3
+  - first:
+      213: -3803241207549519458
+    second: Midpoint Formula_4
+  - first:
+      213: -6023666425416741401
+    second: Midpoint Formula_5
+  - first:
+      213: 710751749340390290
+    second: Midpoint Formula_6
+  - first:
+      213: 8512299527390434532
+    second: Midpoint Formula_7
+  - first:
+      213: -1967179254357019933
+    second: Midpoint Formula_8
+  - first:
+      213: 6821410439695094187
+    second: Midpoint Formula_9
+  - first:
+      213: -2941591356701174850
+    second: Midpoint Formula_10
+  - first:
+      213: 4325724162378435578
+    second: Midpoint Formula_11
+  - first:
+      213: 7954744263464225359
+    second: Midpoint Formula_12
+  - first:
+      213: 9149677984410177532
+    second: Midpoint Formula_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Midpoint Formula_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1331
+        width: 60
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27116b0eade68efa0800000000000000
+      internalID: -5771241036123336334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1464
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bca6e5d75719f30800000000000000
+      internalID: 4580571477327924000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_2
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1464
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbed7fee427858480800000000000000
+      internalID: -8897556896102752577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1331
+        width: 60
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10e5c4c2d4735dd0800000000000000
+      internalID: -2498524919667236836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1420
+        width: 284
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9912eca54c283bc0800000000000000
+      internalID: -3803241207549519458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_5
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1384
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed86930d43a76ca0800000000000000
+      internalID: -6023666425416741401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_6
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1420
+        width: 284
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293ebe643f81dd900800000000000000
+      internalID: 710751749340390290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1350
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e415dfe153c12670800000000000000
+      internalID: 8512299527390434532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_8
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1350
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2388604ec23b4e0800000000000000
+      internalID: -1967179254357019933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1285
+        width: 77
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1da2d47a48aae50800000000000000
+      internalID: 6821410439695094187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_10
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1264
+        width: 77
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3977d0f3e5d27d0800000000000000
+      internalID: -2941591356701174850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1009
+        width: 60
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb04eef43f080c30800000000000000
+      internalID: 4325724162378435578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_12
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1025
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a8cd6f2cde46e60800000000000000
+      internalID: 7954744263464225359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Midpoint Formula_13
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1009
+        width: 60
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff0bf556af2afe70800000000000000
+      internalID: 9149677984410177532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Midpoint Formula_0: -5771241036123336334
+      Midpoint Formula_1: 4580571477327924000
+      Midpoint Formula_10: -2941591356701174850
+      Midpoint Formula_11: 4325724162378435578
+      Midpoint Formula_12: 7954744263464225359
+      Midpoint Formula_13: 9149677984410177532
+      Midpoint Formula_2: -8897556896102752577
+      Midpoint Formula_3: -2498524919667236836
+      Midpoint Formula_4: -3803241207549519458
+      Midpoint Formula_5: -6023666425416741401
+      Midpoint Formula_6: 710751749340390290
+      Midpoint Formula_7: 8512299527390434532
+      Midpoint Formula_8: -1967179254357019933
+      Midpoint Formula_9: 6821410439695094187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
