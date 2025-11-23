@@ -1,0 +1,3926 @@
+fileFormatVersion: 2
+guid: 9b04fb78b1b3a5940a2b1382c62d636b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7214823941185996098
+    second: Radicals P1_0
+  - first:
+      213: 4108414592122675952
+    second: Radicals P1_1
+  - first:
+      213: 4869567368929402825
+    second: Radicals P1_2
+  - first:
+      213: 5578055598934867164
+    second: Radicals P1_3
+  - first:
+      213: 7471649186353128233
+    second: Radicals P1_4
+  - first:
+      213: -1369343897678502948
+    second: Radicals P1_5
+  - first:
+      213: 4524910594334436428
+    second: Radicals P1_6
+  - first:
+      213: 7773865634866741004
+    second: Radicals P1_7
+  - first:
+      213: 405508390281666781
+    second: Radicals P1_8
+  - first:
+      213: -5758116805593392356
+    second: Radicals P1_9
+  - first:
+      213: 8942033638612499701
+    second: Radicals P1_10
+  - first:
+      213: 881936030946483314
+    second: Radicals P1_11
+  - first:
+      213: 2666993969360879968
+    second: Radicals P1_12
+  - first:
+      213: 6393720148003923432
+    second: Radicals P1_13
+  - first:
+      213: -1512942123763064813
+    second: Radicals P1_14
+  - first:
+      213: -5882082359380258738
+    second: Radicals P1_15
+  - first:
+      213: 5465090434407032624
+    second: Radicals P1_16
+  - first:
+      213: -172368575472575608
+    second: Radicals P1_17
+  - first:
+      213: 7746643545961467840
+    second: Radicals P1_18
+  - first:
+      213: 69736037705286694
+    second: Radicals P1_19
+  - first:
+      213: 943847189026914051
+    second: Radicals P1_20
+  - first:
+      213: -5478135640327893972
+    second: Radicals P1_21
+  - first:
+      213: 5685251454862517307
+    second: Radicals P1_22
+  - first:
+      213: 2739540496372865932
+    second: Radicals P1_23
+  - first:
+      213: -8253440693945767437
+    second: Radicals P1_24
+  - first:
+      213: -235643173989654195
+    second: Radicals P1_25
+  - first:
+      213: 2597401480764645622
+    second: Radicals P1_26
+  - first:
+      213: 3359786458755146095
+    second: Radicals P1_27
+  - first:
+      213: 7727807511758716543
+    second: Radicals P1_28
+  - first:
+      213: -700490295991748286
+    second: Radicals P1_29
+  - first:
+      213: -3779958635923137462
+    second: Radicals P1_30
+  - first:
+      213: 8969913741309530942
+    second: Radicals P1_31
+  - first:
+      213: 5143142497365646149
+    second: Radicals P1_32
+  - first:
+      213: 4727399052466546423
+    second: Radicals P1_33
+  - first:
+      213: 2323178550199202844
+    second: Radicals P1_34
+  - first:
+      213: 2796046749944425639
+    second: Radicals P1_35
+  - first:
+      213: 7060607613524131806
+    second: Radicals P1_36
+  - first:
+      213: 1024167713385250132
+    second: Radicals P1_37
+  - first:
+      213: -3799661302939985932
+    second: Radicals P1_38
+  - first:
+      213: 112502381890279333
+    second: Radicals P1_39
+  - first:
+      213: 1231196653475422124
+    second: Radicals P1_40
+  - first:
+      213: 7878722259443588330
+    second: Radicals P1_41
+  - first:
+      213: -2433396252867281351
+    second: Radicals P1_42
+  - first:
+      213: -4692828583651548845
+    second: Radicals P1_43
+  - first:
+      213: -1442026680254795097
+    second: Radicals P1_44
+  - first:
+      213: 335150226286430661
+    second: Radicals P1_45
+  - first:
+      213: -1018730467016083662
+    second: Radicals P1_46
+  - first:
+      213: 413254775699428405
+    second: Radicals P1_47
+  - first:
+      213: -1414915111827104905
+    second: Radicals P1_48
+  - first:
+      213: 9024572889904713446
+    second: Radicals P1_49
+  - first:
+      213: -2279319405957597363
+    second: Radicals P1_50
+  - first:
+      213: -4119585116409982328
+    second: Radicals P1_51
+  - first:
+      213: -6951814381585606668
+    second: Radicals P1_52
+  - first:
+      213: -2560176972711249331
+    second: Radicals P1_53
+  - first:
+      213: 7073601505747539320
+    second: Radicals P1_54
+  - first:
+      213: -2396332822278025362
+    second: Radicals P1_55
+  - first:
+      213: 3880963657758816073
+    second: Radicals P1_56
+  - first:
+      213: -4984484169184704161
+    second: Radicals P1_57
+  - first:
+      213: -4307127617915955909
+    second: Radicals P1_58
+  - first:
+      213: 8722586054379018446
+    second: Radicals P1_59
+  - first:
+      213: 5224889030602397529
+    second: Radicals P1_60
+  - first:
+      213: 5799991353565779580
+    second: Radicals P1_61
+  - first:
+      213: 2644698271852623064
+    second: Radicals P1_62
+  - first:
+      213: -1358439709814921697
+    second: Radicals P1_63
+  - first:
+      213: -7917697802065312622
+    second: Radicals P1_64
+  - first:
+      213: -5465468568789188546
+    second: Radicals P1_65
+  - first:
+      213: 4132833026626406782
+    second: Radicals P1_66
+  - first:
+      213: 4232090632292114621
+    second: Radicals P1_67
+  - first:
+      213: -4460054465492798524
+    second: Radicals P1_68
+  - first:
+      213: 6796163862696825855
+    second: Radicals P1_69
+  - first:
+      213: 2383962697680017294
+    second: Radicals P1_70
+  - first:
+      213: -865794920042227169
+    second: Radicals P1_71
+  - first:
+      213: 4127059090211317042
+    second: Radicals P1_72
+  - first:
+      213: -3381887689764866599
+    second: Radicals P1_73
+  - first:
+      213: -1599946329689891694
+    second: Radicals P1_74
+  - first:
+      213: 1363266467575801687
+    second: Radicals P1_75
+  - first:
+      213: 5177742736873439820
+    second: Radicals P1_76
+  - first:
+      213: 5035654153791460308
+    second: Radicals P1_77
+  - first:
+      213: -8634643214295925727
+    second: Radicals P1_78
+  - first:
+      213: 1522519438006554817
+    second: Radicals P1_79
+  - first:
+      213: -7912806825956596423
+    second: Radicals P1_80
+  - first:
+      213: 300509507907729011
+    second: Radicals P1_81
+  - first:
+      213: -9054012754008683476
+    second: Radicals P1_82
+  - first:
+      213: 6951028420935203311
+    second: Radicals P1_83
+  - first:
+      213: -1003841164112778289
+    second: Radicals P1_84
+  - first:
+      213: 2905654649345274692
+    second: Radicals P1_85
+  - first:
+      213: -2230309855306621840
+    second: Radicals P1_86
+  - first:
+      213: 6260958723346648307
+    second: Radicals P1_87
+  - first:
+      213: -33142282794447840
+    second: Radicals P1_88
+  - first:
+      213: 6247287931818639812
+    second: Radicals P1_89
+  - first:
+      213: -1141669551203163541
+    second: Radicals P1_90
+  - first:
+      213: -3565133245500796226
+    second: Radicals P1_91
+  - first:
+      213: 9067043202934722617
+    second: Radicals P1_92
+  - first:
+      213: -6023223419076981467
+    second: Radicals P1_93
+  - first:
+      213: -4015882574669077792
+    second: Radicals P1_94
+  - first:
+      213: 6813069937470841999
+    second: Radicals P1_95
+  - first:
+      213: 1861990757874577214
+    second: Radicals P1_96
+  - first:
+      213: -1558368606231340948
+    second: Radicals P1_97
+  - first:
+      213: 2777088508541900014
+    second: Radicals P1_98
+  - first:
+      213: -799929229404315593
+    second: Radicals P1_99
+  - first:
+      213: -5971992670128698201
+    second: Radicals P1_100
+  - first:
+      213: 4086898712103901091
+    second: Radicals P1_101
+  - first:
+      213: 4773954517267572488
+    second: Radicals P1_102
+  - first:
+      213: -1358410756738824061
+    second: Radicals P1_103
+  - first:
+      213: -5278691090611255232
+    second: Radicals P1_104
+  - first:
+      213: 2592623356550533799
+    second: Radicals P1_105
+  - first:
+      213: 2754418631363904926
+    second: Radicals P1_106
+  - first:
+      213: -58188981250028606
+    second: Radicals P1_107
+  - first:
+      213: 265035215545375340
+    second: Radicals P1_108
+  - first:
+      213: -7657644374520966031
+    second: Radicals P1_109
+  - first:
+      213: 7361769946361358943
+    second: Radicals P1_110
+  - first:
+      213: -8392549986522880819
+    second: Radicals P1_111
+  - first:
+      213: 5264884842173748577
+    second: Radicals P1_112
+  - first:
+      213: -4322917998619864959
+    second: Radicals P1_113
+  - first:
+      213: 7730111453038066703
+    second: Radicals P1_114
+  - first:
+      213: 8044115407148772620
+    second: Radicals P1_115
+  - first:
+      213: 8726530604223095935
+    second: Radicals P1_116
+  - first:
+      213: -5899898233071580919
+    second: Radicals P1_117
+  - first:
+      213: 1941117876191137100
+    second: Radicals P1_118
+  - first:
+      213: 764648915390561036
+    second: Radicals P1_119
+  - first:
+      213: -15737813321308718
+    second: Radicals P1_120
+  - first:
+      213: 7854272928610751052
+    second: Radicals P1_121
+  - first:
+      213: -3137873392336387937
+    second: Radicals P1_122
+  - first:
+      213: -4370974438726090858
+    second: Radicals P1_123
+  - first:
+      213: 6668586749672264146
+    second: Radicals P1_124
+  - first:
+      213: -8310794012448794926
+    second: Radicals P1_125
+  - first:
+      213: -416428980743406076
+    second: Radicals P1_126
+  - first:
+      213: -3375914899703225305
+    second: Radicals P1_127
+  - first:
+      213: -6756939991635938553
+    second: Radicals P1_128
+  - first:
+      213: -609820742502172278
+    second: Radicals P1_129
+  - first:
+      213: 1411492646164750127
+    second: Radicals P1_130
+  - first:
+      213: 595106658140419962
+    second: Radicals P1_131
+  - first:
+      213: -5704835602020497556
+    second: Radicals P1_132
+  - first:
+      213: 8599502498205707511
+    second: Radicals P1_133
+  - first:
+      213: 5379708040173872529
+    second: Radicals P1_134
+  - first:
+      213: 3486392999096443379
+    second: Radicals P1_135
+  - first:
+      213: 1719630727067393924
+    second: Radicals P1_136
+  - first:
+      213: 1754942654060607475
+    second: Radicals P1_137
+  - first:
+      213: 5281366174422022902
+    second: Radicals P1_138
+  - first:
+      213: 2741509029318420176
+    second: Radicals P1_139
+  - first:
+      213: 3318014523120087194
+    second: Radicals P1_140
+  - first:
+      213: 4961367240045773600
+    second: Radicals P1_141
+  - first:
+      213: -8368132531119234738
+    second: Radicals P1_142
+  - first:
+      213: 326269245425098055
+    second: Radicals P1_143
+  - first:
+      213: -7251026257086559489
+    second: Radicals P1_144
+  - first:
+      213: 5225945539070073297
+    second: Radicals P1_145
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Radicals P1_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 941
+        width: 593
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebaff9ce9dbcfdb90800000000000000
+      internalID: -7214823941185996098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1001
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2e081ed45040930800000000000000
+      internalID: 4108414592122675952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfded2d8bd249340800000000000000
+      internalID: 4869567368929402825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_3
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 998
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc34ef630c396d40800000000000000
+      internalID: 5578055598934867164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_4
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9232ae63951a0b760800000000000000
+      internalID: 7471649186353128233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 905
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3268beafc1ffce0800000000000000
+      internalID: -1369343897678502948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_6
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 906
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ca4b72636bbce30800000000000000
+      internalID: 4524910594334436428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_7
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 906
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f39d17b9152eb60800000000000000
+      internalID: 7773865634866741004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_8
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 882
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0ed248bb7a0a500800000000000000
+      internalID: 405508390281666781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_9
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 907
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b166be54f0710b0800000000000000
+      internalID: -5758116805593392356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_10
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 722
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc7717a73c781c70800000000000000
+      internalID: 8942033638612499701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_11
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 720
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cde2fb5244d3c00800000000000000
+      internalID: 881936030946483314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 722
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0614dd182e0130520800000000000000
+      internalID: 2666993969360879968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 711
+        width: 78
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e52807699e0bb850800000000000000
+      internalID: 6393720148003923432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 691
+        width: 89
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310a0638723f00be0800000000000000
+      internalID: -1512942123763064813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_15
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 515
+        width: 497
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e405c8d3245ae5ea0800000000000000
+      internalID: -5882082359380258738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_16
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 687
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03767387bc6e7db40800000000000000
+      internalID: 5465090434407032624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 688
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b5480a1bf9b9df0800000000000000
+      internalID: -172368575472575608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 688
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf0b96f24b918b60800000000000000
+      internalID: 7746643545961467840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_19
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 708
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624877b8e80c7f000800000000000000
+      internalID: 69736037705286694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_20
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 686
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f33388408391d00800000000000000
+      internalID: 943847189026914051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 668
+        width: 67
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c49d6d8a0c9f3b0800000000000000
+      internalID: -5478135640327893972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_22
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 678
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b346ad1931216ee40800000000000000
+      internalID: 5685251454862517307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_23
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 694
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b1a16119dc40620800000000000000
+      internalID: 2739540496372865932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_24
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 678
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9eb9eda63e57d80800000000000000
+      internalID: -8253440693945767437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_25
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 678
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41e99028c3dabcf0800000000000000
+      internalID: -235643173989654195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_26
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 688
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0ec0892e2db0420800000000000000
+      internalID: 2597401480764645622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_27
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 678
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61a44bbbfb50ae20800000000000000
+      internalID: 3359786458755146095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_28
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 570
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e39fefcffae3b60800000000000000
+      internalID: 7727807511758716543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_29
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 571
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249bdc289cb5746f0800000000000000
+      internalID: -700490295991748286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_30
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 571
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c9120d5a3ea8bc0800000000000000
+      internalID: -3779958635923137462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_31
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 591
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3356a8e5098b7c70800000000000000
+      internalID: 8969913741309530942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_32
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 571
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bd1b01adc106740800000000000000
+      internalID: 5143142497365646149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_33
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 571
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f669c134681b9140800000000000000
+      internalID: 4727399052466546423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_34
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 558
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c143e6a25969d3020800000000000000
+      internalID: 2323178550199202844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 591
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aca2d974bd8dc620800000000000000
+      internalID: 2796046749944425639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_36
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 571
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf368e37315cf160800000000000000
+      internalID: 7060607613524131806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_37
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 529
+        width: 122
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d70caeb13963e00800000000000000
+      internalID: 1024167713385250132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_38
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 413
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7d67b2d24e44bc0800000000000000
+      internalID: -3799661302939985932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_39
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 416
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a794fcf150bf8100800000000000000
+      internalID: 112502381890279333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_40
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 416
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf5d0b45d6161110800000000000000
+      internalID: 1231196653475422124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_41
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 416
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec1916d628d65d60800000000000000
+      internalID: 7878722259443588330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_42
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 415
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e341e2007da3ed0800000000000000
+      internalID: -2433396252867281351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_43
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 415
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35166af4449bfdeb0800000000000000
+      internalID: -4692828583651548845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_44
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 401
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2f6cedf54ecfbe0800000000000000
+      internalID: -1442026680254795097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_45
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 401
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9c138ea51b6a400800000000000000
+      internalID: 335150226286430661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_46
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 423
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23773a7a90ebcd1f0800000000000000
+      internalID: -1018730467016083662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_47
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 413
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5345c4b670d2cb500800000000000000
+      internalID: 413254775699428405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_48
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 299
+        width: 194
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b963cc3363d5ce0800000000000000
+      internalID: -1414915111827104905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_49
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 295
+        width: 56
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee0468aa39bd3d70800000000000000
+      internalID: 9024572889904713446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_50
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 353
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d473e3e931b3e50e0800000000000000
+      internalID: -2279319405957597363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_51
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 298
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8829562c92b44d6c0800000000000000
+      internalID: -4119585116409982328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_52
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 324
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f75329f6a1368f90800000000000000
+      internalID: -6951814381585606668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_53
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 324
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a39639b9c687cd0800000000000000
+      internalID: -2560176972711249331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_54
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 323
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87510c8871b7a2260800000000000000
+      internalID: 7073601505747539320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_55
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 324
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f42849ef38ebed0800000000000000
+      internalID: -2396332822278025362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_56
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 322
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9473aee62e3fbd530800000000000000
+      internalID: 3880963657758816073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_57
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 324
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59003b9e0e83dab0800000000000000
+      internalID: -4984484169184704161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_58
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 325
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3558db60420a34c0800000000000000
+      internalID: -4307127617915955909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_59
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 344
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8990e5dc9dc0970800000000000000
+      internalID: 8722586054379018446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_60
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 324
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95714e304e8828840800000000000000
+      internalID: 5224889030602397529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_61
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 344
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7610a90865bd7050800000000000000
+      internalID: 5799991353565779580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_62
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 324
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d47dd7e01bd3b420800000000000000
+      internalID: 2644698271852623064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_63
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 325
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1662bff74ad52de0800000000000000
+      internalID: -1358439709814921697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_64
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 324
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294810d7ccfae1290800000000000000
+      internalID: -7917697802065312622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_65
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 283
+        width: 46
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3002424b41c624b0800000000000000
+      internalID: -5465468568789188546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_66
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 205
+        width: 179
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79c114bdb5ca5930800000000000000
+      internalID: 4132833026626406782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_67
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 251
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0a70be1086bba30800000000000000
+      internalID: 4232090632292114621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_68
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 249
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c338611814ba12c0800000000000000
+      internalID: -4460054465492798524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_69
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 251
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff314678603d05e50800000000000000
+      internalID: 6796163862696825855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_70
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 238
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87dff85179851120800000000000000
+      internalID: 2383962697680017294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_71
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 238
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a9b8e7b141cf3f0800000000000000
+      internalID: -865794920042227169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_72
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 251
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235a71f5062464930800000000000000
+      internalID: 4127059090211317042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_73
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 156
+        width: 151
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d57c4d601f1111d0800000000000000
+      internalID: -3381887689764866599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_74
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 147
+        width: 49
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cd42f3a49dbc9e0800000000000000
+      internalID: -1599946329689891694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_75
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 252
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757ae0e11ab4be210800000000000000
+      internalID: 1363266467575801687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_76
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 251
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4243b916990bd740800000000000000
+      internalID: 5177742736873439820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_77
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 252
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3d578d5cc32e540800000000000000
+      internalID: 5035654153791460308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_78
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 252
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c77a1beb59b2880800000000000000
+      internalID: -8634643214295925727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 252
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0120abc53112510800000000000000
+      internalID: 1522519438006554817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_80
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 251
+        width: 37
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935229a9d10103290800000000000000
+      internalID: -7912806825956596423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_81
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 252
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376b7762ecf9b2400800000000000000
+      internalID: 300509507907729011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_82
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 149
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cc475de5fa95280800000000000000
+      internalID: -9054012754008683476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_83
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 216
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9bc7d4583077060800000000000000
+      internalID: 6951028420935203311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_84
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 202
+        width: 100
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcba422a7c3a112f0800000000000000
+      internalID: -1003841164112778289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_85
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 217
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443ff2e3285f25820800000000000000
+      internalID: 2905654649345274692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_86
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 201
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c5567d0095c01e0800000000000000
+      internalID: -2230309855306621840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_87
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 216
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcc57279c463e650800000000000000
+      internalID: 6260958723346648307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_88
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 176
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ccdf6f4414a8ff0800000000000000
+      internalID: -33142282794447840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_89
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 199
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c182a14643d2b650800000000000000
+      internalID: 6247287931818639812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_90
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 157
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62e7ad8799f720f0800000000000000
+      internalID: -1141669551203163541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_91
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 184
+        width: 39
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb25dfcb33a168ec0800000000000000
+      internalID: -3565133245500796226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_92
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 131
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9305b0af0cb94dd70800000000000000
+      internalID: 9067043202934722617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_93
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 170
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d4a177636396ca0800000000000000
+      internalID: -6023223419076981467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_94
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 31
+        width: 308
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e22b2d4318b448c0800000000000000
+      internalID: -4015882574669077792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_95
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 103
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84a7dcc203ec8e50800000000000000
+      internalID: 6813069937470841999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_96
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 139
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fac22aabe17d910800000000000000
+      internalID: 1861990757874577214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_97
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 119
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68d57c52009f5ae0800000000000000
+      internalID: -1558368606231340948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_98
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 130
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4957de8433a8620800000000000000
+      internalID: 2777088508541900014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_99
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 129
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73067e3aa9416e4f0800000000000000
+      internalID: -799929229404315593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_100
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 129
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac0eb7be483f1da0800000000000000
+      internalID: -5971992670128698201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_101
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 114
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a754ffa9b497b830800000000000000
+      internalID: 4086898712103901091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_102
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 129
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807ea97075e704240800000000000000
+      internalID: 4773954517267572488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_103
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 129
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38843892d94f52de0800000000000000
+      internalID: -1358410756738824061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_104
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 128
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048c819bb625eb6b0800000000000000
+      internalID: -5278691090611255232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_105
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 130
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2539bd439daf320800000000000000
+      internalID: 2592623356550533799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_106
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 130
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95c925d629a93620800000000000000
+      internalID: 2754418631363904926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_107
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 130
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb00ca0e65413ff0800000000000000
+      internalID: -58188981250028606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_108
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 116
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a1d83df189da300800000000000000
+      internalID: 265035215545375340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_109
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 129
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174d86863059ab590800000000000000
+      internalID: -7657644374520966031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_110
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 92
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ae30b03c24a2660800000000000000
+      internalID: 7361769946361358943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_111
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 101
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4289db04ca78b80800000000000000
+      internalID: -8392549986522880819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_112
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 102
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165da119ed0a01940800000000000000
+      internalID: 5264884842173748577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_113
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 32
+        width: 59
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180de1bebf8e104c0800000000000000
+      internalID: -4322917998619864959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_114
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 79
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c3380296fd64b60800000000000000
+      internalID: 7730111453038066703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_115
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 95
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d695fd75072af60800000000000000
+      internalID: 8044115407148772620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_116
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 79
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74ea42795dda1970800000000000000
+      internalID: 8726530604223095935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_117
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 94
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90940d6e0d95f1ea0800000000000000
+      internalID: -5899898233071580919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_118
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 58
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d88858c6c30fa10800000000000000
+      internalID: 1941117876191137100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_119
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 95
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bfdb323249c9a00800000000000000
+      internalID: 764648915390561036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_120
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 94
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5217bca8618cff0800000000000000
+      internalID: -15737813321308718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_121
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 92
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c429fc66d9bfffc60800000000000000
+      internalID: 7854272928610751052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_122
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 94
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90c3ab56c80474d0800000000000000
+      internalID: -3137873392336387937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_123
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 95
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f3b6908ed2753c0800000000000000
+      internalID: -4370974438726090858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_124
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 69
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1971031549b8c50800000000000000
+      internalID: 6668586749672264146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_125
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 60
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6db8ec0e02aac80800000000000000
+      internalID: -8310794012448794926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_126
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 60
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e7c906c0c883af0800000000000000
+      internalID: -416428980743406076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_127
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 46
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724ad3bf8475621d0800000000000000
+      internalID: -3375914899703225305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_128
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 60
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703b8ed90e68a32a0800000000000000
+      internalID: -6756939991635938553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_129
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 60
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a893e72044b7987f0800000000000000
+      internalID: -609820742502172278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_130
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 46
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fd9b15511a69310800000000000000
+      internalID: 1411492646164750127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_131
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 79
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77fde14a5e324800800000000000000
+      internalID: 595106658140419962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_132
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 59
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c670197de3a54d0b0800000000000000
+      internalID: -5704835602020497556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_133
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 60
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fca2a2c5f1975770800000000000000
+      internalID: 8599502498205707511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_134
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 59
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19560e9a5ff88aa40800000000000000
+      internalID: 5379708040173872529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_135
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 46
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f16d8206f7226030800000000000000
+      internalID: 3486392999096443379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_136
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 79
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fd2b7090b5dd710800000000000000
+      internalID: 1719630727067393924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_137
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7b678bb0fca5810800000000000000
+      internalID: 1754942654060607475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_138
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 52
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa3033cd8e2b4940800000000000000
+      internalID: 5281366174422022902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_139
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 59
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6ec01efebcb0620800000000000000
+      internalID: 2741509029318420176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_140
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 59
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90f82211a4fb0e20800000000000000
+      internalID: 3318014523120087194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_141
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 57
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0234037e7315ad440800000000000000
+      internalID: 4961367240045773600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_142
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 57
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e416f399ccb6edb80800000000000000
+      internalID: -8368132531119234738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_143
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 59
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d92ba6624278400800000000000000
+      internalID: 326269245425098055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_144
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 59
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa4359690e2f5b90800000000000000
+      internalID: -7251026257086559489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals P1_145
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d91fcf87c9468840800000000000000
+      internalID: 5225945539070073297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Radicals P1_0: -7214823941185996098
+      Radicals P1_1: 4108414592122675952
+      Radicals P1_10: 8942033638612499701
+      Radicals P1_100: -5971992670128698201
+      Radicals P1_101: 4086898712103901091
+      Radicals P1_102: 4773954517267572488
+      Radicals P1_103: -1358410756738824061
+      Radicals P1_104: -5278691090611255232
+      Radicals P1_105: 2592623356550533799
+      Radicals P1_106: 2754418631363904926
+      Radicals P1_107: -58188981250028606
+      Radicals P1_108: 265035215545375340
+      Radicals P1_109: -7657644374520966031
+      Radicals P1_11: 881936030946483314
+      Radicals P1_110: 7361769946361358943
+      Radicals P1_111: -8392549986522880819
+      Radicals P1_112: 5264884842173748577
+      Radicals P1_113: -4322917998619864959
+      Radicals P1_114: 7730111453038066703
+      Radicals P1_115: 8044115407148772620
+      Radicals P1_116: 8726530604223095935
+      Radicals P1_117: -5899898233071580919
+      Radicals P1_118: 1941117876191137100
+      Radicals P1_119: 764648915390561036
+      Radicals P1_12: 2666993969360879968
+      Radicals P1_120: -15737813321308718
+      Radicals P1_121: 7854272928610751052
+      Radicals P1_122: -3137873392336387937
+      Radicals P1_123: -4370974438726090858
+      Radicals P1_124: 6668586749672264146
+      Radicals P1_125: -8310794012448794926
+      Radicals P1_126: -416428980743406076
+      Radicals P1_127: -3375914899703225305
+      Radicals P1_128: -6756939991635938553
+      Radicals P1_129: -609820742502172278
+      Radicals P1_13: 6393720148003923432
+      Radicals P1_130: 1411492646164750127
+      Radicals P1_131: 595106658140419962
+      Radicals P1_132: -5704835602020497556
+      Radicals P1_133: 8599502498205707511
+      Radicals P1_134: 5379708040173872529
+      Radicals P1_135: 3486392999096443379
+      Radicals P1_136: 1719630727067393924
+      Radicals P1_137: 1754942654060607475
+      Radicals P1_138: 5281366174422022902
+      Radicals P1_139: 2741509029318420176
+      Radicals P1_14: -1512942123763064813
+      Radicals P1_140: 3318014523120087194
+      Radicals P1_141: 4961367240045773600
+      Radicals P1_142: -8368132531119234738
+      Radicals P1_143: 326269245425098055
+      Radicals P1_144: -7251026257086559489
+      Radicals P1_145: 5225945539070073297
+      Radicals P1_15: -5882082359380258738
+      Radicals P1_16: 5465090434407032624
+      Radicals P1_17: -172368575472575608
+      Radicals P1_18: 7746643545961467840
+      Radicals P1_19: 69736037705286694
+      Radicals P1_2: 4869567368929402825
+      Radicals P1_20: 943847189026914051
+      Radicals P1_21: -5478135640327893972
+      Radicals P1_22: 5685251454862517307
+      Radicals P1_23: 2739540496372865932
+      Radicals P1_24: -8253440693945767437
+      Radicals P1_25: -235643173989654195
+      Radicals P1_26: 2597401480764645622
+      Radicals P1_27: 3359786458755146095
+      Radicals P1_28: 7727807511758716543
+      Radicals P1_29: -700490295991748286
+      Radicals P1_3: 5578055598934867164
+      Radicals P1_30: -3779958635923137462
+      Radicals P1_31: 8969913741309530942
+      Radicals P1_32: 5143142497365646149
+      Radicals P1_33: 4727399052466546423
+      Radicals P1_34: 2323178550199202844
+      Radicals P1_35: 2796046749944425639
+      Radicals P1_36: 7060607613524131806
+      Radicals P1_37: 1024167713385250132
+      Radicals P1_38: -3799661302939985932
+      Radicals P1_39: 112502381890279333
+      Radicals P1_4: 7471649186353128233
+      Radicals P1_40: 1231196653475422124
+      Radicals P1_41: 7878722259443588330
+      Radicals P1_42: -2433396252867281351
+      Radicals P1_43: -4692828583651548845
+      Radicals P1_44: -1442026680254795097
+      Radicals P1_45: 335150226286430661
+      Radicals P1_46: -1018730467016083662
+      Radicals P1_47: 413254775699428405
+      Radicals P1_48: -1414915111827104905
+      Radicals P1_49: 9024572889904713446
+      Radicals P1_5: -1369343897678502948
+      Radicals P1_50: -2279319405957597363
+      Radicals P1_51: -4119585116409982328
+      Radicals P1_52: -6951814381585606668
+      Radicals P1_53: -2560176972711249331
+      Radicals P1_54: 7073601505747539320
+      Radicals P1_55: -2396332822278025362
+      Radicals P1_56: 3880963657758816073
+      Radicals P1_57: -4984484169184704161
+      Radicals P1_58: -4307127617915955909
+      Radicals P1_59: 8722586054379018446
+      Radicals P1_6: 4524910594334436428
+      Radicals P1_60: 5224889030602397529
+      Radicals P1_61: 5799991353565779580
+      Radicals P1_62: 2644698271852623064
+      Radicals P1_63: -1358439709814921697
+      Radicals P1_64: -7917697802065312622
+      Radicals P1_65: -5465468568789188546
+      Radicals P1_66: 4132833026626406782
+      Radicals P1_67: 4232090632292114621
+      Radicals P1_68: -4460054465492798524
+      Radicals P1_69: 6796163862696825855
+      Radicals P1_7: 7773865634866741004
+      Radicals P1_70: 2383962697680017294
+      Radicals P1_71: -865794920042227169
+      Radicals P1_72: 4127059090211317042
+      Radicals P1_73: -3381887689764866599
+      Radicals P1_74: -1599946329689891694
+      Radicals P1_75: 1363266467575801687
+      Radicals P1_76: 5177742736873439820
+      Radicals P1_77: 5035654153791460308
+      Radicals P1_78: -8634643214295925727
+      Radicals P1_79: 1522519438006554817
+      Radicals P1_8: 405508390281666781
+      Radicals P1_80: -7912806825956596423
+      Radicals P1_81: 300509507907729011
+      Radicals P1_82: -9054012754008683476
+      Radicals P1_83: 6951028420935203311
+      Radicals P1_84: -1003841164112778289
+      Radicals P1_85: 2905654649345274692
+      Radicals P1_86: -2230309855306621840
+      Radicals P1_87: 6260958723346648307
+      Radicals P1_88: -33142282794447840
+      Radicals P1_89: 6247287931818639812
+      Radicals P1_9: -5758116805593392356
+      Radicals P1_90: -1141669551203163541
+      Radicals P1_91: -3565133245500796226
+      Radicals P1_92: 9067043202934722617
+      Radicals P1_93: -6023223419076981467
+      Radicals P1_94: -4015882574669077792
+      Radicals P1_95: 6813069937470841999
+      Radicals P1_96: 1861990757874577214
+      Radicals P1_97: -1558368606231340948
+      Radicals P1_98: 2777088508541900014
+      Radicals P1_99: -799929229404315593
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

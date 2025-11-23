@@ -1,11 +1,22 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
 public class Scissors : Shapes
 {
+    protected override void Start()
+    {
+        base.Start();
+        SetPos();
+        this.RevertPosition();
+    }
     public GameObject CombinedShape1, CombinedShape2;
+    protected virtual void SetPos()
+    {
+        ChangeOriginPos(new Vector3(3, 3, 0));
+    }
     public override void CombineShapes(GameObject dragged, GameObject target)
     {
         int val1 = 0;
@@ -23,7 +34,16 @@ public class Scissors : Shapes
                 val2 = (int)Mathf.Sqrt(target.GetComponent<Shapes>().value);
                 break;
             case ShapeClassification.Circle:
-                if(StageManager.Instance.problem.stageDifficulty == Difficulty.easy)
+                if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.completingSquare)
+                {
+                    int targetValue = target.GetComponent<Shapes>().value;
+                    GetFactorPair(targetValue, 2, out val1, out val2);
+
+                    CombinedShape1 = StageManager.Instance.constant;
+                    CombinedShape2 = StageManager.Instance.constant;
+                }
+
+                else if (StageManager.Instance.problem.stageDifficulty == Difficulty.easy)
                 {
                     int targetValue = target.GetComponent<Shapes>().value;
                     GetFactorPair(targetValue, out val1, out val2);
@@ -41,10 +61,13 @@ public class Scissors : Shapes
                 }
                 break;
             case ShapeClassification.Triangle:
-                CombinedShape1 = StageManager.Instance.constant;
+                if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType != ProblemType.completingSquare)
+                    return;
+                int varVal = StageManager.Instance.problem.gameObject.GetComponent<CompletingSquareProblemLoader>().VarValue;
+                CombinedShape1 = StageManager.Instance.variable;
                 val1 = 1;
-                CombinedShape2 = StageManager.Instance.variable;
-                val1 = target.GetComponent<Shapes>().value;
+                CombinedShape2 = StageManager.Instance.constant;
+                val2 = target.GetComponent<Shapes>().value;
                 break;
             case ShapeClassification.DoubleSquare:
                 CombinedShape1 = StageManager.Instance.variable;
@@ -54,8 +77,8 @@ public class Scissors : Shapes
                 break;
 
             default:
-                Debug.Log("cannot combine shapes");
-                break;
+                StageManager.Instance.NotificationText.text = "Gear Cannot be Factorized.";
+                return;
         }
 
         StartCoroutine(InstantiateQuotients(dragged, target, val1, val2));
@@ -88,6 +111,7 @@ public class Scissors : Shapes
         newShape = Instantiate(CombinedShape2, spawnPt, Quaternion.identity);
         newShape.GetComponent<Shapes>().AddQuotientValue(val2);
         newShape.GetComponent<Shapes>().MoveToArea();
+        //target.SetActive(false);
     }
     private void GetFactorPair(int value, out int val1, out int val2)
     {
@@ -114,5 +138,12 @@ public class Scissors : Shapes
             }
         }
     }
+    private void GetFactorPair(int value, int divisor, out int a, out int b)
+    {
+        a = value / divisor;
+        b = 2;
+        return;
+    }
+
 
 }

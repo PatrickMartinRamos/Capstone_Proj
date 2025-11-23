@@ -34,6 +34,7 @@ public class StageManager : MonoBehaviour
 
     [Header("Problem")]
     public ProblemLoader problem;
+    public ProblemType problemType;
 
     [Header("UI")]
     public float timeLimit;
@@ -107,6 +108,7 @@ public class StageManager : MonoBehaviour
     public void DeductTime(float deduction)
     {
         timer.GetComponent<TimerMechanics>().DeductTime(deduction);
+
     }
 
 }

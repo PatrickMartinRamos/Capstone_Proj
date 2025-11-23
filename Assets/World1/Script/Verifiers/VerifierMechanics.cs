@@ -25,9 +25,16 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
     {
         if (embedShape  != null)
         {
-            StageManager.Instance.NotificationText.text = "A Gear is Already Embed. Remove first to proceed.";
+            StageManager.Instance.NotificationText.text = "A Gear is Already Embedded. Remove first to proceed.";
+            draggedObject.GetComponent<Shapes>().RevertPosition();
             return;
-        } 
+        }
+        else if (draggedObject.GetComponent<Scissors>() != null)
+        {
+            StageManager.Instance.NotificationText.text = "Gear can not be embedded";
+            draggedObject.GetComponent<Shapes>().RevertPosition();
+            return;
+        }
 
         if (draggedObject.transform.parent != this)
         {

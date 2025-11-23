@@ -151,30 +151,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 0
-  playerStatus: {fileID: 0}
   squaringBinomialBox: {fileID: 0}
   radicalsBox: {fileID: 0}
   completingSquareBox: {fileID: 0}
   cannon: {fileID: 0}
-  star: {fileID: 0}
   bullet: {fileID: 0}
-  targetBomb: {fileID: 0}
   craftArea: {fileID: 0}
+  gameplaySpawnPt: {fileID: 0}
+  bulletCase: {fileID: 0}
+  ActiveGameArea: {fileID: 0}
   variable: {fileID: 8922515263533181531, guid: 021c5c51342b80a45af394a2a8b0bda1, type: 3}
   constant: {fileID: 139977714354691627, guid: 12fc330542027654aa2a8b8a5c0db10f, type: 3}
   squaredVariable: {fileID: 8535150851574643827, guid: ee7f71faac913864385f071cf58939eb, type: 3}
   squaredConstant: {fileID: 3661027638255985016, guid: fb7dd6b261384b14d84c567a627b6bf8, type: 3}
   product: {fileID: 5739211409042679698, guid: ac7ab1f7dc0097341857c5af5533b735, type: 3}
+  problem: {fileID: 0}
   timeLimit: 0
+  currentTime: 0
   timer: {fileID: 0}
   NotificationText: {fileID: 0}
-  CorrectAnswerPanel: {fileID: 0}
+  correctAnswerPanel: {fileID: 0}
   WrongAnswerPanel: {fileID: 0}
-  HelpPanel: {fileID: 0}
-  ShowCraftBox: 0
-  craftBoxIsHidden: 0
-  startGame: 0
-  playerStatusJSONManager: {fileID: 0}
+  notificationPanel: {fileID: 0}
+  stageIndicatorLabel: {fileID: 0}
+  astronaut: {fileID: 0}
+  bombsManager: {fileID: 0}
+  uiManager: {fileID: 0}
+  audioSrc: {fileID: 0}
+  isPlaying: 0
+  playTimer: 0
 --- !u!4 &90442764
 Transform:
   m_ObjectHideFlags: 0
@@ -506,7 +511,8 @@ MonoBehaviour:
   value: 0
   originPos: {x: 0, y: 0, z: 0}
   interacted: []
-  propulseForce: 0
+  origScaleSize: 0
+  valueLabel: {fileID: 0}
   CombinedShape: {fileID: 0}
 --- !u!1001 &691769667
 PrefabInstance:
@@ -1359,6 +1365,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105283399}
   m_CullTransparentMesh: 1
+--- !u!1001 &5877311621867345304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1438592897135452997, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_Name
+      value: Rooter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977294738062183503, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cc2ba19021cea648baaeaa686be5f23, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1370,3 +1433,4 @@ SceneRoots:
   - {fileID: 1021507736}
   - {fileID: 758037293}
   - {fileID: 515969187}
+  - {fileID: 5877311621867345304}

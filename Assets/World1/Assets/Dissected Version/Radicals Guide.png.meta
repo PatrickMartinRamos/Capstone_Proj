@@ -1,0 +1,3614 @@
+fileFormatVersion: 2
+guid: 0f516fe8a1df909499dd19875f2976ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3575247818268745678
+    second: Radicals Guide_0
+  - first:
+      213: 5455448010567931543
+    second: Radicals Guide_1
+  - first:
+      213: 875819156987287375
+    second: Radicals Guide_2
+  - first:
+      213: -4167841035667163918
+    second: Radicals Guide_3
+  - first:
+      213: -8873714661023473446
+    second: Radicals Guide_4
+  - first:
+      213: -2689399006523048435
+    second: Radicals Guide_5
+  - first:
+      213: -6299524855791610082
+    second: Radicals Guide_6
+  - first:
+      213: 6074423998347419050
+    second: Radicals Guide_7
+  - first:
+      213: 8281539109936397208
+    second: Radicals Guide_8
+  - first:
+      213: 924302620813518833
+    second: Radicals Guide_9
+  - first:
+      213: 6004972964612473077
+    second: Radicals Guide_10
+  - first:
+      213: 5090344030699613735
+    second: Radicals Guide_11
+  - first:
+      213: -5900485062349360483
+    second: Radicals Guide_12
+  - first:
+      213: 7160523330857227179
+    second: Radicals Guide_13
+  - first:
+      213: -4072708632437588566
+    second: Radicals Guide_14
+  - first:
+      213: 6967229411392089426
+    second: Radicals Guide_15
+  - first:
+      213: -677439795130919449
+    second: Radicals Guide_16
+  - first:
+      213: -7403494782425961624
+    second: Radicals Guide_17
+  - first:
+      213: -2765725153359427837
+    second: Radicals Guide_18
+  - first:
+      213: -6242487937392924804
+    second: Radicals Guide_19
+  - first:
+      213: 5514147705068171186
+    second: Radicals Guide_20
+  - first:
+      213: -6174600291816212275
+    second: Radicals Guide_21
+  - first:
+      213: -4713573707087038716
+    second: Radicals Guide_22
+  - first:
+      213: 4572347158925258924
+    second: Radicals Guide_23
+  - first:
+      213: -2635403181014723439
+    second: Radicals Guide_24
+  - first:
+      213: 6597200368340198178
+    second: Radicals Guide_25
+  - first:
+      213: 561194514426585635
+    second: Radicals Guide_26
+  - first:
+      213: -3523184625641959520
+    second: Radicals Guide_27
+  - first:
+      213: 1397016324305586136
+    second: Radicals Guide_28
+  - first:
+      213: -1374212895183764007
+    second: Radicals Guide_29
+  - first:
+      213: -4978500297945425330
+    second: Radicals Guide_30
+  - first:
+      213: 3125290729882830561
+    second: Radicals Guide_31
+  - first:
+      213: 1768495036900121929
+    second: Radicals Guide_32
+  - first:
+      213: 7431700423503249484
+    second: Radicals Guide_33
+  - first:
+      213: 2460095617120902335
+    second: Radicals Guide_34
+  - first:
+      213: 1716750958882022458
+    second: Radicals Guide_35
+  - first:
+      213: 1652287042343961041
+    second: Radicals Guide_36
+  - first:
+      213: -8010635920318034720
+    second: Radicals Guide_37
+  - first:
+      213: -9011134634038983472
+    second: Radicals Guide_38
+  - first:
+      213: -8913868844914060887
+    second: Radicals Guide_39
+  - first:
+      213: 1546829310101720483
+    second: Radicals Guide_40
+  - first:
+      213: 3837553740048122229
+    second: Radicals Guide_41
+  - first:
+      213: -8223843169075107012
+    second: Radicals Guide_42
+  - first:
+      213: -7414159075140488611
+    second: Radicals Guide_43
+  - first:
+      213: 5211367330277155571
+    second: Radicals Guide_44
+  - first:
+      213: 3952506255088650808
+    second: Radicals Guide_45
+  - first:
+      213: 6117403824604647895
+    second: Radicals Guide_46
+  - first:
+      213: 5871354590818642185
+    second: Radicals Guide_47
+  - first:
+      213: 4177519494071286489
+    second: Radicals Guide_48
+  - first:
+      213: -4023434560419726374
+    second: Radicals Guide_49
+  - first:
+      213: 7266665964426032219
+    second: Radicals Guide_50
+  - first:
+      213: 7651925215098774034
+    second: Radicals Guide_51
+  - first:
+      213: -989266466402412460
+    second: Radicals Guide_52
+  - first:
+      213: 6775541554251302000
+    second: Radicals Guide_53
+  - first:
+      213: 4458270085576885691
+    second: Radicals Guide_54
+  - first:
+      213: 4953822639012467563
+    second: Radicals Guide_55
+  - first:
+      213: -6267864210968762419
+    second: Radicals Guide_56
+  - first:
+      213: 604758873115251451
+    second: Radicals Guide_57
+  - first:
+      213: -7303664176213499795
+    second: Radicals Guide_58
+  - first:
+      213: 5845257414349786132
+    second: Radicals Guide_59
+  - first:
+      213: -1659587438358519493
+    second: Radicals Guide_60
+  - first:
+      213: 8435747009181428911
+    second: Radicals Guide_61
+  - first:
+      213: -4856770696849952875
+    second: Radicals Guide_62
+  - first:
+      213: 707914292417915925
+    second: Radicals Guide_63
+  - first:
+      213: 9110691842057577701
+    second: Radicals Guide_64
+  - first:
+      213: 5908144549334849037
+    second: Radicals Guide_65
+  - first:
+      213: -2115799355030829079
+    second: Radicals Guide_66
+  - first:
+      213: -6225317552336383992
+    second: Radicals Guide_67
+  - first:
+      213: -1901723534311346632
+    second: Radicals Guide_68
+  - first:
+      213: -184554041447645665
+    second: Radicals Guide_69
+  - first:
+      213: -277447558564719019
+    second: Radicals Guide_70
+  - first:
+      213: 5571030621797711992
+    second: Radicals Guide_71
+  - first:
+      213: -332006744742214053
+    second: Radicals Guide_72
+  - first:
+      213: 5416119071972423802
+    second: Radicals Guide_73
+  - first:
+      213: 3363838927425024862
+    second: Radicals Guide_74
+  - first:
+      213: -4275211295658319866
+    second: Radicals Guide_75
+  - first:
+      213: 4287694139319462613
+    second: Radicals Guide_76
+  - first:
+      213: -643365042337294830
+    second: Radicals Guide_77
+  - first:
+      213: 6272011083895039837
+    second: Radicals Guide_78
+  - first:
+      213: -8227650426500618270
+    second: Radicals Guide_79
+  - first:
+      213: 1298542869959630798
+    second: Radicals Guide_80
+  - first:
+      213: -5651039651008447795
+    second: Radicals Guide_81
+  - first:
+      213: -8545324906232902777
+    second: Radicals Guide_82
+  - first:
+      213: -9117745842584562610
+    second: Radicals Guide_83
+  - first:
+      213: 5159265620713191077
+    second: Radicals Guide_84
+  - first:
+      213: -7947159603953437526
+    second: Radicals Guide_85
+  - first:
+      213: 8559985783407939472
+    second: Radicals Guide_86
+  - first:
+      213: 995493801817829350
+    second: Radicals Guide_87
+  - first:
+      213: -3174427524911026697
+    second: Radicals Guide_88
+  - first:
+      213: -9174676216865650090
+    second: Radicals Guide_89
+  - first:
+      213: -7868395415085838542
+    second: Radicals Guide_90
+  - first:
+      213: 4588155536713672851
+    second: Radicals Guide_91
+  - first:
+      213: -5534467689911781250
+    second: Radicals Guide_92
+  - first:
+      213: 1482049769430517206
+    second: Radicals Guide_93
+  - first:
+      213: -8551434519694273150
+    second: Radicals Guide_94
+  - first:
+      213: 2221300867905477779
+    second: Radicals Guide_95
+  - first:
+      213: -4000501903207207685
+    second: Radicals Guide_96
+  - first:
+      213: -2244252132813108699
+    second: Radicals Guide_97
+  - first:
+      213: -2922350949303608523
+    second: Radicals Guide_98
+  - first:
+      213: -4900108942201192789
+    second: Radicals Guide_99
+  - first:
+      213: -4923834196029720322
+    second: Radicals Guide_100
+  - first:
+      213: -7767687236999873678
+    second: Radicals Guide_101
+  - first:
+      213: -2308094202282445573
+    second: Radicals Guide_102
+  - first:
+      213: 2114871567890836538
+    second: Radicals Guide_103
+  - first:
+      213: 6338223008133338001
+    second: Radicals Guide_104
+  - first:
+      213: 4261662381086029404
+    second: Radicals Guide_105
+  - first:
+      213: -5127922529751322292
+    second: Radicals Guide_106
+  - first:
+      213: 2867748329085182139
+    second: Radicals Guide_107
+  - first:
+      213: -6744045936438928976
+    second: Radicals Guide_108
+  - first:
+      213: -7636062341769791702
+    second: Radicals Guide_109
+  - first:
+      213: -6197859086827290877
+    second: Radicals Guide_110
+  - first:
+      213: -3161736133460636986
+    second: Radicals Guide_111
+  - first:
+      213: 5188397977447980110
+    second: Radicals Guide_112
+  - first:
+      213: -1922330323650462170
+    second: Radicals Guide_113
+  - first:
+      213: -7732210557682859352
+    second: Radicals Guide_114
+  - first:
+      213: 5601728976134180018
+    second: Radicals Guide_115
+  - first:
+      213: 2955680447343941539
+    second: Radicals Guide_116
+  - first:
+      213: -8814941035385314126
+    second: Radicals Guide_117
+  - first:
+      213: 4303690451910510432
+    second: Radicals Guide_118
+  - first:
+      213: -7716191884834209512
+    second: Radicals Guide_119
+  - first:
+      213: -5731012148890417857
+    second: Radicals Guide_120
+  - first:
+      213: -6667675804893819345
+    second: Radicals Guide_121
+  - first:
+      213: -1051948980593805622
+    second: Radicals Guide_122
+  - first:
+      213: 2538483834850331598
+    second: Radicals Guide_123
+  - first:
+      213: 4703409563648671849
+    second: Radicals Guide_124
+  - first:
+      213: -1531531617943483561
+    second: Radicals Guide_125
+  - first:
+      213: -3410891519055678032
+    second: Radicals Guide_126
+  - first:
+      213: -6768739907909742120
+    second: Radicals Guide_127
+  - first:
+      213: 743630672158716199
+    second: Radicals Guide_128
+  - first:
+      213: -1869185982781090404
+    second: Radicals Guide_129
+  - first:
+      213: 1214598681649379170
+    second: Radicals Guide_130
+  - first:
+      213: -4427495374462386495
+    second: Radicals Guide_131
+  - first:
+      213: -4131372193046930436
+    second: Radicals Guide_132
+  - first:
+      213: -7822405629888052427
+    second: Radicals Guide_133
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Radicals Guide_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 941
+        width: 593
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230e9104d0b226ec0800000000000000
+      internalID: -3575247818268745678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1001
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7965388bf05a5bb40800000000000000
+      internalID: 5455448010567931543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4795bb02e8872c00800000000000000
+      internalID: 875819156987287375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_3
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 998
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f433c409aad826c0800000000000000
+      internalID: -4167841035667163918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_4
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0258fd78b3ad480800000000000000
+      internalID: -8873714661023473446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 906
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eb7e44ad55daad0800000000000000
+      internalID: -2689399006523048435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 904
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e171ccc15879398a0800000000000000
+      internalID: -6299524855791610082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 906
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad1b9c5170bc4450800000000000000
+      internalID: 6074423998347419050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_8
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 906
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b734961ffede270800000000000000
+      internalID: 8281539109936397208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_9
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 906
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f76d822658c3dc00800000000000000
+      internalID: 924302620813518833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_10
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 904
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f00d897813f55350800000000000000
+      internalID: 6004972964612473077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_11
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 906
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e61661de884a640800000000000000
+      internalID: 5090344030699613735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_12
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 906
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92fa2019144d1ea0800000000000000
+      internalID: -5900485062349360483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 896
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba354a5080a4f5360800000000000000
+      internalID: 7160523330857227179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_14
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 906
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadf3e1b315da77c0800000000000000
+      internalID: -4072708632437588566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_15
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 907
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25deda65c3290b060800000000000000
+      internalID: 6967229411392089426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 825
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5128678104996f0800000000000000
+      internalID: -677439795130919449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 826
+        width: 54
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bea0588b0814990800000000000000
+      internalID: -7403494782425961624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 826
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30706af50ab2e99d0800000000000000
+      internalID: -2765725153359427837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_19
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 816
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77a8098b4a3e59a0800000000000000
+      internalID: -6242487937392924804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 812
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfaf9f5f10368c40800000000000000
+      internalID: 5514147705068171186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_21
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 826
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc87540cfb96f4aa0800000000000000
+      internalID: -6174600291816212275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_22
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 836
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407b47edfa5069eb0800000000000000
+      internalID: -4713573707087038716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_23
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 728
+        width: 135
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0b185048d347f30800000000000000
+      internalID: 4572347158925258924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_24
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 734
+        width: 126
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194dea315ca2d6bd0800000000000000
+      internalID: -2635403181014723439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 824
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2236ef218c6fd8b50800000000000000
+      internalID: 6597200368340198178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_26
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 744
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3226b420073c9c700800000000000000
+      internalID: 561194514426585635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_27
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 776
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af4e76ef322b1fc0800000000000000
+      internalID: -3523184625641959520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_28
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 775
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d708abf1f2336310800000000000000
+      internalID: 1397016324305586136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_29
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 773
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d58fc817a0ddece0800000000000000
+      internalID: -1374212895183764007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_30
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 772
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a59c23b50d8eab0800000000000000
+      internalID: -4978500297945425330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_31
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 770
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6cc7e3c534f5b20800000000000000
+      internalID: 3125290729882830561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_32
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 773
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d197dbdd4fa8810800000000000000
+      internalID: 1768495036900121929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_33
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 772
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40080c0924b22760800000000000000
+      internalID: 7431700423503249484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_34
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 676
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc9cfbfde3042220800000000000000
+      internalID: 2460095617120902335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 662
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3469ffb6ef13d710800000000000000
+      internalID: 1716750958882022458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_36
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 677
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d184e19f4a1ee610800000000000000
+      internalID: 1652287042343961041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_37
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 677
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec8578921184d090800000000000000
+      internalID: -8010635920318034720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_38
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 667
+        width: 84
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d403ea1bc402f280800000000000000
+      internalID: -9011134634038983472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_39
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 687
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1d97463839b4480800000000000000
+      internalID: -8913868844914060887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_40
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 675
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad86c4ef01777510800000000000000
+      internalID: 1546829310101720483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_41
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 629
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5714a0a5bcab14530800000000000000
+      internalID: 3837553740048122229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_42
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 630
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b61c2a53a0fdd80800000000000000
+      internalID: -8223843169075107012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_43
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 634
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5233026a9d9b1990800000000000000
+      internalID: -7414159075140488611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_44
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 634
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2ee33d9fe725840800000000000000
+      internalID: 5211367330277155571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_45
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 635
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a811b6f7f1ad630800000000000000
+      internalID: 3952506255088650808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_46
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 654
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d11d29fd5265e450800000000000000
+      internalID: 6117403824604647895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_47
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 631
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909aa1084ed3b7150800000000000000
+      internalID: 5871354590818642185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_48
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 634
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da736ea8d789f930800000000000000
+      internalID: 4177519494071286489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_49
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 634
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbf6299593e928c0800000000000000
+      internalID: -4023434560419726374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_50
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 511
+        width: 105
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54f807b13268d460800000000000000
+      internalID: 7266665964426032219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_51
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 560
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21221d50179113a60800000000000000
+      internalID: 7651925215098774034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_52
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 560
+        width: 44
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458d0e1e36b6542f0800000000000000
+      internalID: -989266466402412460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_53
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 561
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0740c0e252f870e50800000000000000
+      internalID: 6775541554251302000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_54
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 560
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb58f8b9505fedd30800000000000000
+      internalID: 4458270085576885691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_55
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 551
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6350a691738fb440800000000000000
+      internalID: 4953822639012467563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_56
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 509
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7a2dc65b21409a0800000000000000
+      internalID: -6267864210968762419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 568
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2dcceadf8846800800000000000000
+      internalID: 604758873115251451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_58
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 569
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d606c02d02c24aa90800000000000000
+      internalID: -7303664176213499795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_59
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 570
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c890b16a68e1150800000000000000
+      internalID: 5845257414349786132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_60
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 571
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31a0f68406f7f8e0800000000000000
+      internalID: -1659587438358519493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_61
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 570
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faca259d53bc11570800000000000000
+      internalID: 8435747009181428911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_62
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 570
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f6bb298c8499cb0800000000000000
+      internalID: -4856770696849952875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_63
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 570
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51cedfa5c4403d900800000000000000
+      internalID: 707914292417915925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_64
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 570
+        width: 53
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e424e7b5fdaf6e70800000000000000
+      internalID: 9110691842057577701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_65
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 507
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0693c83a22fdf150800000000000000
+      internalID: 5908144549334849037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_66
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 525
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7036352bb23a2e0800000000000000
+      internalID: -2115799355030829079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_67
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 507
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8005cf65baa3b99a0800000000000000
+      internalID: -6225317552336383992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_68
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 493
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e2f547588bb95e0800000000000000
+      internalID: -1901723534311346632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_69
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 507
+        width: 56
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e76adb315507df0800000000000000
+      internalID: -184554041447645665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_70
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 506
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55653fb5aee462cf0800000000000000
+      internalID: -277447558564719019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_71
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 507
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870831d75d6405d40800000000000000
+      internalID: 5571030621797711992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_72
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 507
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b564b9cef99746bf0800000000000000
+      internalID: -332006744742214053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_73
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 508
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a787222a99be92b40800000000000000
+      internalID: 5416119071972423802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_74
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 516
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53bcce9ea1ceae20800000000000000
+      internalID: 3363838927425024862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_75
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 504
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6006c864af56ba4c0800000000000000
+      internalID: -4275211295658319866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_76
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 516
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da29af3a13f08b30800000000000000
+      internalID: 4287694139319462613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_77
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 506
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216d49617ee4217f0800000000000000
+      internalID: -643365042337294830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_78
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 507
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5760eaa9d8aa0750800000000000000
+      internalID: 6272011083895039837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_79
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 514
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7e650778381dd80800000000000000
+      internalID: -8227650426500618270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_80
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 424
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf5f893cd9550210800000000000000
+      internalID: 1298542869959630798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_81
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 427
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca7efdb0697391b0800000000000000
+      internalID: -5651039651008447795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_82
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 427
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b80b9d548e86980800000000000000
+      internalID: -8545324906232902777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_83
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 427
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44d37cc672477180800000000000000
+      internalID: -9117745842584562610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_84
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 416
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6be704fb4699740800000000000000
+      internalID: 5159265620713191077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_85
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 427
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa47501327406b190800000000000000
+      internalID: -7947159603953437526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 425
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f8c6e97bd2bc670800000000000000
+      internalID: 8559985783407939472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_87
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 426
+        width: 54
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef6471a654b0dd00800000000000000
+      internalID: 995493801817829350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_88
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 426
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fda4742cfa22f3d0800000000000000
+      internalID: -3174427524911026697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_89
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 416
+        width: 84
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a8f7c17900da080800000000000000
+      internalID: -9174676216865650090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_90
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 434
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f0f7bfe08ddc290800000000000000
+      internalID: -7868395415085838542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_91
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 434
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3986f0cc6276caf30800000000000000
+      internalID: 4588155536713672851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_92
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 434
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e787ee975fe9133b0800000000000000
+      internalID: -5534467689911781250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_93
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 424
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d50b5eb96c419410800000000000000
+      internalID: 1482049769430517206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_94
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 424
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2851c9d9c93335980800000000000000
+      internalID: -8551434519694273150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_95
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 424
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39cd5c2de55a3de10800000000000000
+      internalID: 2221300867905477779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_96
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 284
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc6f00f6bc5b78c0800000000000000
+      internalID: -4000501903207207685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_97
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 284
+        width: 85
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a03456390dad0e0800000000000000
+      internalID: -2244252132813108699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_98
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 316
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b9bbd7b49b177d0800000000000000
+      internalID: -2922350949303608523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_99
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 318
+        width: 125
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baef16301e05ffbb0800000000000000
+      internalID: -4900108942201192789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_100
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 333
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef83ab4e2e60babb0800000000000000
+      internalID: -4923834196029720322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_101
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 332
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b7948ec91a33490800000000000000
+      internalID: -7767687236999873678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_102
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 333
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4f0d44d8008ffd0800000000000000
+      internalID: -2308094202282445573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_103
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 351
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ce4b56c78895d10800000000000000
+      internalID: 2114871567890836538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_104
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 332
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193defa9e34e5f750800000000000000
+      internalID: 6338223008133338001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_105
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 282
+        width: 125
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5637493b57742b30800000000000000
+      internalID: 4261662381086029404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_106
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 296
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41337ac0a5f5d8b0800000000000000
+      internalID: -5127922529751322292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_107
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 294
+        width: 83
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0a75c49e94cc720800000000000000
+      internalID: 2867748329085182139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_108
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 333
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b914a9c3f55862a0800000000000000
+      internalID: -6744045936438928976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_109
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 298
+        width: 113
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27f21cf1c1470690800000000000000
+      internalID: -7636062341769791702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_110
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 264
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f7bb98ff7ccf9a0800000000000000
+      internalID: -6197859086827290877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_111
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 277
+        width: 93
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cacf8bfcb14f14d0800000000000000
+      internalID: -3161736133460636986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_112
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 30
+        width: 397
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c542f9874e00840800000000000000
+      internalID: 5188397977447980110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_113
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 131
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e3add61c28255e0800000000000000
+      internalID: -1922330323650462170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_114
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 200
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2c9ccf67ba1b490800000000000000
+      internalID: -7732210557682859352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_115
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 201
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc8d7613d65dbd40800000000000000
+      internalID: 5601728976134180018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_116
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 192
+        width: 131
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7d08df4bfa40920800000000000000
+      internalID: 2955680447343941539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_117
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 191
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b428d5f4d90ba580800000000000000
+      internalID: -8814941035385314126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_118
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 202
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067cd510aa7c9bb30800000000000000
+      internalID: 4303690451910510432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_119
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 202
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81184b5ec549ae490800000000000000
+      internalID: -7716191884834209512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_120
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 201
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3540f590da5770b0800000000000000
+      internalID: -5731012148890417857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_121
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 187
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e46dbae28a773a0800000000000000
+      internalID: -6667675804893819345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_122
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 124
+        width: 503
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac63fd1c9f9b661f0800000000000000
+      internalID: -1051948980593805622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_123
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 159
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb435c29918a3320800000000000000
+      internalID: 2538483834850331598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_124
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 161
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9604472141ed54140800000000000000
+      internalID: 4703409563648671849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_125
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 148
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b033e9b18eebae0800000000000000
+      internalID: -1531531617943483561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_126
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 159
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b53b4f2c341aa0d0800000000000000
+      internalID: -3410891519055678032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_127
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 148
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d197048aea9012a0800000000000000
+      internalID: -6768739907909742120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_128
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 161
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721fa1a0828e15a00800000000000000
+      internalID: 743630672158716199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_129
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 146
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95913580415f06e0800000000000000
+      internalID: -1869185982781090404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_130
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 160
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2677e54d01f1bd010800000000000000
+      internalID: 1214598681649379170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_131
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 30
+        width: 276
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cefb703a606e82c0800000000000000
+      internalID: -4427495374462386495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_132
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 27
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbd28e11ea6aa6c0800000000000000
+      internalID: -4131372193046930436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radicals Guide_133
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 27
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533c185468b317390800000000000000
+      internalID: -7822405629888052427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Radicals Guide_0: -3575247818268745678
+      Radicals Guide_1: 5455448010567931543
+      Radicals Guide_10: 6004972964612473077
+      Radicals Guide_100: -4923834196029720322
+      Radicals Guide_101: -7767687236999873678
+      Radicals Guide_102: -2308094202282445573
+      Radicals Guide_103: 2114871567890836538
+      Radicals Guide_104: 6338223008133338001
+      Radicals Guide_105: 4261662381086029404
+      Radicals Guide_106: -5127922529751322292
+      Radicals Guide_107: 2867748329085182139
+      Radicals Guide_108: -6744045936438928976
+      Radicals Guide_109: -7636062341769791702
+      Radicals Guide_11: 5090344030699613735
+      Radicals Guide_110: -6197859086827290877
+      Radicals Guide_111: -3161736133460636986
+      Radicals Guide_112: 5188397977447980110
+      Radicals Guide_113: -1922330323650462170
+      Radicals Guide_114: -7732210557682859352
+      Radicals Guide_115: 5601728976134180018
+      Radicals Guide_116: 2955680447343941539
+      Radicals Guide_117: -8814941035385314126
+      Radicals Guide_118: 4303690451910510432
+      Radicals Guide_119: -7716191884834209512
+      Radicals Guide_12: -5900485062349360483
+      Radicals Guide_120: -5731012148890417857
+      Radicals Guide_121: -6667675804893819345
+      Radicals Guide_122: -1051948980593805622
+      Radicals Guide_123: 2538483834850331598
+      Radicals Guide_124: 4703409563648671849
+      Radicals Guide_125: -1531531617943483561
+      Radicals Guide_126: -3410891519055678032
+      Radicals Guide_127: -6768739907909742120
+      Radicals Guide_128: 743630672158716199
+      Radicals Guide_129: -1869185982781090404
+      Radicals Guide_13: 7160523330857227179
+      Radicals Guide_130: 1214598681649379170
+      Radicals Guide_131: -4427495374462386495
+      Radicals Guide_132: -4131372193046930436
+      Radicals Guide_133: -7822405629888052427
+      Radicals Guide_14: -4072708632437588566
+      Radicals Guide_15: 6967229411392089426
+      Radicals Guide_16: -677439795130919449
+      Radicals Guide_17: -7403494782425961624
+      Radicals Guide_18: -2765725153359427837
+      Radicals Guide_19: -6242487937392924804
+      Radicals Guide_2: 875819156987287375
+      Radicals Guide_20: 5514147705068171186
+      Radicals Guide_21: -6174600291816212275
+      Radicals Guide_22: -4713573707087038716
+      Radicals Guide_23: 4572347158925258924
+      Radicals Guide_24: -2635403181014723439
+      Radicals Guide_25: 6597200368340198178
+      Radicals Guide_26: 561194514426585635
+      Radicals Guide_27: -3523184625641959520
+      Radicals Guide_28: 1397016324305586136
+      Radicals Guide_29: -1374212895183764007
+      Radicals Guide_3: -4167841035667163918
+      Radicals Guide_30: -4978500297945425330
+      Radicals Guide_31: 3125290729882830561
+      Radicals Guide_32: 1768495036900121929
+      Radicals Guide_33: 7431700423503249484
+      Radicals Guide_34: 2460095617120902335
+      Radicals Guide_35: 1716750958882022458
+      Radicals Guide_36: 1652287042343961041
+      Radicals Guide_37: -8010635920318034720
+      Radicals Guide_38: -9011134634038983472
+      Radicals Guide_39: -8913868844914060887
+      Radicals Guide_4: -8873714661023473446
+      Radicals Guide_40: 1546829310101720483
+      Radicals Guide_41: 3837553740048122229
+      Radicals Guide_42: -8223843169075107012
+      Radicals Guide_43: -7414159075140488611
+      Radicals Guide_44: 5211367330277155571
+      Radicals Guide_45: 3952506255088650808
+      Radicals Guide_46: 6117403824604647895
+      Radicals Guide_47: 5871354590818642185
+      Radicals Guide_48: 4177519494071286489
+      Radicals Guide_49: -4023434560419726374
+      Radicals Guide_5: -2689399006523048435
+      Radicals Guide_50: 7266665964426032219
+      Radicals Guide_51: 7651925215098774034
+      Radicals Guide_52: -989266466402412460
+      Radicals Guide_53: 6775541554251302000
+      Radicals Guide_54: 4458270085576885691
+      Radicals Guide_55: 4953822639012467563
+      Radicals Guide_56: -6267864210968762419
+      Radicals Guide_57: 604758873115251451
+      Radicals Guide_58: -7303664176213499795
+      Radicals Guide_59: 5845257414349786132
+      Radicals Guide_6: -6299524855791610082
+      Radicals Guide_60: -1659587438358519493
+      Radicals Guide_61: 8435747009181428911
+      Radicals Guide_62: -4856770696849952875
+      Radicals Guide_63: 707914292417915925
+      Radicals Guide_64: 9110691842057577701
+      Radicals Guide_65: 5908144549334849037
+      Radicals Guide_66: -2115799355030829079
+      Radicals Guide_67: -6225317552336383992
+      Radicals Guide_68: -1901723534311346632
+      Radicals Guide_69: -184554041447645665
+      Radicals Guide_7: 6074423998347419050
+      Radicals Guide_70: -277447558564719019
+      Radicals Guide_71: 5571030621797711992
+      Radicals Guide_72: -332006744742214053
+      Radicals Guide_73: 5416119071972423802
+      Radicals Guide_74: 3363838927425024862
+      Radicals Guide_75: -4275211295658319866
+      Radicals Guide_76: 4287694139319462613
+      Radicals Guide_77: -643365042337294830
+      Radicals Guide_78: 6272011083895039837
+      Radicals Guide_79: -8227650426500618270
+      Radicals Guide_8: 8281539109936397208
+      Radicals Guide_80: 1298542869959630798
+      Radicals Guide_81: -5651039651008447795
+      Radicals Guide_82: -8545324906232902777
+      Radicals Guide_83: -9117745842584562610
+      Radicals Guide_84: 5159265620713191077
+      Radicals Guide_85: -7947159603953437526
+      Radicals Guide_86: 8559985783407939472
+      Radicals Guide_87: 995493801817829350
+      Radicals Guide_88: -3174427524911026697
+      Radicals Guide_89: -9174676216865650090
+      Radicals Guide_9: 924302620813518833
+      Radicals Guide_90: -7868395415085838542
+      Radicals Guide_91: 4588155536713672851
+      Radicals Guide_92: -5534467689911781250
+      Radicals Guide_93: 1482049769430517206
+      Radicals Guide_94: -8551434519694273150
+      Radicals Guide_95: 2221300867905477779
+      Radicals Guide_96: -4000501903207207685
+      Radicals Guide_97: -2244252132813108699
+      Radicals Guide_98: -2922350949303608523
+      Radicals Guide_99: -4900108942201192789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

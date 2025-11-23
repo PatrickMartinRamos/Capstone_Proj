@@ -16,6 +16,7 @@ public class CannonMechanics : MonoBehaviour
     public void Start()
     {
         StageManager.Instance.cannon = this.gameObject;
+        cannonShell = this.gameObject.transform.GetChild(0).gameObject;
     }
     public void AimAt(Vector3 targetPos)
     {

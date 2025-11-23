@@ -41,7 +41,8 @@ public class BombsManager : MonoBehaviour
     public void setTargetBomb(GameObject bomb)
     {
         target = bomb;
-        //StageManager.Instance.cannon.GetComponent<CannonMechanics>().SwitchShell(bomb.GetComponent<BombMechanics>().problemType);
+        StageManager.Instance.cannon.GetComponent<CannonMechanics>().SwitchShell(bomb.GetComponent<BombMechanics>().problemType);
+        StageManager.Instance.problemType = this.targetBomb.GetComponent<BombMechanics>().problemType;
     }
     public void AddNeutralized()
     {
