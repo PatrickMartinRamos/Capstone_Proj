@@ -109,7 +109,7 @@ public class Circle : Shapes
                 break;
             default:
                 Debug.Log("cannot combine shapes");
-                break;
+                return;
 
         }
 

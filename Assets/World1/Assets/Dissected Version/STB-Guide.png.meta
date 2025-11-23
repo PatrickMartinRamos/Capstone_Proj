@@ -1,0 +1,1716 @@
+fileFormatVersion: 2
+guid: 6a585fd939ab7b64c93dada7776009b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4362769856116762813
+    second: STB-Guide_0
+  - first:
+      213: 4009987245067287685
+    second: STB-Guide_1
+  - first:
+      213: 5977890499438304501
+    second: STB-Guide_2
+  - first:
+      213: -7915450704381863903
+    second: STB-Guide_3
+  - first:
+      213: -4773432986665567712
+    second: STB-Guide_4
+  - first:
+      213: 8794047406094711929
+    second: STB-Guide_5
+  - first:
+      213: 7468867803053818833
+    second: STB-Guide_6
+  - first:
+      213: 4312533551590953107
+    second: STB-Guide_7
+  - first:
+      213: -2078381982695378181
+    second: STB-Guide_8
+  - first:
+      213: 656346413969104701
+    second: STB-Guide_9
+  - first:
+      213: 2333152616284495201
+    second: STB-Guide_10
+  - first:
+      213: -7852266812890244971
+    second: STB-Guide_11
+  - first:
+      213: -3464976041165996541
+    second: STB-Guide_12
+  - first:
+      213: 4725366007482848187
+    second: STB-Guide_13
+  - first:
+      213: -7756876349137192223
+    second: STB-Guide_14
+  - first:
+      213: -4795447176991357722
+    second: STB-Guide_15
+  - first:
+      213: 6605731208948888469
+    second: STB-Guide_16
+  - first:
+      213: -5068579553492139447
+    second: STB-Guide_17
+  - first:
+      213: 626052123193499190
+    second: STB-Guide_18
+  - first:
+      213: 7091722305527160749
+    second: STB-Guide_19
+  - first:
+      213: -889008888710818979
+    second: STB-Guide_20
+  - first:
+      213: -7448088791410357945
+    second: STB-Guide_21
+  - first:
+      213: -4997663759316465198
+    second: STB-Guide_22
+  - first:
+      213: -6620327888727611735
+    second: STB-Guide_23
+  - first:
+      213: 1776109151600861970
+    second: STB-Guide_24
+  - first:
+      213: -4646791752097256176
+    second: STB-Guide_25
+  - first:
+      213: -3530599293112610260
+    second: STB-Guide_26
+  - first:
+      213: 4247340197674675674
+    second: STB-Guide_27
+  - first:
+      213: -5778096498707555905
+    second: STB-Guide_28
+  - first:
+      213: -231938870063936186
+    second: STB-Guide_29
+  - first:
+      213: 8723470258696554116
+    second: STB-Guide_30
+  - first:
+      213: -1681326078630003514
+    second: STB-Guide_31
+  - first:
+      213: -6426685253865629840
+    second: STB-Guide_32
+  - first:
+      213: 5445091378991469417
+    second: STB-Guide_33
+  - first:
+      213: -7787867489115345636
+    second: STB-Guide_34
+  - first:
+      213: 8499297183007711586
+    second: STB-Guide_35
+  - first:
+      213: -6314156615227995951
+    second: STB-Guide_36
+  - first:
+      213: 7166849489665567841
+    second: STB-Guide_37
+  - first:
+      213: -6549159532681880641
+    second: STB-Guide_38
+  - first:
+      213: -3749720348390998747
+    second: STB-Guide_39
+  - first:
+      213: 5166103353023794756
+    second: STB-Guide_40
+  - first:
+      213: -2682865725438957549
+    second: STB-Guide_41
+  - first:
+      213: -8436775951393364824
+    second: STB-Guide_42
+  - first:
+      213: 5668152376152572121
+    second: STB-Guide_43
+  - first:
+      213: -8539378675757761422
+    second: STB-Guide_44
+  - first:
+      213: 6911500135484633674
+    second: STB-Guide_45
+  - first:
+      213: -1047253643228178986
+    second: STB-Guide_46
+  - first:
+      213: 3957155670264905011
+    second: STB-Guide_47
+  - first:
+      213: -2353389461791116634
+    second: STB-Guide_48
+  - first:
+      213: 7956081427589166419
+    second: STB-Guide_49
+  - first:
+      213: 7980747254005206358
+    second: STB-Guide_50
+  - first:
+      213: -2010190322543846231
+    second: STB-Guide_51
+  - first:
+      213: 4460939383221932986
+    second: STB-Guide_52
+  - first:
+      213: -3719947122529228082
+    second: STB-Guide_53
+  - first:
+      213: -1964172367858179843
+    second: STB-Guide_54
+  - first:
+      213: -5828314475710983868
+    second: STB-Guide_55
+  - first:
+      213: -3165556405334114341
+    second: STB-Guide_56
+  - first:
+      213: -2695522244516120135
+    second: STB-Guide_57
+  - first:
+      213: 8686521654051501894
+    second: STB-Guide_58
+  - first:
+      213: -4639366351720343849
+    second: STB-Guide_59
+  - first:
+      213: -5041145246476477856
+    second: STB-Guide_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: STB-Guide_0
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1001
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347d0694ee35473c0800000000000000
+      internalID: -4362769856116762813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1041
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c3510572656a730800000000000000
+      internalID: 4009987245067287685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_2
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 997
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcd33dacbbb5f250800000000000000
+      internalID: 5977890499438304501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_3
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1001
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1281430b58ba62290800000000000000
+      internalID: -7915450704381863903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_4
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 997
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02abaa64dfb51cdb0800000000000000
+      internalID: -4773432986665567712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_5
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1041
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c7832e58bba0a70800000000000000
+      internalID: 8794047406094711929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_6
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1041
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d30063f1bfb6a760800000000000000
+      internalID: 7468867803053818833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_7
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39058889a6239db30800000000000000
+      internalID: 4312533551590953107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 941
+        width: 593
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2bed5399a1823e0800000000000000
+      internalID: -2078381982695378181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 906
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fda36069fcb1900800000000000000
+      internalID: 656346413969104701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 904
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d196461f5016020800000000000000
+      internalID: 2333152616284495201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 906
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5989610dfe4270390800000000000000
+      internalID: -7852266812890244971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_12
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 904
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ebf0716aee9efc0800000000000000
+      internalID: -3464976041165996541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_13
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 882
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb398b5095fd39140800000000000000
+      internalID: 4725366007482848187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 906
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea7c03ee0a0a5490800000000000000
+      internalID: -7756876349137192223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_15
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 896
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4c74c2336237db0800000000000000
+      internalID: -4795447176991357722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_16
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 906
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5933c1f29854cab50800000000000000
+      internalID: 6605731208948888469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_17
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 906
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9420b4620c9c8a9b0800000000000000
+      internalID: -5068579553492139447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_18
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 906
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ed3ddc61f20b800800000000000000
+      internalID: 626052123193499190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_19
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 907
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf19a20ddbda6260800000000000000
+      internalID: 7091722305527160749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 825
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d531a3a302b99a3f0800000000000000
+      internalID: -889008888710818979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 826
+        width: 54
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749ca64b4b213a890800000000000000
+      internalID: -7448088791410357945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 826
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d949172a4bb4aab0800000000000000
+      internalID: -4997663759316465198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_23
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 816
+        width: 84
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a667c77cdedf14a0800000000000000
+      internalID: -6620327888727611735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_24
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 836
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2136d77fcd106a810800000000000000
+      internalID: 1776109151600861970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_25
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 710
+        width: 186
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d270f6587438fb0800000000000000
+      internalID: -4646791752097256176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_26
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 707
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2217c916aac00fc0800000000000000
+      internalID: -3530599293112610260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_27
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 708
+        width: 147
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adde2aa086591fa30800000000000000
+      internalID: 4247340197674675674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_28
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 824
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb99b9c19d310dfa0800000000000000
+      internalID: -5778096498707555905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_29
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 624
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64dcb3893dcf7ccf0800000000000000
+      internalID: -231938870063936186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_30
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 613
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4860b4a3bfdff0970800000000000000
+      internalID: 8723470258696554116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_31
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 646
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc78abe6dabaa8e0800000000000000
+      internalID: -1681326078630003514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_32
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 613
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0771918cfc3dfc6a0800000000000000
+      internalID: -6426685253865629840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_33
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 616
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963145682c9d09b40800000000000000
+      internalID: 5445091378991469417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_34
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 626
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d6771d7cfebe390800000000000000
+      internalID: -7787867489115345636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_35
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 624
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26127a9b1c193f570800000000000000
+      internalID: 8499297183007711586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_36
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 627
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d80725230c9f58a0800000000000000
+      internalID: -6314156615227995951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_37
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 53
+        width: 887
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ca436a3a3c57360800000000000000
+      internalID: 7166849489665567841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_38
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 546
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb122d9a16bc15a0800000000000000
+      internalID: -6549159532681880641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_39
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 538
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52db913c53156fbc0800000000000000
+      internalID: -3749720348390998747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_40
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 549
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e00fdd0afa1b740800000000000000
+      internalID: 5166103353023794756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_41
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 546
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318e32f46db84cad0800000000000000
+      internalID: -2682865725438957549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_42
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 568
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4e3afd8fc8aea80800000000000000
+      internalID: -8436775951393364824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_43
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 546
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d04c511e8259ae40800000000000000
+      internalID: 5668152376152572121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_44
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 548
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cb9e486580e7980800000000000000
+      internalID: -8539378675757761422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_45
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 568
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4230a821c49aef50800000000000000
+      internalID: 6911500135484633674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_46
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 546
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d596ad2c586771f0800000000000000
+      internalID: -1047253643228178986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_47
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 568
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dff0fbd14aae630800000000000000
+      internalID: 3957155670264905011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_48
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 464
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2fac7d0c4175fd0800000000000000
+      internalID: -2353389461791116634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_49
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 464
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355f88fb7eda96e60800000000000000
+      internalID: 7956081427589166419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_50
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 364
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d872df75f41ce60800000000000000
+      internalID: 7980747254005206358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_51
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 364
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac98d55d8e5a14e0800000000000000
+      internalID: -2010190322543846231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_52
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 365
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab35e75ebb078ed30800000000000000
+      internalID: 4460939383221932986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_53
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 365
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecaa86a1dc7106cc0800000000000000
+      internalID: -3719947122529228082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_54
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 317
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0ec2853abddb4e0800000000000000
+      internalID: -1964172367858179843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_55
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 316
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441daf33ddaad1fa0800000000000000
+      internalID: -5828314475710983868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_56
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 317
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdff89f983fa114d0800000000000000
+      internalID: -3165556405334114341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_57
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 317
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9f373dcc4979ad0800000000000000
+      internalID: -2695522244516120135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_58
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 318
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6477a73db69bc8870800000000000000
+      internalID: 8686521654051501894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_59
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 113
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d61fce22e8ad9fb0800000000000000
+      internalID: -4639366351720343849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: STB-Guide_60
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 113
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ade928b114a0ab0800000000000000
+      internalID: -5041145246476477856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      STB-Guide_0: -4362769856116762813
+      STB-Guide_1: 4009987245067287685
+      STB-Guide_10: 2333152616284495201
+      STB-Guide_11: -7852266812890244971
+      STB-Guide_12: -3464976041165996541
+      STB-Guide_13: 4725366007482848187
+      STB-Guide_14: -7756876349137192223
+      STB-Guide_15: -4795447176991357722
+      STB-Guide_16: 6605731208948888469
+      STB-Guide_17: -5068579553492139447
+      STB-Guide_18: 626052123193499190
+      STB-Guide_19: 7091722305527160749
+      STB-Guide_2: 5977890499438304501
+      STB-Guide_20: -889008888710818979
+      STB-Guide_21: -7448088791410357945
+      STB-Guide_22: -4997663759316465198
+      STB-Guide_23: -6620327888727611735
+      STB-Guide_24: 1776109151600861970
+      STB-Guide_25: -4646791752097256176
+      STB-Guide_26: -3530599293112610260
+      STB-Guide_27: 4247340197674675674
+      STB-Guide_28: -5778096498707555905
+      STB-Guide_29: -231938870063936186
+      STB-Guide_3: -7915450704381863903
+      STB-Guide_30: 8723470258696554116
+      STB-Guide_31: -1681326078630003514
+      STB-Guide_32: -6426685253865629840
+      STB-Guide_33: 5445091378991469417
+      STB-Guide_34: -7787867489115345636
+      STB-Guide_35: 8499297183007711586
+      STB-Guide_36: -6314156615227995951
+      STB-Guide_37: 7166849489665567841
+      STB-Guide_38: -6549159532681880641
+      STB-Guide_39: -3749720348390998747
+      STB-Guide_4: -4773432986665567712
+      STB-Guide_40: 5166103353023794756
+      STB-Guide_41: -2682865725438957549
+      STB-Guide_42: -8436775951393364824
+      STB-Guide_43: 5668152376152572121
+      STB-Guide_44: -8539378675757761422
+      STB-Guide_45: 6911500135484633674
+      STB-Guide_46: -1047253643228178986
+      STB-Guide_47: 3957155670264905011
+      STB-Guide_48: -2353389461791116634
+      STB-Guide_49: 7956081427589166419
+      STB-Guide_5: 8794047406094711929
+      STB-Guide_50: 7980747254005206358
+      STB-Guide_51: -2010190322543846231
+      STB-Guide_52: 4460939383221932986
+      STB-Guide_53: -3719947122529228082
+      STB-Guide_54: -1964172367858179843
+      STB-Guide_55: -5828314475710983868
+      STB-Guide_56: -3165556405334114341
+      STB-Guide_57: -2695522244516120135
+      STB-Guide_58: 8686521654051501894
+      STB-Guide_59: -4639366351720343849
+      STB-Guide_6: 7468867803053818833
+      STB-Guide_60: -5041145246476477856
+      STB-Guide_7: 4312533551590953107
+      STB-Guide_8: -2078381982695378181
+      STB-Guide_9: 656346413969104701
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

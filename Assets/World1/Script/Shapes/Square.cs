@@ -127,7 +127,7 @@ public class Square : Shapes
                 break;
             default:
                 Debug.Log("cannot combine shapes");
-                break;
+                return;
         }
 
         GameObject newShape = Instantiate(CombinedShape, spawnPt, Quaternion.identity);

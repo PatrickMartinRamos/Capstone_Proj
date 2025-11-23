@@ -6,7 +6,6 @@ using static UnityEngine.Rendering.DebugUI;
 public class RadicalProblemLoader : ProblemLoader
 {
     [SerializeField] GameObject givenLocation;
-    [SerializeField] GameObject scissorLocation;
 
     private GameObject constant;
 

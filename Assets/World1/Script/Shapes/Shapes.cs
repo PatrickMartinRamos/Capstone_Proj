@@ -36,7 +36,7 @@ public class Shapes : MonoBehaviour, ITargetable
 
     public string ID => iD;
 
-    void Start()
+    protected virtual void Start()
     {
         // Generate ID
         iD = Generate(7);
@@ -50,6 +50,7 @@ public class Shapes : MonoBehaviour, ITargetable
     // Update is called once per frame
     void Update()
     { 
+
     }
     public void ChangeToGiven()
     {
@@ -82,7 +83,15 @@ public class Shapes : MonoBehaviour, ITargetable
     // Function for combining shapes in similar vessel
     public virtual void CombineLikeTerms(GameObject dragged, GameObject target)
     {
-        if (target.GetComponent<Shapes>().classification != dragged.GetComponent<Shapes>().classification) return; 
+        if (target.GetComponent<Shapes>().classification != dragged.GetComponent<Shapes>().classification) return;
+        if (StageManager.Instance.problemType == ProblemType.completingSquare)
+        {
+            GameObject newShape = Instantiate(StageManager.Instance.squaredConstant, target.transform.position, Quaternion.identity);
+            newShape.GetComponent<Shapes>().AddValue(target.GetComponent<Shapes>().value, dragged.GetComponent<Shapes>().value);
+            newShape.transform.SetParent(StageManager.Instance.craftArea.transform);
+            Destroy(dragged);
+            Destroy(target);
+        }
         target.GetComponent<Shapes>().AddValue(dragged.GetComponent<Shapes>().value);
         Destroy(dragged);
     }
@@ -93,7 +102,10 @@ public class Shapes : MonoBehaviour, ITargetable
     }
     public void AddValue (int val)
     {
-        value += val;
+        if (StageManager.Instance.problemType != ProblemType.squaringBinomial)
+            value *= val;
+        else
+            value += val;
         valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
 
         if (!withValue)
@@ -106,7 +118,8 @@ public class Shapes : MonoBehaviour, ITargetable
     private int currentIndex = 0;
     public void AddValue(int val1, int val2)
     {
-        if (StageManager.Instance.problem.stageDifficulty != Difficulty.hard)
+
+        if (StageManager.Instance.problem.stageDifficulty != Difficulty.hard || StageManager.Instance.problemType == ProblemType.completingSquare)
         {
             value = val1 * val2;
             withValue = true;
@@ -179,10 +192,10 @@ public class Shapes : MonoBehaviour, ITargetable
     }
 
     // getting spot in assigned area for combination insatantiation
-    private Vector3 GetRandomPosition()
+    protected Vector3 GetRandomPosition(GameObject targetArea)
     {
         // Get collider bounds
-        Bounds bounds = StageManager.Instance.craftArea.GetComponent<Collider2D>().bounds;
+        Bounds bounds = targetArea.GetComponent<Collider2D>().bounds;
 
         // Pick random position inside the bounds
         float randomX = Random.Range(bounds.min.x, bounds.max.x);
@@ -199,15 +212,26 @@ public class Shapes : MonoBehaviour, ITargetable
         transform.DOScale(origScaleSize * scaleModifier, 0.5f);
     }
 
-    public void MoveToArea()
+    public virtual void MoveToArea(Transform pos = null)
     {
-        transform.SetParent(StageManager.Instance.craftArea.transform);
+        if (pos != null)
+        {
+            transform.SetParent(pos);
+            Debug.Log($"Moving to {pos}.");
+        }
+        else
+            transform.SetParent(StageManager.Instance.craftArea.transform);
 
         // Apply impulse force once
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        Vector3 targetPos = GetRandomPosition();
-        rb.DOMove(targetPos, 1f).OnComplete(()=>ChangeOriginPos(targetPos));
+        Vector3 targetPos = GetRandomPosition(transform.parent.gameObject);
+        rb.DOMove(targetPos, 1f).OnComplete(()=> 
+        { 
+            ChangeOriginPos(targetPos);
+            GetComponentInParent<AreaContainer>().InteractWithDraggedObject(this.gameObject);
+        });
         Debug.Log("Sending to Area");
+        //StageManager.Instance.craftArea.GetComponent<CraftAreaMech>().InteractWithDraggedObject(this.gameObject);
     }
 
     // Random ID Generator - AlphaNumeric

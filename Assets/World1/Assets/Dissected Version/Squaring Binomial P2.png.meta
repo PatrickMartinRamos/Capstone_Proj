@@ -1,0 +1,3302 @@
+fileFormatVersion: 2
+guid: ceec1cb5efcd01945b94b19cbaea56eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6639916262841934965
+    second: Squaring Binomial P2_0
+  - first:
+      213: -5755741899883735528
+    second: Squaring Binomial P2_1
+  - first:
+      213: 8901801152191761350
+    second: Squaring Binomial P2_2
+  - first:
+      213: 4745262762067040749
+    second: Squaring Binomial P2_3
+  - first:
+      213: 8390034472360104586
+    second: Squaring Binomial P2_4
+  - first:
+      213: 5131759660898443986
+    second: Squaring Binomial P2_5
+  - first:
+      213: 1017262353266091147
+    second: Squaring Binomial P2_6
+  - first:
+      213: -5654834826860533087
+    second: Squaring Binomial P2_7
+  - first:
+      213: 6684561775303305565
+    second: Squaring Binomial P2_8
+  - first:
+      213: 6301515619217407835
+    second: Squaring Binomial P2_9
+  - first:
+      213: 3125334153661750839
+    second: Squaring Binomial P2_10
+  - first:
+      213: 6693187716889810900
+    second: Squaring Binomial P2_11
+  - first:
+      213: -7151475148107786631
+    second: Squaring Binomial P2_12
+  - first:
+      213: -4891368558406628704
+    second: Squaring Binomial P2_13
+  - first:
+      213: -4504633761688624047
+    second: Squaring Binomial P2_14
+  - first:
+      213: -4650441472931734560
+    second: Squaring Binomial P2_15
+  - first:
+      213: -7965131766865598179
+    second: Squaring Binomial P2_16
+  - first:
+      213: 3238873863725472386
+    second: Squaring Binomial P2_17
+  - first:
+      213: 4548532408721365305
+    second: Squaring Binomial P2_18
+  - first:
+      213: -2610703035198313297
+    second: Squaring Binomial P2_19
+  - first:
+      213: 6218438461739095087
+    second: Squaring Binomial P2_20
+  - first:
+      213: -3462401673341851874
+    second: Squaring Binomial P2_21
+  - first:
+      213: 6063561655546711563
+    second: Squaring Binomial P2_22
+  - first:
+      213: -5077088439431579497
+    second: Squaring Binomial P2_23
+  - first:
+      213: 7181032583415851266
+    second: Squaring Binomial P2_24
+  - first:
+      213: 8936086305460391900
+    second: Squaring Binomial P2_25
+  - first:
+      213: 2023941053332513628
+    second: Squaring Binomial P2_26
+  - first:
+      213: 7969225047157854747
+    second: Squaring Binomial P2_27
+  - first:
+      213: 1713867606710309854
+    second: Squaring Binomial P2_28
+  - first:
+      213: -603997453654729811
+    second: Squaring Binomial P2_29
+  - first:
+      213: -5774019155460529655
+    second: Squaring Binomial P2_30
+  - first:
+      213: -3720312970368057151
+    second: Squaring Binomial P2_31
+  - first:
+      213: 1265082745402043227
+    second: Squaring Binomial P2_32
+  - first:
+      213: -4091595120660125869
+    second: Squaring Binomial P2_33
+  - first:
+      213: -6714923808086088131
+    second: Squaring Binomial P2_34
+  - first:
+      213: 1538119518427195626
+    second: Squaring Binomial P2_35
+  - first:
+      213: -7167327655826009929
+    second: Squaring Binomial P2_36
+  - first:
+      213: 3031422517845875121
+    second: Squaring Binomial P2_37
+  - first:
+      213: 9204381150677839056
+    second: Squaring Binomial P2_38
+  - first:
+      213: -1796653215954485934
+    second: Squaring Binomial P2_39
+  - first:
+      213: -6375022055800197347
+    second: Squaring Binomial P2_40
+  - first:
+      213: -4730963005920687818
+    second: Squaring Binomial P2_41
+  - first:
+      213: -2222675225358213803
+    second: Squaring Binomial P2_42
+  - first:
+      213: -7154397259644447318
+    second: Squaring Binomial P2_43
+  - first:
+      213: 4623651911916420343
+    second: Squaring Binomial P2_44
+  - first:
+      213: 8441496758516797401
+    second: Squaring Binomial P2_45
+  - first:
+      213: -6443522383943374333
+    second: Squaring Binomial P2_46
+  - first:
+      213: 2945291290988402065
+    second: Squaring Binomial P2_47
+  - first:
+      213: 4247683674090567653
+    second: Squaring Binomial P2_48
+  - first:
+      213: -2076812347698306947
+    second: Squaring Binomial P2_49
+  - first:
+      213: 7890855016430496954
+    second: Squaring Binomial P2_50
+  - first:
+      213: -8134097564299659979
+    second: Squaring Binomial P2_51
+  - first:
+      213: -588306939377224188
+    second: Squaring Binomial P2_52
+  - first:
+      213: -7149299601269868431
+    second: Squaring Binomial P2_53
+  - first:
+      213: 1393101028793620306
+    second: Squaring Binomial P2_54
+  - first:
+      213: -2210155266311643738
+    second: Squaring Binomial P2_55
+  - first:
+      213: 6915948745625514397
+    second: Squaring Binomial P2_56
+  - first:
+      213: 3429921780511696327
+    second: Squaring Binomial P2_57
+  - first:
+      213: -58600429412933720
+    second: Squaring Binomial P2_58
+  - first:
+      213: 3341920553972656913
+    second: Squaring Binomial P2_59
+  - first:
+      213: 129659314256295460
+    second: Squaring Binomial P2_60
+  - first:
+      213: -8577414985689449654
+    second: Squaring Binomial P2_61
+  - first:
+      213: 7208567082240538027
+    second: Squaring Binomial P2_62
+  - first:
+      213: -1606893345648995479
+    second: Squaring Binomial P2_63
+  - first:
+      213: 1622253556147583601
+    second: Squaring Binomial P2_64
+  - first:
+      213: -8804051662079258124
+    second: Squaring Binomial P2_65
+  - first:
+      213: -2983591540697810110
+    second: Squaring Binomial P2_66
+  - first:
+      213: -9182070058252211182
+    second: Squaring Binomial P2_67
+  - first:
+      213: 3364386169604456692
+    second: Squaring Binomial P2_68
+  - first:
+      213: 3226837165188920434
+    second: Squaring Binomial P2_69
+  - first:
+      213: -2368927545637625247
+    second: Squaring Binomial P2_70
+  - first:
+      213: 1573691619003424405
+    second: Squaring Binomial P2_71
+  - first:
+      213: -4536212480204248808
+    second: Squaring Binomial P2_72
+  - first:
+      213: -1336301917836352496
+    second: Squaring Binomial P2_73
+  - first:
+      213: -4575986846662494220
+    second: Squaring Binomial P2_74
+  - first:
+      213: -4635930589777805574
+    second: Squaring Binomial P2_75
+  - first:
+      213: 842302846358596926
+    second: Squaring Binomial P2_76
+  - first:
+      213: -2053743736480585719
+    second: Squaring Binomial P2_77
+  - first:
+      213: 7519888361871507584
+    second: Squaring Binomial P2_78
+  - first:
+      213: -3744875536347939757
+    second: Squaring Binomial P2_79
+  - first:
+      213: -5975520293999833024
+    second: Squaring Binomial P2_80
+  - first:
+      213: 3146814822456458182
+    second: Squaring Binomial P2_81
+  - first:
+      213: 1351355412679393067
+    second: Squaring Binomial P2_82
+  - first:
+      213: -6725026443599437907
+    second: Squaring Binomial P2_83
+  - first:
+      213: 2470301348652527097
+    second: Squaring Binomial P2_84
+  - first:
+      213: 135057091866875850
+    second: Squaring Binomial P2_85
+  - first:
+      213: 5553333307402668396
+    second: Squaring Binomial P2_86
+  - first:
+      213: -1292556900545634123
+    second: Squaring Binomial P2_87
+  - first:
+      213: 2718256022544907773
+    second: Squaring Binomial P2_88
+  - first:
+      213: -5841377763037866765
+    second: Squaring Binomial P2_89
+  - first:
+      213: 1847755401795775710
+    second: Squaring Binomial P2_90
+  - first:
+      213: -5858054996951480561
+    second: Squaring Binomial P2_91
+  - first:
+      213: 1519008552280309261
+    second: Squaring Binomial P2_92
+  - first:
+      213: -1399636524501392002
+    second: Squaring Binomial P2_93
+  - first:
+      213: 8710253842401080194
+    second: Squaring Binomial P2_94
+  - first:
+      213: -24912508649095955
+    second: Squaring Binomial P2_95
+  - first:
+      213: -1471911258522426309
+    second: Squaring Binomial P2_96
+  - first:
+      213: 7970493578521558220
+    second: Squaring Binomial P2_97
+  - first:
+      213: 5883296539886512129
+    second: Squaring Binomial P2_98
+  - first:
+      213: 4571838932500656482
+    second: Squaring Binomial P2_99
+  - first:
+      213: 7776794630211403459
+    second: Squaring Binomial P2_100
+  - first:
+      213: -8134133987209965402
+    second: Squaring Binomial P2_101
+  - first:
+      213: -3436145641191402784
+    second: Squaring Binomial P2_102
+  - first:
+      213: 9137440835168721873
+    second: Squaring Binomial P2_103
+  - first:
+      213: 3913206084951928290
+    second: Squaring Binomial P2_104
+  - first:
+      213: -8250439583496199654
+    second: Squaring Binomial P2_105
+  - first:
+      213: 4470513341229016211
+    second: Squaring Binomial P2_106
+  - first:
+      213: -5326465671869984982
+    second: Squaring Binomial P2_107
+  - first:
+      213: 3757806849879618122
+    second: Squaring Binomial P2_108
+  - first:
+      213: -1872067935661934327
+    second: Squaring Binomial P2_109
+  - first:
+      213: -3549085635736684767
+    second: Squaring Binomial P2_110
+  - first:
+      213: -2830423463037846305
+    second: Squaring Binomial P2_111
+  - first:
+      213: 1101487241314040282
+    second: Squaring Binomial P2_112
+  - first:
+      213: -6320339219288398713
+    second: Squaring Binomial P2_113
+  - first:
+      213: -4018682495462096409
+    second: Squaring Binomial P2_114
+  - first:
+      213: 3081499476978988648
+    second: Squaring Binomial P2_115
+  - first:
+      213: 2979623930941951014
+    second: Squaring Binomial P2_116
+  - first:
+      213: 3719546715014311995
+    second: Squaring Binomial P2_117
+  - first:
+      213: 5606123170701886366
+    second: Squaring Binomial P2_118
+  - first:
+      213: -1645869503149363592
+    second: Squaring Binomial P2_119
+  - first:
+      213: -2034648554327875807
+    second: Squaring Binomial P2_120
+  - first:
+      213: -8628848516376142167
+    second: Squaring Binomial P2_121
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Squaring Binomial P2_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 954
+        width: 593
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b97f6b6574ad3a0800000000000000
+      internalID: -6639916262841934965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_1
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816199ebc3f7f10b0800000000000000
+      internalID: -5755741899883735528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 938
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb8d81fbfc898b70800000000000000
+      internalID: 8901801152191761350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_3
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 939
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de915e2375f8ad140800000000000000
+      internalID: 4745262762067040749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_4
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 939
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a825e4a76e36f6470800000000000000
+      internalID: 8390034472360104586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 929
+        width: 66
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2e78ce83ca73740800000000000000
+      internalID: 5131759660898443986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_6
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 940
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84adc978ba0e1e00800000000000000
+      internalID: 1017262353266091147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 857
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa68718fadf581b0800000000000000
+      internalID: -5654834826860533087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_8
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 860
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59ab10b48554cc50800000000000000
+      internalID: 6684561775303305565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 860
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f770e911b737750800000000000000
+      internalID: 6301515619217407835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 860
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e9761aada6f5b20800000000000000
+      internalID: 3125334153661750839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 846
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7993834caf2ec50800000000000000
+      internalID: 6693187716889810900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_12
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 860
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97650013e3bd0cc90800000000000000
+      internalID: -7151475148107786631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 860
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa88a2363e5e1cb0800000000000000
+      internalID: -4891368558406628704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_14
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 859
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1546157d5735c71c0800000000000000
+      internalID: -4504633761688624047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_15
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 845
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebd8259e10567fb0800000000000000
+      internalID: -4650441472931734560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_16
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 857
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19ebceebda267190800000000000000
+      internalID: -7965131766865598179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 859
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a57a76e9ac2fc20800000000000000
+      internalID: 3238873863725472386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_18
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 859
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93950376022af1f30800000000000000
+      internalID: 4548532408721365305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_19
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 860
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac68fceb6be4cbd0800000000000000
+      internalID: -2610703035198313297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_20
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 859
+        width: 41
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24d59195d45c4650800000000000000
+      internalID: 6218438461739095087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_21
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 867
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17adbec50413ffc0800000000000000
+      internalID: -3462401673341851874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_22
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 859
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e8a881339162450800000000000000
+      internalID: 6063561655546711563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_23
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 828
+        width: 166
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7983072c6fe8a89b0800000000000000
+      internalID: -5077088439431579497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_24
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 860
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209e10f761728a360800000000000000
+      internalID: 7181032583415851266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_25
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 859
+        width: 65
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf033f362b530c70800000000000000
+      internalID: 8936086305460391900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_26
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 864
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53e63a2aab761c10800000000000000
+      internalID: 2023941053332513628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_27
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 864
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b125df625ff589e60800000000000000
+      internalID: 7969225047157854747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_28
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 864
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed354020281e8c710800000000000000
+      internalID: 1713867606710309854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_29
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 857
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab5ba9148b2e97f0800000000000000
+      internalID: -603997453654729811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_30
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 857
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90269709b209edfa0800000000000000
+      internalID: -5774019155460529655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_31
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 857
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c00fe3801bce5cc0800000000000000
+      internalID: -3720312970368057151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_32
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 857
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b2a23ed0a7e8110800000000000000
+      internalID: 1265082745402043227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_33
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 792
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357e45c7aebb737c0800000000000000
+      internalID: -4091595120660125869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_34
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 792
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36273daf5ccfc2a0800000000000000
+      internalID: -6714923808086088131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_35
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 598
+        width: 410
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8a2fd7d8f785510800000000000000
+      internalID: 1538119518427195626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_36
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 790
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b058ad9879888c90800000000000000
+      internalID: -7167327655826009929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_37
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 748
+        width: 179
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9d25408b6c11a20800000000000000
+      internalID: 3031422517845875121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_38
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 659
+        width: 50
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc247fb3e78cbf70800000000000000
+      internalID: 9204381150677839056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_39
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 733
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d387e4b610117e0800000000000000
+      internalID: -1796653215954485934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_40
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 682
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fafb0773f5787a0800000000000000
+      internalID: -6375022055800197347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_41
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 631
+        width: 82
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639459a363e385eb0800000000000000
+      internalID: -4730963005920687818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_42
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 682
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d5675a8a87721e0800000000000000
+      internalID: -2222675225358213803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_43
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 594
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa55dd4199976bc90800000000000000
+      internalID: -7154397259644447318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_44
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 594
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc75deaae28a2040800000000000000
+      internalID: 4623651911916420343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_45
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 148
+        width: 88
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df4100b398362570800000000000000
+      internalID: 8441496758516797401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_46
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 508
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ae6c2f7820496a0800000000000000
+      internalID: -6443522383943374333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_47
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 508
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1955a6703d6cfd820800000000000000
+      internalID: 2945291290988402065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_48
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 485
+        width: 97
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7f460ebcdc2fa30800000000000000
+      internalID: 4247683674090567653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_49
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 527
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d702c465c2ead23e0800000000000000
+      internalID: -2076812347698306947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_50
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 522
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abce27474d2f18d60800000000000000
+      internalID: 7890855016430496954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_51
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 489
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5357c8f8c51ed1f80800000000000000
+      internalID: -8134097564299659979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_52
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 489
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406f583a4f9e5d7f0800000000000000
+      internalID: -588306939377224188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_53
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 516
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178b77924e598cc90800000000000000
+      internalID: -7149299601269868431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_54
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 489
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2579975310a455310800000000000000
+      internalID: 1393101028793620306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_55
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 505
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad1905ce73f351e0800000000000000
+      internalID: -2210155266311643738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_56
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 442
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9131dbedb26aff50800000000000000
+      internalID: 6915948745625514397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_57
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 416
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c566c6dfa7899f20800000000000000
+      internalID: 3429921780511696327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_58
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 378
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af182d483fcf2ff0800000000000000
+      internalID: -58600429412933720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_59
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 378
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bed1f9903e06e20800000000000000
+      internalID: 3341920553972656913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_60
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 386
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42631189574acc100800000000000000
+      internalID: 129659314256295460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_61
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 386
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b3edef386e6f880800000000000000
+      internalID: -8577414985689449654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_62
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 388
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba575849199f90460800000000000000
+      internalID: 7208567082240538027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_63
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 388
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96317ac040b23b9e0800000000000000
+      internalID: -1606893345648995479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_64
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 389
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a7ac5a307638610800000000000000
+      internalID: 1622253556147583601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_65
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 364
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f11491c8a9b1d580800000000000000
+      internalID: -8804051662079258124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 378
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bb8dd2d472896d0800000000000000
+      internalID: -2983591540697810110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_67
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 405
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c60234eebb29080800000000000000
+      internalID: -9182070058252211182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_68
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 394
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0c28e5563b0be20800000000000000
+      internalID: 3364386169604456692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_69
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 348
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2743d132e4708cc20800000000000000
+      internalID: 3226837165188920434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_70
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 368
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162a1a7c2f0ef1fd0800000000000000
+      internalID: -2368927545637625247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_71
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 349
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e55b09030e6d510800000000000000
+      internalID: 1573691619003424405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_72
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 348
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8196bbb78c22c01c0800000000000000
+      internalID: -4536212480204248808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_73
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 348
+        width: 66
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014e0ba5c70847de0800000000000000
+      internalID: -1336301917836352496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_74
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 356
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f772d32534de70c0800000000000000
+      internalID: -4575986846662494220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_75
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 346
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe3de8d0bdd9afb0800000000000000
+      internalID: -4635930589777805574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_76
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 348
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d218ed9f570bb00800000000000000
+      internalID: 842302846358596926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_77
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 368
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908246fe3f2af73e0800000000000000
+      internalID: -2053743736480585719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_78
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 309
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08002ff7f920c5860800000000000000
+      internalID: 7519888361871507584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_79
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 348
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c3ee77a87870cc0800000000000000
+      internalID: -3744875536347939757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_80
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 348
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0409008c3ffa21da0800000000000000
+      internalID: -5975520293999833024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_81
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 348
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb7372986bbbab20800000000000000
+      internalID: 3146814822456458182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_82
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 258
+        width: 172
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f7e0a869af0c210800000000000000
+      internalID: 1351355412679393067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_83
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 261
+        width: 82
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf952c8418eba2a0800000000000000
+      internalID: -6725026443599437907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_84
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 266
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd2a960df5484220800000000000000
+      internalID: 2470301348652527097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_85
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 304
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac75f11a5b1dfd100800000000000000
+      internalID: 135057091866875850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_86
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 266
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69c4136837611d40800000000000000
+      internalID: 5553333307402668396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_87
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 256
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b06ff2e85aef0ee0800000000000000
+      internalID: -1292556900545634123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_88
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 261
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdfa58537f29b520800000000000000
+      internalID: 2718256022544907773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_89
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 261
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4134b9fd14feea0800000000000000
+      internalID: -5841377763037866765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_90
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 268
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edca8d38fbb84a910800000000000000
+      internalID: 1847755401795775710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_91
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 266
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f074100840204bea0800000000000000
+      internalID: -5858054996951480561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_92
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 293
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eb271fa3a941510800000000000000
+      internalID: 1519008552280309261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_93
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 70
+        width: 88
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75ae6e1ffd739ce0800000000000000
+      internalID: -1399636524501392002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_94
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 266
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2833cc388b901e870800000000000000
+      internalID: 8710253842401080194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_95
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 269
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decb183943e77aff0800000000000000
+      internalID: -24912508649095955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_96
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 282
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b346fd64288b29be0800000000000000
+      internalID: -1471911258522426309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_97
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 195
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc3f402ea1ec9e60800000000000000
+      internalID: 7970493578521558220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_98
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 146
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1086830380ba5a150800000000000000
+      internalID: 5883296539886512129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_99
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 184
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261b006594f627f30800000000000000
+      internalID: 4571838932500656482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_100
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 146
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce7ae05389bceb60800000000000000
+      internalID: 7776794630211403459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_101
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 146
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a01be03c30cd1f80800000000000000
+      internalID: -8134133987209965402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_102
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 179
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2974caebb5050d0800000000000000
+      internalID: -3436145641191402784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_103
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 148
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db51600706bece70800000000000000
+      internalID: 9137440835168721873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_104
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 136
+        width: 111
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ede47283308e4630800000000000000
+      internalID: 3913206084951928290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_105
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 173
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1223e859ec808d80800000000000000
+      internalID: -8250439583496199654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_106
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 162
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394a993b2347a0e30800000000000000
+      internalID: 4470513341229016211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_107
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 51
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f80e731b79416b0800000000000000
+      internalID: -5326465671869984982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_108
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 53
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42ba959b69662430800000000000000
+      internalID: 3757806849879618122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_109
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 53
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909b87391241506e0800000000000000
+      internalID: -1872067935661934327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_110
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 41
+        width: 169
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127397c0b6d1fbec0800000000000000
+      internalID: -3549085635736684767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_111
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 49
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcb2b94bd058b8d0800000000000000
+      internalID: -2830423463037846305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_112
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 82
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9f52f5fc4494f00800000000000000
+      internalID: 1101487241314040282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_113
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 56
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784685677f4a948a0800000000000000
+      internalID: -6320339219288398713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_114
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 49
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1c6e0ff85ca38c0800000000000000
+      internalID: -4018682495462096409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_115
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 49
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86672e4a27fa3ca20800000000000000
+      internalID: 3081499476978988648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_116
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 56
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c4c00bd20c95920800000000000000
+      internalID: 2979623930941951014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_117
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 49
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3036e1c70c7e9330800000000000000
+      internalID: 3719546715014311995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_118
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 82
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93c5cc3253fccd40800000000000000
+      internalID: 5606123170701886366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_119
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 54
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e22263862b829e0800000000000000
+      internalID: -1645869503149363592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_120
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 40
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f568c7be973c3e0800000000000000
+      internalID: -2034648554327875807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squaring Binomial P2_121
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 54
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae5eb0fdfb204880800000000000000
+      internalID: -8628848516376142167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Squaring Binomial P2_0: -6639916262841934965
+      Squaring Binomial P2_1: -5755741899883735528
+      Squaring Binomial P2_10: 3125334153661750839
+      Squaring Binomial P2_100: 7776794630211403459
+      Squaring Binomial P2_101: -8134133987209965402
+      Squaring Binomial P2_102: -3436145641191402784
+      Squaring Binomial P2_103: 9137440835168721873
+      Squaring Binomial P2_104: 3913206084951928290
+      Squaring Binomial P2_105: -8250439583496199654
+      Squaring Binomial P2_106: 4470513341229016211
+      Squaring Binomial P2_107: -5326465671869984982
+      Squaring Binomial P2_108: 3757806849879618122
+      Squaring Binomial P2_109: -1872067935661934327
+      Squaring Binomial P2_11: 6693187716889810900
+      Squaring Binomial P2_110: -3549085635736684767
+      Squaring Binomial P2_111: -2830423463037846305
+      Squaring Binomial P2_112: 1101487241314040282
+      Squaring Binomial P2_113: -6320339219288398713
+      Squaring Binomial P2_114: -4018682495462096409
+      Squaring Binomial P2_115: 3081499476978988648
+      Squaring Binomial P2_116: 2979623930941951014
+      Squaring Binomial P2_117: 3719546715014311995
+      Squaring Binomial P2_118: 5606123170701886366
+      Squaring Binomial P2_119: -1645869503149363592
+      Squaring Binomial P2_12: -7151475148107786631
+      Squaring Binomial P2_120: -2034648554327875807
+      Squaring Binomial P2_121: -8628848516376142167
+      Squaring Binomial P2_13: -4891368558406628704
+      Squaring Binomial P2_14: -4504633761688624047
+      Squaring Binomial P2_15: -4650441472931734560
+      Squaring Binomial P2_16: -7965131766865598179
+      Squaring Binomial P2_17: 3238873863725472386
+      Squaring Binomial P2_18: 4548532408721365305
+      Squaring Binomial P2_19: -2610703035198313297
+      Squaring Binomial P2_2: 8901801152191761350
+      Squaring Binomial P2_20: 6218438461739095087
+      Squaring Binomial P2_21: -3462401673341851874
+      Squaring Binomial P2_22: 6063561655546711563
+      Squaring Binomial P2_23: -5077088439431579497
+      Squaring Binomial P2_24: 7181032583415851266
+      Squaring Binomial P2_25: 8936086305460391900
+      Squaring Binomial P2_26: 2023941053332513628
+      Squaring Binomial P2_27: 7969225047157854747
+      Squaring Binomial P2_28: 1713867606710309854
+      Squaring Binomial P2_29: -603997453654729811
+      Squaring Binomial P2_3: 4745262762067040749
+      Squaring Binomial P2_30: -5774019155460529655
+      Squaring Binomial P2_31: -3720312970368057151
+      Squaring Binomial P2_32: 1265082745402043227
+      Squaring Binomial P2_33: -4091595120660125869
+      Squaring Binomial P2_34: -6714923808086088131
+      Squaring Binomial P2_35: 1538119518427195626
+      Squaring Binomial P2_36: -7167327655826009929
+      Squaring Binomial P2_37: 3031422517845875121
+      Squaring Binomial P2_38: 9204381150677839056
+      Squaring Binomial P2_39: -1796653215954485934
+      Squaring Binomial P2_4: 8390034472360104586
+      Squaring Binomial P2_40: -6375022055800197347
+      Squaring Binomial P2_41: -4730963005920687818
+      Squaring Binomial P2_42: -2222675225358213803
+      Squaring Binomial P2_43: -7154397259644447318
+      Squaring Binomial P2_44: 4623651911916420343
+      Squaring Binomial P2_45: 8441496758516797401
+      Squaring Binomial P2_46: -6443522383943374333
+      Squaring Binomial P2_47: 2945291290988402065
+      Squaring Binomial P2_48: 4247683674090567653
+      Squaring Binomial P2_49: -2076812347698306947
+      Squaring Binomial P2_5: 5131759660898443986
+      Squaring Binomial P2_50: 7890855016430496954
+      Squaring Binomial P2_51: -8134097564299659979
+      Squaring Binomial P2_52: -588306939377224188
+      Squaring Binomial P2_53: -7149299601269868431
+      Squaring Binomial P2_54: 1393101028793620306
+      Squaring Binomial P2_55: -2210155266311643738
+      Squaring Binomial P2_56: 6915948745625514397
+      Squaring Binomial P2_57: 3429921780511696327
+      Squaring Binomial P2_58: -58600429412933720
+      Squaring Binomial P2_59: 3341920553972656913
+      Squaring Binomial P2_6: 1017262353266091147
+      Squaring Binomial P2_60: 129659314256295460
+      Squaring Binomial P2_61: -8577414985689449654
+      Squaring Binomial P2_62: 7208567082240538027
+      Squaring Binomial P2_63: -1606893345648995479
+      Squaring Binomial P2_64: 1622253556147583601
+      Squaring Binomial P2_65: -8804051662079258124
+      Squaring Binomial P2_66: -2983591540697810110
+      Squaring Binomial P2_67: -9182070058252211182
+      Squaring Binomial P2_68: 3364386169604456692
+      Squaring Binomial P2_69: 3226837165188920434
+      Squaring Binomial P2_7: -5654834826860533087
+      Squaring Binomial P2_70: -2368927545637625247
+      Squaring Binomial P2_71: 1573691619003424405
+      Squaring Binomial P2_72: -4536212480204248808
+      Squaring Binomial P2_73: -1336301917836352496
+      Squaring Binomial P2_74: -4575986846662494220
+      Squaring Binomial P2_75: -4635930589777805574
+      Squaring Binomial P2_76: 842302846358596926
+      Squaring Binomial P2_77: -2053743736480585719
+      Squaring Binomial P2_78: 7519888361871507584
+      Squaring Binomial P2_79: -3744875536347939757
+      Squaring Binomial P2_8: 6684561775303305565
+      Squaring Binomial P2_80: -5975520293999833024
+      Squaring Binomial P2_81: 3146814822456458182
+      Squaring Binomial P2_82: 1351355412679393067
+      Squaring Binomial P2_83: -6725026443599437907
+      Squaring Binomial P2_84: 2470301348652527097
+      Squaring Binomial P2_85: 135057091866875850
+      Squaring Binomial P2_86: 5553333307402668396
+      Squaring Binomial P2_87: -1292556900545634123
+      Squaring Binomial P2_88: 2718256022544907773
+      Squaring Binomial P2_89: -5841377763037866765
+      Squaring Binomial P2_9: 6301515619217407835
+      Squaring Binomial P2_90: 1847755401795775710
+      Squaring Binomial P2_91: -5858054996951480561
+      Squaring Binomial P2_92: 1519008552280309261
+      Squaring Binomial P2_93: -1399636524501392002
+      Squaring Binomial P2_94: 8710253842401080194
+      Squaring Binomial P2_95: -24912508649095955
+      Squaring Binomial P2_96: -1471911258522426309
+      Squaring Binomial P2_97: 7970493578521558220
+      Squaring Binomial P2_98: 5883296539886512129
+      Squaring Binomial P2_99: 4571838932500656482
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
