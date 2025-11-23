@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 565410299922219034, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
       propertyPath: m_Name
-      value: UpperScreen
+      value: UpperScreenUI
       objectReference: {fileID: 0}
     - target: {fileID: 3154705047962050389, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
       propertyPath: _full
@@ -107,6 +107,10 @@ PrefabInstance:
     - target: {fileID: 7361570837954015497, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515182905036186403, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8993599236164464122, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
       propertyPath: m_Sprite

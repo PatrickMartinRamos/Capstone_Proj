@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowerScreenUI
       objectReference: {fileID: 0}
+    - target: {fileID: 565410299922219034, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3154705047962050389, guid: c2f08e3e3448ac64bae4b425398f9e4a, type: 3}
       propertyPath: _full
       value: 
