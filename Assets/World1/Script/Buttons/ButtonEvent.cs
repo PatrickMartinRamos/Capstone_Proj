@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +12,11 @@ public class ButtonEvent : MonoBehaviour
         button = GetComponent<Button>();
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(OnClick);
-        audioSource = FindAnyObjectByType<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
+
+        // If no AudioSource exists, add one
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     internal virtual void OnClick()

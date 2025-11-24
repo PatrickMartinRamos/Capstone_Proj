@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Stellarfarer
 {
@@ -42,7 +43,7 @@ namespace Stellarfarer
             => SetPauseMenuVisibility(true);
 
         private void HidePauseMenu()
-            => SetPauseMenuVisibility(true);
+            => SetPauseMenuVisibility(false);
 
         private void SetPauseMenuVisibility(bool isVisible)
             => _pauseMenu.SetActive(isVisible);
