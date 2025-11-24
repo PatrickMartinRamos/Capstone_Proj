@@ -182,6 +182,7 @@ MonoBehaviour:
   squaredConstant: {fileID: 5270895313945380865, guid: 8904a00829aa7634ab92cb77ef9eb4f4, type: 3}
   product: {fileID: 4744246010910942730, guid: 59aea8df97e0f1b43b43e430068efb4d, type: 3}
   problem: {fileID: 0}
+  problemType: 0
   timeLimit: 50
   currentTime: 0
   timer: {fileID: 0}
@@ -1234,11 +1235,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 1493531861}
-  cannonShell: {fileID: 0}
+  cannonShell: {fileID: 466164477}
   cannonShellCase: {fileID: 0}
-  STBshell: {fileID: 0}
-  Rshell: {fileID: 0}
-  CTSshell: {fileID: 0}
+  STBshell: {fileID: 6099144182141006646, guid: fb753fe20a8b83e4da5041029cc2e87a, type: 3}
+  Rshell: {fileID: -3864991376008470435, guid: 89be1ed2dc4b4ad41b7b7a13568513b6, type: 3}
+  CTSshell: {fileID: 8217719450430709663, guid: be3e0ae4a2e21464e8e5643b705844c8, type: 3}
   rotationDuration: 0.5
   rotationEase: 27
 --- !u!4 &1562750899 stripped

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class BinomiallProblemLoader : ProblemLoader
 {
@@ -24,12 +25,40 @@ public class BinomiallProblemLoader : ProblemLoader
     {
         GetLevelDifficulty();
 
-        InstantiateGiven(leftSide.transform, ProblemMarkers[0], ProblemMarkers[1], ProblemMarkers[2]);
+        int vValue = 1;
+        int cValue = 1;
 
-        InstantiateGiven(rightSide.transform, ProblemMarkers[3], ProblemMarkers[4], ProblemMarkers[5]);
+        switch (stageDifficulty)
+        {
+            case Difficulty.easy:
+                break;
+            case Difficulty.normal:
+                vValue = Random.Range(2, 3);
+                cValue = Random.Range(2, 5);
+                break;
+            case Difficulty.hard:
+                vValue = Random.Range(3, 5);
+                cValue = Random.Range(5, 10);
+                break;
+            default:
+                break;
+
+        }
+
+
+        InstantiateGiven(leftSide.transform, vValue, cValue, ProblemMarkers[0], ProblemMarkers[1], ProblemMarkers[2]);
+        InstantiateGiven(rightSide.transform, vValue, cValue, ProblemMarkers[3], ProblemMarkers[4], ProblemMarkers[5]);
+
+
+        if (answers.Count == 0)
+        {
+            var a = vValue;
+            var b = cValue;
+            SolveForAnswer(a, b);
+        }
 
     }
-    public void InstantiateGiven(Transform side, Vector3 varSpawnPt, Vector3 symSpawnPt, Vector3 conSpawnPt)
+    public void InstantiateGiven(Transform side, int vVal, int cVal, Vector3 varSpawnPt, Vector3 symSpawnPt, Vector3 conSpawnPt)
     {
 
         // Add Variable
@@ -48,16 +77,8 @@ public class BinomiallProblemLoader : ProblemLoader
         // Add Value
         if (stageDifficulty != Difficulty.easy)
         {
-            v.GetComponent<Shapes>().AddValue(stageDifficulty);
-            c.GetComponent<Shapes>().AddValue(stageDifficulty);
-        }
-
-        // get answer
-        if (answers.Count == 0)
-        {
-            var a = v.GetComponent<Shapes>().value;
-            var b = c.GetComponent<Shapes>().value;
-            SolveForAnswer(a, b);
+            v.GetComponent<Shapes>().AddQuotientValue(vVal);
+            c.GetComponent<Shapes>().AddQuotientValue(cVal);
         }
 
     }
@@ -70,7 +91,6 @@ public class BinomiallProblemLoader : ProblemLoader
         answers.Add(2 * a * b);
         // Add third term
         answers.Add(b*b);
-
     }
 
 }

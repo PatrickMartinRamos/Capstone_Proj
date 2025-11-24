@@ -56,7 +56,7 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
 
         Debug.Log($"submitted {submittedAns}...");
 
-        if (embedShapeClass == correctShape)
+        if (embedShapeClass == correctShape || embedShapeClass == ShapeClassification.Null)
         {
             if(StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.radicals 
                 && StageManager.Instance.problem.stageDifficulty == Difficulty.easy)

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41cecd45a04c3ee409e341e6d312cc1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageNumber: 3
+  stageNumber: 2
   squaringBinomialBox: {fileID: 2581674105859793645, guid: 8065482a1f1433a44a0510f52594563c, type: 3}
   radicalsBox: {fileID: 2798700596207073108, guid: 8abcf549fabf0d94babe953c007326e8, type: 3}
   completingSquareBox: {fileID: 1221349551460899795, guid: 8bb7c61ab364d9745ba9dcd8fdf7619d, type: 3}
@@ -448,6 +448,11 @@ CanvasRenderer:
 --- !u!1 &297755603 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5257185544646418847, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+  m_PrefabInstance: {fileID: 5818323405054323515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &340064713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4919073186902945380, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
   m_PrefabInstance: {fileID: 5818323405054323515}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &383571340
@@ -1571,11 +1576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3147919724658548406, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4443974966272163462, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4646808859714925935, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_Camera
@@ -1583,7 +1588,7 @@ PrefabInstance:
       objectReference: {fileID: 745654688}
     - target: {fileID: 4919073186902945380, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5643556155702356249, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1602,9 +1607,21 @@ PrefabInstance:
       value: -697.84
       objectReference: {fileID: 0}
     - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: tutorialPrompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: 'tutorialPrompts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 340064713}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: 'tutorialPrompts.Array.data[2]'
       value: 
       objectReference: {fileID: 280925012}
+    - target: {fileID: 6785903061218231054, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7407420953950033575, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_SizeDelta.x
       value: 607.64
@@ -1627,12 +1644,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8483318047551778772, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text
-      value: "<size=1.5em><b>Region 1: Squaring the Binomial</b></size>\n\n<align=center>Oh
-        no! The cannon needs an <b>STB Neutralizing Shell (SNS)</b> to lessen the
-        bomb's impact! \n\nBy following the <b>\"Squaring the Binomial\"</b> We can
-        open the case containing the SNS Shell!\n\nPlease Help us Dear Savior!</align>\n\nFollow
-        the guide below to obtain the <b>STB Neutralizing Shell</b>,\n\n\n\n\n\n\n\n\n\n<i><size=0.8em><align=center>Touch
-        Screen to Close</align></size></i>"
+      value: "<size=1.5em><b>Region 1: Squaring the Binomial</b></size>\n\n\n<align=center>Oh
+        dear... The enemies has intesified their attacks. One more bomb has been
+        planted.\n\n<size=1.3em><b>ALERT!!! One more Bomb has been Planted!</b></size>
+        \n\nPlease neutralize all the bombs in the area.</align>\n\n\n\n<b>PS. Timer
+        Countdown are for both bombs. Make sure you have enough time to defuse all
+        the bombs.</b>,\n\n\n\n<i><size=0.8em><align=center>Touch Screen to Close</align></size></i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8483318047551778772, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_fontSize
+      value: 46.6
       objectReference: {fileID: 0}
     - target: {fileID: 9136652380534691151, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text

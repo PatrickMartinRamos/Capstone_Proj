@@ -56,8 +56,13 @@ public class Scissors : Shapes
                     int targetValue = target.GetComponent<Shapes>().value;
                     GetFactorPair(targetValue, out val1, out val2);
 
-                    CombinedShape1 = StageManager.Instance.constant;
-                    CombinedShape2 = StageManager.Instance.constant;
+                    int root = Mathf.RoundToInt(Mathf.Sqrt(val1));
+
+                    CombinedShape1 = root * root == val1 ? StageManager.Instance.squaredConstant : StageManager.Instance.constant;
+
+                    root = Mathf.RoundToInt(Mathf.Sqrt(val2));
+
+                    CombinedShape2 = root * root == val2 ? StageManager.Instance.squaredConstant : StageManager.Instance.constant;
                 }
                 break;
             case ShapeClassification.Triangle:

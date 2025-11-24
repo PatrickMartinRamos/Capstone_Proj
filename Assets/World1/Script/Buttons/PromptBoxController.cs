@@ -1,11 +1,14 @@
 using CapstoneProj.GameInputSystem;
+using System.Collections.Generic;
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PromptBoxController : MonoBehaviour
 {
     [SerializeField] private float enableCloseTimer;
+    [SerializeField] private List<GameObject> ObjectsToClose = new();
     private float timer;
     private void Update()
     {
@@ -16,6 +19,13 @@ public class PromptBoxController : MonoBehaviour
     internal virtual void TriggerAction()
     {
         gameObject.SetActive(false);
+        if (ObjectsToClose.Count != 0)
+        {
+            foreach (GameObject obj in ObjectsToClose)
+            {
+                obj.SetActive(false);
+            }
+        }
     }
     private void OnEnable()
     {

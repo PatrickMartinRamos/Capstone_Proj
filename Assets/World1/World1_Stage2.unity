@@ -887,6 +887,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &767196166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4919073186902945380, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+  m_PrefabInstance: {fileID: 5818323405054323515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &960741133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,7 +1513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3147919724658548406, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4443974966272163462, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
@@ -1520,7 +1525,7 @@ PrefabInstance:
       objectReference: {fileID: 745654688}
     - target: {fileID: 4919073186902945380, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5643556155702356249, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1539,9 +1544,25 @@ PrefabInstance:
       value: -697.84
       objectReference: {fileID: 0}
     - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: tutorialPrompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: 'tutorialPrompts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 767196166}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: 'tutorialPrompts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 767196166}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: 'tutorialPrompts.Array.data[2]'
       value: 
-      objectReference: {fileID: 280925012}
+      objectReference: {fileID: 767196166}
+    - target: {fileID: 6785903061218231054, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7407420953950033575, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_SizeDelta.x
       value: 607.64
@@ -1564,12 +1585,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8483318047551778772, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text
-      value: "<size=1.5em><b>Region 1: Squaring the Binomial</b></size>\n\n<align=center>Oh
-        no! The cannon needs an <b>STB Neutralizing Shell (SNS)</b> to lessen the
-        bomb's impact! \n\nBy following the <b>\"Squaring the Binomial\"</b> We can
-        open the case containing the SNS Shell!\n\nPlease Help us Dear Savior!</align>\n\nFollow
-        the guide below to obtain the <b>STB Neutralizing Shell</b>,\n\n\n\n\n\n\n\n\n\n<i><size=0.8em><align=center>Touch
-        Screen to Close</align></size></i>"
+      value: '<size=1.5em><b>Region 1: Squaring the Binomial</b></size>
+
+
+
+        <align=center>"Huh?!
+        Numbers??! Sheesh!! Seems like we have been detected! Mr. Geartherre has
+        added an additional security feature to avoid enemy intervention.</align>
+
+
+
+        <b>New
+        Security Feature Unlocked: </b> Values has been added to the gears! Make
+        sure to <b>submit</b> the <b>required gears with correct value!</b>
+
+
+
+
+
+
+
+
+        <i><size=0.8em><align=center>Touch
+        Screen to Close</align></size></i>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8483318047551778772, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_fontSize
+      value: 47.45
       objectReference: {fileID: 0}
     - target: {fileID: 9136652380534691151, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text

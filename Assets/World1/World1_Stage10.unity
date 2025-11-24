@@ -1240,11 +1240,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannon: {fileID: 1493531861}
-  cannonShell: {fileID: 0}
+  cannonShell: {fileID: 466164477}
   cannonShellCase: {fileID: 0}
-  STBshell: {fileID: 0}
-  Rshell: {fileID: 0}
-  CTSshell: {fileID: 0}
+  STBshell: {fileID: 6099144182141006646, guid: fb753fe20a8b83e4da5041029cc2e87a, type: 3}
+  Rshell: {fileID: -3864991376008470435, guid: 89be1ed2dc4b4ad41b7b7a13568513b6, type: 3}
+  CTSshell: {fileID: 8217719450430709663, guid: be3e0ae4a2e21464e8e5643b705844c8, type: 3}
   rotationDuration: 0.5
   rotationEase: 27
 --- !u!1 &1796044915 stripped
