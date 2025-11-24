@@ -722,8 +722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<size=1.5em><b>Region 1: Squaring the Binomial</b></size>
-
+  m_text: '<size=1.5em><b>Region 2: Simplifying Radicals</b></size>
 
 
     <align=center>"Numbers
@@ -775,7 +774,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.2
+  m_fontSize: 41.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
