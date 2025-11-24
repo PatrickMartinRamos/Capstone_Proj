@@ -129,12 +129,12 @@ TextureImporter:
       name: Volume Title Container_0
       rect:
         serializedVersion: 2
-        x: 237
-        y: 913
-        width: 233
-        height: 94
+        x: 238
+        y: 914
+        width: 231
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,11 +147,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Volume Title Container_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 903
+        width: 238
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7153b09b6379e844fbb89a727f326851
+      internalID: 1199731705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e8ae451fd04d011409ea3cdc83cacffa
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +184,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Volume Title Container_0: -1219898832549386301
+      Volume Title Container_1: 1199731705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

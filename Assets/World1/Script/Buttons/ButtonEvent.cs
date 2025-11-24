@@ -21,7 +21,7 @@ public class ButtonEvent : MonoBehaviour
 
     internal virtual void OnClick()
     {
-/*        audioSource.clip = buttonClickSFX;
-        audioSource.Play();*/
+        audioSource.clip = buttonClickSFX;
+        audioSource.Play();
     }
 }

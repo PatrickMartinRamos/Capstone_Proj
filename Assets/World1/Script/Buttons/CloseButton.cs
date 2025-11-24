@@ -9,7 +9,7 @@ public class CloseButton : ButtonEvent
     [SerializeField] bool isSceneChanger = false;
     [SerializeField] bool isStageChanger = false;
 
-    [ShowIf("isSceneChanger")] [SerializeField] string sceneName;
+    [ShowIf("isSceneChanger")] [SerializeField] string sceneName = "World1_GameScene";
 
     internal override void OnClick()
     {
