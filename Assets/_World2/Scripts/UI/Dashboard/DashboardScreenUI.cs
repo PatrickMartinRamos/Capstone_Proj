@@ -15,7 +15,7 @@ namespace Stellarfarer
         {
             _screen.onClick.AddListener(() =>
             {
-                if (!Hydros7GameManager.Instance.IsGamePlaying() ||
+                if (!Hydros7WorldManager.Instance.IsGamePlaying() ||
                     DashboardManager.Instance.IsPoweredOff() ||
                     DashboardManager.Instance.IsSwitchedOn() ||
                     DashboardManager.Instance.IsExtracting())

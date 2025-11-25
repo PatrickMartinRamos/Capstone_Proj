@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Stellarfarer
 {
@@ -7,16 +6,16 @@ namespace Stellarfarer
     {
         [SerializeField] private GameObject _pauseMenu;
 
-        private Hydros7GameManager _hydros7GameManager;
+        private Hydros7WorldManager _hydros7WorldManager;
 
         private void Start()
         {
-            if (Hydros7GameManager.Instance != null)
+            if (Hydros7WorldManager.Instance != null)
             {
-                _hydros7GameManager = Hydros7GameManager.Instance;
+                _hydros7WorldManager = Hydros7WorldManager.Instance;
 
-                _hydros7GameManager.OnGamePauseTToggled
-                    += Hydros7GameManager_OnGamePauseTToggled;
+                _hydros7WorldManager.OnGamePauseToggled
+                    += Hydros7GameManager_OnGamePauseToggled;
             }
 
             HidePauseMenu();
@@ -24,16 +23,16 @@ namespace Stellarfarer
 
         private void OnDestroy()
         {
-            if (_hydros7GameManager != null)
+            if (_hydros7WorldManager != null)
             {
-                _hydros7GameManager.OnGamePauseTToggled
-                    -= Hydros7GameManager_OnGamePauseTToggled;
+                _hydros7WorldManager.OnGamePauseToggled
+                    -= Hydros7GameManager_OnGamePauseToggled;
             }
         }
 
-        private void Hydros7GameManager_OnGamePauseTToggled()
+        private void Hydros7GameManager_OnGamePauseToggled()
         {
-            if (_hydros7GameManager.IsGamePaused())
+            if (_hydros7WorldManager.IsGamePaused())
                 ShowPauseMenu();
             else
                 HidePauseMenu();

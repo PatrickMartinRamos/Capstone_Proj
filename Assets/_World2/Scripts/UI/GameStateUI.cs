@@ -1,7 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 namespace Stellarfarer
 {
@@ -9,44 +7,21 @@ namespace Stellarfarer
     {
         private const string WIN_MESSAGE = "YOU WIN!";
         private const string LOSE_MESSAGE = "YOU LOSE!";
-        private const string STAGE_ID_NAME = "StageID";
-        private const string WORLD2SCENE_FILEPATH = "Scenes/Game Scene/World2_GameScene";
-        private const string WORLDSELECTION_FILEPATH = "Scenes/WorldSelection";
 
         [SerializeField] private TextMeshProUGUI _stateLabel;
-        [SerializeField] private Button _nextStageButton;
-        [SerializeField] private Button _retryButton;
-        [SerializeField] private Button _returnButton;
+        [SerializeField] private NextStageButtonUI _nextStageButtonUI;
+        [SerializeField] private RetryButtonUI _retryButtonUI;
 
-        private Hydros7GameManager _hydros7GameManager;
-
-        private void Awake()
-        {
-            _nextStageButton.onClick.AddListener(() =>
-            {
-                int stageID = Hydros7GameManager.Instance.GetStageID();
-                stageID = PlayerPrefs.HasKey(STAGE_ID_NAME) ? stageID + 1 : 1;
-                PlayerPrefs.SetInt(STAGE_ID_NAME, stageID);
-                LoadScene(WORLD2SCENE_FILEPATH);
-            });
-            _retryButton.onClick.AddListener(() => LoadScene(WORLD2SCENE_FILEPATH));
-            _returnButton.onClick.AddListener(() => LoadScene(WORLDSELECTION_FILEPATH));
-        }
-
-        private void LoadScene(string sceneName){
-            SceneManager.LoadScene(sceneName);
-            Time.timeScale = 1f;
-        }
-            
+        private Hydros7WorldManager _hydros7WorldManager;
 
         private void Start()
         {
-            if (Hydros7GameManager.Instance != null)
+            if (Hydros7WorldManager.Instance != null)
             {
-                _hydros7GameManager = Hydros7GameManager.Instance;
+                _hydros7WorldManager = Hydros7WorldManager.Instance;
 
-                _hydros7GameManager.OnStateChanged
-                    += Hydros7GameManager_OnStateChanged;
+                _hydros7WorldManager.OnGamePauseToggled
+                    += Hydros7WorldManager_OnGamePauseToggled;
             }
 
             Hide();
@@ -54,24 +29,22 @@ namespace Stellarfarer
 
         private void OnDestroy()
         {
-            if (_hydros7GameManager != null)
+            if (_hydros7WorldManager != null)
             {
-                _hydros7GameManager = Hydros7GameManager.Instance;
-
-                _hydros7GameManager.OnStateChanged
-                    -= Hydros7GameManager_OnStateChanged;
+                _hydros7WorldManager.OnGamePauseToggled
+                    -= Hydros7WorldManager_OnGamePauseToggled;
             }
         }
 
-        private void Hydros7GameManager_OnStateChanged()
+        private void Hydros7WorldManager_OnGamePauseToggled()
         {
-            if (_hydros7GameManager.IsGameOver())
+            if (_hydros7WorldManager.IsGameOver())
             {
                 Show();
 
-                if (_hydros7GameManager.IsGameWon())
+                if (_hydros7WorldManager.IsGameWon())
                     Win();
-                else if (_hydros7GameManager.IsGameLost())
+                else if (_hydros7WorldManager.IsGameLost())
                     Lose();
             }
         }
@@ -89,25 +62,16 @@ namespace Stellarfarer
         }
 
         private void ShowNextStageButton()
-            => SetNextStageButtonAndRetryButtonVisibility(
-                isNextStageButtonVisible: true,
-                isReturnButtonVisible: false
-            );
-
-        private void ShowReturnButton()
-            => SetNextStageButtonAndRetryButtonVisibility(
-                isNextStageButtonVisible: false,
-                isReturnButtonVisible: true
-            );
-
-        private void SetNextStageButtonAndRetryButtonVisibility(bool isNextStageButtonVisible, bool isReturnButtonVisible)
         {
-            SetButtonVisibility(_nextStageButton, isNextStageButtonVisible);
-            SetButtonVisibility(_retryButton, isReturnButtonVisible);
+            _nextStageButtonUI.Show();
+            _retryButtonUI.Hide();
         }
 
-        private void SetButtonVisibility(Button button, bool isVisible)
-            => button.gameObject.SetActive(isVisible);
+        private void ShowReturnButton()
+        {
+            _retryButtonUI.Show();
+            _nextStageButtonUI.Hide();
+        }
 
         private void Show()
             => SetVisibility(true);

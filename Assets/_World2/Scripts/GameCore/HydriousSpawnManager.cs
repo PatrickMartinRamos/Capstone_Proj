@@ -108,7 +108,7 @@ namespace Stellarfarer
         {
             if (_spawnedHydriousUIList.Count > SPAWN_COUNT_MAX)
             {
-                Hydros7GameManager.Instance.LoseGame();
+                Hydros7WorldManager.Instance.LoseGame();
                 return;
             }
 
