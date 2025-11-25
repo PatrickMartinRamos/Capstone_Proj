@@ -13,7 +13,13 @@ namespace Stellarfarer
             if (_button == null)
                 _button = GetComponent<Button>();
 
-            _button.onClick.AddListener(() => Hydros7GameManager.Instance.ToggleGamePause());
+            _button.onClick.AddListener(() =>
+            {
+                Hydros7WorldManager hydros7WorldManager = Hydros7WorldManager.Instance;
+
+                if (hydros7WorldManager.IsGamePlaying())
+                    hydros7WorldManager.ToggleGamePause();
+            });
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Stellarfarer
         public event Action OnPointsChanged;
 
         private int _points;
-        private Hydros7GameManager _hydros7GameManager;
+        private Hydros7WorldManager _hydros7WorldManager;
 
         protected override void Awake()
         {
@@ -18,8 +18,8 @@ namespace Stellarfarer
 
         private void Start()
         {
-            if (Hydros7GameManager.Instance != null)
-                _hydros7GameManager = Hydros7GameManager.Instance;
+            if (Hydros7WorldManager.Instance != null)
+                _hydros7WorldManager = Hydros7WorldManager.Instance;
         }
 
         public void AddPoints(int pointsToAdd)
@@ -27,13 +27,13 @@ namespace Stellarfarer
             _points += pointsToAdd;
             OnPointsChanged?.Invoke();
 
-            if (_points >= _hydros7GameManager.GetRequiredPoints())
-                _hydros7GameManager.WinGame();
+            if (_points >= _hydros7WorldManager.GetRequiredPoints())
+                _hydros7WorldManager.WinGame();
         }
 
         public float GetProgression()
         {
-            int requiredPoints = _hydros7GameManager.GetRequiredPoints();
+            int requiredPoints = _hydros7WorldManager.GetRequiredPoints();
             return (float)_points / requiredPoints;
         }
     }
