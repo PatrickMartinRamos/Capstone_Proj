@@ -40,8 +40,8 @@ public class CompletingSquareProblemLoader : ProblemLoader
         switch(stageDifficulty)
         {
             case Difficulty.easy:
-                v.GetComponent<Shapes>().AddValue(1);
-                p.GetComponent<Shapes>().AddValue(4);
+                v.GetComponent<Shapes>().AddQuotientValue(1);
+                p.GetComponent<Shapes>().AddQuotientValue(4);
                 break;
 
         }
