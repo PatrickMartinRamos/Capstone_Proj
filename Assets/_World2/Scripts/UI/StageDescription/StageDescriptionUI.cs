@@ -22,10 +22,10 @@ namespace Stellarfarer
 
             _button.onClick.AddListener(() =>
             {
-                if (Hydros7WorldManager.Instance.IsWaiting())
+                if (Hydros7WorldManager.Instance.IsDisplayingStageDescription())
                 {
-                    Hydros7WorldManager.Instance.Countdown();
                     Hide();
+                    Hydros7WorldManager.Instance.Wait();
                 }
             });
         }
@@ -54,7 +54,7 @@ namespace Stellarfarer
 
         private void Hydros7WorldManager_OnGameStateChanged()
         {
-            if (_hydros7WorldManager.IsWaiting())
+            if (_hydros7WorldManager.IsDisplayingStageDescription())
             {
                 Show();
 

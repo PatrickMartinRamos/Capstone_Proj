@@ -8,6 +8,8 @@ namespace Stellarfarer
         private enum GameState
         {
             InitializeGame,
+            StageDescriptionDisplay,
+            TutorialDisplay,
             WaitingToStart,
             CountdownToStart,
             GamePlaying,
@@ -65,9 +67,15 @@ namespace Stellarfarer
                     UpdateStageData();
                     HydriousSpawnManager.Instance.InitializeSpawnManager(GetCleansingType());
                     GridManager.Instance.SetGrid();
-                    Wait();
+                    DisplayStageDescription();
+                    break;
+                case GameState.StageDescriptionDisplay:
                     break;
                 case GameState.WaitingToStart:
+                    TutorialManager.Instance.TryDisplay();
+                    DisplayTutorial();
+                    break;
+                case GameState.TutorialDisplay:
                     break;
                 case GameState.CountdownToStart:
                     _countdownToStartTimer -= Time.deltaTime;
@@ -90,7 +98,17 @@ namespace Stellarfarer
         private void InitializeGame()
             => SetGameState(GameState.InitializeGame);
 
-        private void Wait()
+        private void DisplayStageDescription()
+            => SetGameState(GameState.StageDescriptionDisplay);
+        public bool IsDisplayingStageDescription()
+            => IsGameState(GameState.StageDescriptionDisplay);
+
+        private void DisplayTutorial()
+            => SetGameState(GameState.TutorialDisplay);
+        public bool IsDisplayingTutorial()
+            => IsGameState(GameState.TutorialDisplay);
+
+        public void Wait()
             => SetGameState(GameState.WaitingToStart);
         public bool IsWaiting()
             => IsGameState(GameState.WaitingToStart);
