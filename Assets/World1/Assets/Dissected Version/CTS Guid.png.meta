@@ -1,0 +1,2444 @@
+fileFormatVersion: 2
+guid: 0129e9eed24b19e4ab6d9ae6ca98f8ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8948822029993954074
+    second: CTS Guid_0
+  - first:
+      213: 7262975495103789986
+    second: CTS Guid_1
+  - first:
+      213: -1477846312357175587
+    second: CTS Guid_2
+  - first:
+      213: -467509258169775483
+    second: CTS Guid_3
+  - first:
+      213: -5709579448076674716
+    second: CTS Guid_4
+  - first:
+      213: -5533890993045160809
+    second: CTS Guid_5
+  - first:
+      213: -2327222530820478272
+    second: CTS Guid_6
+  - first:
+      213: -1984742543662950582
+    second: CTS Guid_7
+  - first:
+      213: -1092416074748497540
+    second: CTS Guid_8
+  - first:
+      213: 1520386472567640764
+    second: CTS Guid_9
+  - first:
+      213: 3925805948965759375
+    second: CTS Guid_10
+  - first:
+      213: -7380576811822986872
+    second: CTS Guid_11
+  - first:
+      213: -5679545737591640286
+    second: CTS Guid_12
+  - first:
+      213: -7792894138901390823
+    second: CTS Guid_13
+  - first:
+      213: 4860014004812993610
+    second: CTS Guid_14
+  - first:
+      213: -8668679028943024319
+    second: CTS Guid_15
+  - first:
+      213: 3447337393629463933
+    second: CTS Guid_16
+  - first:
+      213: 6732560096614835491
+    second: CTS Guid_17
+  - first:
+      213: -6340017652299876867
+    second: CTS Guid_18
+  - first:
+      213: -5161152006135555267
+    second: CTS Guid_19
+  - first:
+      213: -2512604787117532477
+    second: CTS Guid_20
+  - first:
+      213: 5490488370010199178
+    second: CTS Guid_21
+  - first:
+      213: -7470344414159489571
+    second: CTS Guid_22
+  - first:
+      213: -3016970836528265955
+    second: CTS Guid_23
+  - first:
+      213: -8174891691412907095
+    second: CTS Guid_24
+  - first:
+      213: -2018739704176199959
+    second: CTS Guid_25
+  - first:
+      213: 5988104057945936149
+    second: CTS Guid_26
+  - first:
+      213: -9154081631135053252
+    second: CTS Guid_27
+  - first:
+      213: -7411798587984560648
+    second: CTS Guid_28
+  - first:
+      213: 6659176799226590095
+    second: CTS Guid_29
+  - first:
+      213: 3738555584181369252
+    second: CTS Guid_30
+  - first:
+      213: 864326912473223627
+    second: CTS Guid_31
+  - first:
+      213: 6330032142258303249
+    second: CTS Guid_32
+  - first:
+      213: -6923403939737002381
+    second: CTS Guid_33
+  - first:
+      213: 5403289893574873088
+    second: CTS Guid_34
+  - first:
+      213: -1041842016908299239
+    second: CTS Guid_35
+  - first:
+      213: -5586146506520228710
+    second: CTS Guid_36
+  - first:
+      213: 3942354733305132829
+    second: CTS Guid_37
+  - first:
+      213: -5834103761424528134
+    second: CTS Guid_38
+  - first:
+      213: 5827555790798210561
+    second: CTS Guid_39
+  - first:
+      213: -4576069359662010676
+    second: CTS Guid_40
+  - first:
+      213: 6787721505696319764
+    second: CTS Guid_41
+  - first:
+      213: 7885527775663107749
+    second: CTS Guid_42
+  - first:
+      213: 6984813468275685942
+    second: CTS Guid_43
+  - first:
+      213: -3747858142445694631
+    second: CTS Guid_44
+  - first:
+      213: -6909526516850878094
+    second: CTS Guid_45
+  - first:
+      213: -1107195327700528891
+    second: CTS Guid_46
+  - first:
+      213: -892500029336889034
+    second: CTS Guid_47
+  - first:
+      213: 6620092261857258084
+    second: CTS Guid_48
+  - first:
+      213: -2695902104761878104
+    second: CTS Guid_49
+  - first:
+      213: -104163880982697652
+    second: CTS Guid_50
+  - first:
+      213: -3799383834807180884
+    second: CTS Guid_51
+  - first:
+      213: -1039474947965417782
+    second: CTS Guid_52
+  - first:
+      213: -2394192583073704961
+    second: CTS Guid_53
+  - first:
+      213: -5401422846123307702
+    second: CTS Guid_54
+  - first:
+      213: 2780976447591265975
+    second: CTS Guid_55
+  - first:
+      213: -4427063530094981833
+    second: CTS Guid_56
+  - first:
+      213: -5506548439947292781
+    second: CTS Guid_57
+  - first:
+      213: 6732487282278280822
+    second: CTS Guid_58
+  - first:
+      213: 7555470348865636455
+    second: CTS Guid_59
+  - first:
+      213: 5004232621467257778
+    second: CTS Guid_60
+  - first:
+      213: 7738490128855394059
+    second: CTS Guid_61
+  - first:
+      213: 7637705376852717306
+    second: CTS Guid_62
+  - first:
+      213: 1117948083045387828
+    second: CTS Guid_63
+  - first:
+      213: 382716006555955259
+    second: CTS Guid_64
+  - first:
+      213: -5020509764011884011
+    second: CTS Guid_65
+  - first:
+      213: -7862821635192838044
+    second: CTS Guid_66
+  - first:
+      213: 813570513974957561
+    second: CTS Guid_67
+  - first:
+      213: -7865822105893958340
+    second: CTS Guid_68
+  - first:
+      213: -5044466428714729417
+    second: CTS Guid_69
+  - first:
+      213: 1377530667704988766
+    second: CTS Guid_70
+  - first:
+      213: -6202683902600859769
+    second: CTS Guid_71
+  - first:
+      213: -2599860779249029069
+    second: CTS Guid_72
+  - first:
+      213: -2194336662283432399
+    second: CTS Guid_73
+  - first:
+      213: -7281755146551784274
+    second: CTS Guid_74
+  - first:
+      213: 7144187500388331603
+    second: CTS Guid_75
+  - first:
+      213: 3052560393923099583
+    second: CTS Guid_76
+  - first:
+      213: 8331701352104152120
+    second: CTS Guid_77
+  - first:
+      213: 1183174972357634806
+    second: CTS Guid_78
+  - first:
+      213: 3864359206490860593
+    second: CTS Guid_79
+  - first:
+      213: -7591293919452309811
+    second: CTS Guid_80
+  - first:
+      213: -926415749946089873
+    second: CTS Guid_81
+  - first:
+      213: -607773587347971667
+    second: CTS Guid_82
+  - first:
+      213: -2548977973209349851
+    second: CTS Guid_83
+  - first:
+      213: 2915759202965649305
+    second: CTS Guid_84
+  - first:
+      213: 5862974550347662127
+    second: CTS Guid_85
+  - first:
+      213: 6132525570838163747
+    second: CTS Guid_86
+  - first:
+      213: -5826021449623016161
+    second: CTS Guid_87
+  - first:
+      213: 7583248040234848411
+    second: CTS Guid_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CTS Guid_0
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 997
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e43500d6c56fc380800000000000000
+      internalID: -8948822029993954074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1003
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab370e5bb54bc460800000000000000
+      internalID: 7262975495103789986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1003
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde545fdb92ad7be0800000000000000
+      internalID: -1477846312357175587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_3
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1041
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a85918ec21389f0800000000000000
+      internalID: -467509258169775483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1003
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469d48c1ebf73c0b0800000000000000
+      internalID: -5709579448076674716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_5
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1001
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c3fcd267ba333b0800000000000000
+      internalID: -5533890993045160809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_6
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1001
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cae829307b04bfd0800000000000000
+      internalID: -2327222530820478272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 941
+        width: 593
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a475d521c27c474e0800000000000000
+      internalID: -1984742543662950582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_8
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 973
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7170bd2e55f6d0f0800000000000000
+      internalID: -1092416074748497540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 906
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb214b2017f791510800000000000000
+      internalID: 1520386472567640764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 904
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f892835f5b34b7630800000000000000
+      internalID: 3925805948965759375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 906
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8894ecd5e7ce29990800000000000000
+      internalID: -7380576811822986872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_12
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 906
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f24414e333e21b0800000000000000
+      internalID: -5679545737591640286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_13
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 906
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a1f86b1141ad390800000000000000
+      internalID: -7792894138901390823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_14
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 904
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a445d48ecfc327340800000000000000
+      internalID: 4860014004812993610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_15
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 882
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f09ff0a5aa2b780800000000000000
+      internalID: -8668679028943024319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_16
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 906
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d758430481767df20800000000000000
+      internalID: 3447337393629463933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_17
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 896
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32562bbbcbbde6d50800000000000000
+      internalID: 6732560096614835491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_18
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 906
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5b5fc398bb308a0800000000000000
+      internalID: -6340017652299876867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_19
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 907
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bde7a6897ef58b0800000000000000
+      internalID: -5161152006135555267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 825
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cad9ea224f612dd0800000000000000
+      internalID: -2512604787117532477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_21
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 814
+        width: 196
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a841fd92512223c40800000000000000
+      internalID: 5490488370010199178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 731
+        width: 189
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5333cb551045890800000000000000
+      internalID: -7470344414159489571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 662
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15050f32019126d0800000000000000
+      internalID: -3016970836528265955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 665
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab9a00b153fc8e80800000000000000
+      internalID: -8174891691412907095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_25
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 665
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6b99e4feefbf3e0800000000000000
+      internalID: -2018739704176199959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_26
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 665
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51151f31ae40a1350800000000000000
+      internalID: 5988104057945936149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_27
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 654
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a4443c14b26f080800000000000000
+      internalID: -9154081631135053252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_28
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 665
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd30702470042990800000000000000
+      internalID: -7411798587984560648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_29
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 672
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f837c6e54062a6c50800000000000000
+      internalID: 6659176799226590095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 669
+        width: 212
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9fe200f7402e330800000000000000
+      internalID: 3738555584181369252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_31
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 646
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1d6cb5fb4befb00800000000000000
+      internalID: 864326912473223627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_32
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 646
+        width: 89
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1117c1802bac8d750800000000000000
+      internalID: 6330032142258303249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_33
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 648
+        width: 65
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e9f6f6cc02bef90800000000000000
+      internalID: -6923403939737002381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_34
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 662
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0001df4c7875cfa40800000000000000
+      internalID: 5403289893574873088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_35
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 662
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914ba1e9432aa81f0800000000000000
+      internalID: -1041842016908299239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_36
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 495
+        width: 145
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c829759550a72b0800000000000000
+      internalID: -5586146506520228710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_37
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 635
+        width: 105
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d177b311ebe06b630800000000000000
+      internalID: 3942354733305132829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_38
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 614
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc45851a89190fa0800000000000000
+      internalID: -5834103761424528134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_39
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 615
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1064c43bd13afd050800000000000000
+      internalID: 5827555790798210561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_40
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 634
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cceebc599298e70c0800000000000000
+      internalID: -4576069359662010676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_41
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 492
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4190f4d1fb4d23e50800000000000000
+      internalID: 6787721505696319764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_42
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 614
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae20ee8bb50f6d60800000000000000
+      internalID: 7885527775663107749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_43
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 614
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63abfee97da0fe060800000000000000
+      internalID: 6984813468275685942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_44
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 615
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95118fe50eeecfbc0800000000000000
+      internalID: -3747858142445694631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_45
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 547
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27916fcbd3e6c10a0800000000000000
+      internalID: -6909526516850878094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_46
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 532
+        width: 146
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501107337b372a0f0800000000000000
+      internalID: -1107195327700528891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_47
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 461
+        width: 53
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6395955b3f33d93f0800000000000000
+      internalID: -892500029336889034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_48
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 341
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a605066da4fdb50800000000000000
+      internalID: 6620092261857258084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_49
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 341
+        width: 230
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9b078b15b369ad0800000000000000
+      internalID: -2695902104761878104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_50
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 393
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49a99b808fed8ef0800000000000000
+      internalID: -104163880982697652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_51
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 399
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1e4f04880e54bc0800000000000000
+      internalID: -3799383834807180884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_52
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 399
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac68a9dca0b0391f0800000000000000
+      internalID: -1039474947965417782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_53
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 400
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3540ad78e16ced0800000000000000
+      internalID: -2394192583073704961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_54
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 419
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d04271a8a4a05b0800000000000000
+      internalID: -5401422846123307702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_55
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 402
+        width: 54
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6b7674853089620800000000000000
+      internalID: 2780976447591265975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_56
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 282
+        width: 125
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d0a9acc29ef82c0800000000000000
+      internalID: -4427063530094981833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_57
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 399
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fc57a6e5fc493b0800000000000000
+      internalID: -5506548439947292781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_58
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 400
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e280353899e6d50800000000000000
+      internalID: 6732487282278280822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_59
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 272
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768022f604c6ad860800000000000000
+      internalID: 7555470348865636455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_60
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 302
+        width: 85
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb4aff3e0b927540800000000000000
+      internalID: 5004232621467257778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_61
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 211
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07ea4c95c3a46b60800000000000000
+      internalID: 7738490128855394059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_62
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 259
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afea56ee2949ef960800000000000000
+      internalID: 7637705376852717306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_63
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 291
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ecf3fbbdfb38f00800000000000000
+      internalID: 1117948083045387828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_64
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 158
+        width: 145
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30bf942e2eaf4500800000000000000
+      internalID: 382716006555955259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_65
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 146
+        width: 141
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51201bc28f0935ab0800000000000000
+      internalID: -5020509764011884011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_66
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 280
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468231eb165a1e290800000000000000
+      internalID: -7862821635192838044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_67
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 262
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5953d62126a4b00800000000000000
+      internalID: 813570513974957561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_68
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 270
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d86c7387cf6d290800000000000000
+      internalID: -7865822105893958340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_69
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 181
+        width: 263
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730431382847ef9b0800000000000000
+      internalID: -5044466428714729417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_70
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 217
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5433c308d8fd1310800000000000000
+      internalID: 1377530667704988766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_71
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 227
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f21739ad3abe9a0800000000000000
+      internalID: -6202683902600859769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_72
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 239
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330346b55607bebd0800000000000000
+      internalID: -2599860779249029069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_73
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 48
+        width: 141
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ecaf68e662c81e0800000000000000
+      internalID: -2194336662283432399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_74
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 187
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac886c464202fa90800000000000000
+      internalID: -7281755146551784274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_75
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 204
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350be691ea0452360800000000000000
+      internalID: 7144187500388331603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_76
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 125
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb763f418fdc5a20800000000000000
+      internalID: 3052560393923099583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_77
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 137
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c4fca8c3620a370800000000000000
+      internalID: 8331701352104152120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_78
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 123
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa628e5e5b7b6010800000000000000
+      internalID: 1183174972357634806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_79
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 157
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ce56b5936f0a530800000000000000
+      internalID: 3864359206490860593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_80
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 138
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc65671966e46a690800000000000000
+      internalID: -7591293919452309811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_81
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 125
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ed226a8c5b423f0800000000000000
+      internalID: -926415749946089873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_82
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 134
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da162467421c097f0800000000000000
+      internalID: -607773587347971667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_83
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 148
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521cf86d90630acd0800000000000000
+      internalID: -2548977973209349851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_84
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 148
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997f757fb8bd67820800000000000000
+      internalID: 2915759202965649305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_85
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 19
+        width: 153
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23c0a84a487d5150800000000000000
+      internalID: 5862974550347662127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_86
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 137
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321fec1e38b1b1550800000000000000
+      internalID: 6132525570838163747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_87
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 123
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1de961fb50d52fa0800000000000000
+      internalID: -5826021449623016161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CTS Guid_88
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 32
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9010e13aeb1d3960800000000000000
+      internalID: 7583248040234848411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CTS Guid_0: -8948822029993954074
+      CTS Guid_1: 7262975495103789986
+      CTS Guid_10: 3925805948965759375
+      CTS Guid_11: -7380576811822986872
+      CTS Guid_12: -5679545737591640286
+      CTS Guid_13: -7792894138901390823
+      CTS Guid_14: 4860014004812993610
+      CTS Guid_15: -8668679028943024319
+      CTS Guid_16: 3447337393629463933
+      CTS Guid_17: 6732560096614835491
+      CTS Guid_18: -6340017652299876867
+      CTS Guid_19: -5161152006135555267
+      CTS Guid_2: -1477846312357175587
+      CTS Guid_20: -2512604787117532477
+      CTS Guid_21: 5490488370010199178
+      CTS Guid_22: -7470344414159489571
+      CTS Guid_23: -3016970836528265955
+      CTS Guid_24: -8174891691412907095
+      CTS Guid_25: -2018739704176199959
+      CTS Guid_26: 5988104057945936149
+      CTS Guid_27: -9154081631135053252
+      CTS Guid_28: -7411798587984560648
+      CTS Guid_29: 6659176799226590095
+      CTS Guid_3: -467509258169775483
+      CTS Guid_30: 3738555584181369252
+      CTS Guid_31: 864326912473223627
+      CTS Guid_32: 6330032142258303249
+      CTS Guid_33: -6923403939737002381
+      CTS Guid_34: 5403289893574873088
+      CTS Guid_35: -1041842016908299239
+      CTS Guid_36: -5586146506520228710
+      CTS Guid_37: 3942354733305132829
+      CTS Guid_38: -5834103761424528134
+      CTS Guid_39: 5827555790798210561
+      CTS Guid_4: -5709579448076674716
+      CTS Guid_40: -4576069359662010676
+      CTS Guid_41: 6787721505696319764
+      CTS Guid_42: 7885527775663107749
+      CTS Guid_43: 6984813468275685942
+      CTS Guid_44: -3747858142445694631
+      CTS Guid_45: -6909526516850878094
+      CTS Guid_46: -1107195327700528891
+      CTS Guid_47: -892500029336889034
+      CTS Guid_48: 6620092261857258084
+      CTS Guid_49: -2695902104761878104
+      CTS Guid_5: -5533890993045160809
+      CTS Guid_50: -104163880982697652
+      CTS Guid_51: -3799383834807180884
+      CTS Guid_52: -1039474947965417782
+      CTS Guid_53: -2394192583073704961
+      CTS Guid_54: -5401422846123307702
+      CTS Guid_55: 2780976447591265975
+      CTS Guid_56: -4427063530094981833
+      CTS Guid_57: -5506548439947292781
+      CTS Guid_58: 6732487282278280822
+      CTS Guid_59: 7555470348865636455
+      CTS Guid_6: -2327222530820478272
+      CTS Guid_60: 5004232621467257778
+      CTS Guid_61: 7738490128855394059
+      CTS Guid_62: 7637705376852717306
+      CTS Guid_63: 1117948083045387828
+      CTS Guid_64: 382716006555955259
+      CTS Guid_65: -5020509764011884011
+      CTS Guid_66: -7862821635192838044
+      CTS Guid_67: 813570513974957561
+      CTS Guid_68: -7865822105893958340
+      CTS Guid_69: -5044466428714729417
+      CTS Guid_7: -1984742543662950582
+      CTS Guid_70: 1377530667704988766
+      CTS Guid_71: -6202683902600859769
+      CTS Guid_72: -2599860779249029069
+      CTS Guid_73: -2194336662283432399
+      CTS Guid_74: -7281755146551784274
+      CTS Guid_75: 7144187500388331603
+      CTS Guid_76: 3052560393923099583
+      CTS Guid_77: 8331701352104152120
+      CTS Guid_78: 1183174972357634806
+      CTS Guid_79: 3864359206490860593
+      CTS Guid_8: -1092416074748497540
+      CTS Guid_80: -7591293919452309811
+      CTS Guid_81: -926415749946089873
+      CTS Guid_82: -607773587347971667
+      CTS Guid_83: -2548977973209349851
+      CTS Guid_84: 2915759202965649305
+      CTS Guid_85: 5862974550347662127
+      CTS Guid_86: 6132525570838163747
+      CTS Guid_87: -5826021449623016161
+      CTS Guid_88: 7583248040234848411
+      CTS Guid_9: 1520386472567640764
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
