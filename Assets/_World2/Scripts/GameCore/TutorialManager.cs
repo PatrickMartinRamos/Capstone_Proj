@@ -30,13 +30,20 @@ namespace Stellarfarer
             _tutorialState = tutorialState;
 
             // TODO: FIX
-            string keyName = tutorialState.ToString();
-            PlayerPrefs.DeleteKey(keyName);
-            if (!HasKeyInPlayerPref(keyName))
+            string key = tutorialState.ToString();
+
+            PlayerPrefs.DeleteKey(key);
+            int oldValue = PlayerPrefs.GetInt(key, 0);   // default 0
+            int newValue = 1;
+
+            if (oldValue != newValue)
             {
-                SetIntInPlayerPref(tutorialState.ToString(), 1);
+                PlayerPrefs.SetInt(key, newValue);
+                PlayerPrefs.Save();
                 OnTutorialStateChanged?.Invoke();
             }
+            else
+                Hydros7WorldManager.Instance.Countdown();
         }
         private bool IsTutorialState(TutorialState tutorialState)
             => _tutorialState == tutorialState;
