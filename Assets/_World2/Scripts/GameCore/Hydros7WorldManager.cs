@@ -3,10 +3,11 @@ using UnityEngine;
 
 namespace Stellarfarer
 {
-    public class Hydros7GameManager : SingletonBehaviour<Hydros7GameManager>
+    public class Hydros7WorldManager : SingletonBehaviour<Hydros7WorldManager>
     {
-        private enum State
+        private enum GameState
         {
+            InitializeGame,
             WaitingToStart,
             CountdownToStart,
             GamePlaying,
@@ -16,8 +17,8 @@ namespace Stellarfarer
 
         private const string STAGE_ID_NAME = "StageID";
 
-        public event Action OnStateChanged;
-        public event Action OnGamePauseTToggled;
+        public event Action OnGameStateChanged;
+        public event Action OnGamePauseToggled;
 
         [SerializeField] private World2StageDictSO _stageDataDictSO;
 #if UNITY_EDITOR
@@ -25,7 +26,7 @@ namespace Stellarfarer
 #endif
         private int _stageID;
         private World2StageSO _stageSO;
-        private State _state;
+        private GameState _state;
         private float _countdownToStartTimer = 3f;
         private bool _isGamePaused;
 
@@ -37,7 +38,7 @@ namespace Stellarfarer
         }
 
         private void Start()
-            => Wait();
+            => InitializeGame();
 
         private void UpdateStageData()
         {
@@ -60,65 +61,75 @@ namespace Stellarfarer
         {
             switch (_state)
             {
-                case State.WaitingToStart:
+                case GameState.InitializeGame:
                     UpdateStageData();
-                    HydriousSpawnManager.Instance.InitializeSpawnManager(_stageSO.CleansingType);
+                    HydriousSpawnManager.Instance.InitializeSpawnManager(GetCleansingType());
                     GridManager.Instance.SetGrid();
-                    Countdown();
+                    Wait();
                     break;
-                case State.CountdownToStart:
+                case GameState.WaitingToStart:
+                    break;
+                case GameState.CountdownToStart:
                     _countdownToStartTimer -= Time.deltaTime;
 
                     if (_countdownToStartTimer <= 0f)
                         PlayGame();
 
                     break;
-                case State.GamePlaying:
+                case GameState.GamePlaying:
                     break;
-                case State.GameWin:
+                case GameState.GameWin:
                     Debug.Log("Game Won");
                     break;
-                case State.GameLose:
+                case GameState.GameLose:
                     Debug.Log("Game Lost");
                     break;
             }
         }
 
-        private void Wait()
-            => UpdateState(State.WaitingToStart);
+        private void InitializeGame()
+            => SetGameState(GameState.InitializeGame);
 
-        private void Countdown()
-            => UpdateState(State.CountdownToStart);
+        private void Wait()
+            => SetGameState(GameState.WaitingToStart);
+        public bool IsWaiting()
+            => IsGameState(GameState.WaitingToStart);
+
+        public void Countdown()
+            => SetGameState(GameState.CountdownToStart);
         public bool IsCountingDown()
-            => CompareState(State.CountdownToStart);
+            => IsGameState(GameState.CountdownToStart);
         public float GetCountdownTime()
             => _countdownToStartTimer;
 
         private void PlayGame()
-            => UpdateState(State.GamePlaying);
+            => SetGameState(GameState.GamePlaying);
         public bool IsGamePlaying()
-            => CompareState(State.GamePlaying);
+            => IsGameState(GameState.GamePlaying);
 
         public void WinGame()
-            => UpdateState(State.GameWin);
+            => SetGameState(GameState.GameWin);
         public bool IsGameWon()
-            => CompareState(State.GameWin);
+            => IsGameState(GameState.GameWin);
 
         public void LoseGame()
-            => UpdateState(State.GameLose);
+            => SetGameState(GameState.GameLose);
         public bool IsGameLost()
-            => CompareState(State.GameLose);
+            => IsGameState(GameState.GameLose);
 
         public bool IsGameOver()
             => IsGameWon() || IsGameLost();
 
-        private void UpdateState(State state)
+        private void SetGameState(GameState state)
         {
             _state = state;
-            OnStateChanged?.Invoke();
+            OnGameStateChanged?.Invoke();
         }
-        private bool CompareState(State state)
+        private bool IsGameState(GameState state)
             => _state == state;
+
+        public CleansingType GetCleansingType()
+            => _stageSO.CleansingType;
 
         public float GetSpawnTime()
             => _stageSO.SpawnTime;
@@ -135,7 +146,7 @@ namespace Stellarfarer
 
             Time.timeScale = _isGamePaused ? 0f : 1f;
 
-            OnGamePauseTToggled?.Invoke();
+            OnGamePauseToggled?.Invoke();
         }
 
         public bool IsGamePaused()

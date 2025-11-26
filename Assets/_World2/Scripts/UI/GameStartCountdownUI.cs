@@ -12,7 +12,7 @@ namespace Stellarfarer
         [SerializeField] private float _punchZDuration = 1.5f;
         [SerializeField] private int _punchZVibrato = 10;
 
-        private Hydros7GameManager _hydros7GameManager;
+        private Hydros7WorldManager _hydros7WorldManager;
         private int _previousCountdownTime;
         private RectTransform _countdownTextRectTransform;
 
@@ -25,12 +25,12 @@ namespace Stellarfarer
 
         private void Start()
         {
-            if (Hydros7GameManager.Instance != null)
+            if (Hydros7WorldManager.Instance != null)
             {
-                _hydros7GameManager = Hydros7GameManager.Instance;
+                _hydros7WorldManager = Hydros7WorldManager.Instance;
 
-                _hydros7GameManager.OnStateChanged
-                    += Hydros7GameManager_OnStateChanged;
+                _hydros7WorldManager.OnGameStateChanged
+                    += Hydros7WorldManager_OnGameStateChanged;
             }
 
             Hide();
@@ -38,19 +38,19 @@ namespace Stellarfarer
 
         private void OnDestroy()
         {
-            if (_hydros7GameManager != null)
+            if (_hydros7WorldManager != null)
             {
-                _hydros7GameManager.OnStateChanged
-                    -= Hydros7GameManager_OnStateChanged;
+                _hydros7WorldManager.OnGameStateChanged
+                    -= Hydros7WorldManager_OnGameStateChanged;
             }
         }
 
         private void Update()
         {
-            if (!_hydros7GameManager.IsCountingDown())
+            if (!_hydros7WorldManager.IsCountingDown())
                 return;
 
-            int countdownTime = Mathf.CeilToInt(_hydros7GameManager.GetCountdownTime());
+            int countdownTime = Mathf.CeilToInt(_hydros7WorldManager.GetCountdownTime());
             _countdownText.text = countdownTime.ToString();
 
             if (_previousCountdownTime != countdownTime)
@@ -75,9 +75,9 @@ namespace Stellarfarer
             _countdownTextRectTransform.localRotation = Quaternion.identity;
         }
 
-        private void Hydros7GameManager_OnStateChanged()
+        private void Hydros7WorldManager_OnGameStateChanged()
         {
-            if (_hydros7GameManager.IsCountingDown())
+            if (_hydros7WorldManager.IsCountingDown())
                 Show();
             else
                 Hide();

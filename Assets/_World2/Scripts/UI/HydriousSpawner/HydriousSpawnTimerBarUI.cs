@@ -7,7 +7,7 @@ namespace Stellarfarer
     {
         [SerializeField] private UnityEngine.UI.Image _fill;
 
-        private Hydros7GameManager _gameManager;
+        private Hydros7WorldManager _hydros7WorldManager;
         private bool _isRunning = false;
 
         private void Awake()
@@ -29,38 +29,38 @@ namespace Stellarfarer
 
         private void Start()
         {
-            if (Hydros7GameManager.Instance != null)
+            if (Hydros7WorldManager.Instance != null)
             {
-                _gameManager = Hydros7GameManager.Instance;
+                _hydros7WorldManager = Hydros7WorldManager.Instance;
 
-                _gameManager.OnStateChanged
-                    += Hydros7GameManager_OnStateChanged;
+                _hydros7WorldManager.OnGameStateChanged
+                    += Hydros7WorldManager_OnGameStateChanged;
             }
         }
 
         private void OnDestroy()
         {
-            if (_gameManager != null)
+            if (_hydros7WorldManager != null)
             {
-                _gameManager.OnStateChanged
-                    -= Hydros7GameManager_OnStateChanged;
+                _hydros7WorldManager.OnGameStateChanged
+                    -= Hydros7WorldManager_OnGameStateChanged;
             }
         }
 
-        private void Hydros7GameManager_OnStateChanged()
+        private void Hydros7WorldManager_OnGameStateChanged()
         {
-            if (_gameManager.IsGamePlaying() && !_isRunning)
+            if (_hydros7WorldManager.IsGamePlaying() && !_isRunning)
             {
                 _isRunning = true;
 
                 ResetSpawnTimerBar();
 
                 float full = 1f;
-                _fill.DOFillAmount(full, _gameManager.GetSpawnTime())
+                _fill.DOFillAmount(full, _hydros7WorldManager.GetSpawnTime())
                     .SetLoops(-1, LoopType.Restart)
                     .OnStepComplete(() => HydriousSpawnManager.Instance.SpawnNextSpawn());
             }
-            else if (_gameManager.IsGameLost())
+            else if (_hydros7WorldManager.IsGameLost())
                 _fill.DOKill();
         }
     }
