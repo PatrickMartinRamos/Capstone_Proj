@@ -2197,7 +2197,7 @@ MonoBehaviour:
   - {fileID: 1914364443}
   isSceneChanger: 1
   isStageChanger: 0
-  sceneName: World1_GameScene
+  sceneName: WorldSelection
 --- !u!114 &1914364447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,7 +2593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Retry
+  m_text: Back to World Selection
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
   m_sharedMaterial: {fileID: -5212519863517009721, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
