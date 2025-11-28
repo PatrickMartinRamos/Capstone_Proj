@@ -1026,9 +1026,11 @@ MonoBehaviour:
   squaringBinomialBox: {fileID: 0}
   radicalsBox: {fileID: 0}
   completingSquareBox: {fileID: 0}
+  advCompletingSquareBox: {fileID: 0}
   cannon: {fileID: 0}
   bullet: {fileID: 0}
   craftArea: {fileID: 0}
+  craftArea2: {fileID: 0}
   gameplaySpawnPt: {fileID: 0}
   bulletCase: {fileID: 0}
   ActiveGameArea: {fileID: 0}
@@ -1038,6 +1040,7 @@ MonoBehaviour:
   squaredConstant: {fileID: 0}
   product: {fileID: 0}
   problem: {fileID: 0}
+  problemType: 0
   timeLimit: 30
   currentTime: 0
   timer: {fileID: 933105792}
@@ -1051,6 +1054,7 @@ MonoBehaviour:
   uiManager: {fileID: 0}
   audioSrc: {fileID: 0}
   isPlaying: 0
+  isAdvanceCTS: 0
   playTimer: 0
 --- !u!114 &152560687
 MonoBehaviour:
