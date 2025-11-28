@@ -9,7 +9,7 @@ public class RadicalProblemLoader : ProblemLoader
 
     private GameObject constant;
 
-    void Start()
+    protected override void Start()
     {
         StageManager.Instance.problem = this;
         constant = StageManager.Instance.constant;

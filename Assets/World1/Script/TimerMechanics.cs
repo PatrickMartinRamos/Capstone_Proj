@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimerMechanics : MonoBehaviour
 {
     [SerializeField] float currentTime = 100;
+    [SerializeField] TextMeshProUGUI timerText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -28,6 +30,8 @@ public class TimerMechanics : MonoBehaviour
     {
         currentTime = Mathf.Clamp(currentTime-Time.deltaTime, 0, StageManager.Instance.timeLimit);
         StageManager.Instance.timer.value = currentTime;
+        timerText.text = Mathf.FloorToInt(currentTime).ToString();
+
         if(currentTime == 0 && StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().bombExploded == false)
         {
             StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().ExplodeBomb();

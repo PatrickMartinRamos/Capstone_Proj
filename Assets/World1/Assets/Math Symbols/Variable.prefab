@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7041340117839291517}
   - component: {fileID: 5786989494212872442}
   - component: {fileID: 2233062726424168025}
-  - component: {fileID: -6126770364298023208}
   - component: {fileID: 7395668187051491105}
   - component: {fileID: 4548718659223850358}
   - component: {fileID: 2226260236212083956}
@@ -32,7 +31,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371423931236171065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -41,7 +40,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301.05502, y: -87.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7041340117839291517
@@ -126,27 +125,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-6126770364298023208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371423931236171065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c39984a4e946c498f3cdf5172f26ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iD: 
-  classification: 0
-  shapeName: Variable
-  withValue: 0
-  value: 1
-  interacted: []
-  valueLabel: {fileID: 0}
-  originPos: {x: 0, y: 0}
-  CombinedShapePrefab: {fileID: 0}
 --- !u!114 &7395668187051491105
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,7 +8,10 @@ public class ProblemLoader : MonoBehaviour
     internal Difficulty stageDifficulty;
     protected List<int> answers = new List<int>();
 
+    protected virtual void Start()
+    {
 
+    }
     public virtual void LoadProblem()
     {
 

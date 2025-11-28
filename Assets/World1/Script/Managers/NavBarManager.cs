@@ -13,4 +13,8 @@ public class NavBarManager : MonoBehaviour
     {
         stageLevelLabel.text = "Stage " + stageLvl;
     }
+    public void ChangeToTutorial()
+    {
+        stageLevelLabel.text = "Tutorial";
+    }
 }

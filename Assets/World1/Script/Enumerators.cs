@@ -22,7 +22,8 @@ public enum ProblemType
 {
     squaringBinomial,
     radicals,
-    completingSquare
+    completingSquare,
+    advanceCompletingSquare
 }
 public enum Difficulty
 {

@@ -86,8 +86,19 @@ public class Shapes : MonoBehaviour, ITargetable
         if (target.GetComponent<Shapes>().classification != dragged.GetComponent<Shapes>().classification) return;
         if (StageManager.Instance.problemType == ProblemType.completingSquare)
         {
-            GameObject newShape = Instantiate(StageManager.Instance.squaredConstant, target.transform.position, Quaternion.identity);
-            newShape.GetComponent<Shapes>().AddValue(target.GetComponent<Shapes>().value, dragged.GetComponent<Shapes>().value);
+            GameObject newShape = null;
+            if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Circle)
+            {
+                if(dragged.GetComponent<Shapes>().value == target.GetComponent<Shapes>().value)
+                    newShape = Instantiate(StageManager.Instance.squaredConstant, target.transform.position, Quaternion.identity);
+                else
+                    newShape = Instantiate(StageManager.Instance.constant, target.transform.position, Quaternion.identity);
+            }
+            else if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Square)
+            {
+                newShape = Instantiate(StageManager.Instance.squaredVariable, target.transform.position, Quaternion.identity);
+            }
+                newShape.GetComponent<Shapes>().AddValue(target.GetComponent<Shapes>().value, dragged.GetComponent<Shapes>().value);
             newShape.transform.SetParent(StageManager.Instance.craftArea.transform);
             Destroy(dragged);
             Destroy(target);
@@ -227,6 +238,27 @@ public class Shapes : MonoBehaviour, ITargetable
         Vector3 targetPos = GetRandomPosition(transform.parent.gameObject);
         rb.DOMove(targetPos, 1f).OnComplete(()=> 
         { 
+            ChangeOriginPos(targetPos);
+            GetComponentInParent<AreaContainer>().InteractWithDraggedObject(this.gameObject);
+        });
+        Debug.Log("Sending to Area");
+        //StageManager.Instance.craftArea.GetComponent<CraftAreaMech>().InteractWithDraggedObject(this.gameObject);
+    }
+    public virtual void MoveToArea2(Transform pos = null)
+    {
+        if (pos != null)
+        {
+            transform.SetParent(pos);
+            Debug.Log($"Moving to {pos}.");
+        }
+        else
+            transform.SetParent(StageManager.Instance.craftArea2.transform);
+
+        // Apply impulse force once
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        Vector3 targetPos = GetRandomPosition(transform.parent.gameObject);
+        rb.DOMove(targetPos, 1f).OnComplete(() =>
+        {
             ChangeOriginPos(targetPos);
             GetComponentInParent<AreaContainer>().InteractWithDraggedObject(this.gameObject);
         });

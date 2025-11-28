@@ -85,6 +85,8 @@ public class BombMechanics : MonoBehaviour
                 return StageManager.Instance.radicalsBox;
             case ProblemType.completingSquare:
                 return StageManager.Instance.completingSquareBox;
+            case ProblemType.advanceCompletingSquare:
+                return StageManager.Instance.advCompletingSquareBox;
         }
         return null;
     }

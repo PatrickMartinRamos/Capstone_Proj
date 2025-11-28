@@ -16,11 +16,13 @@ public class StageManager : MonoBehaviour
     [SerializeField] public GameObject squaringBinomialBox;
     [SerializeField] public GameObject radicalsBox;
     [SerializeField] public GameObject completingSquareBox;
+    [SerializeField] public GameObject advCompletingSquareBox;
+
 
     [Header("GameObjects")]
     public GameObject cannon;
     public GameObject bullet;
-    public GameObject craftArea;
+    public GameObject craftArea, craftArea2=null;
     public GameObject gameplaySpawnPt;
     public GameObject bulletCase;
     public GameObject ActiveGameArea;
@@ -53,7 +55,7 @@ public class StageManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] public AudioSource audioSrc;
 
-    public bool isPlaying = false;
+    public bool isPlaying = false, isAdvanceCTS = false;
     public float playTimer;
 
 

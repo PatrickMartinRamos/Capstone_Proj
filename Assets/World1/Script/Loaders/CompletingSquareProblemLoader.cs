@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class CompletingSquareProblemLoader : ProblemLoader
 {
-    [SerializeField] GameObject leftSide; // 0 = variable , 1 = product
-    [SerializeField] GameObject plusSymbol;
-    private GameObject variable;
-    private GameObject product;
-    private int varVal = 0;
+    [SerializeField] protected GameObject leftSide; // 0 = variable , 1 = product
+    [SerializeField] protected GameObject plusSymbol;
+    protected GameObject sqrVariable;
+    protected GameObject product;
+    protected int varVal = 0;
     public int VarValue => varVal;
-    private void Start()
+    protected override void Start()
     {
         StageManager.Instance.problem = this;
-        variable = StageManager.Instance.variable;
+        sqrVariable = StageManager.Instance.squaredVariable;
         product = StageManager.Instance.product;
         //LoadProblem();
     }
@@ -22,12 +22,12 @@ public class CompletingSquareProblemLoader : ProblemLoader
         GetLevelDifficulty();
         InstantiateGiven(leftSide.transform, ProblemMarkers[0], ProblemMarkers[1]);
     }
-    public void InstantiateGiven(Transform side, Vector3 varSpawnPt, Vector3 prodSpawnPt)
+    public virtual void InstantiateGiven(Transform side, Vector3 varSpawnPt, Vector3 prodSpawnPt)
     {
         Debug.Log("Instantiating Given");
 
         // Add Variable
-        GameObject v = Instantiate(variable, varSpawnPt, Quaternion.identity);
+        GameObject v = Instantiate(sqrVariable, varSpawnPt, Quaternion.identity);
         v.transform.SetParent(side, false);
         v.GetComponent<Shapes>().ChangeToGiven();
 

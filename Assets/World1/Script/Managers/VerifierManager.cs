@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class VerifierManager : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> Verifiers;
-    private List<int> answerKey;
+    [SerializeField] protected List<GameObject> Verifiers;
+    protected List<int> answerKey;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +18,7 @@ public class VerifierManager : MonoBehaviour
     {
         
     }
-    public void VerifyAnswers()
+    public virtual void VerifyAnswers()
     {
         answerKey = StageManager.Instance.problem.Answers();
         int numCorrect = 0;
@@ -31,7 +31,7 @@ public class VerifierManager : MonoBehaviour
         {
             StageManager.Instance.StartSuccessSequence();
         }
-        else
+/*        else
         {
             Difficulty diff = StageManager.Instance.problem.stageDifficulty;
             int timeDeduction = 0;
@@ -47,7 +47,7 @@ public class VerifierManager : MonoBehaviour
             }
             StageManager.Instance.NotificationText.text = $"Combination Error... (Time - {timeDeduction})";
             StageManager.Instance.DeductTime(timeDeduction);
-        }
+        }*/
 
     }
 }

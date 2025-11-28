@@ -30,6 +30,8 @@ public class shapeDragController : MonoBehaviour
                 if (hit.collider != null)
                 {
                     selectedShape = hit.collider.gameObject;
+                    selectedShape.GetComponent<Shapes>().ChangeOriginPos(selectedShape.transform.localPosition);
+
                 }
             }
             else
@@ -73,7 +75,10 @@ public class shapeDragController : MonoBehaviour
                 }
 
                 // Reset Pos
-                //selectedShape.GetComponent<Shapes>().RevertPosition();
+                else if (overlap == null || overlap.gameObject.GetComponent<ITargetable>() == null)
+                {
+                    selectedShape.GetComponent<Shapes>().RevertPosition();
+                }
             }
 
             // Reset Drag Controller

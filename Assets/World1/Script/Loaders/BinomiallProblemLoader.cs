@@ -14,7 +14,7 @@ public class BinomiallProblemLoader : ProblemLoader
     private GameObject variable;
     private GameObject constant;
 
-    private void Start()
+    protected override void Start()
     {
         StageManager.Instance.problem = this;
         variable = StageManager.Instance.variable;

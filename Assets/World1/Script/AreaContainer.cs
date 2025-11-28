@@ -6,10 +6,16 @@ public class AreaContainer : MonoBehaviour, ITargetable
     {
         AreaIntegration(draggedObject);
     }
-    protected void AreaIntegration(GameObject draggedObject)
+    protected virtual void AreaIntegration(GameObject draggedObject)
     {
         if (StageManager.Instance.ActiveGameArea.GetComponent<BinomiallProblemLoader>() && (draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Square
             || draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle))
+        {
+            draggedObject.GetComponent<Shapes>().returnToInitParent();
+            return;
+        }
+        else if (StageManager.Instance.ActiveGameArea.GetComponent<CompletingSquareProblemLoader>() && (draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.DoubleSquare
+    || draggedObject.GetComponent<Shapes>().GetClassification() == ShapeClassification.Triangle))
         {
             draggedObject.GetComponent<Shapes>().returnToInitParent();
             return;

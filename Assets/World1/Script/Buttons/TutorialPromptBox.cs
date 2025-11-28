@@ -10,6 +10,7 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject tutorialPanel;
     [SerializeField] private GameObject astronaut;
     [SerializeField] private List<GameObject> tutorialPrompts = new List<GameObject>();
+    [SerializeField] private bool isTutorial = false;
 
     private int currentPromptIndex = 0;
 
@@ -29,12 +30,13 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
+        if(!isTutorial)
         NextPrompt();
     }
 
-    private void NextPrompt()
+    public void NextPrompt()
     {
-        if (tutorialPrompts.Count == 0)
+        if (tutorialPrompts.Count == 0 || currentPromptIndex == tutorialPrompts.Count-1)
             return;
 
         // Hide current prompt
@@ -45,15 +47,39 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
         if (currentPromptIndex < tutorialPrompts.Count)
         {
             // Show next
+
             tutorialPrompts[currentPromptIndex].SetActive(true);
         }
         else
         {
-            EndTutorial();
+            if (!isTutorial)
+                EndTutorial();
+        }
+    }
+    public void PrevPrompt()
+    {
+        if (tutorialPrompts.Count == 0 || currentPromptIndex == 0)
+            return;
+
+        // Hide current prompt
+        tutorialPrompts[currentPromptIndex].SetActive(false);
+
+        currentPromptIndex--;
+
+        if (currentPromptIndex >= 0)
+        {
+            // Show prev
+            tutorialPrompts[currentPromptIndex].SetActive(true);
+        }
+
+        else
+        {
+            if (!isTutorial)
+                EndTutorial();
         }
     }
 
-    private void EndTutorial()
+    public void EndTutorial()
     {
         //Dotween scale
         tutorialPanel.SetActive(false);

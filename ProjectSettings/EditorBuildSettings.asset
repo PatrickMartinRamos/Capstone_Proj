@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldSelection.unity
     guid: 6c84aca4d0a0d2847ba0a1daec705950
   - enabled: 1
-    path: Assets/World1/World1_GameScene.unity
+    path: Assets/World1/World1_Gamescene.unity
     guid: 370a74663ec34b04a83d9406d4de0364
   - enabled: 1
     path: Assets/World1/World1_Stage1.unity
@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/World1/World1_Stage10.unity
     guid: 693442e102697954aa636e0f8faf3d3f
+  - enabled: 1
+    path: Assets/World1/World1_Tutorial.unity
+    guid: 18a923711ffbee34d9e9e7aca9cc93fe
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
