@@ -456,7 +456,8 @@ MonoBehaviour:
 
 
     <b>6.
-    Drag </b>the crafted <b>gear to the verification slot.</b>'
+    Tools</b> will also appear as game progress. <b>Drag the tools to a gear</b>
+    to <b>trigger an interaction</b>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
   m_sharedMaterial: {fileID: -5212519863517009721, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
@@ -2082,7 +2083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &559843967
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2118,6 +2119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 725060749}
+  nextTutorial: {fileID: 559843966}
   astronaut: {fileID: 167047534}
   tutorialPrompts:
   - {fileID: 435272728}
@@ -2178,7 +2180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &583141902
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2992,6 +2994,7 @@ MonoBehaviour:
   - {fileID: 29695416}
   objectToOpen:
   - {fileID: 203479141}
+  - {fileID: 559843966}
 --- !u!114 &817329181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5297,7 +5300,7 @@ MonoBehaviour:
 
 
     <b>5.
-    Keep combining</b> until you get the required gear.'
+    Put the <b>crafted gear/s</b> on the verification slot/s.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
   m_sharedMaterial: {fileID: -5212519863517009721, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
@@ -5898,7 +5901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1028968467927346453, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1213623521965366202, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text
@@ -6066,8 +6069,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: nextTutorial
+      value: 
+      objectReference: {fileID: 559843966}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: tutorialPanel
+      value: 
+      objectReference: {fileID: 1942240253}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: tutorialPrompts.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: 'tutorialPrompts.Array.data[0]'
@@ -6095,6 +6106,10 @@ PrefabInstance:
       objectReference: {fileID: 1740673330}
     - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: 'tutorialPrompts.Array.data[6]'
+      value: 
+      objectReference: {fileID: 91139935}
+    - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: 'tutorialPrompts.Array.data[7]'
       value: 
       objectReference: {fileID: 361167814}
     - target: {fileID: 6684689196994230583, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
