@@ -10,7 +10,7 @@ public class TutorialWebPlayer : MonoBehaviour
 
     private void Start()
     {
-        string videoPath = Path.Combine(Application.streamingAssetsPath, videoFileName);
+        string videoPath = Path.Combine(Application.streamingAssetsPath, "World-1-Tut-Vid",videoFileName);
         //videoPlayer.playOnAwake = false;
         videoPlayer.url = videoPath;
         videoPlayer.Play();
