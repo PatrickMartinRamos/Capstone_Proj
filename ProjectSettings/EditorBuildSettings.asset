@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/World1/World1_Stage9.unity
     guid: c2e997b958271c44cab3092d325f528c
   - enabled: 1
-    path: Assets/World1/World1_Stage10.unity
+    path: Assets/World1/World1_Stage7.unity
     guid: 693442e102697954aa636e0f8faf3d3f
   - enabled: 1
     path: Assets/World1/World1_Tutorial.unity
