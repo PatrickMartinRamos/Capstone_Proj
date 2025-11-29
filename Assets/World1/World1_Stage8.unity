@@ -170,9 +170,11 @@ MonoBehaviour:
   squaringBinomialBox: {fileID: 2581674105859793645, guid: 8065482a1f1433a44a0510f52594563c, type: 3}
   radicalsBox: {fileID: 5889609793712396234, guid: a52c5d05056b246479ae206c26ea031d, type: 3}
   completingSquareBox: {fileID: 1221349551460899795, guid: 8bb7c61ab364d9745ba9dcd8fdf7619d, type: 3}
+  advCompletingSquareBox: {fileID: 0}
   cannon: {fileID: 1493531861}
   bullet: {fileID: 466164477}
   craftArea: {fileID: 0}
+  craftArea2: {fileID: 0}
   gameplaySpawnPt: {fileID: 383571340}
   bulletCase: {fileID: 0}
   ActiveGameArea: {fileID: 0}
@@ -196,6 +198,7 @@ MonoBehaviour:
   uiManager: {fileID: 0}
   audioSrc: {fileID: 0}
   isPlaying: 0
+  isAdvanceCTS: 0
   playTimer: 0
 --- !u!114 &183638
 MonoBehaviour:
@@ -1416,6 +1419,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2202237809723995841, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3147919724658548406, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1444,6 +1451,10 @@ PrefabInstance:
       propertyPath: 'tutorialPrompts.Array.data[2]'
       value: 
       objectReference: {fileID: 1796044915}
+    - target: {fileID: 6620990543544089274, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8483318047551778772, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_text
       value: "<size=1.3em><b>Region 1: Squaring the Binomial</b></size>\n\n\n<align=center>All

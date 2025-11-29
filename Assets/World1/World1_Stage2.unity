@@ -170,9 +170,11 @@ MonoBehaviour:
   squaringBinomialBox: {fileID: 2581674105859793645, guid: 8065482a1f1433a44a0510f52594563c, type: 3}
   radicalsBox: {fileID: 2798700596207073108, guid: 8abcf549fabf0d94babe953c007326e8, type: 3}
   completingSquareBox: {fileID: 1221349551460899795, guid: 8bb7c61ab364d9745ba9dcd8fdf7619d, type: 3}
+  advCompletingSquareBox: {fileID: 0}
   cannon: {fileID: 1493531861}
   bullet: {fileID: 466164477}
   craftArea: {fileID: 0}
+  craftArea2: {fileID: 0}
   gameplaySpawnPt: {fileID: 383571340}
   bulletCase: {fileID: 0}
   ActiveGameArea: {fileID: 0}
@@ -196,6 +198,7 @@ MonoBehaviour:
   uiManager: {fileID: 0}
   audioSrc: {fileID: 0}
   isPlaying: 0
+  isAdvanceCTS: 0
   playTimer: 0
 --- !u!114 &183638
 MonoBehaviour:
@@ -1515,13 +1518,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2202237809723995841, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3147919724658548406, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4443974966272163462, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4646808859714925935, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_Camera
@@ -1563,6 +1570,10 @@ PrefabInstance:
       propertyPath: 'tutorialPrompts.Array.data[2]'
       value: 
       objectReference: {fileID: 767196166}
+    - target: {fileID: 6620990543544089274, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6785903061218231054, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1654,6 +1665,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 699041388320945964, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+    - {fileID: 2439041574887315722, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3508358969199149246, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       insertIndex: 2
