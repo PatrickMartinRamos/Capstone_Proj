@@ -3,7 +3,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class VerifierMechanics : MonoBehaviour, ITargetable
 {
-    [SerializeField] private GameObject embedShape;
+    [SerializeField] public GameObject embedShape;
     [SerializeField] private ShapeClassification correctShape;
     [SerializeField] private SpriteRenderer verificationIndicator;
     [SerializeField] Color correct, normal, wrong;

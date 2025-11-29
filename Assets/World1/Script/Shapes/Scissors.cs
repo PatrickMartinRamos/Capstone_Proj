@@ -29,12 +29,12 @@ public class Scissors : Shapes
         {
             case ShapeClassification.DoubleCircle:
                 CombinedShape1 = StageManager.Instance.constant;
-                val1 = (int)Mathf.Sqrt(target.GetComponent<Shapes>().value);
+                val1 = Mathf.RoundToInt(Mathf.Sqrt(target.GetComponent<Shapes>().value));
                 CombinedShape2 = StageManager.Instance.constant;
-                val2 = (int)Mathf.Sqrt(target.GetComponent<Shapes>().value);
+                val2 = Mathf.RoundToInt(Mathf.Sqrt(target.GetComponent<Shapes>().value));
                 break;
             case ShapeClassification.Circle:
-                if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.completingSquare)
+                if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.completingSquare || StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.advanceCompletingSquare)
                 {
                     int targetValue = target.GetComponent<Shapes>().value;
                     GetFactorPair(targetValue, 2, out val1, out val2);
@@ -66,7 +66,7 @@ public class Scissors : Shapes
                 }
                 break;
             case ShapeClassification.Triangle:
-                if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType != ProblemType.completingSquare)
+                if (StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.squaringBinomial || StageManager.Instance.bombsManager.targetBomb.GetComponent<BombMechanics>().problemType == ProblemType.radicals)
                     return;
                 int varVal = StageManager.Instance.problem.gameObject.GetComponent<CompletingSquareProblemLoader>().VarValue;
                 CombinedShape1 = StageManager.Instance.variable;
@@ -109,13 +109,44 @@ public class Scissors : Shapes
     }*/
     IEnumerator InstantiateQuotients(GameObject dragged, GameObject target, int val1, int val2) 
     {
-        GameObject newShape = Instantiate(CombinedShape1, spawnPt, Quaternion.identity);
-        newShape.GetComponent<Shapes>().AddQuotientValue(val1);
-        newShape.GetComponent<Shapes>().MoveToArea();
-        yield return new WaitForSeconds(0.5f);
-        newShape = Instantiate(CombinedShape2, spawnPt, Quaternion.identity);
-        newShape.GetComponent<Shapes>().AddQuotientValue(val2);
-        newShape.GetComponent<Shapes>().MoveToArea();
+        GameObject newShape = null;
+
+        if (StageManager.Instance.isAdvanceCTS )
+        {
+
+            if (target.GetComponent<Shapes>().isGiven)
+            {
+                newShape = Instantiate(CombinedShape1, spawnPt, Quaternion.identity, StageManager.Instance.craftArea2.transform);
+                newShape.GetComponent<Shapes>().AddQuotientValue(val1);
+                newShape.GetComponent<Shapes>().MoveToArea2();
+                yield return new WaitForSeconds(0.5f);
+
+                newShape = Instantiate(CombinedShape2, spawnPt, Quaternion.identity, StageManager.Instance.craftArea2.transform);
+                newShape.GetComponent<Shapes>().AddQuotientValue(val2);
+                newShape.GetComponent<Shapes>().MoveToArea2();
+            }
+            //var spawnTrans = target.transform.parent.GetComponent<CraftAreaMech>() ? target.transform : null;
+            newShape = Instantiate(CombinedShape1, spawnPt, Quaternion.identity, StageManager.Instance.craftArea.transform);
+            newShape.GetComponent<Shapes>().AddQuotientValue(val1);
+            newShape.GetComponent<Shapes>().MoveToArea(!target.GetComponent<Shapes>().isGiven ? target.transform.parent : null);
+            yield return new WaitForSeconds(0.5f);
+
+            newShape = Instantiate(CombinedShape2, spawnPt, Quaternion.identity, StageManager.Instance.craftArea.transform);
+            newShape.GetComponent<Shapes>().AddQuotientValue(val2);
+            newShape.GetComponent<Shapes>().MoveToArea(!target.GetComponent<Shapes>().isGiven ? target.transform.parent : null);
+
+        }
+        else
+        {
+            newShape = Instantiate(CombinedShape1, spawnPt, Quaternion.identity);
+            newShape.GetComponent<Shapes>().AddQuotientValue(val1);
+            newShape.GetComponent<Shapes>().MoveToArea();
+            yield return new WaitForSeconds(0.5f);
+
+            newShape = Instantiate(CombinedShape2, spawnPt, Quaternion.identity);
+            newShape.GetComponent<Shapes>().AddQuotientValue(val2);
+            newShape.GetComponent<Shapes>().MoveToArea();
+        }
         //target.SetActive(false);
     }
     private void GetFactorPair(int value, out int val1, out int val2)

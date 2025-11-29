@@ -47,7 +47,7 @@ public class Rooter : Scissors
 
         GameObject newShape = Instantiate(CombinedShape1, spawnPt, Quaternion.identity);
         newShape.GetComponent<Shapes>().AddQuotientValue(val);
-        newShape.GetComponent<Shapes>().MoveToArea(this.transform.parent);
+        newShape.GetComponent<Shapes>().MoveToArea(StageManager.Instance.problemType == ProblemType.advanceCompletingSquare ? StageManager.Instance.craftArea.transform : this.transform.parent);
         target.SetActive(false);
 
 

@@ -11,7 +11,8 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject astronaut;
     [SerializeField] private List<GameObject> tutorialPrompts = new List<GameObject>();
     [SerializeField] private bool isTutorial = false;
-
+    [ShowIf("isTutorial")]
+    [SerializeField] private GameObject nextBtn, prevBtn; 
     private int currentPromptIndex = 0;
 
     private void Awake()
@@ -36,46 +37,59 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
 
     public void NextPrompt()
     {
-        if (tutorialPrompts.Count == 0 || currentPromptIndex == tutorialPrompts.Count-1)
+        if (tutorialPrompts.Count == 0 || currentPromptIndex > tutorialPrompts.Count-1)
             return;
 
-        // Hide current prompt
-        tutorialPrompts[currentPromptIndex].SetActive(false);
-
-        currentPromptIndex++;
-
-        if (currentPromptIndex < tutorialPrompts.Count)
+        else if (currentPromptIndex == tutorialPrompts.Count - 1)
         {
-            // Show next
+            if (!isTutorial) EndTutorial();
+            else return;
+        }
+            // Hide current prompt
 
+        else 
+        {
+            tutorialPrompts[currentPromptIndex].SetActive(false);
+
+            currentPromptIndex++;
             tutorialPrompts[currentPromptIndex].SetActive(true);
+            if (isTutorial)
+            {
+                if (currentPromptIndex > 0 && !prevBtn.activeInHierarchy)
+                    prevBtn.SetActive(true);
+                if (currentPromptIndex == tutorialPrompts.Count - 1)
+                    nextBtn.SetActive(false);
+            }
         }
-        else
-        {
-            if (!isTutorial)
-                EndTutorial();
-        }
+
+ 
     }
     public void PrevPrompt()
     {
-        if (tutorialPrompts.Count == 0 || currentPromptIndex == 0)
+        if (tutorialPrompts.Count == 0 || currentPromptIndex < 0)
             return;
 
-        // Hide current prompt
-        tutorialPrompts[currentPromptIndex].SetActive(false);
-
-        currentPromptIndex--;
-
-        if (currentPromptIndex >= 0)
+        else if (currentPromptIndex == 0)
         {
-            // Show prev
-            tutorialPrompts[currentPromptIndex].SetActive(true);
+            if (!isTutorial) EndTutorial();
+            else return;
         }
+        // Hide current prompt
 
         else
         {
-            if (!isTutorial)
-                EndTutorial();
+            tutorialPrompts[currentPromptIndex].SetActive(false);
+
+            currentPromptIndex--;
+            tutorialPrompts[currentPromptIndex].SetActive(true);
+            if (isTutorial)
+            {
+                if (currentPromptIndex < tutorialPrompts.Count - 1 && !nextBtn.activeInHierarchy)
+                    nextBtn.SetActive(true);
+                if (currentPromptIndex == 0)
+                    prevBtn.SetActive(false);
+            }
+
         }
     }
 

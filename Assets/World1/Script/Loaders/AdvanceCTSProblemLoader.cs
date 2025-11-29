@@ -88,7 +88,34 @@ public class AdvanceCTSProblemLoader : CompletingSquareProblemLoader
         b = ans;
         answers1.Add(b);
 
-        answers1.Add(stageDifficulty == Difficulty.hard ? 0-c : c);
 
+        ans = stageDifficulty == Difficulty.hard ? (0 - c) : c;
+        Debug.Log(ans + " \t " + b);
+        c = ans + (b * b);
+        answers1.Add(c);
+
+        answers2.Add(0 - b);
+        SolveForRadical(c);
+
+    }
+    private void SolveForRadical(int n)
+    {
+        int outside = 1;
+        int inside = n;
+
+        // Find perfect square factors
+        for (int i = Mathf.FloorToInt(Mathf.Sqrt(n)); i >= 2; i--)
+        {
+            int square = i * i;
+            if (inside % square == 0)
+            {
+                outside *= i;
+                inside /= square;
+            }
+        }
+
+        answers.Clear();
+        answers.Add(outside);
+        answers.Add(inside);
     }
 }

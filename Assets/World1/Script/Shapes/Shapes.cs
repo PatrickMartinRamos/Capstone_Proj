@@ -44,7 +44,7 @@ public class Shapes : MonoBehaviour, ITargetable
         origScaleSize = transform.localScale.x;
         if (StageManager.Instance.StageNumber % 3 == 1) withValue = false;
         if(!withValue) valueLabel.SetActive(false);
-        initParent = transform.parent.gameObject;
+        initParent = transform.parent != null ? transform.parent.gameObject : null;
     }
 
     // Update is called once per frame
@@ -83,26 +83,56 @@ public class Shapes : MonoBehaviour, ITargetable
     // Function for combining shapes in similar vessel
     public virtual void CombineLikeTerms(GameObject dragged, GameObject target)
     {
-        if (target.GetComponent<Shapes>().classification != dragged.GetComponent<Shapes>().classification) return;
-        if (StageManager.Instance.problemType == ProblemType.completingSquare)
+        if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Scissors || target.GetComponent<Shapes>().classification == ShapeClassification.Scissors) return;
+
+
+        if (StageManager.Instance.problemType == ProblemType.completingSquare || StageManager.Instance.problemType == ProblemType.advanceCompletingSquare)
         {
             GameObject newShape = null;
-            if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Circle)
+            if (target.GetComponent<Shapes>().classification == dragged.GetComponent<Shapes>().classification)
             {
-                if(dragged.GetComponent<Shapes>().value == target.GetComponent<Shapes>().value)
-                    newShape = Instantiate(StageManager.Instance.squaredConstant, target.transform.position, Quaternion.identity);
-                else
-                    newShape = Instantiate(StageManager.Instance.constant, target.transform.position, Quaternion.identity);
-            }
-            else if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Square)
-            {
-                newShape = Instantiate(StageManager.Instance.squaredVariable, target.transform.position, Quaternion.identity);
-            }
+                Debug.Log("Same Classification. Combining Like Terms");
+                if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Circle)
+                {
+                    if (dragged.GetComponent<Shapes>().value == target.GetComponent<Shapes>().value)
+                        newShape = Instantiate(StageManager.Instance.squaredConstant, target.transform.position, Quaternion.identity);
+                    else
+                        newShape = Instantiate(StageManager.Instance.constant, target.transform.position, Quaternion.identity);
+                }
+                else if (dragged.GetComponent<Shapes>().classification == ShapeClassification.Square)
+                {
+                    newShape = Instantiate(StageManager.Instance.squaredVariable, target.transform.position, Quaternion.identity);
+                }
                 newShape.GetComponent<Shapes>().AddValue(target.GetComponent<Shapes>().value, dragged.GetComponent<Shapes>().value);
-            newShape.transform.SetParent(StageManager.Instance.craftArea.transform);
-            Destroy(dragged);
-            Destroy(target);
+
+                Transform t = target.transform.parent.GetComponent<CraftAreaMech>() == null ? StageManager.Instance.craftArea.transform : target.transform.parent;
+                Debug.Log(t.name);
+                newShape.GetComponent<Shapes>().MoveToArea(t);
+
+                Destroy(dragged);
+                Destroy(target);
+            }
+
+            else if((dragged.GetComponent<Shapes>().classification == ShapeClassification.Circle ||
+                dragged.GetComponent<Shapes>().classification == ShapeClassification.DoubleCircle) 
+                && (target.GetComponent<Shapes>().classification == ShapeClassification.Circle || target.GetComponent<Shapes>().classification == ShapeClassification.DoubleCircle))
+            {
+                newShape = Instantiate(StageManager.Instance.constant, target.transform.position, Quaternion.identity);
+                newShape.transform.SetParent(target.transform.parent);
+
+                int a = dragged.GetComponent<Shapes>().value;
+                int b = target.GetComponent<Shapes>().value;
+
+                newShape.GetComponent<Shapes>().AddQuotientValue(a + b);
+
+                Destroy(dragged);
+                Destroy(target);
+            }
+
         }
+        else if (target.GetComponent<Shapes>().classification != dragged.GetComponent<Shapes>().classification)
+            return;
+
         target.GetComponent<Shapes>().AddValue(dragged.GetComponent<Shapes>().value);
         Destroy(dragged);
     }
@@ -130,7 +160,7 @@ public class Shapes : MonoBehaviour, ITargetable
     public void AddValue(int val1, int val2)
     {
 
-        if (StageManager.Instance.problem.stageDifficulty != Difficulty.hard || StageManager.Instance.problemType == ProblemType.completingSquare)
+        if (StageManager.Instance.problem.stageDifficulty != Difficulty.hard || StageManager.Instance.problemType == ProblemType.completingSquare || StageManager.Instance.problemType == ProblemType.advanceCompletingSquare)
         {
             value = val1 * val2;
             withValue = true;
@@ -263,7 +293,7 @@ public class Shapes : MonoBehaviour, ITargetable
             GetComponentInParent<AreaContainer>().InteractWithDraggedObject(this.gameObject);
         });
         Debug.Log("Sending to Area");
-        //StageManager.Instance.craftArea.GetComponent<CraftAreaMech>().InteractWithDraggedObject(this.gameObject);
+        //StageManager.Instance.craftArea2.GetComponent<CraftAreaMech>().InteractWithDraggedObject(this.gameObject);
     }
 
     // Random ID Generator - AlphaNumeric
@@ -295,6 +325,12 @@ public class Shapes : MonoBehaviour, ITargetable
             list[i] = list[rand];
             list[rand] = temp;
         }
+    }
+    public void ReverseValue()
+    {
+        value = 0 - value;
+        valueLabel.GetComponent<TextMeshProUGUI>().text = value.ToString();
+
     }
 
     // Call this function to get one value each time

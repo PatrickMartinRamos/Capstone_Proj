@@ -8,17 +8,18 @@ public class audioListenerDisabler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        audioListener.GetComponent<AudioListener>();
+        audioListener = GetComponent<AudioListener>();
         activeListenerCount = CountEnabledAudioListeners();
+        if (audioListener.isActiveAndEnabled && activeListenerCount > 1)
+        {
+            Destroy(audioListener);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (audioListener.isActiveAndEnabled && activeListenerCount > 1)
-        {
-            Destroy(audioListener);
-        }
+
     }
     private int CountEnabledAudioListeners()
     {
