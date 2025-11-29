@@ -50,6 +50,7 @@ namespace Stellarfarer
 #if UNITY_EDITOR
             if (_deleteKey)
                 PlayerPrefs.DeleteKey(STAGE_ID_NAME);
+            PlayerPrefs.DeleteAll();
             int baseStageID = _testStageID; // TODO: Change to saved stage
 #else
             int baseStageID = 1; // TODO: Change to saved stage

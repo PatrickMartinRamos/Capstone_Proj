@@ -10771,7 +10771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageDataDictSO: {fileID: 11400000, guid: 7f98c46a6969c6144ab60c2a59822d4b, type: 2}
-  _testStageID: 5
+  _testStageID: 1
   _deleteKey: 1
   _winGame: 0
   _loseGame: 0
