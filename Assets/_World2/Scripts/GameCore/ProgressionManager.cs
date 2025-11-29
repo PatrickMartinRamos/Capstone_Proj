@@ -1,10 +1,12 @@
 using System;
+using UnityEngine;
 
 namespace Stellarfarer
 {
     public class ProgressionManager : SingletonBehaviour<ProgressionManager>
     {
         public event Action OnPointsChanged;
+        public event Func<Rect> OnProgressBarRectGot;
 
         private int _points;
         private Hydros7WorldManager _hydros7WorldManager;
@@ -36,5 +38,8 @@ namespace Stellarfarer
             int requiredPoints = _hydros7WorldManager.GetRequiredPoints();
             return (float)_points / requiredPoints;
         }
+
+        public Rect GetProgressBarRect()
+            => OnProgressBarRectGot?.Invoke() ?? Rect.zero;
     }
 }

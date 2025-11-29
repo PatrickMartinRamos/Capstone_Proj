@@ -8,7 +8,10 @@ namespace Stellarfarer
     public class CleanseButtonUI : MonoBehaviour
     {
         [SerializeField] private Button _button;
+        [SerializeField] private Sprite _full;
+        [SerializeField] private Sprite _visible;
 
+        private LapilizManager _lapilizManager;
         private RectTransform _rectTransform;
         private float _rectWidth;
 
@@ -23,12 +26,45 @@ namespace Stellarfarer
 
             _button.onClick.AddListener(() =>
             {
-                DashboardManager.Instance.Extract();
-                DashboardManager.Instance.SwitchOff();
+                if (Hydros7WorldManager.Instance.IsGamePlaying() ||
+                (Hydros7WorldManager.Instance.IsDisplayingTutorial() &&
+                TutorialManager.Instance.IsDisplayingCleanseTutorial()))
+                {
+                    DashboardManager.Instance.Extract();
+                    DashboardManager.Instance.SwitchOff();
+                    Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.Wait);
+                }
             });
         }
         private void Start()
-            => _rectWidth = _rectTransform.rect.width;
+        {
+            _rectWidth = _rectTransform.rect.width;
+
+            _button.image.ConfigureImageFromFullToVisibleSprite(_full, _visible);
+
+            if (LapilizManager.Instance != null)
+            {
+                _lapilizManager = LapilizManager.Instance;
+
+                _lapilizManager.OnCleanseButtonRectGot
+                    += LapilizManager_OnCleanseButtonRectGot;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if (_lapilizManager != null)
+            {
+                _lapilizManager.OnCleanseButtonRectGot
+                    -= LapilizManager_OnCleanseButtonRectGot;
+            }
+        }
+
+        private Rect LapilizManager_OnCleanseButtonRectGot()
+        {
+            RectTransform buttonRectTransform = _button.image.rectTransform;
+            return new Rect(buttonRectTransform.position, buttonRectTransform.sizeDelta);
+        }
 
         public Sequence MoveCenter()
             => Move(0);

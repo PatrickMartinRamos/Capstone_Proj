@@ -78,6 +78,7 @@ namespace Stellarfarer
                 hydriousUI.SetParent(holdingAreaRectTransform, holdingAreaRectTransform.position);
                 hydriousUI.Float();
                 DashboardManager.Instance.PowerOn();
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayClickDashboardTutorial);
                 ResetClaw();
             });
 

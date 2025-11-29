@@ -20,8 +20,8 @@ namespace Stellarfarer
             {
                 _hydros7WorldManager = Hydros7WorldManager.Instance;
 
-                _hydros7WorldManager.OnGamePauseToggled
-                    += Hydros7WorldManager_OnGamePauseToggled;
+                _hydros7WorldManager.OnGameStateChanged
+                    += Hydros7WorldManager_OnGameStateChanged;
             }
 
             Hide();
@@ -31,12 +31,12 @@ namespace Stellarfarer
         {
             if (_hydros7WorldManager != null)
             {
-                _hydros7WorldManager.OnGamePauseToggled
-                    -= Hydros7WorldManager_OnGamePauseToggled;
+                _hydros7WorldManager.OnGameStateChanged
+                    -= Hydros7WorldManager_OnGameStateChanged;
             }
         }
 
-        private void Hydros7WorldManager_OnGamePauseToggled()
+        private void Hydros7WorldManager_OnGameStateChanged()
         {
             if (_hydros7WorldManager.IsGameOver())
             {

@@ -5,6 +5,8 @@ namespace Stellarfarer
 {
     public class DashboardManagerUI : MonoBehaviour
     {
+        private const float ZOOM_MOVED_POS = 10000F;
+
         [SerializeField] private RectTransform _content; // parent of everything in your screen
         [SerializeField] private DashboardScreenUI _upperScreen;
         [SerializeField] private DashboardScreenUI _lowerScreen;
@@ -12,9 +14,16 @@ namespace Stellarfarer
         private DashboardManager _dashboardManager;
         private LoadingScreenUI _loadingScreenUI;
         private LapilizManager _lapilizManager;
+        private Vector2 _zoomedPos;
 
         private void Start()
         {
+            if (LoadingScreenUI.Instance != null)
+                _loadingScreenUI = LoadingScreenUI.Instance;
+
+            if (LapilizManager.Instance != null)
+                _lapilizManager = LapilizManager.Instance;
+
             if (DashboardManager.Instance != null)
             {
                 _dashboardManager = DashboardManager.Instance;
@@ -23,13 +32,9 @@ namespace Stellarfarer
                     += DashboardManager_OnPowerStateChanged;
                 _dashboardManager.OnSwitchStateChanged
                     += DashboardManager_OnSwitchStateChanged;
+                _dashboardManager.OnDashboardRectGot
+                    += DashboardManager_OnDashboardRectGot;
             }
-
-            if (LoadingScreenUI.Instance != null)
-                _loadingScreenUI = LoadingScreenUI.Instance;
-
-            if (LapilizManager.Instance != null)
-                _lapilizManager = LapilizManager.Instance;
         }
 
         private void OnDestroy()
@@ -40,7 +45,22 @@ namespace Stellarfarer
                     -= DashboardManager_OnPowerStateChanged;
                 _dashboardManager.OnSwitchStateChanged
                     -= DashboardManager_OnSwitchStateChanged;
+                _dashboardManager.OnDashboardRectGot
+                    -= DashboardManager_OnDashboardRectGot;
             }
+        }
+
+        private Rect DashboardManager_OnDashboardRectGot()
+        {
+            Rect upperScreenRect = _upperScreen.GetRect();
+            Rect lowerScreenRect = _lowerScreen.GetRect();
+            Vector2 position = Utils.Halve(upperScreenRect.position + lowerScreenRect.position);
+            Vector2 size = new Vector2(
+                Utils.Halve(upperScreenRect.size.x + lowerScreenRect.size.x) * 1.1f,
+                upperScreenRect.size.y + lowerScreenRect.size.y * 1.5f);
+            Rect dashboardRect = new Rect(position, size);
+
+            return dashboardRect;
         }
 
         public Sequence ZoomToTarget()
@@ -51,12 +71,13 @@ namespace Stellarfarer
             float zoomScale = 1.5f;
 
             // 1️⃣ Get world position of target area
-            Vector3 targetPos = (upperScreenPos + lowerScreenPos) / 2;
+            Vector3 targetPos = Utils.Halve(upperScreenPos + lowerScreenPos);
 
             // 2️⃣ Convert to local position relative to parent
             Vector3 localTarget = _content.InverseTransformPoint(targetPos);
 
             Vector3 movePosition = -localTarget * zoomScale;
+            _zoomedPos = movePosition;
 
             return SetZoom(zoomScale, movePosition);
         }
@@ -82,11 +103,34 @@ namespace Stellarfarer
             if (_dashboardManager.IsSwitchedOn())
             {
                 sequence.Append(ZoomToTarget());
-                sequence.Append(_loadingScreenUI.LoadScreen(_lapilizManager.Activate));
+                sequence.Append(_loadingScreenUI.LoadScreen(() =>
+                {
+                    _lapilizManager.Activate();
+                    _content.anchoredPosition = new Vector2(ZOOM_MOVED_POS, _content.anchoredPosition.y);
+                }));
+                sequence.AppendCallback(() =>
+                {
+                    HydriousUI hydriousUI = CaptureManager.Instance.GetHydriousUITarget();
+
+                    switch (hydriousUI.GetCleansingType())
+                    {
+                        case CleansingType.Plotting:
+                            Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayPlottingCartesianPlaneTutorial);
+                            break;
+                        case CleansingType.Midpoint:
+                        case CleansingType.Distance:
+                            Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplaySwitchToTab2Tutorial);
+                            break;
+                    }
+                });
             }
             else if (_dashboardManager.IsSwitchedOff())
             {
-                sequence.Append(_loadingScreenUI.LoadScreen(_lapilizManager.Deactivate));
+                sequence.Append(_loadingScreenUI.LoadScreen(() =>
+                {
+                    _lapilizManager.Deactivate();
+                    _content.localPosition = _zoomedPos;
+                }));
                 sequence.Append(ResetZoom());
                 sequence.AppendCallback(() => CaptureManager.Instance.Cleanse());
             }

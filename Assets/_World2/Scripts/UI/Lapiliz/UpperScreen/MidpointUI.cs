@@ -13,6 +13,33 @@ namespace Stellarfarer
 
         private NumberSlotManager _numberSlotManager;
 
+        private void Awake()
+        {
+            _midpoint_X1.OnValueChanged
+                += HandleInput;
+            _midpoint_Y1.OnValueChanged
+                += HandleInput;
+            _midpoint_X2.OnValueChanged
+                += HandleInput;
+            _midpoint_Y2.OnValueChanged
+                += HandleInput;
+            _midpoint_X.OnValueChanged
+                += HandleInput;
+            _midpoint_Y.OnValueChanged
+                += HandleInput;
+        }
+
+        private void HandleInput()
+        {
+            if (_midpoint_X1.IsNotEmpty() &&
+            _midpoint_Y1.IsNotEmpty() &&
+            _midpoint_X2.IsNotEmpty() &&
+            _midpoint_Y2.IsNotEmpty() &&
+            _midpoint_X.IsNotEmpty() &&
+            _midpoint_Y.IsNotEmpty())
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplaySwitchToTab1Tutorial);
+        }
+
         private void Start()
         {
             if (NumberSlotManager.Instance != null)
@@ -31,6 +58,19 @@ namespace Stellarfarer
                 _numberSlotManager.OnTryExtractMidpoint
                     -= NumberSlotManager_OnTryExtractMidpoint;
             }
+
+            _midpoint_X1.OnValueChanged
+                -= HandleInput;
+            _midpoint_Y1.OnValueChanged
+                -= HandleInput;
+            _midpoint_X2.OnValueChanged
+                -= HandleInput;
+            _midpoint_Y2.OnValueChanged
+                -= HandleInput;
+            _midpoint_X.OnValueChanged
+                -= HandleInput;
+            _midpoint_Y.OnValueChanged
+                -= HandleInput;
         }
 
         private bool NumberSlotManager_OnTryExtractMidpoint()
@@ -60,6 +100,24 @@ namespace Stellarfarer
             bool isYCorrect = _midpoint_Y.Grade(
                 (answer) => answer == (pointA.y + pointB.y) / 2
             );
+
+            if (isX1Correct &&
+            isY1Correct &&
+            isX2Correct &&
+            isY2Correct &&
+            isXCorrect &&
+            isYCorrect)
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayCleanseTutorial);
+            else
+            {
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayIncorrectTutorial);
+                _midpoint_X1.ClearText();
+                _midpoint_Y1.ClearText();
+                _midpoint_X2.ClearText();
+                _midpoint_Y2.ClearText();
+                _midpoint_X.ClearText();
+                _midpoint_Y.ClearText();
+            }
 
             return isX1Correct && isY1Correct &&
                 isX2Correct && isY2Correct &&

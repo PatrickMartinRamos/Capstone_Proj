@@ -25,6 +25,9 @@ namespace Stellarfarer
         [SerializeField] private World2StageDictSO _stageDataDictSO;
 #if UNITY_EDITOR
         [SerializeField, Range(1, 10)] private int _testStageID = 1;
+        [SerializeField] private bool _deleteKey;
+        [SerializeField] private bool _winGame;
+        [SerializeField] private bool _loseGame;
 #endif
         private int _stageID;
         private World2StageSO _stageSO;
@@ -45,11 +48,13 @@ namespace Stellarfarer
         private void UpdateStageData()
         {
 #if UNITY_EDITOR
+            if (_deleteKey)
+                PlayerPrefs.DeleteKey(STAGE_ID_NAME);
             int baseStageID = _testStageID; // TODO: Change to saved stage
 #else
             int baseStageID = 1; // TODO: Change to saved stage
 #endif
-            _stageID = PlayerPrefs.HasKey(STAGE_ID_NAME) ? PlayerPrefs.GetInt(STAGE_ID_NAME) : baseStageID;
+            _stageID = PlayerPrefs.GetInt(STAGE_ID_NAME, baseStageID);
 #if UNITY_EDITOR
             _testStageID = _stageID; // TODO: Change to saved stage
 #endif
@@ -72,8 +77,22 @@ namespace Stellarfarer
                 case GameState.StageDescriptionDisplay:
                     break;
                 case GameState.WaitingToStart:
-                    TutorialManager.Instance.TryDisplay();
-                    DisplayTutorial();
+#if UNITY_EDITOR
+                    if (_deleteKey)
+                        PlayerPrefs.DeleteKey($"Stage {_stageID}");
+#endif
+                    if (_stageID == 1 ||
+                    _stageID == 3 ||
+                    _stageID == 5)
+                    {
+                        if (PlayerPrefs.GetInt($"Stage {_stageID}", 0) == 0)
+                            TryDisplayTutorial(TutorialManager.Instance.TryDisplayChooseHydriousTutorial);
+                        else
+                            Countdown();
+                    }
+                    else
+                        Countdown();
+
                     break;
                 case GameState.TutorialDisplay:
                     break;
@@ -85,24 +104,44 @@ namespace Stellarfarer
 
                     break;
                 case GameState.GamePlaying:
+#if UNITY_EDITOR
+                    if (_winGame)
+                        WinGame();
+                    else if (_loseGame)
+                        LoseGame();
+#endif
                     break;
                 case GameState.GameWin:
+#if UNITY_EDITOR
                     Debug.Log("Game Won");
+#endif
                     break;
                 case GameState.GameLose:
+#if UNITY_EDITOR
                     Debug.Log("Game Lost");
+#endif
                     break;
             }
         }
 
         private void InitializeGame()
             => SetGameState(GameState.InitializeGame);
+        public bool IsGameInitializing()
+            => IsGameState(GameState.InitializeGame);
 
         private void DisplayStageDescription()
             => SetGameState(GameState.StageDescriptionDisplay);
         public bool IsDisplayingStageDescription()
             => IsGameState(GameState.StageDescriptionDisplay);
 
+        public void TryDisplayTutorial(Action tutorial)
+        {
+            if (IsWaiting() || IsDisplayingTutorial())
+            {
+                DisplayTutorial();
+                tutorial.Invoke();
+            }
+        }
         private void DisplayTutorial()
             => SetGameState(GameState.TutorialDisplay);
         public bool IsDisplayingTutorial()
@@ -157,6 +196,9 @@ namespace Stellarfarer
 
         public int GetStageID()
             => _stageID;
+
+        public int GetStageCount()
+            => _stageDataDictSO.Count();
 
         public void ToggleGamePause()
         {

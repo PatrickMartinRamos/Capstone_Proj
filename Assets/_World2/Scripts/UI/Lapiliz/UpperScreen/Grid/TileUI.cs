@@ -13,12 +13,24 @@ namespace Stellarfarer
         private AzuliuzUI _azuliuzUI;
         private TargetUI _targetUI;
         private Vector2 _gridCoordinates;
+        private bool _isMarked;
+
+        public void Mark()
+            => SetIsMarked(true);
+        public void Unmark()
+            => SetIsMarked(false);
+        private void SetIsMarked(bool isMarked)
+            => _isMarked = isMarked;
+        public bool IsMarked()
+            => _isMarked;
 
         #region Color Management
         private void Awake()
         {
             if (_visual == null)
                 _visual = GetComponent<Image>();
+
+            Unmark();
         }
 
         public void SetColor(Color color, float alpha = 0)
@@ -164,6 +176,5 @@ namespace Stellarfarer
         public void ClearTargetUI()
             => SetTargetUI(null);
         #endregion
-
     }
 }

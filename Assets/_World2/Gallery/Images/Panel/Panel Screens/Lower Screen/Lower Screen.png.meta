@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,15 +100,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lower Screen_0
+      name: Lower Screen_Visible
       rect:
         serializedVersion: 2
-        x: 24
-        y: 331
-        width: 1032
-        height: 457
+        x: 28
+        y: 334
+        width: 1025
+        height: 451
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -117,6 +117,28 @@ TextureImporter:
       bones: []
       spriteID: 4db585cf1721dfa60800000000000000
       internalID: 7709338417902410708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lower Screen_Full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1920
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 334, z: 27, w: 1135}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bed255dd40e59e47b6dbf8f2d5e38f9
+      internalID: 440988220
       vertices: []
       indices: 
       edges: []
@@ -135,7 +157,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lower Screen_0: 7709338417902410708
+      Lower Screen_Full: 440988220
+      Lower Screen_Visible: 7709338417902410708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

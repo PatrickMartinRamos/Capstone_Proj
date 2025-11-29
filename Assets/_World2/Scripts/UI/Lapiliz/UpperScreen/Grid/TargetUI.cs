@@ -22,12 +22,10 @@ namespace Stellarfarer
 
             _sequence = DOTween.Sequence();
             _sequence.Append(_visual.DOFade(1f, 1f));
-            _sequence.Append(_visual.DOFade(0f, 1f));
+            _sequence.Append(_visual.DOFade(0.75f, 1f));
             _sequence.SetLoops(-1, LoopType.Restart);
+            _sequence.SetLink(gameObject, LinkBehaviour.KillOnDestroy);
         }
-
-        private void OnDestroy()
-            => _sequence?.Kill();
 
         public bool HasTileUI()
             => _tileUI != null;
@@ -40,7 +38,12 @@ namespace Stellarfarer
             _tileUI.SetTargetUI(this);
 
             if (_tileUI.HasAzuliuzUI())
+            {
                 _tileUI.SetAlpha(0.1f);
+
+                if (!_tileUI.IsMarked())
+                    Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplaySwitchToTab1Tutorial);
+            }
 
             _rectTransform.SetParent(tileUI.transform, true);
             _rectTransform.offsetMin = Vector2.zero;

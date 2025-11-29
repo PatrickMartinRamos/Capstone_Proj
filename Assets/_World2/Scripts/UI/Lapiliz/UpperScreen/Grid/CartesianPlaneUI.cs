@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Stellarfarer
 {
     public class CartesianPlaneUI : MonoBehaviour
     {
-
         private GridManager _gridManager;
 
         private void Start()
