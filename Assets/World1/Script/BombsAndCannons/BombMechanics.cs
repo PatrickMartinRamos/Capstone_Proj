@@ -62,14 +62,16 @@ public class BombMechanics : MonoBehaviour
         if (prefab != null)
         {
             gameScene = Instantiate(prefab, gameSceneSpawnPt, Quaternion.identity);
+            gameScene.SetActive(false);
             gameScene.transform.SetParent(StageManager.Instance.gameplaySpawnPt.transform, worldPositionStays: false);
-            gameScene.transform.localScale = Vector3.zero;
+            gameScene.transform.localScale = new Vector3(0,-1);
             gameScene.SetActive(true);
             StageManager.Instance.ActiveGameArea = gameScene;
 
             // Create sequence properly
             Sequence seq = DOTween.Sequence();
-            seq.Append(gameScene.transform.DOScale(1.4f, 0.3f))
+            seq.Append(gameScene.transform.DOMoveY(-1, 0.5f))
+               .Append(gameScene.transform.DOScale(1.3f, 0.3f))
                .Append(gameScene.transform.DOScale(1f, 1f))
                .OnComplete(() => gameScene.GetComponent<ProblemLoader>().LoadProblem());
         }
