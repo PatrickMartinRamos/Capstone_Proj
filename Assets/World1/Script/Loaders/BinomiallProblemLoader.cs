@@ -75,11 +75,8 @@ public class BinomiallProblemLoader : ProblemLoader
         c.GetComponent<Shapes>().ChangeToGiven();
 
         // Add Value
-        if (stageDifficulty != Difficulty.easy)
-        {
-            v.GetComponent<Shapes>().AddQuotientValue(vVal);
-            c.GetComponent<Shapes>().AddQuotientValue(cVal);
-        }
+        v.GetComponent<Shapes>().AddQuotientValue(vVal);
+        c.GetComponent<Shapes>().AddQuotientValue(cVal);
 
     }
     public void SolveForAnswer(int a, int b)

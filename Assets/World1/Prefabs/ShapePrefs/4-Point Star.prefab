@@ -214,3 +214,4 @@ MonoBehaviour:
   interacted: []
   origScaleSize: 0
   valueLabel: {fileID: 0}
+  materials: []
