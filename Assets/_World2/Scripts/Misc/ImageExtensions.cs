@@ -123,8 +123,6 @@ namespace Stellarfarer
                 normalizedCenter.x * aspectSize.x,
                 normalizedCenter.y * aspectSize.y
             );
-            Debug.Log($"{image} UI Center: {uiCenter}");
-
 
             return uiCenter;
         }
@@ -161,7 +159,6 @@ namespace Stellarfarer
 
             return resultSize;
         }
-
 
         public static Texture GetSpriteTexture(this Image image)
         {
