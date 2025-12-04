@@ -51,13 +51,13 @@ public class CannonMechanics : MonoBehaviour
         switch (p)
         {
             case ProblemType.squaringBinomial:
-                cannonShell.GetComponent<SpriteRenderer>().sprite = STBshell;
+                cannonShell.GetComponentInChildren<SpriteRenderer>().sprite = STBshell;
                 break;
             case ProblemType.radicals:
-                cannonShell.GetComponent<SpriteRenderer>().sprite = Rshell;
+                cannonShell.GetComponentInChildren<SpriteRenderer>().sprite = Rshell;
                 break;
             case ProblemType.completingSquare:
-                cannonShell.GetComponent<SpriteRenderer>().sprite = CTSshell;
+                cannonShell.GetComponentInChildren<SpriteRenderer>().sprite = CTSshell;
                 break;
             default:
                 break;

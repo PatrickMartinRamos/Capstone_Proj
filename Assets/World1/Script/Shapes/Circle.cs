@@ -195,5 +195,63 @@ public class Circle : Shapes
         return true;
     }
 
+    public override void CombineLikeTerms(GameObject dragged, GameObject target)
+    {
+        if(StageManager.Instance.problemType == ProblemType.radicals)
+        {
+            if (dragged.GetComponent<Shapes>().GetClassification() == ShapeClassification.Scissors || target.GetComponent<Shapes>().GetClassification() == ShapeClassification.Scissors) return;
+
+
+            if (StageManager.Instance.problemType == ProblemType.completingSquare || StageManager.Instance.problemType == ProblemType.advanceCompletingSquare || StageManager.Instance.problemType == ProblemType.radicals)
+            {
+                GameObject newShape = null;
+                if (target.GetComponent<Shapes>().GetClassification() == dragged.GetComponent<Shapes>().GetClassification())
+                {
+                    Debug.Log("Same Classification. Combining Like Terms");
+                    if (dragged.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle)
+                    {
+                        if (dragged.GetComponent<Shapes>().value == target.GetComponent<Shapes>().value)
+                            newShape = Instantiate(StageManager.Instance.squaredConstant, target.transform.position, Quaternion.identity);
+                        else
+                            newShape = Instantiate(StageManager.Instance.constant, target.transform.position, Quaternion.identity);
+                    }
+
+                    newShape.GetComponent<Shapes>().AddValue(target.GetComponent<Shapes>().value, dragged.GetComponent<Shapes>().value);
+
+                    Transform t = target.transform.parent.GetComponent<CraftAreaMech>() == null ? StageManager.Instance.craftArea.transform : target.transform.parent;
+                    Debug.Log(t.name);
+                    newShape.GetComponent<Shapes>().MoveToArea(t);
+
+                    Destroy(dragged);
+                    Destroy(target);
+                }
+
+                else if ((dragged.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle ||
+                    dragged.GetComponent<Shapes>().GetClassification() == ShapeClassification.DoubleCircle)
+                    && (target.GetComponent<Shapes>().GetClassification() == ShapeClassification.Circle || target.GetComponent<Shapes>().GetClassification() == ShapeClassification.DoubleCircle))
+                {
+                    newShape = Instantiate(StageManager.Instance.constant, target.transform.position, Quaternion.identity);
+                    newShape.transform.SetParent(target.transform.parent);
+
+                    int a = dragged.GetComponent<Shapes>().value;
+                    int b = target.GetComponent<Shapes>().value;
+
+                    newShape.GetComponent<Shapes>().AddQuotientValue(a + b);
+
+                    Destroy(dragged);
+                    Destroy(target);
+                }
+
+            }
+            else if (target.GetComponent<Shapes>().GetClassification() != dragged.GetComponent<Shapes>().GetClassification())
+                return;
+
+            target.GetComponent<Shapes>().AddValue(dragged.GetComponent<Shapes>().value);
+            Destroy(dragged);
+        }
+        else
+            base.CombineLikeTerms(dragged, target);
+    }
+
 
 }
