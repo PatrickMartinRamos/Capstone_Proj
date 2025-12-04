@@ -1,5 +1,9 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.EventSystems;
+using static UnityEngine.Rendering.ProbeAdjustmentVolume;
 
 public class shapeDragController : MonoBehaviour
 {
@@ -10,6 +14,8 @@ public class shapeDragController : MonoBehaviour
     private Collider2D overlap;
     private RaycastHit2D hit;
     private bool canInteract = true;
+    bool triggerHighlight = false;
+    private List<Material> mats = new();
 
     void Update()
     {
@@ -30,7 +36,23 @@ public class shapeDragController : MonoBehaviour
                 if (hit.collider != null)
                 {
                     selectedShape = hit.collider.gameObject;
-                    selectedShape.GetComponent<Shapes>().ChangeOriginPos(selectedShape.transform.localPosition);
+                    Shapes shape = selectedShape.GetComponent<Shapes>();
+
+                    if (!shape.isGiven || selectedShape.GetComponent<Scissors>()!=null || selectedShape.name == "Rooter")
+                    {
+                        Debug.Log("Item cannot change origin pos.");
+                        selectedShape.GetComponent<Shapes>().ChangeOriginPos(selectedShape.transform.localPosition);
+
+                    }
+                    List<Material>mats = shape.materials;
+                    if(mats.Count != 0 && triggerHighlight == false)
+                    {
+                        foreach (var item in mats)
+                        {
+                            item.SetFloat("_Speed", 0);
+                        }
+                        triggerHighlight = true;
+                    }
 
                 }
             }
@@ -65,6 +87,16 @@ public class shapeDragController : MonoBehaviour
             //transform.parent = null;
             if (selectedShape != null)
             {
+                if (triggerHighlight == true)
+                {
+                    mats = selectedShape.GetComponent<Shapes>().materials;
+                    foreach (var item in mats)
+                    {
+                        item.SetFloat("_Speed", 1);
+                    }
+                    triggerHighlight = false;
+                }
+
                 selectedShape.GetComponent<Collider2D>().enabled = true;
 
                 if (overlap != null && overlap.gameObject.GetComponent<ITargetable>() != null && overlap.gameObject != selectedShape.gameObject)
@@ -79,6 +111,16 @@ public class shapeDragController : MonoBehaviour
                 {
                     selectedShape.GetComponent<Shapes>().RevertPosition();
                 }
+
+            }
+
+            if (triggerHighlight == true)
+            {
+                foreach (var item in mats)
+                {
+                    item.SetFloat("_Speed", 1);
+                }
+                triggerHighlight = false;
             }
 
             // Reset Drag Controller

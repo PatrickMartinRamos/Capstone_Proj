@@ -71,10 +71,11 @@ Material:
     - _Speed: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _XRMotionVectorsPass: 1
     - _ZTest: 4
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _HighlightColor: {r: 0.07741609, g: 0.24810903, b: 1.8483082, a: 1}
+    - _HighlightColor: {r: 0.1697331, g: 0.3611402, b: 1.8938648, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -19,6 +19,7 @@ public class CompletingSquareProblemLoader : ProblemLoader
     }
     public override void LoadProblem()
     {
+        base.LoadProblem();
         GetLevelDifficulty();
         InstantiateGiven(leftSide.transform, ProblemMarkers[0], ProblemMarkers[1]);
     }

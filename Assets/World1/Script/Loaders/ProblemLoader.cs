@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ProblemLoader : MonoBehaviour
@@ -7,6 +8,7 @@ public class ProblemLoader : MonoBehaviour
     [SerializeField] internal List<Vector3> ProblemMarkers;
     internal Difficulty stageDifficulty;
     protected List<int> answers = new List<int>();
+    [SerializeField] protected List<GameObject>tools = new List<GameObject>();
 
     protected virtual void Start()
     {
@@ -14,7 +16,11 @@ public class ProblemLoader : MonoBehaviour
     }
     public virtual void LoadProblem()
     {
-
+        if (tools.Count != 0)
+        foreach (GameObject go in tools)
+        {
+            go.GetComponent<Shapes>().RevertPosition();
+        }
     }
     public virtual List<int> Answers()
     {

@@ -34,16 +34,18 @@ public class Shapes : MonoBehaviour, ITargetable
 
     protected GameObject initParent;
 
+    public List<Material> materials = new();
+
     public string ID => iD;
 
     protected virtual void Start()
     {
         // Generate ID
         iD = Generate(7);
+        
         ChangeOriginPos(transform.localPosition);
         origScaleSize = transform.localScale.x;
-        if (StageManager.Instance.StageNumber % 3 == 1) withValue = false;
-        if(!withValue) valueLabel.SetActive(false);
+
         initParent = transform.parent != null ? transform.parent.gameObject : null;
     }
 
@@ -195,6 +197,7 @@ public class Shapes : MonoBehaviour, ITargetable
 
     public virtual void AddValue(Difficulty difficulty)
     {
+        if (difficulty == Difficulty.easy) return;
         withValue = true;
     }
     public virtual void AddQuotientValue(int val)
@@ -227,7 +230,7 @@ public class Shapes : MonoBehaviour, ITargetable
     {
         this.transform.localPosition = originPos;
     }
-    public void ChangeOriginPos(Vector3 pos)
+    public virtual void ChangeOriginPos(Vector3 pos)
     {
         originPos = pos;
     }

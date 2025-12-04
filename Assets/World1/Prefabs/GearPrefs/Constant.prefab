@@ -629,6 +629,8 @@ MonoBehaviour:
   interacted: []
   origScaleSize: 0
   valueLabel: {fileID: 3622677137226641589}
+  materials:
+  - {fileID: 2100000, guid: 13cafad7db350d841b2195f2237e8413, type: 2}
   CombinedShape: {fileID: 0}
 --- !u!1 &8444442247562870203
 GameObject:

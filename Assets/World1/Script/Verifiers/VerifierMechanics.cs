@@ -23,25 +23,34 @@ public class VerifierMechanics : MonoBehaviour, ITargetable
     }
     public void InteractWithDraggedObject(GameObject draggedObject)
     {
-        if (embedShape  != null)
+        var shape = draggedObject.GetComponent<Shapes>();
+
+        if (shape.isGiven) 
+        { 
+            shape.RevertPosition();
+            return;
+        }
+        else if (embedShape != null)
         {
             StageManager.Instance.NotificationText.text = "A Gear is Already Embedded. Remove first to proceed.";
-            draggedObject.GetComponent<Shapes>().RevertPosition();
+            shape.RevertPosition();
             return;
         }
         else if (draggedObject.GetComponent<Scissors>() != null)
         {
             StageManager.Instance.NotificationText.text = "Gear can not be embedded";
-            draggedObject.GetComponent<Shapes>().RevertPosition();
+            shape.RevertPosition();
             return;
         }
+
 
         if (draggedObject.transform.parent != this)
         {
             embedShape = draggedObject;
             Debug.Log("Dragged Into: Verifier" + " \nDragged Object: " + this.gameObject.name);
-            draggedObject.transform.SetParent(transform,false);
+            draggedObject.transform.SetParent(transform, false);
         }
+
         draggedObject.transform.localPosition = Vector3.zero;
         verificationIndicator.color = Color.yellow;
         draggedObject.GetComponent<Shapes>().FixScale(2f);

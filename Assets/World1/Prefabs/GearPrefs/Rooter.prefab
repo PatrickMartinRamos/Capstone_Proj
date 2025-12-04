@@ -186,6 +186,8 @@ MonoBehaviour:
   interacted: []
   origScaleSize: 0
   valueLabel: {fileID: 5906268411693255756}
+  materials:
+  - {fileID: 2100000, guid: 0dbb3772dbf760542b7bdcd67ddcded9, type: 2}
   CombinedShape1: {fileID: 0}
   CombinedShape2: {fileID: 0}
 --- !u!1 &5495824209066025885

@@ -52,10 +52,19 @@ public class Rooter : Scissors
 
 
     }
-
-    protected override void SetPos()
+    protected override void Start()
     {
-        ChangeOriginPos(new Vector3(-2, -2.5f, 0));
+        ChangeOriginPos(new Vector3(3, 3, 0));
+        isPosChangeable = false;
+        this.RevertPosition();
+    }
+    public override void ChangeOriginPos(Vector3 newPos)
+    {
+        if (isPosChangeable)
+        {
+            originPos = new Vector3(-2, -2.5f, 0);
+        }
+        else return;
     }
 
 }
