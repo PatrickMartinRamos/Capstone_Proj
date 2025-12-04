@@ -127,8 +127,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingPlottingCartesianPlaneTutorial())
             {
-                pos_1 = new Vector2(142f, GetResponsiveHeight(-341f));
-                size_1 = new Vector2(540f, 473f);
+                pos_1 = new Vector2(205f, GetResponsiveHeight(-385f));
+                size_1 = new Vector2(615f, 705f);
                 tutorialMessage = "Toggle to Show and Hide the Cartesian Plane!";
 
                 _maskAreaUI_1.DisplayPlottingCartesianPlaneTutorial();
@@ -140,7 +140,7 @@ namespace Stellarfarer
             else if (_tutorialManager.IsDisplayingSwitchToTab2Tutorial())
             {
                 pos_1 = new Vector2(0f, GetResponsiveHeight(160f));
-                size_1 = new Vector2(775f, 370f);
+                size_1 = new Vector2(638f, 265);
                 tutorialMessage = "Switch to Tab 2!";
 
                 _maskAreaUI_1.DisplaySwitchToTab2Tutorial();
@@ -151,8 +151,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingPlottingTutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(-631f));
-                size_1 = new Vector2(700f, 300f);
+                pos_1 = new Vector2(0f, GetResponsiveHeight(-100f));
+                size_1 = new Vector2(915f, 235f);
                 tutorialMessage = "Navigate the target using the arrows and hover over an Azuliuz!";
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
@@ -164,7 +164,7 @@ namespace Stellarfarer
             else if (_tutorialManager.IsDisplayingSwitchToTab1Tutorial())
             {
                 pos_1 = new Vector2(0f, GetResponsiveHeight(160f));
-                size_1 = new Vector2(550f, 342f);
+                size_1 = new Vector2(775, 265);
                 tutorialMessage = "Switch to Tab 1!";
 
                 _maskAreaUI_1.DisplaySwitchToTab1Tutorial();
@@ -175,8 +175,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingConfirmTutorial())
             {
-                pos_1 = new Vector2(-150f, GetResponsiveHeight(-342f));
-                size_1 = new Vector2(570f, 387f);
+                pos_1 = new Vector2(-205f, GetResponsiveHeight(-385f));
+                size_1 = new Vector2(615f, 705f);
 
                 HydriousUI hydriousUI = CaptureManager.Instance.GetHydriousUITarget();
 
