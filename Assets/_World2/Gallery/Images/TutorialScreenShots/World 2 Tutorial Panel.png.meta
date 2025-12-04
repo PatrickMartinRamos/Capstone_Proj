@@ -148,15 +148,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: World 2 Tutorial Panel_Full
+      name: World 2 Tutorial Panel_Middle
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1080
-        height: 1920
+        x: 70
+        y: 525
+        width: 940
+        height: 870
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,6 +165,72 @@ TextureImporter:
       bones: []
       spriteID: 896f1ac93f97e994a999865793b1719f
       internalID: -1568335768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World 2 Tutorial Panel_Top
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1395
+        width: 940
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae654c7360095741b7730bcaa165d6b
+      internalID: -1102506101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World 2 Tutorial Panel_Bottom
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 353
+        width: 940
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5e82f114212ee49907a34db4768740
+      internalID: 352672486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World 2 Tutorial Panel_Full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1920
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ed99cfcea5bc04698b46fda93f44f8
+      internalID: 314471590
       vertices: []
       indices: 
       edges: []
@@ -183,7 +249,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      World 2 Tutorial Panel_Full: -1568335768
+      World 2 Tutorial Panel_Bottom: 352672486
+      World 2 Tutorial Panel_Full: 314471590
+      World 2 Tutorial Panel_Middle: -1568335768
+      World 2 Tutorial Panel_Top: -1102506101
       World 2 Tutorial Panel_Visible: -7247135507446808881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
