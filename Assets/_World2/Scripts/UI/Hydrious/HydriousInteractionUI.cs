@@ -20,7 +20,7 @@ namespace Stellarfarer
 
             _button.onClick.AddListener(() =>
             {
-                if (Hydros7WorldManager.Instance.IsGamePlaying())
+                if (Hydros7WorldManager.Instance.IsGamePlaying() || Hydros7WorldManager.Instance.IsDisplayingTutorial())
                 {
                     if (CaptureManager.Instance.TryCapture(_hydriousUI))
                         _hydriousUI.Wait();

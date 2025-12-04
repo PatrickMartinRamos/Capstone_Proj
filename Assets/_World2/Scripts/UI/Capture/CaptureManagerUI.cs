@@ -50,6 +50,7 @@ namespace Stellarfarer
             mainSequence.Append(clawSequence);
             mainSequence.AppendCallback(() =>
             {
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayProgressionTutorial);
                 CaptureManager captureManager = CaptureManager.Instance;
                 ProgressionManager.Instance.AddPoints(captureManager.GetHydriousUITarget().GetHydrionEnergyAmountGiven());
                 captureManager.ClearHydriousUITarget();

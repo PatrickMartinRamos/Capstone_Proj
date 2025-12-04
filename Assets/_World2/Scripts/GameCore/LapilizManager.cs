@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Stellarfarer
 {
@@ -12,8 +13,36 @@ namespace Stellarfarer
 
         public event Action OnActivationChanged;
         public event Action OnExtractStarted;
+        public event Func<Rect> OnCartesianPlaneToggleRectGot;
+        public event Func<Rect> OnTab2RectGot;
+        public event Func<Rect> OnLowerScreenRectGot;
+        public event Func<Rect> OnTab1RectGot;
+        public event Func<Rect> OnConfirmButtonRectGot;
+        public event Func<Rect> OnCleanseButtonRectGot;
+        public event Func<Rect> OnUpperScreenRectGot;
 
         private Activation _activation;
+
+        public Rect GetCartesianPlaneToggleRect()
+            => OnCartesianPlaneToggleRectGot?.Invoke() ?? Rect.zero;
+
+        public Rect GetTab2Rect()
+            => OnTab2RectGot?.Invoke() ?? Rect.zero;
+
+        public Rect GetLowerScreenRect()
+            => OnLowerScreenRectGot?.Invoke() ?? Rect.zero;
+
+        public Rect GetUpperScreenRect()
+            => OnUpperScreenRectGot?.Invoke() ?? Rect.zero;
+
+        public Rect GetTab1Rect()
+            => OnTab1RectGot?.Invoke() ?? Rect.zero;
+
+        public Rect GetConfirmButtonRect()
+            => OnConfirmButtonRectGot?.Invoke() ?? Rect.zero;
+
+        public Rect GetCleansButtonRect()
+            => OnCleanseButtonRectGot?.Invoke() ?? Rect.zero;
 
         public void Activate()
             => SetActivation(Activation.Activate);

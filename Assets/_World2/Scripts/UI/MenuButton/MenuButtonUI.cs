@@ -12,7 +12,7 @@ namespace Stellarfarer
 
         [SerializeField] protected Button _button;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             if (_button == null)
                 _button = GetComponent<Button>();

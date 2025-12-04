@@ -12,6 +12,30 @@ namespace Stellarfarer
 
         private NumberSlotManager _numberSlotManager;
 
+        private void Awake()
+        {
+            _distance_X1.OnValueChanged
+                += HandleInput;
+            _distance_Y1.OnValueChanged
+                += HandleInput;
+            _distance_X2.OnValueChanged
+                += HandleInput;
+            _distance_Y2.OnValueChanged
+                += HandleInput;
+            _distance.OnValueChanged
+                += HandleInput;
+        }
+
+        private void HandleInput()
+        {
+            if (_distance_X1.IsNotEmpty() &&
+            _distance_Y1.IsNotEmpty() &&
+            _distance_X2.IsNotEmpty() &&
+            _distance_Y2.IsNotEmpty() &&
+            _distance.IsNotEmpty())
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplaySwitchToTab1Tutorial);
+        }
+
         private void Start()
         {
             if (NumberSlotManager.Instance != null)
@@ -30,6 +54,17 @@ namespace Stellarfarer
                 _numberSlotManager.OnTryExtractDistance
                     -= NumberSlotManager_OnTryExtractDistance;
             }
+
+            _distance_X1.OnValueChanged
+                -= HandleInput;
+            _distance_Y1.OnValueChanged
+                -= HandleInput;
+            _distance_X2.OnValueChanged
+                -= HandleInput;
+            _distance_Y2.OnValueChanged
+                -= HandleInput;
+            _distance.OnValueChanged
+                -= HandleInput;
         }
 
         private bool NumberSlotManager_OnTryExtractDistance()
@@ -62,9 +97,25 @@ namespace Stellarfarer
                             ) * 100f
                         ) / 100f;
 
-                    return Mathf.Abs(answer - distance) < 0.001f;
+                    return Mathf.Abs(answer - distance) < 0.0000001f;
                 }
             );
+
+            if (isX1Correct &&
+            isY1Correct &&
+            isX2Correct &&
+            isY2Correct &&
+            isDCorrect)
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayCleanseTutorial);
+            else
+            {
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayIncorrectTutorial);
+                _distance_X1.ClearText();
+                _distance_Y1.ClearText();
+                _distance_X2.ClearText();
+                _distance_Y2.ClearText();
+                _distance.ClearText();
+            }
 
             return isX1Correct && isY1Correct &&
                 isX2Correct && isY2Correct &&

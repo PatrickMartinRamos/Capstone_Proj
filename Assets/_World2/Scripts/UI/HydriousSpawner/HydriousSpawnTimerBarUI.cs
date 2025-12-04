@@ -58,7 +58,8 @@ namespace Stellarfarer
                 float full = 1f;
                 _fill.DOFillAmount(full, _hydros7WorldManager.GetSpawnTime())
                     .SetLoops(-1, LoopType.Restart)
-                    .OnStepComplete(() => HydriousSpawnManager.Instance.SpawnNextSpawn());
+                    .OnStepComplete(() => HydriousSpawnManager.Instance.SpawnNextSpawn())
+                    .SetLink(gameObject, LinkBehaviour.KillOnDestroy);
             }
             else if (_hydros7WorldManager.IsGameLost())
                 _fill.DOKill();

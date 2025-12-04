@@ -26,5 +26,8 @@ namespace Stellarfarer
             get { return _world2StageSODict[id]; }
             // set { _world2StageSODict[id] = value; }
         }
+
+        public int Count()
+            => _world2StageSODict.Count;
     }
 }

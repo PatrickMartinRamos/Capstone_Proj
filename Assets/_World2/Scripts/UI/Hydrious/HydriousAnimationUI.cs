@@ -227,6 +227,7 @@ namespace Stellarfarer
 
             _sequence.Append(_hydriousUI.GetRectTransform().DOMove(_movePosition, _swimTimer, true));
             _sequence.AppendCallback(() => _hydriousUI.Float());
+            _sequence.SetLink(gameObject, LinkBehaviour.KillOnDestroy);
         }
 
         private bool TryFlip(out Sequence flipSequence)
@@ -254,6 +255,7 @@ namespace Stellarfarer
             flipSequence.Append(visualRectTransform.DOLocalRotate(new Vector3(0f, 90f, 0f), _flipTimer));
             flipSequence.AppendCallback(() => SetVisualSprite());
             flipSequence.Append(visualRectTransform.DOLocalRotate(Vector3.zero, _flipTimer));
+            flipSequence.SetLink(gameObject, LinkBehaviour.KillOnDestroy);
 
             return true;
         }
@@ -272,7 +274,8 @@ namespace Stellarfarer
             _visual.rectTransform
                 .DOShakeRotation(duration, intensity, vibrato, randomness, false, shakeRandomnessMode)
                 .SetLoops(-1, LoopType.Restart)
-                .SetEase(Ease.Linear);
+                .SetEase(Ease.Linear)
+                .SetLink(gameObject, LinkBehaviour.KillOnDestroy);
         }
 
         private void Release()
@@ -292,6 +295,7 @@ namespace Stellarfarer
 
             _sequence.Append(_hydriousUI.GetRectTransform().DOMove(_movePosition, _swimTimer, true));
             _sequence.AppendCallback(() => _hydriousUI.DestroySelf());
+            _sequence.SetLink(gameObject, LinkBehaviour.KillOnDestroy);
         }
         #endregion
     }

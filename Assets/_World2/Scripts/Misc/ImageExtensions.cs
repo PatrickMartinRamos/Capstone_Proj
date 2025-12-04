@@ -98,7 +98,6 @@ namespace Stellarfarer
             Texture texture = image.GetSpriteTexture();
             Vector2 textureSize = new(texture.width, texture.height);
             Vector4 spriteBorder = image.GetSpriteBorder();
-            RectTransform rectTransform = image.rectTransform;
 
             // 1️⃣ Compute the center position in texture space (in pixels)
             float originToCenterX =
@@ -118,14 +117,47 @@ namespace Stellarfarer
                 textureCenter.y / textureSize.y
             );
 
-            // 3️⃣ Scale by the actual visible UI rect size
-            Vector2 uiRectSize = rectTransform.rect.size;
+            // 3️⃣ Scale by aspect size
+            Vector2 aspectSize = image.GetPreservedAspectSize();
             Vector2 uiCenter = new Vector2(
-                normalizedCenter.x * uiRectSize.x,
-                normalizedCenter.y * uiRectSize.y
+                normalizedCenter.x * aspectSize.x,
+                normalizedCenter.y * aspectSize.y
             );
 
             return uiCenter;
+        }
+
+        public static Vector2 GetPreservedAspectSize(this Image image)
+        {
+            RectTransform rt = image.rectTransform;
+
+            // The size the UI Image is allowed to occupy
+            Vector2 fittingSize = rt.rect.size;
+
+            // Sprite pixel size
+            Sprite sprite = image.sprite;
+            Vector2 spriteSize = sprite.rect.size;
+
+            float spriteAspect = spriteSize.x / spriteSize.y;
+            float rectAspect = fittingSize.x / fittingSize.y;
+
+            Vector2 resultSize = Vector2.zero;
+
+            // Match how Unity actually behaves
+            if (spriteAspect > rectAspect)
+            {
+                // Sprite is wider → width fits, height scaled
+                resultSize.x = fittingSize.x;
+                resultSize.y = fittingSize.x / spriteAspect;
+            }
+            else
+            {
+                // Sprite is taller → height fits, width scaled
+                resultSize.y = fittingSize.y;
+                resultSize.x = fittingSize.y * spriteAspect;
+            }
+
+            return resultSize;
         }
 
         public static Texture GetSpriteTexture(this Image image)

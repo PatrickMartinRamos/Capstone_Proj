@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,15 +100,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cleanse Button (Unpressed)_0
+      name: Cleanse Button (Unpressed)_Visible
       rect:
         serializedVersion: 2
-        x: 89
-        y: 509
-        width: 902
-        height: 902
+        x: 90
+        y: 510
+        width: 900
+        height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -117,6 +117,28 @@ TextureImporter:
       bones: []
       spriteID: 2f0792c4edc68a4a0800000000000000
       internalID: -6581891153385656078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cleanse Button (Unpressed)_Full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 90, y: 510, z: 90, w: 510}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b33bf7387d08a43b0040aec1cb5e33
+      internalID: 292472238
       vertices: []
       indices: 
       edges: []
@@ -135,7 +157,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cleanse Button (Unpressed)_0: -6581891153385656078
+      Cleanse Button (Unpressed)_Full: 292472238
+      Cleanse Button (Unpressed)_Visible: -6581891153385656078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
