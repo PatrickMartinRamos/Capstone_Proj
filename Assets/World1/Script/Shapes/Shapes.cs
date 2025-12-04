@@ -34,6 +34,8 @@ public class Shapes : MonoBehaviour, ITargetable
 
     protected GameObject initParent;
 
+    public List<Material> materials = new();
+
     public string ID => iD;
 
     protected virtual void Start()

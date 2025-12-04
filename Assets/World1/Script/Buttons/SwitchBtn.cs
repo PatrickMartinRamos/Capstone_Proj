@@ -9,14 +9,15 @@ public class SwitchBtn : ButtonEvent
     internal override void OnClick()
     {
         base.OnClick();
+        foreach (GameObject obj in objectToOpen)
+        {
+            obj.SetActive(true);
+        }
 
         foreach (GameObject obj in objectToClose)
         {
             obj.SetActive(false);
         }
-        foreach (GameObject obj in objectToOpen)
-        {
-            obj.SetActive(true);
-        }
+
     }
 }

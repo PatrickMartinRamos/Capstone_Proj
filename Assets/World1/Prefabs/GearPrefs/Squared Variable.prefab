@@ -444,8 +444,8 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 393560378132390910}
   - {fileID: 2368302457716816772}
+  - {fileID: 393560378132390910}
   - {fileID: 2615042421128115893}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -533,3 +533,5 @@ MonoBehaviour:
   interacted: []
   origScaleSize: 0
   valueLabel: {fileID: 2644735689075328706}
+  materials:
+  - {fileID: 2100000, guid: 13cafad7db350d841b2195f2237e8413, type: 2}

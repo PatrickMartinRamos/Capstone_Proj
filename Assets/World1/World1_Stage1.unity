@@ -1727,7 +1727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &435272729
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2209,7 +2209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &559843967
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3121,8 +3121,8 @@ MonoBehaviour:
   objectToClose:
   - {fileID: 29695416}
   objectToOpen:
-  - {fileID: 203479141}
   - {fileID: 559843966}
+  - {fileID: 203479141}
 --- !u!114 &817329181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6272,7 +6272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3147919724658548406, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508358969199149246, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_SizeDelta.x

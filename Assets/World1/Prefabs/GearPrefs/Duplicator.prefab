@@ -227,6 +227,8 @@ MonoBehaviour:
   interacted: []
   origScaleSize: 0
   valueLabel: {fileID: 9038080135506493927}
+  materials:
+  - {fileID: 2100000, guid: 3803e07148f1199419fabfca2d9cf849, type: 2}
 --- !u!60 &100117863370227892
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -572,6 +572,8 @@ MonoBehaviour:
   interacted: []
   origScaleSize: 0
   valueLabel: {fileID: 1204280427436123607}
+  materials:
+  - {fileID: 2100000, guid: 13cafad7db350d841b2195f2237e8413, type: 2}
   CombinedShape: {fileID: 0}
 --- !u!50 &-8582671267178586795
 Rigidbody2D:

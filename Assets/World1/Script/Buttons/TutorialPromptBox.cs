@@ -13,8 +13,12 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     [SerializeField] private bool isTutorial = false;
     [ShowIf("isTutorial")]
     [SerializeField] private GameObject nextBtn, prevBtn; 
-    private int currentPromptIndex = 0;
+    private int currentPromptIndex = 0; bool isOnGuide = false;
 
+    public void turnOffOnPointDown(bool trigger)
+    {
+        isOnGuide = trigger;
+    }
     private void Awake()
     {
         if (tutorialPrompts.Count == 0 && tutorialPanel != null)
@@ -31,7 +35,7 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(!isTutorial)
+        if(!isTutorial && !isOnGuide)
         NextPrompt();
     }
 
