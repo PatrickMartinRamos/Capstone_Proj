@@ -2983,11 +2983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766305148260534269, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2244227803671174273, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2265125059140926972, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
@@ -3005,6 +3005,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 745654688}
+    - target: {fileID: 4646808859714925935, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_UpdateRectTransformForStandalone
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4919073186902945380, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3066,12 +3070,12 @@ PrefabInstance:
         Please proceed to the next area ASAP
 
 
-        congrats u have neutralised
-        all the bombs"'
+        <b>Congratulations you have
+        neutralised all the bombs in planet Arithmos</b>!"'
       objectReference: {fileID: 0}
     - target: {fileID: 8768392919294233789, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_fontSize
-      value: 30.1
+      value: 28.6
       objectReference: {fileID: 0}
     - target: {fileID: 9136652380534691151, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_sharedMaterial

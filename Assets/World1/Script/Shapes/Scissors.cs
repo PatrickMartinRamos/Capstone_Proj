@@ -6,17 +6,23 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Scissors : Shapes
 {
+    protected bool isPosChangeable = true;
     protected override void Start()
     {
-        base.Start();
-        SetPos();
+        ChangeOriginPos(new Vector3(3, 3, 0));
+        isPosChangeable = false;
         this.RevertPosition();
     }
     public GameObject CombinedShape1, CombinedShape2;
-    protected virtual void SetPos()
+    public override void ChangeOriginPos(Vector3 newPos)
     {
-        ChangeOriginPos(new Vector3(3, 3, 0));
+        if (isPosChangeable)
+        {
+            originPos = newPos;
+        }
+        else return;
     }
+    
     public override void CombineShapes(GameObject dragged, GameObject target)
     {
         int val1 = 0;
@@ -47,9 +53,13 @@ public class Scissors : Shapes
                 {
                     int targetValue = target.GetComponent<Shapes>().value;
                     GetFactorPair(targetValue, out val1, out val2);
+                    int root = Mathf.RoundToInt(Mathf.Sqrt(val1));
 
-                    CombinedShape1 = StageManager.Instance.squaredConstant;
-                    CombinedShape2 = StageManager.Instance.constant;
+                    CombinedShape1 = root * root == val1 ? StageManager.Instance.squaredConstant : StageManager.Instance.constant;
+
+                    root = Mathf.RoundToInt(Mathf.Sqrt(val2));
+
+                    CombinedShape2 = root * root == val2 ? StageManager.Instance.squaredConstant : StageManager.Instance.constant;
                 }
                 else
                 {

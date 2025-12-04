@@ -2320,6 +2320,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProblemMarkers: []
+  tools:
+  - {fileID: 4292965111378955929}
+  - {fileID: 5236152994964814170}
   givenLocation: {fileID: 7642994151370815344}
 --- !u!1 &6223483823869955494
 GameObject:
@@ -3439,6 +3442,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24712d714fa7dd2418ea64d51ebf52c8, type: 3}
+--- !u!1 &4292965111378955929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 802534467459498442, guid: 24712d714fa7dd2418ea64d51ebf52c8, type: 3}
+  m_PrefabInstance: {fileID: 3508446902554005331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8137048585555671419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4637611734116267560, guid: 24712d714fa7dd2418ea64d51ebf52c8, type: 3}

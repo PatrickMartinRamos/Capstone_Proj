@@ -19,6 +19,8 @@ public class RadicalProblemLoader : ProblemLoader
     {
         GetLevelDifficulty();
         InstantiateGiven(givenLocation.transform);
+        base.LoadProblem();
+
     }
 
     public void InstantiateGiven(Transform parent)

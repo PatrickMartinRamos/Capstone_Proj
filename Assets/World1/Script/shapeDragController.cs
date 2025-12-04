@@ -30,8 +30,14 @@ public class shapeDragController : MonoBehaviour
                 if (hit.collider != null)
                 {
                     selectedShape = hit.collider.gameObject;
-                    selectedShape.GetComponent<Shapes>().ChangeOriginPos(selectedShape.transform.localPosition);
+                    Shapes shape = selectedShape.GetComponent<Shapes>();
 
+                    if (!shape.isGiven || selectedShape.GetComponent<Scissors>()!=null || selectedShape.name == "Rooter")
+                    {
+                        Debug.Log("Item cannot change origin pos.");
+                        selectedShape.GetComponent<Shapes>().ChangeOriginPos(selectedShape.transform.localPosition);
+
+                    }
                 }
             }
             else

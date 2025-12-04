@@ -246,6 +246,9 @@ MonoBehaviour:
   ProblemMarkers:
   - {x: -2.3, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  tools:
+  - {fileID: 5735961723080391087}
+  - {fileID: 2491864166966429750}
   leftSide: {fileID: 9179312807850120707}
   plusSymbol: {fileID: 274105069923308548, guid: 496003f60cd5d9140823816c5891b553, type: 3}
 --- !u!1 &1240508132842020408
@@ -274,8 +277,8 @@ Transform:
   m_GameObject: {fileID: 1240508132842020408}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2034, z: 1}
-  m_LocalScale: {x: 1.7604454, y: 0.4234897, z: 0.2036}
+  m_LocalPosition: {x: -0, y: -0.2034, z: 1}
+  m_LocalScale: {x: 1.9662929, y: 0.4234897, z: 0.2036}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1341863148062381296}
@@ -2992,6 +2995,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4637611734116267560, guid: 24712d714fa7dd2418ea64d51ebf52c8, type: 3}
   m_PrefabInstance: {fileID: 4952013537902852197}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5735961723080391087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 802534467459498442, guid: 24712d714fa7dd2418ea64d51ebf52c8, type: 3}
+  m_PrefabInstance: {fileID: 4952013537902852197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7884575117529720231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3052,5 +3060,10 @@ PrefabInstance:
 --- !u!4 &702426011092542705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7265476043972297046, guid: 5d96ee60ff50d8f46bc1c8007851e977, type: 3}
+  m_PrefabInstance: {fileID: 7884575117529720231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2491864166966429750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5764398660547849617, guid: 5d96ee60ff50d8f46bc1c8007851e977, type: 3}
   m_PrefabInstance: {fileID: 7884575117529720231}
   m_PrefabAsset: {fileID: 0}
