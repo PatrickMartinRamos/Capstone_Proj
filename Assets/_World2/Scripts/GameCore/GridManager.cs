@@ -42,6 +42,7 @@ namespace Stellarfarer
             if (tileUI.HasAzuliuzUI())
             {
                 _targetUI.ClearTileUI();
+                tileUI.Mark();
                 SpawnTargetUI(tileUI);
 
                 return true;
@@ -107,6 +108,8 @@ namespace Stellarfarer
 
                 if (tileUI.HasTargetUI())
                     tileUI.GetTargetUI().DestroySelf();
+
+                tileUI.Unmark();
             }
 
             ResetGridCoordinates();

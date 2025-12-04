@@ -15,13 +15,14 @@ namespace Stellarfarer
         {
             _screen.onClick.AddListener(() =>
             {
-                if (!Hydros7WorldManager.Instance.IsGamePlaying() ||
+                if ((!Hydros7WorldManager.Instance.IsGamePlaying() && !Hydros7WorldManager.Instance.IsDisplayingTutorial()) ||
                     DashboardManager.Instance.IsPoweredOff() ||
                     DashboardManager.Instance.IsSwitchedOn() ||
                     DashboardManager.Instance.IsExtracting())
                     return;
 
                 DashboardManager.Instance.SwitchOn();
+                Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.Wait);
             });
 
             PowerOff();
@@ -44,5 +45,11 @@ namespace Stellarfarer
 
         public Vector3 GetPosition()
             => _screen.image.rectTransform.position;
+
+        public Rect GetRect()
+        {
+            RectTransform screenImageRectTransform = _screen.image.rectTransform;
+            return new Rect(screenImageRectTransform.position, screenImageRectTransform.sizeDelta);
+        }
     }
 }

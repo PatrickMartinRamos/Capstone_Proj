@@ -42,6 +42,7 @@ namespace Stellarfarer
             Sequence sequence = DOTween.Sequence();
             sequence.Join(_lapilizScreenGroupUI.MoveLeft());
             sequence.Join(_cleanseButtonUI.MoveCenter());
+            sequence.AppendCallback(() => Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayCleanseTutorial));
         }
 
         private void LapilizManager_OnActivationChanged()

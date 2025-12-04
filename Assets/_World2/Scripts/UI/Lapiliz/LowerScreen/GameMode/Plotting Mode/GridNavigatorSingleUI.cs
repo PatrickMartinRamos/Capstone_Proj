@@ -40,15 +40,21 @@ namespace Stellarfarer
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (!(bool)OnInteracted?.Invoke())
+            if (!OnInteracted?.Invoke() ?? false)
                 return;
 
-            _held.DOFillAmount(1f, 1.5f)
-                .OnComplete(() =>
-                {
-                    _delayTimer = _delayDuration;
-                    _isHeld = true;
-                });
+            if (Hydros7WorldManager.Instance.IsGamePlaying() ||
+            (Hydros7WorldManager.Instance.IsDisplayingTutorial() &&
+            (TutorialManager.Instance.IsDisplayingPlottingTutorial() ||
+            TutorialManager.Instance.IsWaiting())))
+            {
+                _held.DOFillAmount(1f, 1.5f)
+                    .OnComplete(() =>
+                    {
+                        _delayTimer = _delayDuration;
+                        _isHeld = true;
+                    });
+            }
         }
 
         private void Update()

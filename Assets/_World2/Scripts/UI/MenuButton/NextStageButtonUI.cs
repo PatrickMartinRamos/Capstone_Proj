@@ -6,12 +6,25 @@ namespace Stellarfarer
     {
         private const string STAGE_ID_NAME = "StageID";
 
+        protected override void Awake()
+        {
+            base.Awake();
+
+            Show();
+        }
+
         protected override void ButtonAction()
         {
             int stageID = Hydros7WorldManager.Instance.GetStageID();
-            stageID = PlayerPrefs.HasKey(STAGE_ID_NAME) ? stageID + 1 : 1;
-            PlayerPrefs.SetInt(STAGE_ID_NAME, stageID);
-            LoadWorld2();
+
+            if (stageID < Hydros7WorldManager.Instance.GetStageCount())
+            {
+                stageID++;
+                PlayerPrefs.SetInt(STAGE_ID_NAME, stageID);
+                LoadWorld2();
+            }
+            else
+                Hide();
         }
     }
 }

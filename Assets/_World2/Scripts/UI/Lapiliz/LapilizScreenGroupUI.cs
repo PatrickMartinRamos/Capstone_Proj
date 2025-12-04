@@ -43,7 +43,6 @@ namespace Stellarfarer
             _lapilizUpperScreenUI.SetPlottingMode();
             _lapilizLowerScreenUI.SetPlottingMode();
         }
-
         public void ResetPlottingMode()
             => _lapilizUpperScreenUI.ResetPlottingMode();
 
@@ -52,7 +51,6 @@ namespace Stellarfarer
             _lapilizUpperScreenUI.SetMidpointMode();
             _lapilizLowerScreenUI.SetMidpointDistanceMode();
         }
-
         public void ResetMidpoindMode()
             => _lapilizUpperScreenUI.ResetMidpointMode();
 
@@ -61,7 +59,6 @@ namespace Stellarfarer
             _lapilizUpperScreenUI.SetDistanceMode();
             _lapilizLowerScreenUI.SetMidpointDistanceMode();
         }
-
         public void ResetDistanceMode()
             => _lapilizUpperScreenUI.ResetDistanceMode();
     }

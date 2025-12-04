@@ -9,6 +9,8 @@ namespace Stellarfarer
     [RequireComponent(typeof(TMP_InputField))]
     public class SolutionSlotButtonUI : MonoBehaviour
     {
+        public event Action OnValueChanged;
+
         [SerializeField] private Image _visual;
         [SerializeField] private Sprite _full;
         [SerializeField] private Sprite _visible;
@@ -24,9 +26,14 @@ namespace Stellarfarer
             if (_inputField == null)
                 _inputField = GetComponent<TMP_InputField>();
 
+            _inputField.onValueChanged.AddListener(value => OnValueChanged?.Invoke());
+
             ClearText();
             _placeholderFontColor = _inputField.placeholder.color;
         }
+
+        public bool IsNotEmpty()
+            => !string.IsNullOrWhiteSpace(_inputField.text);
 
         private void Start()
             => _visual.ConfigureImageFromFullToVisibleSprite(

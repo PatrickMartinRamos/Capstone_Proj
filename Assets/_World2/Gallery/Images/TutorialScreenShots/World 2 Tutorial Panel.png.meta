@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: World 2 Tutorial Panel_0
+      name: World 2 Tutorial Panel_Visible
       rect:
         serializedVersion: 2
         x: 67
@@ -134,7 +134,7 @@ TextureImporter:
         width: 946
         height: 1222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,6 +143,28 @@ TextureImporter:
       bones: []
       spriteID: fce338727a00d6b90800000000000000
       internalID: -7247135507446808881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World 2 Tutorial Panel_Full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896f1ac93f97e994a999865793b1719f
+      internalID: -1568335768
       vertices: []
       indices: 
       edges: []
@@ -161,7 +183,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      World 2 Tutorial Panel_0: -7247135507446808881
+      World 2 Tutorial Panel_Full: -1568335768
+      World 2 Tutorial Panel_Visible: -7247135507446808881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

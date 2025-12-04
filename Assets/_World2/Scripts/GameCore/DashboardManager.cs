@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Stellarfarer
 {
@@ -24,6 +25,7 @@ namespace Stellarfarer
 
         public event Action OnPowerStateChanged;
         public event Action OnSwitchStateChanged;
+        public event Func<Rect> OnDashboardRectGot;
 
         private PowerState _powerState = PowerState.Off;
         private SwitchState _switchState = SwitchState.Off;
@@ -106,5 +108,8 @@ namespace Stellarfarer
         private bool IsActionState(ActionState actionState)
             => _actionState == actionState;
         #endregion
+
+        public Rect GetDashboardRect()
+            => OnDashboardRectGot?.Invoke() ?? Rect.zero;
     }
 }
