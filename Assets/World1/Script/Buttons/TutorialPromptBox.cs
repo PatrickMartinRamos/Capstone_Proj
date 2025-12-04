@@ -35,8 +35,13 @@ public class TutorialPromptBox : MonoBehaviour, IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(!isTutorial && !isOnGuide)
-        NextPrompt();
+        if(!isTutorial)
+        {
+            if (isOnGuide) return;
+            Debug.Log("turn off guides");
+           NextPrompt();
+
+        }
     }
 
     public void NextPrompt()

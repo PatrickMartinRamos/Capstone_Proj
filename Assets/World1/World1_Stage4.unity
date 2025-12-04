@@ -1875,7 +1875,6 @@ GameObject:
   - component: {fileID: 1257872438}
   - component: {fileID: 1257872441}
   - component: {fileID: 1257872440}
-  - component: {fileID: 1257872439}
   m_Layer: 5
   m_Name: Simplifying Radicals Tutorial_1
   m_TagString: Untagged
@@ -1905,20 +1904,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.59, y: -53.78}
   m_SizeDelta: {x: 1044.92, y: 1650.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1257872439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257872437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f30378a5c4dc014ba96b749b4e733e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableCloseTimer: 2
-  ObjectsToClose: []
 --- !u!114 &1257872440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,7 +2285,6 @@ GameObject:
   - component: {fileID: 1456226886}
   - component: {fileID: 1456226889}
   - component: {fileID: 1456226888}
-  - component: {fileID: 1456226887}
   m_Layer: 5
   m_Name: Simplifying Radicals Tutorial_2
   m_TagString: Untagged
@@ -2330,20 +2314,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.59, y: -53.78}
   m_SizeDelta: {x: 1044.92, y: 1650.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1456226887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456226885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f30378a5c4dc014ba96b749b4e733e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableCloseTimer: 2
-  ObjectsToClose: []
 --- !u!114 &1456226888
 MonoBehaviour:
   m_ObjectHideFlags: 0
