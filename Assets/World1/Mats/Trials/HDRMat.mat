@@ -8,22 +8,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HDRMat
-  m_Shader: {fileID: 4800000, guid: 51f8c92d23afab24ab54b1876d75b14a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - UNITY_UI_ALPHACLIP
-  m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
+  - _ALPHATEST_ON
   - _EMISSION
-  - _GLOSSYREFLECTIONS_OFF
-  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   - _SURFACE_TYPE_TRANSPARENT
-  m_LightmapFlags: 0
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
   - DepthOnly
@@ -49,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 2ce6d3e7e24bef34fb9b8d8b7ed92ce5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 99f8c6dfa9dc7704e9bd965dbf3f5238, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -101,6 +100,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 99f8c6dfa9dc7704e9bd965dbf3f5238, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -172,6 +175,17 @@ Material:
     - _AlphaClip: 1
     - _AlphaToMask: 0
     - _Ambient: 0.3
+    - _BUILTIN_AlphaClip: 1
+    - _BUILTIN_Blend: 0
+    - _BUILTIN_CullMode: 2
+    - _BUILTIN_DstBlend: 0
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
+    - _BUILTIN_SrcBlend: 1
+    - _BUILTIN_Surface: 0
+    - _BUILTIN_ZTest: 4
+    - _BUILTIN_ZWrite: 1
+    - _BUILTIN_ZWriteControl: 0
     - _Bevel: 0.5
     - _BevelAmount: 0
     - _BevelClamp: 0
@@ -216,10 +230,11 @@ Material:
     - _FaceUVSpeedY: 0
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
+    - _Focus: -100
     - _GlossMapScale: 0
-    - _Glossiness: 0
+    - _Glossiness: 1
     - _GlossinessSource: 0
-    - _GlossyReflections: 0
+    - _GlossyReflections: 1
     - _GlowInner: 0.05
     - _GlowOffset: 0
     - _GlowOuter: 0.05
@@ -230,8 +245,8 @@ Material:
     - _METALNESS: 0
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
-    - _Metallic: 0
-    - _Mode: 3
+    - _Metallic: 1
+    - _Mode: 2
     - _OcclusionStrength: 1
     - _OutlineMode: 0
     - _OutlineSoftness: 0
@@ -257,13 +272,14 @@ Material:
     - _Shininess: 0.2
     - _Smoothness: 0.5
     - _SmoothnessSource: 0
-    - _SmoothnessTextureChannel: 1
+    - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 0
     - _SpecSource: 0
     - _SpecularHighlights: 1
     - _SpecularPower: 0
+    - _Speed: 2
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Stencil: 0
@@ -275,6 +291,8 @@ Material:
     - _Surface: 1
     - _TextureHeight: 512
     - _TextureWidth: 512
+    - _UIMaskSoftnessX: 1
+    - _UIMaskSoftnessY: 1
     - _UVSec: 0
     - _UnderlayDilate: 0
     - _UnderlayOffsetX: 0
@@ -294,7 +312,7 @@ Material:
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _Color: {r: 5.992157, g: 4.5952044, b: 0, a: 0.7372549}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 32, g: 27.482353, b: 0, a: 1}
@@ -327,3 +345,16 @@ Material:
     - _UnderlayOffset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!114 &2630672960889057488
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9

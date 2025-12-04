@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using TMPro;
 using DG.Tweening;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Collections.Generic;
 public class UIShape : MonoBehaviour, ITargetable
 {
     [Header("Shape Data")]
-    [SerializeField] string iD;
+    [SerializeField] [ReadOnly] string iD;
     [SerializeField] ShapeClassification classification;
     [SerializeField] protected string shapeName;
     public string Name => shapeName;
@@ -15,6 +14,7 @@ public class UIShape : MonoBehaviour, ITargetable
     [SerializeField] internal bool withValue = false;
     [SerializeField] internal int value;
     [SerializeField] internal List<string> interacted;
+    [SerializeField] [ReadOnly] bool isGiven = false;
 
     [Header("UI References")]
     [SerializeField] internal GameObject valueLabel;
@@ -41,12 +41,6 @@ public class UIShape : MonoBehaviour, ITargetable
         ChangeOriginPos(rect.anchoredPosition);
 
         origScaleSize = rect.localScale.x;
-
-        if (StageManager.Instance.StageNumber % 3 == 1)
-            withValue = false;
-
-        if (!withValue)
-            valueLabel.SetActive(false);
     }
 
     // Transfers dragged info to the target
@@ -57,28 +51,28 @@ public class UIShape : MonoBehaviour, ITargetable
         draggedObject.GetComponent<UIShape>().Interact(this.gameObject);
     }
 
-    public virtual void Interact(GameObject target)
+    public virtual void Interact(GameObject dragged)
     {
         Debug.Log("Interacting...");
 
-        UIShape targetShapeComp = target.GetComponent<UIShape>();
-        ShapeStats targetShape = targetShapeComp.SendInfo();
-        Debug.Log(targetShape.iD);
+        UIShape draggedShapeComp = dragged.GetComponent<UIShape>();
+        ShapeStats draggedShape = draggedShapeComp.SendInfo();
+        Debug.Log(draggedShape.iD);
 
-        interacted.Add(targetShape.iD);
-        targetShapeComp.AddInteractedShape(iD);
+        interacted.Add(draggedShape.iD);
+        draggedShapeComp.AddInteractedShape(iD);
 
         // Same parent = combine like terms
-        if (target.transform.parent == transform.parent)
-            CombineLikeTerms(this.gameObject, target);
+        if (dragged.transform.parent == transform.parent)
+            CombineSimilarParent(this.gameObject, dragged);
         else
-            CombineShapes(this.gameObject, target);
+            CombineShapes(dragged, this.gameObject);
 
         RevertPosition();
     }
 
     // Combine inside same parent
-    public virtual void CombineLikeTerms(GameObject dragged, GameObject target)
+    public virtual void CombineSimilarParent(GameObject dragged, GameObject target)
     {
         Debug.Log("Combining Like Terms...");
 
@@ -89,7 +83,7 @@ public class UIShape : MonoBehaviour, ITargetable
             return;
 
         t.AddValue(d.value);
-        Destroy(dragged);
+        //Destroy(dragged);
     }
 
     // Combine across different containers

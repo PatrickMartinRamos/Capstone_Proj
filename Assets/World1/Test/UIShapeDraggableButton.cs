@@ -29,8 +29,8 @@ public class UIShapeDraggableButton : MonoBehaviour,
     public void OnPointerDown(PointerEventData eventData)
     {
         isPressed = true;
-/*        Debug.Log($"{name} pressed");
-*/    }
+        Debug.Log($"{name} pressed");
+    }
 
     public void OnPointerUp(PointerEventData eventData)
     {
@@ -96,7 +96,7 @@ public class UIShapeDraggableButton : MonoBehaviour,
             //Debug.Log($"{name} overlapped {overlap.name}");
 
             // Combine shapes
-            uiShape.InteractWithDraggedObject(overlap.gameObject);
+            overlap.gameObject.GetComponent<UIShape>().InteractWithDraggedObject(this.gameObject);
         }
         else
         {
@@ -105,41 +105,40 @@ public class UIShapeDraggableButton : MonoBehaviour,
         }
     }
 
+    public float radiusOffset = 0.2f;  // shrink the detection circle
+
+
     // Find overlapping draggable shapes in same parent
     UIShapeDraggableButton GetOverlappingShape()
     {
         var others = transform.parent.parent.GetComponentsInChildren<UIShapeDraggableButton>();
-        Rect myRect = GetScreenRect(rectTransform);
+
+        Vector2 myCenter = GetScreenCenter(rectTransform);
+        float myRadius = Mathf.Max(0, GetScreenRadius(rectTransform) - radiusOffset);
 
         UIShapeDraggableButton bestMatch = null;
-        float largestArea = 0f;
+        float bestOverlap = 0f;
 
         foreach (var other in others)
         {
             if (other == this)
                 continue;
 
-            Rect otherRect = GetScreenRect(other.rectTransform);
+            Vector2 otherCenter = GetScreenCenter(other.rectTransform);
+            float otherRadius = Mathf.Max(0, GetScreenRadius(other.rectTransform) - radiusOffset);
 
-            // If no overlap, skip
-            if (!myRect.Overlaps(otherRect))
-                continue;
+            float distance = Vector2.Distance(myCenter, otherCenter);
+            float combined = myRadius + otherRadius;
 
-            // Compute intersection rectangle
-            float xMin = Mathf.Max(myRect.xMin, otherRect.xMin);
-            float xMax = Mathf.Min(myRect.xMax, otherRect.xMax);
-            float yMin = Mathf.Max(myRect.yMin, otherRect.yMin);
-            float yMax = Mathf.Min(myRect.yMax, otherRect.yMax);
+            if (distance > combined)
+                continue; // ❌ no circle overlap
 
-            float overlapWidth = Mathf.Max(0, xMax - xMin);
-            float overlapHeight = Mathf.Max(0, yMax - yMin);
+            // Overlap amount (bigger = stronger match)
+            float overlap = combined - distance;
 
-            float area = overlapWidth * overlapHeight;
-
-            // Pick the one with the biggest area
-            if (area > largestArea)
+            if (overlap > bestOverlap)
             {
-                largestArea = area;
+                bestOverlap = overlap;
                 bestMatch = other;
             }
         }
@@ -148,18 +147,34 @@ public class UIShapeDraggableButton : MonoBehaviour,
     }
 
 
-    Rect GetScreenRect(RectTransform rt)
+
+    Vector2 GetScreenCenter(RectTransform rt)
     {
         Vector3[] corners = new Vector3[4];
         rt.GetWorldCorners(corners);
 
-        return new Rect(
-            corners[0].x,
-            corners[0].y,
-            corners[2].x - corners[0].x,
-            corners[2].y - corners[0].y
-        );
+        // Convert to screen space
+        Vector2 min = RectTransformUtility.WorldToScreenPoint(null, corners[0]);
+        Vector2 max = RectTransformUtility.WorldToScreenPoint(null, corners[2]);
+
+        return (min + max) * 0.5f; // midpoint
     }
+
+    float GetScreenRadius(RectTransform rt)
+    {
+        Vector3[] corners = new Vector3[4];
+        rt.GetWorldCorners(corners);
+
+        Vector2 min = RectTransformUtility.WorldToScreenPoint(null, corners[0]);
+        Vector2 max = RectTransformUtility.WorldToScreenPoint(null, corners[2]);
+
+        // Use half of the smallest dimension to approximate circle
+        float width = max.x - min.x;
+        float height = max.y - min.y;
+
+        return Mathf.Min(width, height) * 0.5f;
+    }
+
 
     private void ClampToParent()
     {
