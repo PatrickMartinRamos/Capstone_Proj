@@ -4,7 +4,7 @@ using UnityEngine;
 public class AspectRatioController : MonoBehaviour
 {
     // Desired reference aspect ratio (width / height)
-    private const float TARGET_ASPECT = 1080f / 1920f;
+    private const float TARGET_ASPECT = 900f / 1600f;
 
     private Camera cam;
 

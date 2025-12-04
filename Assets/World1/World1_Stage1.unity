@@ -1366,8 +1366,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<align=center><size=80><b>How To Play:</b></size></align>\n\n\n<b>7. Press
     the varification</b> button to open the case and it will automatically be shot
-    by the cannon to neutralize  the target bomb.\n\n\n\n\n\n\n\n\n\n\n\n\n\n <align=center><b>Have
-    fun and enjoy the game.</b></align>"
+    by the cannon to neutralize  the target bomb.\n\n\n\n\n<size=0.5em>\n\n\n</size>\n\n\n\n\n\n\n\n
+    <align=center><b>Have fun and enjoy the game.</b></align>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
   m_sharedMaterial: {fileID: -5212519863517009721, guid: d4130b50111ee7d45ab829eadff5d2cb, type: 2}
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 33.21765}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
