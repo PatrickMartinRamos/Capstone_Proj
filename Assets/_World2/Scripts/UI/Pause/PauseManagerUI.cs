@@ -5,7 +5,6 @@ namespace Stellarfarer
     public class PauseManagerUI : MonoBehaviour
     {
         [SerializeField] private GameObject _pauseMenu;
-        [SerializeField] private BackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
 
         private Hydros7WorldManager _hydros7WorldManager;
 
@@ -34,10 +33,7 @@ namespace Stellarfarer
         private void Hydros7GameManager_OnGamePauseToggled()
         {
             if (_hydros7WorldManager.IsGamePaused())
-            {
                 ShowPauseMenu();
-                _backgroundGroupResponsiveUI.RefreshLayout();
-            }
             else
                 HidePauseMenu();
         }

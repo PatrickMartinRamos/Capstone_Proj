@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Stellarfarer
@@ -8,11 +9,11 @@ namespace Stellarfarer
         private const string WIN_MESSAGE = "YOU WIN!";
         private const string LOSE_MESSAGE = "YOU LOSE!";
 
+        [SerializeField] private RectTransform _container;
         [SerializeField] private TextMeshProUGUI _stateLabel;
         [SerializeField] private NextStageButtonUI _nextStageButtonUI;
         [SerializeField] private RetryButtonUI _retryButtonUI;
         [SerializeField] private ReturnButtonUI _returnButtonUI;
-        [SerializeField] private BackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
 
         private Hydros7WorldManager _hydros7WorldManager;
 
@@ -25,6 +26,8 @@ namespace Stellarfarer
                 _hydros7WorldManager.OnGameStateChanged
                     += Hydros7WorldManager_OnGameStateChanged;
             }
+
+            Hide();
         }
 
         private void OnDestroy()
@@ -41,15 +44,12 @@ namespace Stellarfarer
             if (_hydros7WorldManager.IsGameOver())
             {
                 Show();
-                _backgroundGroupResponsiveUI.RefreshLayout();
 
                 if (_hydros7WorldManager.IsGameWon())
                     Win();
                 else if (_hydros7WorldManager.IsGameLost())
                     Lose();
             }
-            else
-                Hide();
         }
 
         private void Win()

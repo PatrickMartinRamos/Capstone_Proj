@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Stellarfarer
 {
@@ -15,7 +14,7 @@ namespace Stellarfarer
         [SerializeField] private DarkOverlayUI _darkOverlayUI_2;
         [SerializeField] private RectTransform _container_1;
         [SerializeField] private RectTransform _container_2;
-        [SerializeField] private TextMeshProUGUI _tutorialMessage;
+        [SerializeField] private TextMeshProUGUI _tutorialMessage_1;
 
         private TutorialManager _tutorialManager;
         private Hydros7WorldManager _hydros7WorldManager;
@@ -78,19 +77,8 @@ namespace Stellarfarer
             ShowCanvas(_maskAreaCavnas);
         }
 
-        private const float REF_WIDTH = 1080f;
-        private const float REF_HEIGHT = 1920f;
-
-        private float ScaleX(float x)
-        {
-            RectTransform tutorialCanvasRect = _tutorialCanvas.transform as RectTransform;
-            return tutorialCanvasRect.rect.width * (x / REF_WIDTH);
-        }
-        private float ScaleY(float y)
-        {
-            RectTransform tutorialCanvasRect = _tutorialCanvas.transform as RectTransform;
-            return tutorialCanvasRect.rect.height * (y / REF_HEIGHT);
-        }
+        private float GetResponsiveHeight(float height)
+            => Screen.height * height / 1600;
 
         private void TutorialManager_OnTutorialStateChanged()
         {
@@ -102,12 +90,12 @@ namespace Stellarfarer
             Vector2 size_2 = Vector2.one * 100f;
             string tutorialMessage = "";
             bool c2 = false;
-            float halfScreenHeight = Utils.Halve(1600f);
+            float halfScreenHeight = Utils.Halve(1920f);
 
             if (_tutorialManager.IsDisplayingChooseHydriousTutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(-75f));
-                size_1 = new Vector2(ScaleX(745f), ScaleY(360f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(-75f));
+                size_1 = new Vector2(745f, 360f);
                 tutorialMessage = "Click on a Hydrious!";
 
                 _maskAreaUI_1.DisplayChooseHydriousTutorial();
@@ -118,8 +106,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingClickDashboardTutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(400f));
-                size_1 = new Vector2(ScaleX(745f), ScaleY(360f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(400f));
+                size_1 = new Vector2(745f, 360f);
                 tutorialMessage = "Click on the Dashboard!";
 
                 _maskAreaUI_1.DisplayClickDashboardTutorial();
@@ -139,8 +127,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingPlottingCartesianPlaneTutorial())
             {
-                pos_1 = new Vector2(ScaleX(205f), ScaleY(-385f));
-                size_1 = new Vector2(ScaleX(615f), ScaleY(705f));
+                pos_1 = new Vector2(142f, GetResponsiveHeight(-341f));
+                size_1 = new Vector2(540f, 473f);
                 tutorialMessage = "Toggle to Show and Hide the Cartesian Plane!";
 
                 _maskAreaUI_1.DisplayPlottingCartesianPlaneTutorial();
@@ -151,8 +139,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingSwitchToTab2Tutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(160f));
-                size_1 = new Vector2(ScaleX(775f), ScaleY(265f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(160f));
+                size_1 = new Vector2(775f, 370f);
                 tutorialMessage = "Switch to Tab 2!";
 
                 _maskAreaUI_1.DisplaySwitchToTab2Tutorial();
@@ -163,8 +151,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingPlottingTutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(680f));
-                size_1 = new Vector2(ScaleX(915f), ScaleY(235f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(-631f));
+                size_1 = new Vector2(700f, 300f);
                 tutorialMessage = "Navigate the target using the arrows and hover over an Azuliuz!";
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
@@ -175,8 +163,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingSwitchToTab1Tutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(160f));
-                size_1 = new Vector2(ScaleX(775f), ScaleY(265f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(160f));
+                size_1 = new Vector2(550f, 342f);
                 tutorialMessage = "Switch to Tab 1!";
 
                 _maskAreaUI_1.DisplaySwitchToTab1Tutorial();
@@ -187,8 +175,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingConfirmTutorial())
             {
-                pos_1 = new Vector2(ScaleX(-205f), ScaleY(-385f));
-                size_1 = new Vector2(ScaleX(515f), ScaleY(705f));
+                pos_1 = new Vector2(-150f, GetResponsiveHeight(-342f));
+                size_1 = new Vector2(570f, 387f);
 
                 HydriousUI hydriousUI = CaptureManager.Instance.GetHydriousUITarget();
 
@@ -204,8 +192,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingCleanseTutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(680f));
-                size_1 = new Vector2(ScaleX(745f), ScaleY(425f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(680f));
+                size_1 = new Vector2(745f, 425f);
                 tutorialMessage = "Confirm Cleanse!";
 
                 _maskAreaUI_1.DisplayCleanseTutorial();
@@ -216,8 +204,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingProgressionTutorial())
             {
-                pos_1 = new Vector2(ScaleX(0f), ScaleY(250f));
-                size_1 = new Vector2(ScaleX(745f), ScaleY(425f));
+                pos_1 = new Vector2(0f, GetResponsiveHeight(250f));
+                size_1 = new Vector2(745f, 425f);
                 tutorialMessage = "Keep on cleansing Hydrious to fill up the Power Meter and Win!";
 
                 _maskAreaUI_1.DisplayProgressionTutorial();
@@ -228,12 +216,12 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingMidpointDistanceTutorial())
             {
-                pos_1 = new Vector2(ScaleX(50f), ScaleY(800f));
-                size_1 = new Vector2(ScaleX(940f), ScaleY(275f));
+                pos_1 = new Vector2(50f, GetResponsiveHeight(800f));
+                size_1 = new Vector2(940f, 275f);
                 tutorialMessage = "Input the corresponding value of the ordered pairs to the empty slots and solve.";
 
-                pos_2 = new Vector2(ScaleX(0f), ScaleY(-765f));
-                size_2 = new Vector2(ScaleX(975f), ScaleY(300f));
+                pos_2 = new Vector2(0f, GetResponsiveHeight(-765f));
+                size_2 = new Vector2(975f, 300f);
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
                 _darkOverlayUI_1.DisplayMidpointTutorial();
@@ -243,12 +231,12 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingIncorrectTutorial())
             {
-                pos_1 = new Vector2(ScaleX(50f), ScaleY(800f));
-                size_1 = new Vector2(ScaleX(940f), ScaleY(275f));
+                pos_1 = new Vector2(50f, GetResponsiveHeight(800f));
+                size_1 = new Vector2(940f, 275f);
                 tutorialMessage = "Incorrect values, please input again";
 
-                pos_2 = new Vector2(ScaleX(0f), ScaleY(-765f));
-                size_2 = new Vector2(ScaleX(975f), ScaleY(300f));
+                pos_2 = new Vector2(0f, GetResponsiveHeight(-765f));
+                size_2 = new Vector2(975f, 300f);
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
                 _darkOverlayUI_1.DisplayMidpointTutorial();
@@ -261,12 +249,7 @@ namespace Stellarfarer
             {
                 _container_1.anchoredPosition = pos_1;
                 _container_1.sizeDelta = size_1;
-                _tutorialMessage.text = tutorialMessage;
-                _tutorialMessage.margin = new Vector4(
-                    size_1.x * 0.24f,
-                    size_1.y * 0.14f,
-                    size_1.x * 0.24f,
-                    size_1.y * 0.14f);
+                _tutorialMessage_1.text = tutorialMessage;
 
                 _container_2.gameObject.SetActive(c2);
                 if (c2)
