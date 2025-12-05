@@ -1570,6 +1570,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -697.84
       objectReference: {fileID: 0}
+    - target: {fileID: 5859195451445893661, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859195451445893661, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859195451445893661, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6055154477294617591, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: tutorialPrompts.Array.size
       value: 1
