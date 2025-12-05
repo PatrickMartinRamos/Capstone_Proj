@@ -6288,12 +6288,20 @@ PrefabInstance:
       value: -46.31
       objectReference: {fileID: 0}
     - target: {fileID: 3681615612197851637, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681615612197851637, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681615612197851637, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_ReferenceResolution.x
-      value: 1080
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 3681615612197851637, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_ReferenceResolution.y
-      value: 1920
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 4443974966272163462, guid: d1a76f4de2d0eb7479a35f2447f454bb, type: 3}
       propertyPath: m_Name
