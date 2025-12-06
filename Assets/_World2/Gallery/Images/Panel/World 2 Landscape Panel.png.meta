@@ -100,15 +100,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: World 2 Landscape Panel_0
+      name: World 2 Landscape Panel_Visible
       rect:
         serializedVersion: 2
-        x: 349
-        y: 136
-        width: 1222
-        height: 808
+        x: 353
+        y: 140
+        width: 1214
+        height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +121,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: World 2 Landscape Panel_Left
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 140
+        width: 165
+        height: 801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6f73a074f975742aed280d3de56ad9
+      internalID: 235328382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World 2 Landscape Panel_Right
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 140
+        width: 165
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d852429e68b21414d83ed6de1e66cbb5
+      internalID: -1375826057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World 2 Landscape Panel_Middle
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 140
+        width: 884
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1314b437ad08f5b47ae0f6dbd07170cd
+      internalID: -1078915039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5eda178e3c914864d84242a486f7a5bb
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +201,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      World 2 Landscape Panel_0: 5948204156365267479
+      World 2 Landscape Panel_Left: 235328382
+      World 2 Landscape Panel_Middle: -1078915039
+      World 2 Landscape Panel_Right: -1375826057
+      World 2 Landscape Panel_Visible: 5948204156365267479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

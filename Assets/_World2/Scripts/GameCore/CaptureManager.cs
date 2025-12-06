@@ -31,7 +31,7 @@ namespace Stellarfarer
                     visible: _visible
                 );
 
-        private bool HasHydriousUITarget()
+        public bool HasHydriousUITarget()
             => _hydriousUITarget != null;
 
         public bool TryCapture(HydriousUI hydriousUI)

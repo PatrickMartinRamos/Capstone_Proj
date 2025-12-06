@@ -12,7 +12,7 @@ namespace Stellarfarer
         [SerializeField] private NextStageButtonUI _nextStageButtonUI;
         [SerializeField] private RetryButtonUI _retryButtonUI;
         [SerializeField] private ReturnButtonUI _returnButtonUI;
-        [SerializeField] private BackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
+        [SerializeField] private VerticalBackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
 
         private Hydros7WorldManager _hydros7WorldManager;
 

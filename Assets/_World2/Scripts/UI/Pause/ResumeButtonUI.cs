@@ -18,8 +18,11 @@ namespace Stellarfarer
                 Hydros7WorldManager hydros7WorldManager = Hydros7WorldManager.Instance;
 
                 if (hydros7WorldManager.IsGamePlaying() || hydros7WorldManager.IsDisplayingTutorial())
-                    hydros7WorldManager.ToggleGamePause();
+                    ButtonAction(hydros7WorldManager);
             });
         }
+
+        protected virtual void ButtonAction(Hydros7WorldManager hydros7WorldManager)
+            => hydros7WorldManager.ResumeGame();
     }
 }

@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 namespace Stellarfarer
 {
-    public class BackgroundGroupResponsiveUI : MonoBehaviour
+    public class VerticalBackgroundGroupResponsiveUI : MonoBehaviour
     {
         [SerializeField] private RectTransform _backgroundPrefab;
-        [SerializeField] private Sprite _backgroundTopSpritre;
+        [SerializeField] private Sprite _backgroundTopSprite;
         [SerializeField] private Sprite _backgroundBottomSprite;
         [SerializeField] private Sprite _backgroundMiddleSprite;
         [SerializeField] private VerticalLayoutGroupResponsiveUI _verticalLayoutGroupResponsiveUI;
 
-        private List<Image> _bgImageList = new List<Image>();
+        private readonly List<Image> _bgImageList = new List<Image>();
 
         private void Awake()
             => _backgroundPrefab.gameObject.SetActive(false);
 
         private void Start()
         {
-            float topHeight = _backgroundTopSpritre.rect.size.y;
+            float topHeight = _backgroundTopSprite.rect.size.y;
             float bottomHeight = _backgroundBottomSprite.rect.size.y;
             float middleHeight = _backgroundMiddleSprite.rect.size.y;
             RectTransform rectTransform = (RectTransform)transform;
@@ -37,36 +37,24 @@ namespace Stellarfarer
                 RectTransform bgInstance = Instantiate(_backgroundPrefab, transform);
                 Sprite spriteToUse;
                 if (i == 0)
-                {
-                    spriteToUse = _backgroundTopSpritre;
-                }
+                    spriteToUse = _backgroundTopSprite;
                 else if (i == totalCount - 1)
-                {
                     spriteToUse = _backgroundBottomSprite;
-                }
                 else
-                {
                     spriteToUse = _backgroundMiddleSprite;
-                }
 
                 Image bgImage = bgInstance.GetComponent<Image>();
                 bgImage.sprite = spriteToUse;
                 _bgImageList.Add(bgImage);
 
                 // Positioning
-                float yPos = 0f;
+                float yPos;
                 if (i == 0)
-                {
                     yPos = height / 2 - topHeight / 2;
-                }
                 else if (i == totalCount - 1)
-                {
                     yPos = -height / 2 + bottomHeight / 2;
-                }
                 else
-                {
                     yPos = height / 2 - topHeight - (i - 1) * middleHeight - middleHeight / 2;
-                }
 
                 bgInstance.anchoredPosition = new Vector2(0f, yPos);
 

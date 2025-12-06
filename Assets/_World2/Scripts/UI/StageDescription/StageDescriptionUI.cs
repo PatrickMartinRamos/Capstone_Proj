@@ -12,7 +12,7 @@ namespace Stellarfarer
         [SerializeField] private ObjectiveUi _plottingObjectiveUI;
         [SerializeField] private ObjectiveUi _midpointObjectiveUI;
         [SerializeField] private ObjectiveUi _distanceObjectiveUI;
-        [SerializeField] private BackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
+        [SerializeField] private VerticalBackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
 
         private Hydros7WorldManager _hydros7WorldManager;
 
