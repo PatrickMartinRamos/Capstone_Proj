@@ -15371,9 +15371,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _backgroundPrefab: {fileID: 1759358303}
-  _backgroundLeftSprite: {fileID: 235328382, guid: ea1cac6eceb8dcc449302b5e8e9aed85, type: 3}
-  _backgroundRightSprite: {fileID: -1375826057, guid: ea1cac6eceb8dcc449302b5e8e9aed85, type: 3}
-  _backgroundMiddleSprite: {fileID: -1078915039, guid: ea1cac6eceb8dcc449302b5e8e9aed85, type: 3}
+  _backgroundLeftSprite: {fileID: 1625739945, guid: ea1cac6eceb8dcc449302b5e8e9aed85, type: 3}
+  _backgroundRightSprite: {fileID: -27531165, guid: ea1cac6eceb8dcc449302b5e8e9aed85, type: 3}
+  _backgroundMiddleSprite: {fileID: 1698873942, guid: ea1cac6eceb8dcc449302b5e8e9aed85, type: 3}
 --- !u!114 &1941528876
 MonoBehaviour:
   m_ObjectHideFlags: 0
