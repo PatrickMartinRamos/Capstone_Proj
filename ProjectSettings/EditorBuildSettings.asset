@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldSelection.unity
     guid: 6c84aca4d0a0d2847ba0a1daec705950
   - enabled: 1
-    path: Assets/World1/World1_GameScene.unity
+    path: Assets/World1/World1_Gamescene.unity
     guid: 370a74663ec34b04a83d9406d4de0364
   - enabled: 1
     path: Assets/World1/World1_Stage1.unity
