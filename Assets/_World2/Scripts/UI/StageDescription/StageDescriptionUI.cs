@@ -12,6 +12,7 @@ namespace Stellarfarer
         [SerializeField] private ObjectiveUi _plottingObjectiveUI;
         [SerializeField] private ObjectiveUi _midpointObjectiveUI;
         [SerializeField] private ObjectiveUi _distanceObjectiveUI;
+        [SerializeField] private VerticalBackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
 
         private Hydros7WorldManager _hydros7WorldManager;
 
@@ -39,8 +40,6 @@ namespace Stellarfarer
                 _hydros7WorldManager.OnGameStateChanged
                     += Hydros7WorldManager_OnGameStateChanged;
             }
-
-            Hide();
         }
 
         private void OnDestroy()
@@ -57,6 +56,7 @@ namespace Stellarfarer
             if (_hydros7WorldManager.IsDisplayingStageDescription())
             {
                 Show();
+                _backgroundGroupResponsiveUI.RefreshLayout();
 
                 int stageLevel = _hydros7WorldManager.GetStageID();
                 _stageLevelDescriptionUI.text = $"Stage {stageLevel}";
@@ -66,12 +66,14 @@ namespace Stellarfarer
                 _midpointObjectiveUI.TryDisplay(cleansingType);
                 _plottingObjectiveUI.TryDisplay(cleansingType);
             }
+            else
+                Hide();
         }
 
         private void Show()
             => SetVisibility(true);
 
-        private void Hide()
+        public void Hide()
             => SetVisibility(false);
 
         private void SetVisibility(bool isVisible)

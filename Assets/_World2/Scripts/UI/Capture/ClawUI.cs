@@ -7,6 +7,7 @@ namespace Stellarfarer
     [RequireComponent(typeof(RectTransform))]
     public class ClawUI : MonoBehaviour
     {
+        [SerializeField] private RectTransform _submarineCanvas;
         [SerializeField] private RectTransform _container;
         [SerializeField] private Image _leftHead;
         [SerializeField] private Image _rightHead;
@@ -151,6 +152,20 @@ namespace Stellarfarer
 
         private void ResetClaw()
         {
+            float width = 1080f;
+
+            // original size from your prefab sprite
+            Vector2 originalScale = _rectTransform.localScale;
+
+            // scale factor based only on height (because Match = Height)
+            float scale = _submarineCanvas.rect.width / width;
+
+            // final size (maintains aspect ratio)
+            Vector3 finalSize = originalScale * scale;
+            finalSize.z = 1f;
+
+            _rectTransform.localScale = finalSize;
+            _container.localScale = new Vector3(1f / finalSize.x, 1f / finalSize.y, 1f);
             _rectTransform.anchoredPosition = Vector2.zero;
             _rectTransform.rotation = Quaternion.identity;
             OpenClaw();

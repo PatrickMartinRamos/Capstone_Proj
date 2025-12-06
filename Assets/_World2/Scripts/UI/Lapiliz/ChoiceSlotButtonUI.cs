@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,12 +13,12 @@ namespace Stellarfarer
         [SerializeField] private Sprite _visible;
         [SerializeField] private TextMeshProUGUI _text;
 
+        private string _textMessage;
+
         private void Awake()
         {
             if (_visual == null)
                 _visual = GetComponent<Image>();
-
-            ClearText();
         }
 
         private void Start()
@@ -26,10 +27,36 @@ namespace Stellarfarer
                 visible: _visible
             );
 
-        public void SetText(string text)
-            => _text.text = text;
+        public void OnEnable()
+            => StartCoroutine(SetText());
+
+        private IEnumerator SetText()
+        {
+            yield return new WaitForEndOfFrame();
+            _text.text = _textMessage;
+
+            RectTransform rectTransform = transform as RectTransform;
+            Vector2 size = rectTransform.rect.size;
+            float paddingFactor = 0.1f;
+            float paddingX = size.x * paddingFactor;
+            float paddingY = size.y * paddingFactor;
+
+            _text.margin = new Vector4(
+                paddingX,
+                paddingY,
+                paddingX,
+                paddingY
+            );
+        }
+
+        public void SetTextMesssage(string text)
+        {
+            _textMessage = text;
+            if (isActiveAndEnabled)
+                StartCoroutine(SetText());
+        }
 
         public void ClearText()
-            => SetText("");
+            => SetTextMesssage("");
     }
 }

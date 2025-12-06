@@ -15,6 +15,7 @@ namespace Stellarfarer
         [SerializeField] private RectTransform _container_1;
         [SerializeField] private RectTransform _container_2;
         [SerializeField] private TextMeshProUGUI _tutorialMessage_1;
+        [SerializeField] private RectTransform _tutorialMessage_2;
 
         private TutorialManager _tutorialManager;
         private Hydros7WorldManager _hydros7WorldManager;
@@ -57,6 +58,9 @@ namespace Stellarfarer
 
         private void Hydros7WorldManager_OnGamePauseToggled()
         {
+            if (!_hydros7WorldManager.IsDisplayingTutorial())
+                return;
+
             if (_hydros7WorldManager.IsGamePaused())
                 HideAllCanvas();
             else
@@ -77,8 +81,19 @@ namespace Stellarfarer
             ShowCanvas(_maskAreaCavnas);
         }
 
-        private float GetResponsiveHeight(float height)
-            => Screen.height * height / 1600;
+        private const float REF_WIDTH = 1080f;
+        private const float REF_HEIGHT = 1920f;
+
+        private float ScaleX(float x)
+        {
+            RectTransform tutorialCanvasRect = _tutorialCanvas.transform as RectTransform;
+            return tutorialCanvasRect.rect.width * (x / REF_WIDTH);
+        }
+        private float ScaleY(float y)
+        {
+            RectTransform tutorialCanvasRect = _tutorialCanvas.transform as RectTransform;
+            return tutorialCanvasRect.rect.height * (y / REF_HEIGHT);
+        }
 
         private void TutorialManager_OnTutorialStateChanged()
         {
@@ -90,12 +105,14 @@ namespace Stellarfarer
             Vector2 size_2 = Vector2.one * 100f;
             string tutorialMessage = "";
             bool c2 = false;
-            float halfScreenHeight = Utils.Halve(1920f);
+            RectTransform tutorialCanvasRect = _tutorialCanvas.transform as RectTransform;
+            float canvasHeight = tutorialCanvasRect.rect.height;
+            float halvedCanvasHeight = Utils.Halve(canvasHeight);
 
             if (_tutorialManager.IsDisplayingChooseHydriousTutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(-75f));
-                size_1 = new Vector2(745f, 360f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(-760f));
+                size_1 = new Vector2(ScaleX(750), ScaleY(360f));
                 tutorialMessage = "Click on a Hydrious!";
 
                 _maskAreaUI_1.DisplayChooseHydriousTutorial();
@@ -106,8 +123,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingClickDashboardTutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(400f));
-                size_1 = new Vector2(745f, 360f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(-760f));
+                size_1 = new Vector2(ScaleX(750), ScaleY(360f));
                 tutorialMessage = "Click on the Dashboard!";
 
                 _maskAreaUI_1.DisplayClickDashboardTutorial();
@@ -127,20 +144,20 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingPlottingCartesianPlaneTutorial())
             {
-                pos_1 = new Vector2(205f, GetResponsiveHeight(-385f));
-                size_1 = new Vector2(615f, 705f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(-760f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
                 tutorialMessage = "Toggle to Show and Hide the Cartesian Plane!";
 
                 _maskAreaUI_1.DisplayPlottingCartesianPlaneTutorial();
-                _darkOverlayUI_1.DisplayBottom(halfScreenHeight);
-                _maskAreaUI_2.DisplayTop(halfScreenHeight);
-                _darkOverlayUI_2.DisplayTop(halfScreenHeight);
+                _darkOverlayUI_1.DisplayBottom(halvedCanvasHeight);
+                _maskAreaUI_2.DisplayTop(halvedCanvasHeight);
+                _darkOverlayUI_2.DisplayTop(halvedCanvasHeight);
                 c2 = false;
             }
             else if (_tutorialManager.IsDisplayingSwitchToTab2Tutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(160f));
-                size_1 = new Vector2(638f, 265);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(160f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
                 tutorialMessage = "Switch to Tab 2!";
 
                 _maskAreaUI_1.DisplaySwitchToTab2Tutorial();
@@ -151,20 +168,20 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingPlottingTutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(-100f));
-                size_1 = new Vector2(915f, 235f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(-760f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
                 tutorialMessage = "Navigate the target using the arrows and hover over an Azuliuz!";
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
-                _darkOverlayUI_1.DisplayBottom(halfScreenHeight);
-                _maskAreaUI_2.DisplayTop(halfScreenHeight);
-                _darkOverlayUI_2.DisplayTop(halfScreenHeight);
+                _darkOverlayUI_1.DisplayBottom(halvedCanvasHeight);
+                _maskAreaUI_2.DisplayTop(halvedCanvasHeight);
+                _darkOverlayUI_2.DisplayTop(halvedCanvasHeight);
                 c2 = false;
             }
             else if (_tutorialManager.IsDisplayingSwitchToTab1Tutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(160f));
-                size_1 = new Vector2(775, 265);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(160f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
                 tutorialMessage = "Switch to Tab 1!";
 
                 _maskAreaUI_1.DisplaySwitchToTab1Tutorial();
@@ -175,8 +192,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingConfirmTutorial())
             {
-                pos_1 = new Vector2(-205f, GetResponsiveHeight(-385f));
-                size_1 = new Vector2(615f, 705f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(-760f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
 
                 HydriousUI hydriousUI = CaptureManager.Instance.GetHydriousUITarget();
 
@@ -185,15 +202,15 @@ namespace Stellarfarer
                 "Check if the values are correct!";
 
                 _maskAreaUI_1.DisplayConfirmTutorial();
-                _darkOverlayUI_1.DisplayBottom(halfScreenHeight);
-                _maskAreaUI_2.DisplayTop(halfScreenHeight);
-                _darkOverlayUI_2.DisplayTop(halfScreenHeight);
+                _darkOverlayUI_1.DisplayBottom(halvedCanvasHeight);
+                _maskAreaUI_2.DisplayTop(halvedCanvasHeight);
+                _darkOverlayUI_2.DisplayTop(halvedCanvasHeight);
                 c2 = false;
             }
             else if (_tutorialManager.IsDisplayingCleanseTutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(680f));
-                size_1 = new Vector2(745f, 425f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(680f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
                 tutorialMessage = "Confirm Cleanse!";
 
                 _maskAreaUI_1.DisplayCleanseTutorial();
@@ -204,8 +221,8 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingProgressionTutorial())
             {
-                pos_1 = new Vector2(0f, GetResponsiveHeight(250f));
-                size_1 = new Vector2(745f, 425f);
+                pos_1 = new Vector2(ScaleX(0f), ScaleY(250f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(360f));
                 tutorialMessage = "Keep on cleansing Hydrious to fill up the Power Meter and Win!";
 
                 _maskAreaUI_1.DisplayProgressionTutorial();
@@ -216,12 +233,12 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingMidpointDistanceTutorial())
             {
-                pos_1 = new Vector2(50f, GetResponsiveHeight(800f));
-                size_1 = new Vector2(940f, 275f);
+                pos_1 = new Vector2(ScaleX(50f), ScaleY(800f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(300f));
                 tutorialMessage = "Input the corresponding value of the ordered pairs to the empty slots and solve.";
 
-                pos_2 = new Vector2(0f, GetResponsiveHeight(-765f));
-                size_2 = new Vector2(975f, 300f);
+                pos_2 = new Vector2(ScaleX(0f), ScaleY(-765f));
+                size_2 = new Vector2(ScaleX(750f), ScaleY(360f));
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
                 _darkOverlayUI_1.DisplayMidpointTutorial();
@@ -231,12 +248,12 @@ namespace Stellarfarer
             }
             else if (_tutorialManager.IsDisplayingIncorrectTutorial())
             {
-                pos_1 = new Vector2(50f, GetResponsiveHeight(800f));
-                size_1 = new Vector2(940f, 275f);
+                pos_1 = new Vector2(ScaleX(50f), ScaleY(800f));
+                size_1 = new Vector2(ScaleX(750f), ScaleY(300f));
                 tutorialMessage = "Incorrect values, please input again";
 
-                pos_2 = new Vector2(0f, GetResponsiveHeight(-765f));
-                size_2 = new Vector2(975f, 300f);
+                pos_2 = new Vector2(ScaleX(0f), ScaleY(-765f));
+                size_2 = new Vector2(ScaleX(750f), ScaleY(360f));
 
                 _maskAreaUI_1.DisplayLapilizLowerScreen();
                 _darkOverlayUI_1.DisplayMidpointTutorial();
@@ -250,12 +267,23 @@ namespace Stellarfarer
                 _container_1.anchoredPosition = pos_1;
                 _container_1.sizeDelta = size_1;
                 _tutorialMessage_1.text = tutorialMessage;
+                _tutorialMessage_1.margin = new Vector4(
+                    size_1.x * 0.1f,
+                    size_1.y * 0.125f,
+                    size_1.x * 0.1f,
+                    size_1.y * 0.125f);
 
                 _container_2.gameObject.SetActive(c2);
                 if (c2)
                 {
                     _container_2.anchoredPosition = pos_2;
                     _container_2.sizeDelta = size_2;
+                    _tutorialMessage_2.offsetMin = new Vector2(
+                        size_2.x * 0.1f,
+                        size_2.y * 0.125f);
+                    _tutorialMessage_2.offsetMax = new Vector2(
+                        -size_2.x * 0.1f,
+                        -size_2.y * 0.125f);
                 }
             }
         }

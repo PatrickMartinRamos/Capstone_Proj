@@ -19,6 +19,7 @@ namespace Stellarfarer
             BottomRight = Bottom | Right,
         }
 
+        [SerializeField] private RectTransform _submarineCanvas;
         [SerializeField] private Location _location;
         [SerializeField] private RectTransform _laserBeamContainerRectTransform;
         [SerializeField] private RectTransform _laserBeamRectTransform;
@@ -32,8 +33,10 @@ namespace Stellarfarer
         {
             _rectTransform = (RectTransform)transform;
             _idleRotY = IsRight() ? 180f : 0f;
-            ResetLaserCannon();
         }
+
+        private void Start()
+            => ResetLaserCannon();
 
         private void ResetLaserCannon()
         {
@@ -60,6 +63,19 @@ namespace Stellarfarer
 
                 _rectTransform.anchoredPosition = position;
             }
+
+            float height = 1920f;
+
+            // original size from your prefab sprite
+            Vector2 originalScale = _rectTransform.localScale;
+
+            // scale factor based only on height (because Match = Height)
+            float scale = _submarineCanvas.rect.height / height;
+
+            // final size (maintains aspect ratio)
+            Vector2 finalSize = originalScale * scale;
+
+            _rectTransform.localScale = finalSize;
 
             _rectTransform.rotation = Quaternion.Euler(0f, _idleRotY, 0f);
             _laserBeamRectTransform.anchoredPosition = -Vector2.right * (_laserBeamHead.rectTransform.sizeDelta.x + _laserBeamBody.rectTransform.sizeDelta.x);
