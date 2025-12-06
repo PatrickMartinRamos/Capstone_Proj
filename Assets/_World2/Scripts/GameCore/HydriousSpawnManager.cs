@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Stellarfarer
 {
@@ -9,9 +10,10 @@ namespace Stellarfarer
         public event System.Action OnNextSpawnChanged;
 
         [SerializeField] private HydriousDictSO _hydriousDictSO;
-        [SerializeField] private UnityEngine.UI.Image _spawnArea;
+        [SerializeField] private Image _spawnArea;
         [SerializeField] private Sprite _full;
         [SerializeField] private Sprite _visible;
+        [SerializeField] private RectTransform _submarineCanvas;
 
         private HydriousSO[] _spawnableHydriousUISOArray;
         private readonly System.Collections.Generic.List<HydriousUI> _spawnedHydriousUIList = new();
@@ -114,6 +116,21 @@ namespace Stellarfarer
 
             Vector2 spawnPosition = GetSpawnPosition(hydriousSO.Prefab);
             HydriousUI hydriousUI = HydriousUI.SpawnHydriousUI(hydriousSO, _spawnArea.rectTransform, spawnPosition);
+
+            float width = 1080f;
+
+            // original size from your prefab sprite
+            Vector2 originalSize = hydriousSO.Prefab.rect.size;
+
+            // scale factor based only on height (because Match = Height)
+            float scale = _submarineCanvas.rect.width / width;
+
+            // final size (maintains aspect ratio)
+            Vector2 finalSize = originalSize * scale;
+
+            RectTransform rectTransform = hydriousUI.GetRectTransform();
+            rectTransform.sizeDelta = finalSize;
+
             _spawnedHydriousUIList.Add(hydriousUI);
             _nextSpawn = null;
         }

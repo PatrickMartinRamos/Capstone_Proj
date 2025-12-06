@@ -11,5 +11,8 @@ namespace Stellarfarer
                     full: _full,
                     visible: _visible
                 );
+
+        protected override void ButtonAction(Hydros7WorldManager hydros7WorldManager)
+            => hydros7WorldManager.PauseGame();
     }
 }

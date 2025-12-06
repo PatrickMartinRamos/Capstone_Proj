@@ -111,12 +111,18 @@ namespace Stellarfarer
             else
             {
                 Hydros7WorldManager.Instance.TryDisplayTutorial(TutorialManager.Instance.TryDisplayIncorrectTutorial);
-                _midpoint_X1.ClearText();
-                _midpoint_Y1.ClearText();
-                _midpoint_X2.ClearText();
-                _midpoint_Y2.ClearText();
-                _midpoint_X.ClearText();
-                _midpoint_Y.ClearText();
+                if (!isX1Correct)
+                    _midpoint_X1.ClearText();
+                if (!isY1Correct)
+                    _midpoint_Y1.ClearText();
+                if (!isX2Correct)
+                    _midpoint_X2.ClearText();
+                if (!isY2Correct)
+                    _midpoint_Y2.ClearText();
+                if (!isXCorrect)
+                    _midpoint_X.ClearText();
+                if (!isYCorrect)
+                    _midpoint_Y.ClearText();
             }
 
             return isX1Correct && isY1Correct &&

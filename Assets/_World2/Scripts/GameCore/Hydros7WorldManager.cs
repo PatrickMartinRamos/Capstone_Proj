@@ -135,6 +135,14 @@ namespace Stellarfarer
         public bool IsDisplayingStageDescription()
             => IsGameState(GameState.StageDescriptionDisplay);
 
+        // public void TryDisplayHint(Action hint)
+        // {
+        //     if (IsGamePlaying())
+        //     {
+        //         DisplayTutorial();
+        //         hint.Invoke();
+        //     }
+        // }
         public void TryDisplayTutorial(Action tutorial)
         {
             if (IsWaiting() || IsDisplayingTutorial())
@@ -201,9 +209,15 @@ namespace Stellarfarer
         public int GetStageCount()
             => _stageDataDictSO.Count();
 
-        public void ToggleGamePause()
+        public void PauseGame()
+            => SetGamePause(true);
+
+        public void ResumeGame()
+            => SetGamePause(false);
+
+        private void SetGamePause(bool isPaused)
         {
-            _isGamePaused = !_isGamePaused;
+            _isGamePaused = isPaused;
 
             Time.timeScale = _isGamePaused ? 0f : 1f;
 

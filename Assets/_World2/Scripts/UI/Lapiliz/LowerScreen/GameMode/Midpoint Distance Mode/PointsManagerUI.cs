@@ -35,10 +35,10 @@ namespace Stellarfarer
         {
             _pointsManager.GetPoints(out Vector2 pointA, out Vector2 pointB);
 
-            choice_X1.SetText(pointA.x.ToString());
-            choice_Y1.SetText(pointA.y.ToString());
-            choice_X2.SetText(pointB.x.ToString());
-            choice_Y2.SetText(pointB.y.ToString());
+            choice_X1.SetTextMesssage(pointA.x.ToString());
+            choice_Y1.SetTextMesssage(pointA.y.ToString());
+            choice_X2.SetTextMesssage(pointB.x.ToString());
+            choice_Y2.SetTextMesssage(pointB.y.ToString());
         }
     }
 }

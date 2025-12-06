@@ -7,7 +7,8 @@ namespace Stellarfarer
     {
         private const float ZOOM_MOVED_POS = 10000F;
 
-        [SerializeField] private RectTransform _content; // parent of everything in your screen
+        [SerializeField] private RectTransform _submarineCanvasContent;
+        [SerializeField] private CanvasGroup _overlayCanvasCanvasGroup;
         [SerializeField] private DashboardScreenUI _upperScreen;
         [SerializeField] private DashboardScreenUI _lowerScreen;
 
@@ -74,7 +75,7 @@ namespace Stellarfarer
             Vector3 targetPos = Utils.Halve(upperScreenPos + lowerScreenPos);
 
             // 2️⃣ Convert to local position relative to parent
-            Vector3 localTarget = _content.InverseTransformPoint(targetPos);
+            Vector3 localTarget = _submarineCanvasContent.InverseTransformPoint(targetPos);
 
             Vector3 movePosition = -localTarget * zoomScale;
             _zoomedPos = movePosition;
@@ -90,11 +91,20 @@ namespace Stellarfarer
             float duration = 0.5f;
 
             Sequence sequence = DOTween.Sequence();
-            sequence.Append(_content.DOScale(zoomScale, duration).SetEase(Ease.OutSine));
-            sequence.Join(_content.DOLocalMove(movePosition, duration).SetEase(Ease.OutSine));
+            sequence.Append(_submarineCanvasContent.DOScale(zoomScale, duration).SetEase(Ease.OutSine));
+            sequence.Join(_submarineCanvasContent.DOLocalMove(movePosition, duration).SetEase(Ease.OutSine));
 
             return sequence;
         }
+
+        private void ShowOverlayCanvas()
+            => SetOvarlayCanvasAlpha(1f);
+
+        private void HideOverlayCanvas()
+            => SetOvarlayCanvasAlpha(0f);
+
+        private void SetOvarlayCanvasAlpha(float alpha)
+            => _overlayCanvasCanvasGroup.alpha = alpha;
 
         private void DashboardManager_OnSwitchStateChanged()
         {
@@ -102,14 +112,17 @@ namespace Stellarfarer
 
             if (_dashboardManager.IsSwitchedOn())
             {
+                sequence.AppendCallback(HideOverlayCanvas);
                 sequence.Append(ZoomToTarget());
                 sequence.Append(_loadingScreenUI.LoadScreen(() =>
                 {
                     _lapilizManager.Activate();
-                    _content.anchoredPosition = new Vector2(ZOOM_MOVED_POS, _content.anchoredPosition.y);
+                    _submarineCanvasContent.anchoredPosition = new Vector2(ZOOM_MOVED_POS, _submarineCanvasContent.anchoredPosition.y);
                 }));
                 sequence.AppendCallback(() =>
                 {
+                    ShowOverlayCanvas();
+
                     HydriousUI hydriousUI = CaptureManager.Instance.GetHydriousUITarget();
 
                     switch (hydriousUI.GetCleansingType())
@@ -126,13 +139,19 @@ namespace Stellarfarer
             }
             else if (_dashboardManager.IsSwitchedOff())
             {
+                sequence.AppendCallback(HideOverlayCanvas);
                 sequence.Append(_loadingScreenUI.LoadScreen(() =>
                 {
                     _lapilizManager.Deactivate();
-                    _content.localPosition = _zoomedPos;
+                    _submarineCanvasContent.localPosition = _zoomedPos;
                 }));
                 sequence.Append(ResetZoom());
-                sequence.AppendCallback(() => CaptureManager.Instance.Cleanse());
+                sequence.AppendCallback(() =>
+                {
+                    ShowOverlayCanvas();
+
+                    CaptureManager.Instance.Cleanse();
+                });
             }
         }
 

@@ -5,7 +5,8 @@ namespace Stellarfarer
     public class PauseManagerUI : MonoBehaviour
     {
         [SerializeField] private GameObject _pauseMenu;
-        [SerializeField] private BackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
+        [SerializeField] private GameObject _tutorialButton;
+        [SerializeField] private VerticalBackgroundGroupResponsiveUI _backgroundGroupResponsiveUI;
 
         private Hydros7WorldManager _hydros7WorldManager;
 
@@ -49,6 +50,9 @@ namespace Stellarfarer
             => SetPauseMenuVisibility(false);
 
         private void SetPauseMenuVisibility(bool isVisible)
-            => _pauseMenu.SetActive(isVisible);
+        {
+            _pauseMenu.SetActive(isVisible);
+            // _tutorialButton.SetActive(_hydros7WorldManager.IsGamePlaying() && isVisible);
+        }
     }
 }
